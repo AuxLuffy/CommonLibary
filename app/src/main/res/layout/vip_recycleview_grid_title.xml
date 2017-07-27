@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_item"
+    android:layout_width="wrap_content"
+
+    android:layout_height="wrap_content"
+
+    >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#EAEAEA"
+        android:id="@+id/vip_title_divider"
+        />
+
+    <RelativeLayout
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_below="@id/vip_title_divider"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:background="#2FB3FF"/>
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="正在热播" />
+    </RelativeLayout>
+</RelativeLayout>

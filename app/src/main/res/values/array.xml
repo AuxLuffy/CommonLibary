@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!--  <string-array name="titles">
+      <item>分类1</item>
+        <item>1Android</item>
+        <item>2IOS</item>
+        <item>3JAVA</item>
+        <item>1-1Android</item>
+        <item>2-1IOS</item>
+        <item>3-1JAVA</item>
+        <item>分类2</item>
+        <item>4C++</item>
+        <item>5Ruby</item>
+        <item>分类3</item>
+        <item>6WEB</item>
+        <item>7HTML</item>
+        <item>8PERL</item>
+        <item>分类4</item>
+        <item>9C</item>
+        <item>10SWIFT</item>
+    </string-array>
+
+
+    <integer-array name="type">
+        <item>1</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+       <item>1</item>
+        <item>2</item>
+        <item>2</item>
+       <item>1</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+       <item>1</item>
+        <item>2</item>
+        <item>2</item>
+
+    </integer-array>-->
+</resources>

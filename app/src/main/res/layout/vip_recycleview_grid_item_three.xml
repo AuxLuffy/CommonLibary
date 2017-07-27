@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical"
+
+    >
+
+    <RelativeLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/vip_image_view"
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"
+
+            android:layout_height="180dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#FFFFFF"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_below="@id/vip_image_view">
+
+            <TextView
+                android:id="@+id/vip_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="皇恩浩荡"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/vip_play_icon"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_below="@id/vip_title"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/play" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vip_title"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/vip_play_icon"
+                android:text="288.8万" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

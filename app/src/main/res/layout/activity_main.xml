@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:text="公共基础库"
+        android:textSize="20dp"
+        android:textColor="#000066"
+        android:gravity="center"
+        android:layout_height="60dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#CCFF99"
+            android:id="@+id/layout1"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="控件"
+                android:textColor="#FFFFFF"
+                android:layout_centerInParent="true"
+                android:textSize="26sp">
+
+            </TextView>
+            <TextView
+                android:id="@+id/description1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/title1"
+                android:layout_marginTop="20dp"
+                android:text="view相关、事件分发"
+                android:textColor="#999999"
+                android:layout_centerHorizontal="true"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#99ccff"
+            android:id="@+id/layout2"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="动画"
+                android:textColor="#FFFFFF"
+                android:layout_centerInParent="true"
+                android:textSize="26sp">
+
+            </TextView>
+            <TextView
+                android:id="@+id/description2"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/title2"
+                android:layout_marginTop="20dp"
+                android:text="自定义复杂动画"
+                android:textColor="#999999"
+                android:layout_centerHorizontal="true"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/layout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffcccc"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/title3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="组件"
+                android:textColor="#FFFFFF"
+                android:layout_centerInParent="true"
+                android:textSize="26sp">
+
+            </TextView>
+            <TextView
+                android:id="@+id/description3"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/title3"
+                android:layout_marginTop="20dp"
+                android:text="四大组件相关"
+                android:textColor="#999999"
+                android:layout_centerHorizontal="true"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ccccff"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/title4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="存储"
+                android:textColor="#FFFFFF"
+                android:layout_centerInParent="true"
+                android:textSize="26sp">
+
+            </TextView>
+            <TextView
+                android:id="@+id/description4"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/title4"
+                android:layout_marginTop="20dp"
+                android:text="缓存、数据库、持久化数据"
+                android:textColor="#999999"
+                android:layout_centerHorizontal="true"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/layout5"
+            android:background="#3de1ad">
+
+            <TextView
+                android:id="@+id/title5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="优化"
+                android:textColor="#FFFFFF"
+                android:textSize="26sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/description5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title5"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="安全、性能调优等"
+                android:textColor="#999999" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#cca4e3"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/title6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="综合"
+                android:textColor="#FFFFFF"
+                android:layout_centerInParent="true"
+                android:textSize="26sp">
+
+            </TextView>
+            <TextView
+                android:id="@+id/description6"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/title6"
+                android:layout_marginTop="20dp"
+                android:text="第三SDK等其它"
+                android:textColor="#999999"
+                android:layout_centerHorizontal="true"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
