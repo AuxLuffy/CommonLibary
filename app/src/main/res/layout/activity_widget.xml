@@ -14,7 +14,7 @@
         android:background="#FFFFF0"
         android:gravity="center"
         android:textColor="#CCCCCC"
-        android:text="控件"
+        android:text="引导页图片,停留2秒自动消失"
 
         />
 

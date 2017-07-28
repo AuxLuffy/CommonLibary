@@ -34,6 +34,7 @@
         <activity android:name=".OptimizeActivity"></activity>
         <activity android:name=".StorageActivity"></activity>
         <activity android:name=".WidgetActivity"></activity>
+        <activity android:name=".AppStartGuide.AppStartGuide"></activity>
     </application>
 
 </manifest>
