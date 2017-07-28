@@ -8,6 +8,11 @@ import org.jetbrains.anko.async
 import org.jetbrains.anko.uiThread
 import java.net.URL
 
+/**
+ *author:simaben
+ * create on 2017/07/25 10:07
+ *Kotlin项目的入口，目前只是添加了简单kotlin 代码
+ */
 class KotlinActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -42,6 +47,7 @@ class KotlinActivity : AppCompatActivity() {
     }
 
     val h = Handler {
+        //扩展的switch语句，支持多种case判断
         when (it.what) {
             0 -> consume { toast("开始网络请求") }
             1, 3, 5 -> consume { toast("请求中。。。") }
@@ -50,6 +56,9 @@ class KotlinActivity : AppCompatActivity() {
         }
     }
 
+    /**
+     * 支持方法作为参数传递
+     */
     fun consume(f: () -> Unit): Boolean {
         f()
         return true
