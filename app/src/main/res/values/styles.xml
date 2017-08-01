@@ -17,4 +17,38 @@
     <style name="dialog_anim_fade_out" mce_bogus="1" parent="android:Animation">
         <item name="android:windowExitAnimation">@anim/dialog_exit_fade_out</item>
     </style>
+
+    <declare-styleable name="FlikerProgressBar">
+        <attr name="textSize" format="dimension"/>
+        <attr name="loadingColor" format="color"/>
+        <attr name="stopColor" format="color"/>
+        <attr name="finishColor" format="color"/>
+        <attr name="radius" format="dimension"/>
+        <attr name="borderWidth" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="RoundCornerProgress">
+        <attr name="rcReverse" format="boolean"/>
+        <attr name="rcProgress" format="float"/>
+        <attr name="rcMax" format="float"/>
+        <attr name="rcSecondaryProgress" format="float"/>
+        <attr name="rcBackgroundPadding" format="dimension"/>
+        <attr name="rcRadius" format="dimension"/>
+        <attr name="rcProgressColor" format="color"/>
+        <attr name="rcSecondaryProgressColor" format="color"/>
+        <attr name="rcBackgroundColor" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="RxRoundProgress">
+        <attr name="roundColor" format="color"/>
+        <attr name="roundProgressColor" format="color"/>
+        <attr name="roundWidth" format="dimension"/>
+        <attr name="textColor" format="color"/>
+        <attr name="textSize1" format="dimension"/>
+        <attr name="max" format="integer"/>
+        <attr name="textIsDisplayable" format="boolean"/>
+        <attr name="style">
+            <enum name="STROKE" value="0"/>
+            <enum name="FILL" value="1"/>
+        </attr>
+    </declare-styleable>
 </resources>
