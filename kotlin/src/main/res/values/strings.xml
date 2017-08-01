@@ -4,4 +4,9 @@
     <string name="customer">潜客</string>
     <string name="mine">我的</string>
     <string name="unkown">未知</string>
+    <string name="username">用户名</string>
+    <string name="phone">手机号</string>
+    <string name="shop">掌柜</string>
+    <string name="my_red_packge">红包</string>
+    <string name="about">关于</string>
 </resources>
