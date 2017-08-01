@@ -9,6 +9,18 @@ import org.jetbrains.anko.setContentView
 import org.jetbrains.anko.startActivity
 
 class AppStartActivity : Activity() {
+
+    val appUI = AppStartActivityUI()
+    val startIcon by lazy {
+        appUI.startIcon
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        appUI.setContentView(this)
+        start(animTime)
+    }
+
     val animTime = 1500L
     fun start(time: Long) {
         val anim = ObjectAnimator.ofFloat(startIcon, "alpha", 1.0f, 0.5f)
@@ -27,14 +39,5 @@ class AppStartActivity : Activity() {
         finish()
     }
 
-    val appUI = AppStartActivityUI()
-    val startIcon by lazy {
-        appUI.startIcon
-    }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        appUI.setContentView(this)
-        start(animTime)
-    }
 }

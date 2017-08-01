@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Kotlin</string>
+    <string name="shopkeeper">掌柜</string>
+    <string name="customer">潜客</string>
+    <string name="mine">我的</string>
+    <string name="unkown">未知</string>
 </resources>
