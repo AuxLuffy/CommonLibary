@@ -8,7 +8,13 @@
             android:supportsRtl="true">
 
         <!-- Kotlin -->
-        <activity android:name="com.lenovo.KotlinActivity"></activity>
+        <activity android:name=".KotlinActivity"/>
+        <activity
+                android:name=".AppStartActivity"
+                android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        </activity>
+        <activity android:name=".HomeActivity">
+        </activity>
     </application>
 
 </manifest>

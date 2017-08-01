@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.support.v7.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_kotlin.*
-import org.jetbrains.anko.async
+import org.jetbrains.anko.custom.async
 import org.jetbrains.anko.uiThread
 import java.net.URL
 

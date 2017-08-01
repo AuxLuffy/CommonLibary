@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import com.lenovo.KotlinActivity;
+import com.lenovo.AppStartActivity;
 
 public class CompositeActivity extends AppCompatActivity {
 
@@ -15,6 +15,6 @@ public class CompositeActivity extends AppCompatActivity {
     }
 
     public void startKotlin(View view) {
-        startActivity(new Intent(this, KotlinActivity.class));
+        startActivity(new Intent(this, AppStartActivity.class));
     }
 }
