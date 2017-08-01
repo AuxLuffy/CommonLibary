@@ -35,6 +35,7 @@
         <activity android:name=".StorageActivity"></activity>
         <activity android:name=".WidgetActivity"></activity>
         <activity android:name=".AppStartGuide.AppStartGuide"></activity>
+        <activity android:name=".ProgressBaranimation.ProgressActivity"></activity>
     </application>
 
 </manifest>
