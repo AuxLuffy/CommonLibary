@@ -12,6 +12,9 @@ import org.jetbrains.anko.*
  * Created by Administrator on 2017/8/1.
  */
 class HomeActivityUI : AnkoComponent<HomeActivity> {
+    lateinit var ivHead: ImageView
+    lateinit var tvAbout: TextView
+
     companion object {
         val tvUserNameId = 1
         val split = tvUserNameId + 1
@@ -39,7 +42,7 @@ class HomeActivityUI : AnkoComponent<HomeActivity> {
 
                 frameLayout {
                     id = headLayout
-                    imageView(R.drawable.head).lparams(width = dip(75), height = dip(75)) {
+                    ivHead = imageView(R.drawable.head).lparams(width = dip(75), height = dip(75)) {
                         gravity = Gravity.CENTER_HORIZONTAL
                     }
                     textView(R.string.unkown) {
@@ -127,7 +130,7 @@ class HomeActivityUI : AnkoComponent<HomeActivity> {
             }.lparams(width = matchParent, height = dip(50)) {
                 topMargin = dip(1)
             }
-            textView(R.string.about) {
+            tvAbout = textView(R.string.about) {
                 backgroundColor = Color.WHITE
                 compoundDrawablePadding = dip(10)
                 gravity = Gravity.CENTER_VERTICAL

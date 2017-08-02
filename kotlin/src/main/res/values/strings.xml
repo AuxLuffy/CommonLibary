@@ -9,4 +9,10 @@
     <string name="shop">掌柜</string>
     <string name="my_red_packge">红包</string>
     <string name="about">关于</string>
+    <string name="app_version">V1.0</string>
+    <string name="check_update">检查新版本</string>
+    <string name="us">联系我们</string>
+
+    <string name="copy_right">联想集团 All rights reserved. \n design by 联想中国区消费及中小企业服务互联网产品设计</string>
+    <string name="back">返回</string>
 </resources>
