@@ -1,5 +1,6 @@
 package com.lenovo
 
+import android.app.Activity
 import android.content.Context
 import android.view.Gravity
 import android.view.View
@@ -15,7 +16,7 @@ class UI {
     companion object {
         fun commTitleBar(ctx: Context): View = ctx.relativeLayout {
             layoutParams = ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, dip(45))
-            backgroundColor = resources.getColor(R.color.red_EA0000)
+            backgroundColor = resources.getColor(R.color.gray_c8c7cc)
             fitsSystemWindows = true
             linearLayout {
                 orientation = LinearLayout.HORIZONTAL
@@ -31,6 +32,7 @@ class UI {
                     textSize = 16F
                     setPadding(dip(10), 0, 0, 0)
                 }.lparams(width = wrapContent, height = wrapContent)
+                setOnClickListener { (ctx as Activity).finish() }
             }.lparams(width = wrapContent, height = matchParent) {
 
             }
