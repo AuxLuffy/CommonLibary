@@ -14,6 +14,9 @@ import org.jetbrains.anko.*
 class HomeActivityUI : AnkoComponent<HomeActivity> {
     lateinit var ivHead: ImageView
     lateinit var tvAbout: TextView
+    lateinit var tvName: TextView
+    lateinit var tvPhone: TextView
+    lateinit var tvRole: TextView
 
     companion object {
         val tvUserNameId = 1
@@ -45,7 +48,7 @@ class HomeActivityUI : AnkoComponent<HomeActivity> {
                     ivHead = imageView(R.drawable.head).lparams(width = dip(75), height = dip(75)) {
                         gravity = Gravity.CENTER_HORIZONTAL
                     }
-                    textView(R.string.unkown) {
+                    tvRole = textView(R.string.unkown) {
                         gravity = Gravity.CENTER
                         textColor = Color.WHITE
                         textSize = 14F
@@ -59,7 +62,7 @@ class HomeActivityUI : AnkoComponent<HomeActivity> {
                     leftMargin = dip(20)
                 }
 
-                textView(R.string.username) {
+                tvName = textView(R.string.username) {
                     id = tvUserNameId
                     textSize = 18F
                     typeface = Typeface.DEFAULT_BOLD
@@ -77,7 +80,7 @@ class HomeActivityUI : AnkoComponent<HomeActivity> {
                     rightOf(headLayout)
                 }
 
-                textView(R.string.phone) {
+                tvPhone = textView(R.string.phone) {
                     textColor = Color.WHITE
                     setPadding(dip(10), dip(5), 0, 0)
                 }.lparams(width = wrapContent, height = wrapContent) {
@@ -140,7 +143,7 @@ class HomeActivityUI : AnkoComponent<HomeActivity> {
                 setCompoundDrawablesWithIntrinsicBounds(R.drawable.icon_about, 0, R.drawable.arrow_right, 0)
 
             }.lparams(width = matchParent, height = dip(50)) {
-                topMargin = dip(1)
+                topMargin = dip(10)
             }
         }
     }.view
