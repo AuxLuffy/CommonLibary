@@ -3,7 +3,7 @@
           package="com.lenovo.service.basicpubliclibrary">
 
     <uses-permission android:name="android.permission.INTERNET"/>
-
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
     <application
             android:allowBackup="true"
             android:icon="@mipmap/ic_launcher"
@@ -36,6 +36,7 @@
         <activity android:name=".WidgetActivity"></activity>
         <activity android:name=".AppStartGuide.AppStartGuide"></activity>
         <activity android:name=".ProgressBaranimation.ProgressActivity"></activity>
+        <activity android:name=".maillistananimation.MaillistActivity"></activity>
     </application>
 
 </manifest>
