@@ -23,6 +23,8 @@ ext {
 }
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'io.reactivex:rxjava:1.0.14'
+    compile 'io.reactivex:rxandroid:1.0.1'
     compile "com.android.support:support-v4:${supportVersion}"
     compile "com.android.support:appcompat-v7:${supportVersion}"
     compile "com.android.support:recyclerview-v7:${supportVersion}"

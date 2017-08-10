@@ -14,12 +14,13 @@ import java.util.List;
 import cc.solart.turbo.BaseTurboAdapter;
 import cc.solart.turbo.BaseViewHolder;
 
-
+/**
+ * 适配器
+ * @Author 李巷阳
+ * Created at 2017/8/10 15:02
+ */
 public class AdapterContactCity extends BaseTurboAdapter<ModelContactCity, BaseViewHolder> {
 
-    public AdapterContactCity(Context context) {
-        super(context);
-    }
 
     public AdapterContactCity(Context context, List<ModelContactCity> data) {
         super(context, data);

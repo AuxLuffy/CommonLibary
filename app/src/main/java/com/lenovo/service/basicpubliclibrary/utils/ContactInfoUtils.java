@@ -19,6 +19,11 @@ import java.util.List;
 
 public class ContactInfoUtils {
 
+    /**
+     * 获取通讯录。
+     * @param mContext
+     * @return
+     */
     public static List<ModelContactCity> getContactList(Context mContext){
         String contactName;
         String contactNumber;
@@ -39,14 +44,9 @@ public class ContactInfoUtils {
                 contactName = cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME));
                 contactNumber = cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER));
                 contactHeadLetter=cursor.getString(cursor.getColumnIndex("phonebook_label"));//这个字段保存了每个联系人首字的拼音的首字母
-
-                String contactNames = contactName.replaceAll(" ", "");
-                String contactNumbers = contactNumber.replaceAll(" ", "").replace("-", "").replace("+86", "");
-                if (isMobileNO(contactNumbers)) {
-                    ModelContactCity contactsInfo = new ModelContactCity(contactNames, contactHeadLetter,contactNumbers);
-                    if (contactName != null)
-                        list.add(contactsInfo);
-                }
+                ModelContactCity contactsInfo = new ModelContactCity(contactName, contactHeadLetter,contactNumber);
+                if (contactName != null)
+                    list.add(contactsInfo);
             }
             cursor.close();//使用完后一定要将cursor关闭，不然会造成内存泄露等问题
 
@@ -74,4 +74,61 @@ public class ContactInfoUtils {
         if (TextUtils.isEmpty(mobiles)) return false;
         else return mobiles.matches(telRegex);
     }
+
+    /**
+     * 通讯录去除不符合手机号格式的数据。
+     * @param oldModelList
+     * @return
+     */
+    public static List<ModelContactCity> getRightMobile(List<ModelContactCity> oldModelList)
+    {
+        List<ModelContactCity> newlist = new ArrayList<ModelContactCity>();
+        if(oldModelList!=null && oldModelList.size()>0){
+            for(int x=0;x<oldModelList.size();x++){
+                ModelContactCity mc=oldModelList.get(x);
+                String contactNames = mc.name.replaceAll(" ", "");
+                String contactNumbers = mc.number.replaceAll(" ", "").replace("-", "").replace("+86", "");
+                if (isMobileNO(contactNumbers)) {
+                    ModelContactCity contactsInfo = new ModelContactCity(contactNames, mc.pys,contactNumbers);
+                    newlist.add(contactsInfo);
+                }
+
+            }
+
+          }
+        return newlist;
+    }
+
+    /**
+     * 获取通讯录对应的字符集。
+     * @param ContactInfo  所有的通讯录
+     * @param Letterdata   所有的字符集
+     * @return
+     */
+    public static List<ModelContactCity> getLetterdata(List<ModelContactCity> ContactInfo,List<ModelContactCity> Letterdata){
+
+        final List<ModelContactCity> results = new ArrayList<>();
+        if(ContactInfo.isEmpty() || Letterdata.isEmpty())
+            return null;
+
+        final int size = ContactInfo.size();
+        final int count = Letterdata.size();
+        for (int i = 0; i < size; i++)
+        {
+            String srcId = ContactInfo.get(i).pys;
+            for (int j = 0; j < count; j++)
+            {
+                ModelContactCity t = Letterdata.get(j);
+                if (srcId.equals(t.pys))
+                {
+                    if(!results.contains(t))
+                    {
+                        results.add(t);
+                    }
+                }
+            }
+        }
+        return results;
+    }
+
 }
