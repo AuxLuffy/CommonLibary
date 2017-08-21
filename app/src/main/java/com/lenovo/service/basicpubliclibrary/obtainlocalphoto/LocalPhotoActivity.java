@@ -42,12 +42,14 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 
-
 /**
- * Created by lenovo on 2017/8/11.
+ * 扫描本地图片后,显示 并支持本地拍照的功能。
+ * @Author 李巷阳
+ * Created at 2017/8/21 14:28
  */
-
 public class LocalPhotoActivity extends Activity{
+
+
     private GridView photoGrid;//图片列表
 
     private Button photoBtn;//底部下一步按钮

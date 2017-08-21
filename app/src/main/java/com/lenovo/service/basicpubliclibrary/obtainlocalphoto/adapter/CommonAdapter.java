@@ -10,7 +10,11 @@ import com.lenovo.service.basicpubliclibrary.R;
 
 import java.util.List;
 
-
+/**
+ * 每个图片item的布局。
+ * @Author 李巷阳
+ * Created at 2017/8/21 14:36
+ */
 public abstract class CommonAdapter<T> extends BaseAdapter
 {
 	final int VIEW_TYPE = 2;

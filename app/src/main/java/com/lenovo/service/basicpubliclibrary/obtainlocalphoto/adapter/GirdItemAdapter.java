@@ -14,7 +14,11 @@ import com.lenovo.service.basicpubliclibrary.R;
 import java.util.LinkedList;
 import java.util.List;
 
-
+/**
+ * 相册列表显示的Gird。
+ * @Author 李巷阳
+ * Created at 2017/8/21 14:37
+ */
 public class GirdItemAdapter extends CommonAdapter<String>{
 	private String mDirPath;
 	private Context context;

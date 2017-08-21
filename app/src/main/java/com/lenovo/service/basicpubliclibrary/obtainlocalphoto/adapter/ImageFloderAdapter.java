@@ -18,8 +18,8 @@ import java.util.List;
 
 /**
  * 相册列表类
- * @author Administrator
- *
+ * @Author 李巷阳
+ * Created at 2017/8/21 14:37
  */
 public class ImageFloderAdapter extends BaseAdapter {
 	private Context context;
