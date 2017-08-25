@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.lenovo.service.basicpubliclibrary.AppStartGuide.AppStartGuide;
+import com.lenovo.service.basicpubliclibrary.cardstatcview.CardStackActivty;
 import com.lenovo.service.basicpubliclibrary.loaddata.LoadDataActivity;
 import com.lenovo.service.basicpubliclibrary.questionnaire.QuestionActivity;
 import com.lenovo.service.basicpubliclibrary.scoringstrip.ScoringStripActivity;
@@ -19,6 +20,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     private TextView loaddata;
     private TextView mTvRatingbar;
     private TextView mTextQuestionnaire;
+    private TextView mCardStack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,12 +38,14 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         loaddata =(TextView) findViewById(R.id.loaddata);
         mTvRatingbar = (TextView) findViewById(R.id.tv_ratingbar);
         mTextQuestionnaire=(TextView) findViewById(R.id.questionnaire);
+        mCardStack= (TextView) findViewById(R.id.card_stack);
     }
 
     private void init_listener() {
         mText1.setOnClickListener(this);
         smileview.setOnClickListener(this);
         mTvRatingbar.setOnClickListener(this);
+        mCardStack.setOnClickListener(this);
         mTextQuestionnaire.setOnClickListener(this);
         loaddata.setOnClickListener(this);
     }
@@ -81,6 +85,10 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
                 loadDataIntent.setClass(WidgetActivity.this,
                         LoadDataActivity.class);
                 startActivity(loadDataIntent);
+                break;
+            case R.id.card_stack:
+                intent=new Intent(WidgetActivity.this, CardStackActivty.class);
+                startActivity(intent);
                 break;
         }
     }

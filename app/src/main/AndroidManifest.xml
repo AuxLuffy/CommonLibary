@@ -48,6 +48,7 @@
         <activity android:name=".meizuweather.MeizuWeacherActivity" />
         <activity android:name=".loopview.LoopViewActivity"></activity>
         <activity android:name=".scoringstrip.ScoringStripActivity"></activity>
+        <activity android:name=".cardstatcview.CardStackActivty"/>
         <activity android:name=".flowwateranimation.FlowWaterAnimationActivity"></activity>
         <activity android:name=".guideanim.ShowActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar"></activity>

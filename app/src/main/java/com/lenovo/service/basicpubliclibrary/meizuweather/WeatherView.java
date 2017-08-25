@@ -177,7 +177,6 @@ public class WeatherView extends View {
         mPaint.setStyle(Paint.Style.FILL);
         mPaint.setStrokeWidth(mBorderWidth);
         canvas.save();
-//        Log.d("zhe", "1111:" + mMovePointX);
         canvas.clipRect(50, mBorderWidth, mMovePointX, mRadius * 2 - mBorderWidth, Region.Op.INTERSECT);
         canvas.drawArc(mRect, mStartAngle, mAngleLength, true, mPaint);
         canvas.restore();
