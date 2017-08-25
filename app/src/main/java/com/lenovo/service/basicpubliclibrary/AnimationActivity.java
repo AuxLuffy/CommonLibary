@@ -8,10 +8,12 @@ import android.widget.TextView;
 
 import com.lenovo.service.basicpubliclibrary.ProgressBaranimation.ProgressActivity;
 import com.lenovo.service.basicpubliclibrary.headerfloatanimation.HeaderFloatActivity;
+import com.lenovo.service.basicpubliclibrary.meizuweather.MeizuWeacherActivity;
 
 public class AnimationActivity extends AppCompatActivity {
     TextView text1=null;
     private TextView mTv_progressBar;
+    private TextView mMEIZUWeather;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,8 +21,10 @@ public class AnimationActivity extends AppCompatActivity {
         setContentView(R.layout.activity_animation);
         text1=(TextView)findViewById(R.id.text1);
         mTv_progressBar = (TextView) findViewById(R.id.tv_progressBar);
+        mMEIZUWeather= (TextView) findViewById(R.id.meizu_weather);
         text1.setOnClickListener(new TextViewClickListener() );
         mTv_progressBar.setOnClickListener(new TextViewClickListener());
+        mMEIZUWeather.setOnClickListener(new TextViewClickListener());
     }
     public class TextViewClickListener implements View.OnClickListener{
 
@@ -44,7 +48,12 @@ public class AnimationActivity extends AppCompatActivity {
 
 
                     break;
+                case R.id.meizu_weather:
+                    intent.setClass(AnimationActivity.this, MeizuWeacherActivity.class);
+                    startActivity(intent);
 
+
+                    break;
 
 
                 default:

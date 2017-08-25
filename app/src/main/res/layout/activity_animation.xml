@@ -28,10 +28,11 @@
         android:text="进度条的艺术" />
 
     <TextView
+        android:id="@+id/meizu_weather"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:textColor="#CCCCCC"
-        android:text="未完待续"
+        android:text="仿魅族天气动画"
         android:background="#E6E6FA"
         android:gravity="center"
 

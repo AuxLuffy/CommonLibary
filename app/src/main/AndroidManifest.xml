@@ -37,6 +37,7 @@
         <activity android:name=".AppStartGuide.AppStartGuide"></activity>
         <activity android:name=".ProgressBaranimation.ProgressActivity"></activity>
         <activity android:name=".maillistananimation.MaillistActivity"></activity>
+        <activity android:name=".meizuweather.MeizuWeacherActivity"/>
     </application>
 
 </manifest>
