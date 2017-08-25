@@ -43,7 +43,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         smileview.setOnClickListener(this);
         mTvRatingbar.setOnClickListener(this);
         mTextQuestionnaire.setOnClickListener(this);
-        loaddata =(TextView) findViewById(R.id.loaddata);
+        loaddata.setOnClickListener(this);
     }
 
     @Override
