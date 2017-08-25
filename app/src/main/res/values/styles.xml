@@ -18,6 +18,67 @@
         <item name="android:windowExitAnimation">@anim/dialog_exit_fade_out</item>
     </style>
 
+
+    <style name="common_swipeLoadDataLayout">
+        <item name="emptyText">@string/custom_empty_text</item>
+        <item name="emptyImgId">@drawable/ic_empty_zhihu</item>
+        <item name="emptyImageVisible">true</item>
+
+        <item name="errorText">@string/custom_error_text</item>
+        <item name="errorImgId">@drawable/ic_error_zhihu</item>
+        <item name="errorImageVisible">true</item>
+
+        <item name="noNetWorkText">@string/custom_nonetwork_text</item>
+        <item name="noNetWorkImgId">@drawable/ic_no_network_zhihu</item>
+        <item name="noNetWorkImageVisible">true</item>
+
+        <item name="allTipTextColor">@color/text_color_child</item>
+        <item name="allTipTextSize">16</item>
+        <item name="allPageBackgroundColor">@color/pageBackground</item>
+
+        <item name="reloadBtnText">@string/custom_reloadBtn_text</item>
+        <item name="reloadBtnTextSize">16</item>
+        <item name="reloadBtnTextColor">@color/colorPrimary</item>
+        <!--<item name="reloadBtnBackgroundResource">@drawable/selector_btn_normal</item>-->
+        <item name="reloadBtnVisible">true</item>
+        <item name="reloadClickArea">button</item>
+    </style>
+
+    <style name="custom_progressbar" parent="Widget.AppCompat.ProgressBar">
+        <item name="android:indeterminateDrawable">@drawable/custom_progressbar</item>
+    </style>
+
+    <style name="common_loadDataLayout">
+        <item name="loadingText">@string/custom_loading_text</item>
+        <item name="loadingTextSize">20</item>
+        <item name="loadingTextColor">@color/colorPrimary</item>
+        <item name="loadingViewLayoutId">@layout/custom_loading_view</item>
+
+        <item name="emptyText">@string/custom_empty_text</item>
+        <item name="emptyImgId">@drawable/ic_empty</item>
+        <item name="emptyImageVisible">true</item>
+
+        <item name="errorText">@string/custom_error_text</item>
+        <item name="errorImgId">@drawable/ic_error</item>
+        <item name="errorImageVisible">true</item>
+
+        <item name="noNetWorkText">@string/custom_nonetwork_text</item>
+        <item name="noNetWorkImgId">@drawable/ic_no_network</item>
+        <item name="noNetWorkImageVisible">true</item>
+
+        <item name="allTipTextColor">@color/text_color_child</item>
+        <item name="allTipTextSize">20</item>
+        <item name="allPageBackgroundColor">@color/pageBackground</item>
+
+        <item name="reloadBtnText">@string/custom_reloadBtn_text</item>
+        <item name="reloadBtnTextSize">20</item>
+        <item name="reloadBtnTextColor">@color/colorPrimary</item>
+        <item name="reloadBtnBackgroundResource">@drawable/selector_btn_normal</item>
+        <item name="reloadBtnVisible">true</item>
+        <item name="reloadClickArea">button</item>
+    </style>
+
+
     <declare-styleable name="FlikerProgressBar">
         <attr name="textSize" format="dimension"/>
         <attr name="loadingColor" format="color"/>
@@ -60,4 +121,48 @@
         <attr name="sidebarRadius" format="dimension"/>
         <attr name="sidebarBallRadius" format="dimension"/>
     </declare-styleable>
+
+    <declare-styleable name="LoopRotarySwitchView">
+        <attr name="orientation">
+            <enum name="vertical" value="0" />
+            <enum name="horizontal" value="1" />
+        </attr>
+        <attr name="autoRotation" format="boolean" />
+        <attr name="r" format="dimension" />
+
+        <attr name="direction">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+
+    </declare-styleable>
+
+
+    <style name="QuestionTitleSurvey">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingMultiplier">1.5</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="QuestionTitleUpOrder">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="OptionBlank">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">40dp</item>
+        <item name="android:background">@mipmap/option_blank</item>
+        <item name="android:hint">请输入</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textColorHint">#CDCDCD</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:textSize">16dp</item>
+    </style>
 </resources>

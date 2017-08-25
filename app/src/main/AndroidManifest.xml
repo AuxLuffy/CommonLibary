@@ -55,6 +55,7 @@
 
         <activity android:name=".CompositeActivity"></activity>
 
+        <activity android:name=".smilepraiseview.SmilePraiseActivity"></activity>
 
         <activity android:name=".OptimizeActivity"></activity>
         <activity android:name=".StorageActivity"></activity>
@@ -63,6 +64,24 @@
         <activity android:name=".ProgressBaranimation.ProgressActivity"></activity>
         <activity android:name=".maillistananimation.MaillistActivity"></activity>
         <activity android:name=".obtainlocalphoto.LocalPhotoActivity"></activity>
+
+        <!-- 加载数据页面的activity  -->
+        <activity android:name=".loaddata.LoadDataActivity"/>
+        <activity android:name=".loaddata.Sample1Activity"/>
+        <activity android:name=".loaddata.Sample2Activity"/>
+
+        <!-- 动画 -->
+        <activity android:name=".OptimizeActivity" />
+        <activity android:name=".StorageActivity" />
+        <activity android:name=".WidgetActivity" />
+        <activity android:name=".AppStartGuide.AppStartGuide" />
+        <activity android:name=".ProgressBaranimation.ProgressActivity" />
+        <activity android:name=".maillistananimation.MaillistActivity" />
+        <activity android:name=".meizuweather.MeizuWeacherActivity" />
+        <activity android:name=".loopview.LoopViewActivity"></activity>
+        <activity android:name=".scoringstrip.ScoringStripActivity"></activity>
+        <activity android:name=".flowwateranimation.FlowWaterAnimationActivity"></activity>
+        <activity android:name=".questionnaire.QuestionActivity"/>
     </application>
 
 </manifest>

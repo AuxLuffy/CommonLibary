@@ -19,28 +19,51 @@
         />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/smileview"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="#F0E68C"
         android:gravity="center"
         android:textColor="#CCCCCC"
-        android:text="未完待续" />
+        android:text="仿最美有物点赞效果" />
 
     <TextView
+        android:id="@+id/tv_ratingbar"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:textColor="#CCCCCC"
-        android:text="未完待续"
+        android:text="自定义打分条，图案大小均可"
+        android:background="#f6E6FA"
+        android:gravity="center"
+
+        />
+
+    <TextView
+        android:id="@+id/loaddata"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="#CCCCCC"
+        android:text="页面加载数据样式"
         android:background="#E6E6FA"
         android:gravity="center"
 
         />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:textColor="#CCCCCC"
         android:text="未完待续"
+        android:background="#b6E6FA"
+        android:gravity="center"
+
+        />
+    <TextView
+        android:id="@+id/questionnaire"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="#CCCCCC"
+        android:text="动态生成问卷-单选多选填空"
         android:background="#FFF0F5"
         android:gravity="center"
 

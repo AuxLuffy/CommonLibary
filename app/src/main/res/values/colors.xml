@@ -15,4 +15,6 @@
     <color name="baby_blue">#89CFF0</color>
     <color name="e">#EEEEEE</color>
     <color name="orange_text">#F78A00</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorYellow">#feef50</color>
 </resources>

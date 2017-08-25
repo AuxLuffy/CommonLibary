@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -28,28 +27,31 @@
         android:text="进度条的艺术" />
 
     <TextView
+        android:id="@+id/meizu_weather"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:textColor="#CCCCCC"
-        android:text="未完待续"
+        android:text="仿魅族天气动画"
         android:background="#E6E6FA"
         android:gravity="center"
 
         />
     <TextView
+        android:id="@+id/tv_loopview"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:textColor="#CCCCCC"
-        android:text="未完待续"
+        android:text="不一样的图片轮播"
         android:background="#FFF0F5"
         android:gravity="center"
 
         />
     <TextView
+        android:id="@+id/water_animation"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:textColor="#CCCCCC"
-        android:text="未完待续"
+        android:text="水流动的动画"
         android:background="#7CFC00"
         android:gravity="center"
 

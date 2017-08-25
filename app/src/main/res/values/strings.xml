@@ -2,14 +2,12 @@
     <string name="app_name">公共基础库</string>
 
 
-
     <string name="no_permissions">应用需要必要的运行权限</string>
 
     <string name="settings">设置</string>
     <string name="help">帮助</string>
     <string name="string_help_text">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。\n\n最后点击两次后退按钮，即可返回。</string>
     <string name="quit">返回</string>
-
 
 
     <string name="permission_camera_user_hint">test onRequestPermissionsResult: 没有此权限，无法开启这个功能，请开启权限。请打开照相机权限</string>
@@ -25,5 +23,16 @@
     <string name="permission_read_external_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_READ_EXTERNAL_STORAGE</string>
     <string name="permission_white_external_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_WRITE_EXTERNAL_STORAGE</string>
     <string name="permission_recode_audio_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_RECORD_AUDIO</string>
+
+
+
+    <string name="normal_style">普通样式</string>
+    <string name="zhihu_style">仿知乎样式</string>
+    <string name="reload_text">reload data</string>
+    <string name="custom_loading_text">加载中</string>
+    <string name="custom_empty_text">暂无数据</string>
+    <string name="custom_error_text">加载失败，请稍后重试</string>
+    <string name="custom_nonetwork_text">似乎出了点问题...</string>
+    <string name="custom_reloadBtn_text">重新加载</string>
 
 </resources>
