@@ -69,10 +69,11 @@
 
         />
     <TextView
+        android:id="@+id/color_dialog"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:textColor="#CCCCCC"
-        android:text="未完待续"
+        android:text="Color Dialog"
         android:background="#7CFC00"
         android:gravity="center"
 
