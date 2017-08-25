@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/multi_choice"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--<CheckBox-->
+        <!--android:id="@+id/mc_cb"-->
+        <!--style="@style/OptionMultiChoice"></CheckBox>-->
+
+    <LinearLayout
+        android:id="@+id/mc_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/mc_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/option_single_choice_normal" />
+
+        <TextView
+            android:id="@+id/mc_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="多选项"
+            android:textColor="#666666"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/mc_et"
+        style="@style/OptionBlank"/>
+</LinearLayout>

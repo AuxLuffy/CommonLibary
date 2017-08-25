@@ -37,10 +37,11 @@
 
         />
     <TextView
+        android:id="@+id/questionnaire"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:textColor="#CCCCCC"
-        android:text="未完待续"
+        android:text="动态生成问卷-单选多选填空"
         android:background="#FFF0F5"
         android:gravity="center"
 

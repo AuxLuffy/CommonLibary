@@ -34,6 +34,7 @@
         <activity android:name=".meizuweather.MeizuWeacherActivity" />
         <activity android:name=".loopview.LoopViewActivity"></activity>
         <activity android:name=".scoringstrip.ScoringStripActivity"></activity>
+        <activity android:name=".questionnaire.QuestionActivity"/>
     </application>
 
 </manifest>

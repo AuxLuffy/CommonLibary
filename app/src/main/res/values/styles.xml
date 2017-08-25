@@ -75,4 +75,33 @@
         </attr>
 
     </declare-styleable>
+
+
+    <style name="QuestionTitleSurvey">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingMultiplier">1.5</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="QuestionTitleUpOrder">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="OptionBlank">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">40dp</item>
+        <item name="android:background">@mipmap/option_blank</item>
+        <item name="android:hint">请输入</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textColorHint">#CDCDCD</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:textSize">16dp</item>
+    </style>
 </resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Spinner
+        android:id="@+id/dc_sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@null"
+        android:overlapAnchor="false" />
+
+    <EditText
+        android:id="@+id/dc_et"
+        android:layout_marginTop="5dp"
+        style="@style/OptionBlank" />
+</LinearLayout>

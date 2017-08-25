@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.lenovo.service.basicpubliclibrary.AppStartGuide.AppStartGuide;
+import com.lenovo.service.basicpubliclibrary.questionnaire.QuestionActivity;
 import com.lenovo.service.basicpubliclibrary.scoringstrip.ScoringStripActivity;
 import com.lenovo.service.basicpubliclibrary.smilepraiseview.SmilePraiseActivity;
 
@@ -15,6 +16,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     private TextView mText1;
     private TextView smileview;
     private TextView mTvRatingbar;
+    private TextView mTextQuestionnaire;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,12 +32,14 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mText1 = (TextView) findViewById(R.id.text1);
         smileview=(TextView) findViewById(R.id.smileview);
         mTvRatingbar = (TextView) findViewById(R.id.tv_ratingbar);
+        mTextQuestionnaire=(TextView) findViewById(R.id.questionnaire);
     }
 
     private void init_listener() {
         mText1.setOnClickListener(this);
         smileview.setOnClickListener(this);
         mTvRatingbar.setOnClickListener(this);
+        mTextQuestionnaire.setOnClickListener(this);
 
     }
 
@@ -62,6 +66,12 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
                 intent3.setClass(WidgetActivity.this,
                         ScoringStripActivity.class);
                 startActivity(intent3);
+                break;
+            case R.id.questionnaire:
+                Intent intent4=new Intent();
+                intent4.setClass(WidgetActivity.this,
+                        QuestionActivity.class);
+                startActivity(intent4);
                 break;
         }
     }
