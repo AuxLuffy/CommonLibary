@@ -54,7 +54,7 @@
         android:layout_height="60dp"
         android:textColor="#CCCCCC"
         android:text="未完待续"
-        android:background="#g6E6FA"
+        android:background="#b6E6FA"
         android:gravity="center"
 
         />
