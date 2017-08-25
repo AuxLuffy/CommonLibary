@@ -33,7 +33,7 @@
         android:layout_height="60dp"
         android:textColor="#CCCCCC"
         android:text="自定义打分条，图案大小均可"
-        android:background="#E6E6FA"
+        android:background="#f6E6FA"
         android:gravity="center"
 
         />
@@ -54,7 +54,7 @@
         android:layout_height="60dp"
         android:textColor="#CCCCCC"
         android:text="未完待续"
-        android:background="#E6E6FA"
+        android:background="#g6E6FA"
         android:gravity="center"
 
         />
