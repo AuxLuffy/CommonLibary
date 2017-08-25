@@ -7,10 +7,12 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.lenovo.service.basicpubliclibrary.AppStartGuide.AppStartGuide;
+import com.lenovo.service.basicpubliclibrary.smilepraiseview.SmilePraiseActivity;
 
 public class WidgetActivity extends AppCompatActivity implements View.OnClickListener {
 
     private TextView mText1;
+    private TextView smileview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,10 +26,12 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
 
     private void init_view() {
         mText1 = (TextView) findViewById(R.id.text1);
+        smileview=(TextView) findViewById(R.id.smileview);
     }
 
     private void init_listener() {
         mText1.setOnClickListener(this);
+        smileview.setOnClickListener(this);
 
     }
 
@@ -40,6 +44,13 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
                 intent.setClass(WidgetActivity.this,
                         AppStartGuide.class);
                 startActivity(intent);
+                break;
+
+            case R.id.smileview:
+                Intent intent2=new Intent();
+                intent2.setClass(WidgetActivity.this,
+                        SmilePraiseActivity.class);
+                startActivity(intent2);
                 break;
         }
     }

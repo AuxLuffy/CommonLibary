@@ -30,6 +30,7 @@
 
         <activity android:name=".CompositeActivity"></activity>
 
+        <activity android:name=".smilepraiseview.SmilePraiseActivity"></activity>
 
         <activity android:name=".OptimizeActivity"></activity>
         <activity android:name=".StorageActivity"></activity>

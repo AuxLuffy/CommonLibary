@@ -14,11 +14,6 @@
     <color name="custom_progress_orange_progress">#ffff8800</color>
     <color name="baby_blue">#89CFF0</color>
     <color name="e">#EEEEEE</color>
-
-    <!-- 魅族天气动画  -->
-    <color name="gray">#FFCCCCCC</color>
-    <color name="black">#FF999999</color>
-    <color name="yellow1">#FFEDC251</color>
-    <color name="yellow2">#FFFFF4EE</color>
-    <!-- -->
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorYellow">#feef50</color>
 </resources>
