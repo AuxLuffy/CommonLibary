@@ -166,14 +166,14 @@ public class WeatherView extends View {
     }
 
     private void drawCurrentArc(Canvas canvas, RectF rect) {
-        mPaint.setColor(getResources().getColor(R.color.yellow1));
+        mPaint.setColor(getResources().getColor(R.color.red_EA0000));
         mPaint.setStyle(Paint.Style.STROKE);
         mPaint.setStrokeWidth(mBorderWidth);
         canvas.drawArc(rect, mStartAngle, mCurrentAngleLength, false, mPaint);
     }
 
     private void drawCurrentArcBg(Canvas canvas) {
-        mPaint.setColor(getResources().getColor(R.color.yellow2));
+        mPaint.setColor(getResources().getColor(R.color.red_standerd));
         mPaint.setStyle(Paint.Style.FILL);
         mPaint.setStrokeWidth(mBorderWidth);
         canvas.save();

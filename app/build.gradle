@@ -35,5 +35,5 @@ dependencies {
     compile 'cc.solart:turbo-recyclerview-helper:1.0.3-beta'
     compile 'com.google.code.gson:gson:2.6.1'
     compile project(path: ':kotlin')
-
+    compile project(path: ':loaddatalib')
 }

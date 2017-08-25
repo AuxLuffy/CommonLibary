@@ -15,6 +15,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
 
     private TextView mText1;
     private TextView smileview;
+    private TextView loaddata;
     private TextView mTvRatingbar;
     private TextView mTextQuestionnaire;
 
@@ -31,6 +32,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     private void init_view() {
         mText1 = (TextView) findViewById(R.id.text1);
         smileview=(TextView) findViewById(R.id.smileview);
+        loaddata =(TextView) findViewById(R.id.loaddata);
         mTvRatingbar = (TextView) findViewById(R.id.tv_ratingbar);
         mTextQuestionnaire=(TextView) findViewById(R.id.questionnaire);
     }
@@ -72,6 +74,12 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
                 intent4.setClass(WidgetActivity.this,
                         QuestionActivity.class);
                 startActivity(intent4);
+                break;
+            case R.id.loaddata:
+                Intent intent3=new Intent();
+                intent3.setClass(WidgetActivity.this,
+                        LoadDataActivity.class);
+                startActivity(intent3);
                 break;
         }
     }
