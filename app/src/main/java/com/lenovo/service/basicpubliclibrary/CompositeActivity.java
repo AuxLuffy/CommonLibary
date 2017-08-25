@@ -5,7 +5,9 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.lenovo.KotlinActivity;
 import com.lenovo.service.basicpubliclibrary.AppStartGuide.AppStartGuide;
+import com.lenovo.service.basicpubliclibrary.rxjava.RxJavaActivity;
 
 public class CompositeActivity extends AppCompatActivity {
 
@@ -16,6 +18,9 @@ public class CompositeActivity extends AppCompatActivity {
     }
 
     public void startKotlin(View view) {
-        startActivity(new Intent(this, AppStartGuide.class));
+        startActivity(new Intent(this, KotlinActivity.class));
+    }
+    public void startRx(View view) {
+        startActivity(new Intent(this,RxJavaActivity.class));
     }
 }

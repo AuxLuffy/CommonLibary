@@ -18,7 +18,6 @@
     />
 
     <TextView
-            android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:background="#F0E68C"
@@ -31,8 +30,9 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:textColor="#CCCCCC"
-            android:text="未完待续"
+            android:text="Rxjava实例"
             android:background="#E6E6FA"
+            android:onClick="startRx"
             android:gravity="center"
 
     />

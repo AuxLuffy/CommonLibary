@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.lenovo.service.basicpubliclibrary.AppStartGuide.AppStartGuide;
+import com.lenovo.service.basicpubliclibrary.loaddata.LoadDataActivity;
 import com.lenovo.service.basicpubliclibrary.questionnaire.QuestionActivity;
 import com.lenovo.service.basicpubliclibrary.scoringstrip.ScoringStripActivity;
 import com.lenovo.service.basicpubliclibrary.smilepraiseview.SmilePraiseActivity;
@@ -76,10 +77,10 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
                 startActivity(intent4);
                 break;
             case R.id.loaddata:
-                Intent intent3=new Intent();
-                intent3.setClass(WidgetActivity.this,
+                Intent intent5=new Intent();
+                intent5.setClass(WidgetActivity.this,
                         LoadDataActivity.class);
-                startActivity(intent3);
+                startActivity(intent5);
                 break;
         }
     }
