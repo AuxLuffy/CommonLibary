@@ -47,10 +47,11 @@
 
         />
     <TextView
+        android:id="@+id/water_animation"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:textColor="#CCCCCC"
-        android:text="未完待续"
+        android:text="水流动的动画"
         android:background="#7CFC00"
         android:gravity="center"
 
