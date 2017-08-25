@@ -7,12 +7,14 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.lenovo.service.basicpubliclibrary.AppStartGuide.AppStartGuide;
+import com.lenovo.service.basicpubliclibrary.scoringstrip.ScoringStripActivity;
 import com.lenovo.service.basicpubliclibrary.smilepraiseview.SmilePraiseActivity;
 
 public class WidgetActivity extends AppCompatActivity implements View.OnClickListener {
 
     private TextView mText1;
     private TextView smileview;
+    private TextView mTvRatingbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,11 +29,13 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     private void init_view() {
         mText1 = (TextView) findViewById(R.id.text1);
         smileview=(TextView) findViewById(R.id.smileview);
+        mTvRatingbar = (TextView) findViewById(R.id.tv_ratingbar);
     }
 
     private void init_listener() {
         mText1.setOnClickListener(this);
         smileview.setOnClickListener(this);
+        mTvRatingbar.setOnClickListener(this);
 
     }
 
@@ -51,6 +55,13 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
                 intent2.setClass(WidgetActivity.this,
                         SmilePraiseActivity.class);
                 startActivity(intent2);
+                break;
+
+            case R.id.tv_ratingbar:
+                Intent intent3 = new Intent();
+                intent3.setClass(WidgetActivity.this,
+                        ScoringStripActivity.class);
+                startActivity(intent3);
                 break;
         }
     }

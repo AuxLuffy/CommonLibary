@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+
+    <com.lenovo.service.basicpubliclibrary.loopview.view.LoopRotarySwitchView
+        android:id="@+id/mLoopRotarySwitchView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        app:direction="right">
+
+        <ImageView
+            android:src="@drawable/image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@drawable/image2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@drawable/image3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@drawable/image4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@drawable/image5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@drawable/image6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@drawable/image7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@drawable/image8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </com.lenovo.service.basicpubliclibrary.loopview.view.LoopRotarySwitchView>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="设置X轴"
+            android:textSize="16sp"
+            android:padding="5dp"
+            android:textColor="#444444"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <SeekBar
+            android:id="@+id/seekBarX"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:max="180" />
+
+        <TextView
+            android:text="设置Z轴"
+            android:textSize="16sp"
+            android:textColor="#444444"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <SeekBar
+            android:id="@+id/seekBarZ"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:max="360" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Switch
+                android:id="@+id/switchLeftright"
+                android:layout_height="wrap_content"
+                android:text="左-右"
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="left"
+                android:checked="true" />
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自动播放"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:checked="true" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
