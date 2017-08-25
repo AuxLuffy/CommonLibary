@@ -36,4 +36,8 @@ dependencies {
     compile 'com.google.code.gson:gson:2.6.1'
     compile project(path: ':kotlin')
     compile project(path: ':loaddatalib')
+    // the viewpager shown first time to use CoCoin
+    compile "com.dev.sacot41:scviewpager:0.0.4"
+    // charts
+    compile 'com.github.lecho:hellocharts-library:1.5.8@aar'
 }

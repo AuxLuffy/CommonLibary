@@ -16,4 +16,7 @@
     <color name="e">#EEEEEE</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorYellow">#feef50</color>
+    <color name="yellow1">#feef50</color>
+    <color name="yellow2">#feef50</color>
+    <color name="my_blue">#2196F3</color>
 </resources>
