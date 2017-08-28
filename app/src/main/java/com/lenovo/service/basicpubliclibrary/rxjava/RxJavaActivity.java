@@ -48,11 +48,11 @@ public class RxJavaActivity extends AppCompatActivity {
     }
 
     private void showAvatar() {
-        Observable.just("")
+        Observable.just("help")
                 .map(new Func1<String, String>() {
                     @Override
                     public String call(String s) {
-                        return "help.jpg";
+                        return s+".jpg";
                     }
                 })
                 .map(new Func1<String, Bitmap>() {
