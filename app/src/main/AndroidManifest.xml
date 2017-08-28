@@ -32,6 +32,7 @@
         <activity android:name=".loaddata.Sample1Activity"/>
         <activity android:name=".loaddata.Sample2Activity"/>
 
+        <activity android:name=".colordialog.ColorDialogActivity"/>
         <!-- 动画 -->
         <activity android:name=".OptimizeActivity"/>
         <activity android:name=".StorageActivity"/>
@@ -42,10 +43,13 @@
         <activity android:name=".meizuweather.MeizuWeacherActivity"/>
         <activity android:name=".loopview.LoopViewActivity"/>
         <activity android:name=".scoringstrip.ScoringStripActivity"/>
+        <activity android:name=".cardstatcview.CardStackActivty"/>
         <activity android:name=".flowwateranimation.FlowWaterAnimationActivity"/>
         <activity android:name=".questionnaire.QuestionActivity"/>
         <activity android:name=".rxjava.RxJavaActivity">
         </activity>
+        <activity android:name=".guideanim.ShowActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
     </application>
 
 </manifest>

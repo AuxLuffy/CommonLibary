@@ -34,5 +34,11 @@ dependencies {
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
     compile 'cc.solart:turbo-recyclerview-helper:1.0.3-beta'
     compile project(path: ':kotlin')
+    compile 'com.loopeer.library:cardstack:1.0.2'
+
     compile project(path: ':loaddatalib')
+    // the viewpager shown first time to use CoCoin
+    compile "com.dev.sacot41:scviewpager:0.0.4"
+    // charts
+    compile 'com.github.lecho:hellocharts-library:1.5.8@aar'
 }
