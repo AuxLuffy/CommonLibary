@@ -79,22 +79,22 @@
 
         />
     <TextView
+        android:id="@+id/recycler_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="#CCCCCC"
+        android:text="利用RecyclerView实现TabLayout一样的功能"
+        android:background="#F08080"
+        android:gravity="center"
+        />
+
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:textColor="#CCCCCC"
         android:text="未完待续"
         android:background="#ADD8E6"
         android:gravity="center"
-
-        />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:textColor="#CCCCCC"
-        android:text="未完待续"
-        android:background="#F08080"
-        android:gravity="center"
-
         />
     <TextView
         android:layout_width="match_parent"

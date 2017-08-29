@@ -12,6 +12,7 @@ import com.lenovo.service.basicpubliclibrary.colordialog.ColorDialogActivity;
 import com.lenovo.service.basicpubliclibrary.loaddata.LoadDataActivity;
 import com.lenovo.service.basicpubliclibrary.loaddata.LoadDataActivity;
 import com.lenovo.service.basicpubliclibrary.questionnaire.QuestionActivity;
+import com.lenovo.service.basicpubliclibrary.recyclertablayout.TabLayoutActivity;
 import com.lenovo.service.basicpubliclibrary.scoringstrip.ScoringStripActivity;
 import com.lenovo.service.basicpubliclibrary.smilepraiseview.SmilePraiseActivity;
 
@@ -24,6 +25,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     private TextView mTextQuestionnaire;
     private TextView mCardStack;
     private TextView color_dialog;
+    private TextView recycler_tablayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +45,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTextQuestionnaire=(TextView) findViewById(R.id.questionnaire);
         mCardStack= (TextView) findViewById(R.id.card_stack);
         color_dialog = (TextView) findViewById(R.id.color_dialog);
+        recycler_tablayout = (TextView) findViewById(R.id.recycler_tablayout);
     }
 
     private void init_listener() {
@@ -53,6 +56,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTextQuestionnaire.setOnClickListener(this);
         loaddata.setOnClickListener(this);
         color_dialog.setOnClickListener(this);
+        recycler_tablayout.setOnClickListener(this);
     }
 
     @Override
@@ -98,6 +102,10 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
 
             case R.id.color_dialog:
                 intent=new Intent(WidgetActivity.this, ColorDialogActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.recycler_tablayout:
+                intent=new Intent(WidgetActivity.this, TabLayoutActivity.class);
                 startActivity(intent);
                 break;
         }
