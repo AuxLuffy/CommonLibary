@@ -34,13 +34,13 @@ dependencies {
     compile 'com.jakewharton:butterknife:8.4.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
     compile 'cc.solart:turbo-recyclerview-helper:1.0.3-beta'
-    compile 'com.google.code.gson:gson:2.6.1'
     compile project(path: ':kotlin')
     compile 'com.loopeer.library:cardstack:1.0.2'
-
+    compile 'com.j256.ormlite:ormlite-android:4.48'
     compile project(path: ':loaddatalib')
     // the viewpager shown first time to use CoCoin
     compile "com.dev.sacot41:scviewpager:0.0.4"
     // charts
     compile 'com.github.lecho:hellocharts-library:1.5.8@aar'
+    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
 }

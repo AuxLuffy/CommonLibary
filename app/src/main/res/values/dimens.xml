@@ -9,4 +9,7 @@
     <dimen name="radius_sidebar">20dp</dimen>
     <dimen name="ball_radius_sidebar">24dp</dimen>
 
+    <dimen name="tab_height">48dp</dimen>
+    <dimen name="tab_width">300dp</dimen>
+
 </resources>

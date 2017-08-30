@@ -64,4 +64,11 @@
     <color name="color_type_wrong">#ed7861</color>
     <color name="color_type_warning">#e8bd4b</color>
     <color name="color_type_success">#90b06e</color>
+
+    <color name="green_00DB00">#00DB00</color><!--上报成功-->
+    <color name="red_EA0000">#EA0000</color><!--上报失败-->
+    <color name="orange_FF8000">#FF8000</color><!--等用户完成绑定-->
+    <color name="bule_0072E3">#0072E3</color><!--上报成功延保失败-->
+
+    <color name="red_standerd">#e9504a</color>
 </resources>
