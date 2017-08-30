@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/editAddData"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lines="1" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:clickable="true"
+            style="?android:borderlessButtonStyle"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:background="@android:color/holo_green_light"
+            android:gravity="center"
+            android:text="Add" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/editDeleteData"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lines="1" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:clickable="true"
+            style="?android:borderlessButtonStyle"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:background="@android:color/holo_green_light"
+            android:gravity="center"
+            android:text="Delete" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/editUpdateData"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lines="1" />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:clickable="true"
+            style="?android:borderlessButtonStyle"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:background="@android:color/holo_green_light"
+            android:gravity="center"
+            android:text="Update" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/editQueryData"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lines="1" />
+
+        <Button
+            android:id="@+id/btnQuery"
+            android:clickable="true"
+            style="?android:borderlessButtonStyle"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:background="@android:color/holo_green_light"
+            android:gravity="center"
+            android:text="Query" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listResult"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/baby_blue"
+        android:divider="@android:color/transparent"
+        android:padding="10dp"
+        android:scrollbars="none"></ListView>
+</LinearLayout>

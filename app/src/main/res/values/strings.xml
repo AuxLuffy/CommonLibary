@@ -58,5 +58,6 @@
     <string name="pic">Pic</string>
     <string name="text">Text</string>
     <string name="text_and_pic">Text And Pic</string>
+    <string name="title_activity_green_dao_demo">GreenDaoDemoActivity</string>
 
 </resources>

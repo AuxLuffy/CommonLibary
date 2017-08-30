@@ -52,6 +52,11 @@
             android:name=".guideanim.ShowActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity android:name=".recyclertablayout.TabLayoutActivity" />
+        <activity android:name=".ormlite.OrmLiteActivity" />
+        <activity
+            android:name=".greendao.GreenDaoDemoActivity"
+            android:label="@string/title_activity_green_dao_demo"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".ormlite.OrmLiteActivity"></activity>
         <activity android:name=".flycotablayout.ui.CommonTabActivity"/>
         <activity android:name=".flycotablayout.ui.SegmentTabActivity"/>

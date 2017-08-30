@@ -11,5 +11,6 @@
 
     <dimen name="tab_height">48dp</dimen>
     <dimen name="tab_width">300dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
 
 </resources>
