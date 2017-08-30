@@ -4,9 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-
 import com.lenovo.KotlinActivity;
-import com.lenovo.service.basicpubliclibrary.AppStartGuide.AppStartGuide;
+import com.lenovo.service.basicpubliclibrary.databinding.DataBindingActivity;
 import com.lenovo.service.basicpubliclibrary.rxjava.RxJavaActivity;
 
 public class CompositeActivity extends AppCompatActivity {
@@ -20,7 +19,12 @@ public class CompositeActivity extends AppCompatActivity {
     public void startKotlin(View view) {
         startActivity(new Intent(this, KotlinActivity.class));
     }
+
     public void startRx(View view) {
-        startActivity(new Intent(this,RxJavaActivity.class));
+        startActivity(new Intent(this, RxJavaActivity.class));
+    }
+
+    public void startDataBinding(View view) {
+        startActivity(new Intent(this, DataBindingActivity.class));
     }
 }
