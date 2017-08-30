@@ -89,10 +89,11 @@
         />
 
     <TextView
+        android:id="@+id/fly_tab"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:textColor="#CCCCCC"
-        android:text="未完待续"
+        android:text=" Android的TabLayout库"
         android:background="#ADD8E6"
         android:gravity="center"
         />

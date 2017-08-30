@@ -53,6 +53,10 @@
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity android:name=".recyclertablayout.TabLayoutActivity" />
         <activity android:name=".ormlite.OrmLiteActivity"></activity>
+        <activity android:name=".flycotablayout.ui.CommonTabActivity"/>
+        <activity android:name=".flycotablayout.ui.SegmentTabActivity"/>
+        <activity android:name=".flycotablayout.ui.SimpleHomeActivity"/>
+        <activity android:name=".flycotablayout.ui.SlidingTabActivity"/>
     </application>
 
 </manifest>
