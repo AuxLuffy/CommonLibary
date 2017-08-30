@@ -57,6 +57,7 @@
         <activity android:name=".flycotablayout.ui.SegmentTabActivity"/>
         <activity android:name=".flycotablayout.ui.SimpleHomeActivity"/>
         <activity android:name=".flycotablayout.ui.SlidingTabActivity"/>
+        <activity android:name=".recyclerview.item.ui.RecyclerViewActivity"/>
     </application>
 
 </manifest>

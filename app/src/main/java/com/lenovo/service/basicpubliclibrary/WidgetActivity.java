@@ -13,6 +13,7 @@ import com.lenovo.service.basicpubliclibrary.flycotablayout.ui.SimpleHomeActivit
 import com.lenovo.service.basicpubliclibrary.loaddata.LoadDataActivity;
 import com.lenovo.service.basicpubliclibrary.questionnaire.QuestionActivity;
 import com.lenovo.service.basicpubliclibrary.recyclertablayout.TabLayoutActivity;
+import com.lenovo.service.basicpubliclibrary.recyclerview.item.ui.RecyclerViewActivity;
 import com.lenovo.service.basicpubliclibrary.scoringstrip.ScoringStripActivity;
 import com.lenovo.service.basicpubliclibrary.smilepraiseview.SmilePraiseActivity;
 
@@ -27,6 +28,8 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     private TextView color_dialog;
     private TextView recycler_tablayout;
     private TextView flytab;
+    //RecyclerView条目操作入口按钮
+    private TextView recyclerview_item_opt_tv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +51,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         color_dialog = (TextView) findViewById(R.id.color_dialog);
         recycler_tablayout = (TextView) findViewById(R.id.recycler_tablayout);
         flytab = (TextView) findViewById(R.id.fly_tab);
+        recyclerview_item_opt_tv = (TextView) findViewById(R.id.recyclerview_item_opt_tv);
     }
 
     private void init_listener() {
@@ -60,6 +64,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         color_dialog.setOnClickListener(this);
         recycler_tablayout.setOnClickListener(this);
         flytab.setOnClickListener(this);
+        recyclerview_item_opt_tv.setOnClickListener(this);
     }
 
     @Override
@@ -113,6 +118,11 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.fly_tab:
                 intent=new Intent(WidgetActivity.this, SimpleHomeActivity.class);
+                startActivity(intent);
+                break;
+            //点击RecyclerView条目操作按钮
+            case R.id.recyclerview_item_opt_tv:
+                intent=new Intent(WidgetActivity.this, RecyclerViewActivity.class);
                 startActivity(intent);
                 break;
         }
