@@ -31,7 +31,7 @@ public class AppStartGuide extends Activity implements View.OnClickListener {
 
 
     private void init_view() {
-        mBt_splash = findViewById(R.id.bt_splash);
+        mBt_splash = (Button) findViewById(R.id.bt_splash);
     }
 
     private void init_listener() {

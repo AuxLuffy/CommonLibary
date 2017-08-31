@@ -19,7 +19,6 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         view1=findViewById(R.id.layout1);
         view1.setOnClickListener(new LayoutListener());
         view2=findViewById(R.id.layout2);
@@ -41,7 +40,7 @@ public class MainActivity extends Activity {
         public void onClick(View view) {
             Intent intent=new Intent();
             switch (view.getId()){
-
+                //点击控件
                 case R.id.layout1:
 
                     intent.setClass(MainActivity.this,

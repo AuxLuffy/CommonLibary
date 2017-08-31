@@ -1,8 +1,10 @@
 package com.lenovo.service.basicpubliclibrary;
 
 import android.app.Application;
+import android.content.Context;
 
 import com.lenovo.loaddatalib.LoadDataLayout;
+import com.lenovo.service.basicpubliclibrary.config.Config;
 
 
 /**
@@ -13,10 +15,12 @@ import com.lenovo.loaddatalib.LoadDataLayout;
  */
 public class App extends Application {
 
+    private static Context mContext;
+
     @Override
     public void onCreate() {
         super.onCreate();
-
+        this.mContext = getApplicationContext();
         LoadDataLayout.getBuilder()
                 .setLoadingText(getString(R.string.custom_loading_text))
                 .setLoadingTextSize(16)
@@ -60,5 +64,11 @@ public class App extends Application {
                 .setReloadBtnBackgroundResource(R.drawable.selector_btn_normal)
                 .setReloadBtnVisible(true)
                 .setReloadClickArea(SwipeLoadDataLayout.FULL);*/
+        //设置输出日志
+        Config.setDebug(true);
+    }
+
+    public static Context getContext() {
+        return mContext;
     }
 }

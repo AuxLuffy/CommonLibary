@@ -7,11 +7,14 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.lenovo.service.basicpubliclibrary.AppStartGuide.AppStartGuide;
+import com.lenovo.service.basicpubliclibrary.boommenu.BoomMenuMainActivity;
 import com.lenovo.service.basicpubliclibrary.cardstatcview.CardStackActivty;
 import com.lenovo.service.basicpubliclibrary.colordialog.ColorDialogActivity;
-import com.lenovo.service.basicpubliclibrary.loaddata.LoadDataActivity;
+import com.lenovo.service.basicpubliclibrary.flycotablayout.ui.SimpleHomeActivity;
 import com.lenovo.service.basicpubliclibrary.loaddata.LoadDataActivity;
 import com.lenovo.service.basicpubliclibrary.questionnaire.QuestionActivity;
+import com.lenovo.service.basicpubliclibrary.recyclertablayout.TabLayoutActivity;
+import com.lenovo.service.basicpubliclibrary.recyclerview.item.ui.RecyclerViewActivity;
 import com.lenovo.service.basicpubliclibrary.scoringstrip.ScoringStripActivity;
 import com.lenovo.service.basicpubliclibrary.smilepraiseview.SmilePraiseActivity;
 
@@ -24,6 +27,11 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     private TextView mTextQuestionnaire;
     private TextView mCardStack;
     private TextView color_dialog;
+    private TextView recycler_tablayout;
+    private TextView flytab;
+    //RecyclerView条目操作入口按钮
+    private TextView recyclerview_item_opt_tv;
+    private TextView mTvBoomMenu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +51,10 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTextQuestionnaire=(TextView) findViewById(R.id.questionnaire);
         mCardStack= (TextView) findViewById(R.id.card_stack);
         color_dialog = (TextView) findViewById(R.id.color_dialog);
+        recycler_tablayout = (TextView) findViewById(R.id.recycler_tablayout);
+        flytab = (TextView) findViewById(R.id.fly_tab);
+        recyclerview_item_opt_tv = (TextView) findViewById(R.id.recyclerview_item_opt_tv);
+        mTvBoomMenu = (TextView) findViewById(R.id.tv_boommenu);
     }
 
     private void init_listener() {
@@ -53,6 +65,10 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTextQuestionnaire.setOnClickListener(this);
         loaddata.setOnClickListener(this);
         color_dialog.setOnClickListener(this);
+        recycler_tablayout.setOnClickListener(this);
+        flytab.setOnClickListener(this);
+        recyclerview_item_opt_tv.setOnClickListener(this);
+        mTvBoomMenu.setOnClickListener(this);
     }
 
     @Override
@@ -99,6 +115,22 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
             case R.id.color_dialog:
                 intent=new Intent(WidgetActivity.this, ColorDialogActivity.class);
                 startActivity(intent);
+                break;
+            case R.id.recycler_tablayout:
+                intent=new Intent(WidgetActivity.this, TabLayoutActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.fly_tab:
+                intent=new Intent(WidgetActivity.this, SimpleHomeActivity.class);
+                startActivity(intent);
+                break;
+            //点击RecyclerView条目操作按钮
+            case R.id.recyclerview_item_opt_tv:
+                intent=new Intent(WidgetActivity.this, RecyclerViewActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.tv_boommenu:
+                startActivity(new Intent(WidgetActivity.this, BoomMenuMainActivity.class));
                 break;
         }
     }
