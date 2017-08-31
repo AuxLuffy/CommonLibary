@@ -47,6 +47,7 @@ dependencies {
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
     compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
     compile "com.android.support:cardview-v7:${supportVersion}"
+    compile 'me.drakeet.multitype:multitype:3.3.0'
 }
 greendao {
     schemaVersion 1
