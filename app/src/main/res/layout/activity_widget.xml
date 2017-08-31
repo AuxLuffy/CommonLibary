@@ -114,11 +114,12 @@
             />
 
         <TextView
+            android:id="@+id/tv_boommenu"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:background="#D3D3D3"
             android:gravity="center"
-            android:text="未完待续"
+            android:text="弹出菜单"
             android:textColor="#CCCCCC"
 
             />

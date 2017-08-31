@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.lenovo.service.basicpubliclibrary.AppStartGuide.AppStartGuide;
+import com.lenovo.service.basicpubliclibrary.boommenu.BoomMenuMainActivity;
 import com.lenovo.service.basicpubliclibrary.cardstatcview.CardStackActivty;
 import com.lenovo.service.basicpubliclibrary.colordialog.ColorDialogActivity;
 import com.lenovo.service.basicpubliclibrary.flycotablayout.ui.SimpleHomeActivity;
@@ -30,6 +31,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     private TextView flytab;
     //RecyclerView条目操作入口按钮
     private TextView recyclerview_item_opt_tv;
+    private TextView mTvBoomMenu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +54,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         recycler_tablayout = (TextView) findViewById(R.id.recycler_tablayout);
         flytab = (TextView) findViewById(R.id.fly_tab);
         recyclerview_item_opt_tv = (TextView) findViewById(R.id.recyclerview_item_opt_tv);
+        mTvBoomMenu = (TextView) findViewById(R.id.tv_boommenu);
     }
 
     private void init_listener() {
@@ -65,6 +68,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         recycler_tablayout.setOnClickListener(this);
         flytab.setOnClickListener(this);
         recyclerview_item_opt_tv.setOnClickListener(this);
+        mTvBoomMenu.setOnClickListener(this);
     }
 
     @Override
@@ -124,6 +128,9 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
             case R.id.recyclerview_item_opt_tv:
                 intent=new Intent(WidgetActivity.this, RecyclerViewActivity.class);
                 startActivity(intent);
+                break;
+            case R.id.tv_boommenu:
+                startActivity(new Intent(WidgetActivity.this, BoomMenuMainActivity.class));
                 break;
         }
     }
