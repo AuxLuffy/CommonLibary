@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.lenovo.service.basicpubliclibrary.maillistananimation.MaillistActivity;
+import com.lenovo.service.basicpubliclibrary.multitype.bilibili.BilibiliActivity;
 import com.lenovo.service.basicpubliclibrary.obtainlocalphoto.LocalPhotoActivity;
 
 import butterknife.BindView;
@@ -16,6 +17,9 @@ public class ComponentActivity extends AppCompatActivity implements View.OnClick
 
     @BindView(R.id.tv_maillist)
     TextView mtv_maillist;
+    @BindView(R.id.tv_multitype)
+    TextView mTvMultitype;
+
     @BindView(R.id.tv_localphoto)
     TextView mtv_localphoto;
 
@@ -31,6 +35,7 @@ public class ComponentActivity extends AppCompatActivity implements View.OnClick
     private void init_listener() {
         mtv_maillist.setOnClickListener(this);
         mtv_localphoto.setOnClickListener(this);
+        mTvMultitype.setOnClickListener(this);
     }
 
 
@@ -48,6 +53,9 @@ public class ComponentActivity extends AppCompatActivity implements View.OnClick
                 intent.setClass(ComponentActivity.this,
                         LocalPhotoActivity.class);
                 startActivity(intent);
+            break;
+            case R.id.tv_multitype:
+                startActivity(new Intent(ComponentActivity.this, BilibiliActivity.class));
             break;
         }
     }

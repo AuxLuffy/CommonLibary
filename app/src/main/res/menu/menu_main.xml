@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/more"
+        android:title="More ->"
+        app:showAsAction="always"
+        android:orderInCategory="1"/>
+
+    <item
+        android:id="@+id/NormalActivity"
+        android:title="NormalActivity"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/MultiSelectActivity"
+        android:title="MultiSelectActivity"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/communicate_with_binder"
+        android:title="communicate with binder"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/BilibiliActivity"
+        android:title="BilibiliActivity"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/WeiboActivity"
+        android:title="WeiboActivity"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/OneDataToManyActivity"
+        android:title="OneDataToManyActivity"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/TestPayloadActivity"
+        android:title="TestPayloadActivity"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/SeldomUsedApisPlayground"
+        android:title="SeldomUsedApisPlayground"
+        app:showAsAction="never"/>
+
+</menu>

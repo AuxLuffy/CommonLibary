@@ -67,10 +67,11 @@
 
         />
     <TextView
+        android:id="@+id/guide_anim_svg"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:textColor="#CCCCCC"
-        android:text="未完待续"
+        android:text="引导页动画—svg动画"
         android:background="#F08080"
         android:gravity="center"
 

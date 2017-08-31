@@ -4,6 +4,7 @@ import android.app.Application;
 import android.content.Context;
 
 import com.lenovo.loaddatalib.LoadDataLayout;
+import com.lenovo.service.basicpubliclibrary.config.Config;
 
 
 /**
@@ -63,9 +64,11 @@ public class App extends Application {
                 .setReloadBtnBackgroundResource(R.drawable.selector_btn_normal)
                 .setReloadBtnVisible(true)
                 .setReloadClickArea(SwipeLoadDataLayout.FULL);*/
+        //设置输出日志
+        Config.setDebug(true);
     }
 
-    public static Context getContext(){
+    public static Context getContext() {
         return mContext;
     }
 }

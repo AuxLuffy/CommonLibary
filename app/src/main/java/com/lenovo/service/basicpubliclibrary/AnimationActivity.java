@@ -12,6 +12,7 @@ import com.lenovo.service.basicpubliclibrary.guideanim.ShowActivity;
 import com.lenovo.service.basicpubliclibrary.headerfloatanimation.HeaderFloatActivity;
 import com.lenovo.service.basicpubliclibrary.loopview.LoopViewActivity;
 import com.lenovo.service.basicpubliclibrary.meizuweather.MeizuWeacherActivity;
+import com.lenovo.service.basicpubliclibrary.svg.WowActivity;
 
 public class AnimationActivity extends AppCompatActivity {
     TextView text1 = null;
@@ -20,6 +21,7 @@ public class AnimationActivity extends AppCompatActivity {
     private TextView mTvLoopView;
     private TextView mWateranimation;
     private TextView mTvGuideAnim;
+    private TextView mTvGuideAnimSvg;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,13 +32,15 @@ public class AnimationActivity extends AppCompatActivity {
         mMEIZUWeather = (TextView) findViewById(R.id.meizu_weather);
         mTvLoopView = (TextView) findViewById(R.id.tv_loopview);
         mWateranimation = (TextView) findViewById(R.id.water_animation);
-        mTvGuideAnim= (TextView) findViewById(R.id.guide_anim);
+        mTvGuideAnim = (TextView) findViewById(R.id.guide_anim);
+        mTvGuideAnimSvg = (TextView) findViewById(R.id.guide_anim_svg);
         text1.setOnClickListener(new TextViewClickListener());
         mTvLoopView.setOnClickListener(new TextViewClickListener());
         mTv_progressBar.setOnClickListener(new TextViewClickListener());
         mMEIZUWeather.setOnClickListener(new TextViewClickListener());
         mWateranimation.setOnClickListener(new TextViewClickListener());
         mTvGuideAnim.setOnClickListener(new TextViewClickListener());
+        mTvGuideAnimSvg.setOnClickListener(new TextViewClickListener());
     }
 
     public class TextViewClickListener implements View.OnClickListener {
@@ -74,8 +78,10 @@ public class AnimationActivity extends AppCompatActivity {
                     break;
 
                 case R.id.guide_anim:
-                    intent.setClass(AnimationActivity.this, ShowActivity.class);
-                    startActivity(intent);
+                    startActivity(new Intent(AnimationActivity.this, ShowActivity.class));
+                    break;
+                case R.id.guide_anim_svg:
+                    startActivity(new Intent(AnimationActivity.this, WowActivity.class));
                     break;
 
                 default:
