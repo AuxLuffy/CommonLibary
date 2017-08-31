@@ -40,7 +40,8 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:textColor="#CCCCCC"
-            android:text="未完待续"
+            android:text="仿微信拍摄短视频"
+            android:onClick="recorder_video"
             android:background="#FFF0F5"
             android:gravity="center"
 

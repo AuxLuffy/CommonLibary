@@ -1,1 +1,1 @@
-include ':app', ':kotlin', ':loaddatalib'
+include ':app', ':kotlin', ':loaddatalib', ':camera'
