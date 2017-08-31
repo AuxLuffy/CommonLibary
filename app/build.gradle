@@ -23,6 +23,7 @@ ext {
     supportVersion = '26.0.0-alpha1'
 }
 dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'io.reactivex:rxjava:1.0.14'
     compile 'io.reactivex:rxandroid:1.0.1'
@@ -42,6 +43,7 @@ dependencies {
     compile "com.dev.sacot41:scviewpager:0.0.4"
     // charts
     compile 'com.github.lecho:hellocharts-library:1.5.8@aar'
+    compile project(path: ':camera')
     compile 'org.greenrobot:greendao:3.2.2'
     compile 'com.android.support:design:26.+'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
