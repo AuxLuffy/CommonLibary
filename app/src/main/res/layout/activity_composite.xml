@@ -41,7 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:textColor="#CCCCCC"
-            android:text="DataBinding实例"
+            android:text="DataBinding实现MVVM"
             android:background="#FFF0F5"
             android:gravity="center"
 
