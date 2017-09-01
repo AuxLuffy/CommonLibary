@@ -147,4 +147,5 @@
     <dimen name="normal_11_text">11sp</dimen>
 
 
+    <dimen name="recycler_banner_height">200dp</dimen>
 </resources>
