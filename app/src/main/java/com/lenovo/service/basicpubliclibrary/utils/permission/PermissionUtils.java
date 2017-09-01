@@ -29,6 +29,8 @@ public class PermissionUtils {
     public static final int CODE_GET_ACCOUNTS = 0;      // 获取通讯录标识
     public static final int CODE_READ_EXTERNAL_STORAGE = 1;// 读取内存卡权限标识
     public static final int CODE_WRITE_EXTERNAL_STORAGE = 2;// 写入内存卡权限标识
+    public static final int CODE_WRITE_EXTERNAL_CAMERA = 3;// 写入内存卡权限标识
+
 
     public static final int CODE_MULTI_PERMISSION = 100;
 
@@ -36,13 +38,14 @@ public class PermissionUtils {
     public static final String PERMISSION_READ_CONTACTS = Manifest.permission.READ_CONTACTS;    // 获取通讯录权限
     public static final String PERMISSION_READ_EXTERNAL_STORAGE = Manifest.permission.READ_EXTERNAL_STORAGE;// 读取存储卡权限
     public static final String PERMISSION_WRITE_EXTERNAL_STORAGE = Manifest.permission.WRITE_EXTERNAL_STORAGE;// 写入存储卡权限
-
+    public static final String PERMISSION_WRITE_EXTERNAL_CAMERA = Manifest.permission.CAMERA;// 拍照权限
 
 
     private static final String[] requestPermissions = {
             PERMISSION_READ_CONTACTS,
             PERMISSION_READ_EXTERNAL_STORAGE,
-            PERMISSION_WRITE_EXTERNAL_STORAGE
+            PERMISSION_WRITE_EXTERNAL_STORAGE,
+            PERMISSION_WRITE_EXTERNAL_CAMERA
     };
 
     public interface PermissionGrant {

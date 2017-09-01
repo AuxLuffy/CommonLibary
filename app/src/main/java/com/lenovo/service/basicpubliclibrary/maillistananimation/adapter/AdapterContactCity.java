@@ -17,7 +17,7 @@ import cc.solart.turbo.BaseViewHolder;
 /**
  * 适配器
  * @Author 李巷阳
- * Created at 2017/8/10 15:02
+ * Created at 2017/8/10 15:28
  */
 public class AdapterContactCity extends BaseTurboAdapter<ModelContactCity, BaseViewHolder> {
 

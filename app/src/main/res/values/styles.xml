@@ -297,6 +297,12 @@
     <style name="FAB.Done">
         <item name="android:background">@drawable/ic_fab_done</item>
     </style>
+    <style name="TANCStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
 
     <style name="style_progressbar" parent="Widget.AppCompat.ProgressBar">
         <item name="android:indeterminateDrawable">@drawable/progressbar</item>
