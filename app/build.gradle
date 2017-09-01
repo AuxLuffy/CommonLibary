@@ -23,7 +23,7 @@ ext {
     supportVersion = '26.0.0-alpha1'
 }
 dependencies {
-    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'io.reactivex:rxjava:1.0.14'
     compile 'io.reactivex:rxandroid:1.0.1'
@@ -51,6 +51,7 @@ dependencies {
     compile "com.android.support:cardview-v7:${supportVersion}"
     compile 'com.nightonke:boommenu:2.1.0'
     compile 'me.drakeet.multitype:multitype:3.3.0'
+    compile "com.github.kamimoo.jockeyjs:jockeyjs:2.0" // core SDK
 }
 greendao {
     schemaVersion 1
