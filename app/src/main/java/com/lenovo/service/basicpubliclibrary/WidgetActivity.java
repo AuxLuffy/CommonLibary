@@ -19,6 +19,7 @@ import com.lenovo.service.basicpubliclibrary.recyclerview.banner.ui.BannerActivi
 import com.lenovo.service.basicpubliclibrary.recyclerview.item.ui.RecyclerViewActivity;
 import com.lenovo.service.basicpubliclibrary.scoringstrip.ScoringStripActivity;
 import com.lenovo.service.basicpubliclibrary.pickerview.PickerActivity;
+import com.lenovo.service.basicpubliclibrary.scratchview.ScratchViewActivity;
 import com.lenovo.service.basicpubliclibrary.smilepraiseview.SmilePraiseActivity;
 
 public class WidgetActivity extends AppCompatActivity implements View.OnClickListener {
@@ -38,6 +39,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     //RecyclerView实现图片轮播效果入口按钮
     private TextView recyclerview_banner_tv;
     private TextView mTvBoomMenu;
+    private TextView tvScratch;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,6 +67,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         recyclerview_banner_tv = (TextView) findViewById(R.id.recyclerview_banner_tv);
         mTvBoomMenu = (TextView) findViewById(R.id.tv_boommenu);
         mTxtPicker = (TextView) findViewById(R.id.tv_picker);
+        tvScratch = (TextView) findViewById(R.id.tv_scratch);
     }
 
     private void init_listener() {
@@ -81,6 +84,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         recyclerview_banner_tv.setOnClickListener(this);
         mTvBoomMenu.setOnClickListener(this);
         mTxtPicker.setOnClickListener(this);
+        tvScratch.setOnClickListener(this);
     }
 
     @Override
@@ -155,6 +159,10 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.tv_chartview:
                 intent=new Intent(WidgetActivity.this, ChartViewActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.tv_scratch:
+                intent=new Intent(WidgetActivity.this, ScratchViewActivity.class);
                 startActivity(intent);
                 break;
         }

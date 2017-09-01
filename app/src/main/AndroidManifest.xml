@@ -81,6 +81,10 @@
         <activity android:name=".multitype.extra_apis.SeldomUsedApisPlayground" />
         <activity android:name=".svg.WowActivity" />
         <activity android:name=".boommenu.BoomMenuMainActivity" />
+        <activity android:name=".scratchview.ScratchViewActivity" />
+        <activity android:name=".scratchview.DemoClothingActivity" />
+        <activity android:name=".scratchview.CaptchaActivity" />
+
         <activity
             android:name=".boommenu.SquareAndPieceCornerRadiusActivity"
             android:label="Square &amp; Piece Corner Radius" />
