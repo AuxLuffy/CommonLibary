@@ -109,10 +109,18 @@
             android:layout_height="60dp"
             android:background="#E0FFFF"
             android:gravity="center"
-            android:text="Recycler条目操作:拖拽排序,滑动删除"
+            android:text="RecyclerView条目操作:拖拽排序,滑动删除"
             android:textColor="#CCCCCC"
             />
-
+        <TextView
+            android:id="@+id/recyclerview_banner_tv"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#E0FFFF"
+            android:gravity="center"
+            android:text="利用RecyclerView实现图片轮播效果"
+            android:textColor="#CCCCCC"
+            />
         <TextView
             android:id="@+id/tv_boommenu"
             android:layout_width="match_parent"

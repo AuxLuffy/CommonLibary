@@ -19,4 +19,5 @@
     <dimen name="normal_space">12dp</dimen>
     <dimen name="small_space">6dp</dimen>
     <dimen name="post_image_height">96dp</dimen>
+    <dimen name="recycler_banner_height">200dp</dimen>
 </resources>

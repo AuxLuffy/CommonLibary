@@ -15,6 +15,7 @@ import com.lenovo.service.basicpubliclibrary.flycotablayout.ui.SimpleHomeActivit
 import com.lenovo.service.basicpubliclibrary.loaddata.LoadDataActivity;
 import com.lenovo.service.basicpubliclibrary.questionnaire.QuestionActivity;
 import com.lenovo.service.basicpubliclibrary.recyclertablayout.TabLayoutActivity;
+import com.lenovo.service.basicpubliclibrary.recyclerview.banner.ui.BannerActivity;
 import com.lenovo.service.basicpubliclibrary.recyclerview.item.ui.RecyclerViewActivity;
 import com.lenovo.service.basicpubliclibrary.scoringstrip.ScoringStripActivity;
 import com.lenovo.service.basicpubliclibrary.pickerview.PickerActivity;
@@ -34,6 +35,8 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     private TextView mTxtPicker;
     //RecyclerView条目操作入口按钮
     private TextView recyclerview_item_opt_tv;
+    //RecyclerView实现图片轮播效果入口按钮
+    private TextView recyclerview_banner_tv;
     private TextView mTvBoomMenu;
 
     @Override
@@ -56,7 +59,10 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         color_dialog = (TextView) findViewById(R.id.color_dialog);
         recycler_tablayout = (TextView) findViewById(R.id.recycler_tablayout);
         flytab = (TextView) findViewById(R.id.fly_tab);
+        //获取RecyclerView条目操作入口按钮对象
         recyclerview_item_opt_tv = (TextView) findViewById(R.id.recyclerview_item_opt_tv);
+        //获取RecyclerView实现图片轮播效果入口按钮对象
+        recyclerview_banner_tv = (TextView) findViewById(R.id.recyclerview_banner_tv);
         mTvBoomMenu = (TextView) findViewById(R.id.tv_boommenu);
         mTxtPicker = (TextView) findViewById(R.id.tv_picker);
     }
@@ -72,6 +78,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         recycler_tablayout.setOnClickListener(this);
         flytab.setOnClickListener(this);
         recyclerview_item_opt_tv.setOnClickListener(this);
+        recyclerview_banner_tv.setOnClickListener(this);
         mTvBoomMenu.setOnClickListener(this);
         mTxtPicker.setOnClickListener(this);
     }
@@ -132,6 +139,11 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
             //点击RecyclerView条目操作按钮
             case R.id.recyclerview_item_opt_tv:
                 intent=new Intent(WidgetActivity.this, RecyclerViewActivity.class);
+                startActivity(intent);
+                break;
+            //点击RecyclerView条目操作按钮
+            case R.id.recyclerview_banner_tv:
+                intent=new Intent(WidgetActivity.this, BannerActivity.class);
                 startActivity(intent);
                 break;
             case R.id.tv_boommenu:
