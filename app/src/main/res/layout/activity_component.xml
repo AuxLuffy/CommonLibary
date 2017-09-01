@@ -26,31 +26,33 @@
         android:gravity="center"
         android:textColor="#CCCCCC"
         android:text="获取本地通讯录+字母检索功能" />
+    <TextView
+        android:id="@+id/tv_localphoto"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="#CCCCCC"
+        android:text="获取本地图片+拍照+图片显示框架"
+        android:background="#E6E6FA"
+        android:gravity="center"
 
+        />
     <TextView
         android:id="@+id/tv_multitype"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:textColor="#CCCCCC"
         android:text="Multitype—Android复杂的列表视图新写法"
-        android:background="#E6E6FA"
-        android:gravity="center"
-
-        />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:textColor="#CCCCCC"
-        android:text="未完待续"
         android:background="#FFF0F5"
         android:gravity="center"
 
         />
+
     <TextView
+        android:id="@+id/tv_pulltorefresh"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:textColor="#CCCCCC"
-        android:text="未完待续"
+        android:text="pulltorefresh+BaseAdapter高级封装+Rxjava处理异步任务"
         android:background="#7CFC00"
         android:gravity="center"
 

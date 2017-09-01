@@ -68,6 +68,7 @@
         <activity android:name=".headerfloatanimation.HeaderFloatActivity" />
         <activity android:name=".ComponentActivity" />
         <activity android:name=".CompositeActivity" />
+        <activity android:name=".pullTorefresh_tool.PullTorefreshActivity" />
         <activity android:name=".smilepraiseview.SmilePraiseActivity" />
         <!-- 动画  -->
         <activity android:name=".AnimationActivity"></activity>

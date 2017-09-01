@@ -370,9 +370,7 @@ public class LocalPhotoActivity extends Activity{
     private void init_Permission() {
         PermissionUtils.requestPermission(mActivity, PermissionUtils.CODE_READ_EXTERNAL_STORAGE, mPermissionGrant);
         PermissionUtils.requestPermission(mActivity, PermissionUtils.CODE_WRITE_EXTERNAL_STORAGE, mPermissionGrant);
-
         PermissionUtils.requestPermission(mActivity, PermissionUtils.CODE_WRITE_EXTERNAL_CAMERA, mPermissionGrant);
-
     }
     // 获取后权限的回调
     private PermissionUtils.PermissionGrant mPermissionGrant = new PermissionUtils.PermissionGrant() {
