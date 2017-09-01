@@ -29,7 +29,6 @@ dependencies {
     compile "com.android.support:recyclerview-v7:${supportVersion}"
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile project(path: ':kotlin')
-    compile project(path: ':loaddatalib')
     // the viewpager shown first time to use CoCoin
     // charts
     compile project(path: ':camera')

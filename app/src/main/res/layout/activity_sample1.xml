@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.lenovo.loaddatalib.LoadDataLayout
+<com.lenovo.service.basicpubliclibrary.loaddata.LoadDataLayout
     android:id="@+id/loadDataLayout"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -14,4 +14,4 @@
         android:textColor="@color/white"
         android:textSize="20sp"/>
 
-</com.lenovo.loaddatalib.LoadDataLayout>
+</com.lenovo.service.basicpubliclibrary.loaddata.LoadDataLayout>

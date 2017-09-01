@@ -1,4 +1,4 @@
-package com.lenovo.loaddatalib;
+package com.lenovo.service.basicpubliclibrary.loaddata;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -17,11 +17,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.lenovo.service.basicpubliclibrary.R;
+
 /**
- * Description : 公共组件：滑动刷新/加载数据的Layout  <br/>
- * author : WangGanxin <br/>
- * date : 2017/4/1 <br/>
- * email : mail@wangganxin.me <br/>
+ * Description : 公共组件：滑动刷新/加载数据的Layout
  */
 public class SwipeLoadDataLayout extends SwipeRefreshLayout implements View.OnClickListener, SwipeRefreshLayout.OnRefreshListener {
 

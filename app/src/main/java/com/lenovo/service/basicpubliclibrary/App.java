@@ -3,8 +3,8 @@ package com.lenovo.service.basicpubliclibrary;
 import android.app.Application;
 import android.content.Context;
 
-import com.lenovo.loaddatalib.LoadDataLayout;
 import com.lenovo.service.basicpubliclibrary.config.Config;
+import com.lenovo.service.basicpubliclibrary.loaddata.LoadDataLayout;
 
 
 /**
