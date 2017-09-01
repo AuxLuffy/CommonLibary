@@ -121,7 +121,15 @@
             android:gravity="center"
             android:text="弹出菜单"
             android:textColor="#CCCCCC"
-
+            />
+        <TextView
+            android:id="@+id/tv_picker"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#A8A8A8"
+            android:gravity="center"
+            android:text="时间选择器"
+            android:textColor="#666666"
             />
         <TextView
             android:id="@+id/tv_chartview"
