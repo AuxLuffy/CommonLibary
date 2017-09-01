@@ -297,4 +297,8 @@
     <style name="FAB.Done">
         <item name="android:background">@drawable/ic_fab_done</item>
     </style>
+
+    <style name="style_progressbar" parent="Widget.AppCompat.ProgressBar">
+        <item name="android:indeterminateDrawable">@drawable/progressbar</item>
+    </style>
 </resources>

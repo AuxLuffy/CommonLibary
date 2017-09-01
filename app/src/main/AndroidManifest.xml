@@ -96,12 +96,16 @@
         <activity
             android:name=".pickerview.PickerActivity"
             android:label="@string/title_activity_picker"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar"/>
 
         <activity
             android:name=".videoplayer.VideoplayerActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/CameraTheme"/>
+
+        <activity android:name=".chartview.ChartViewActivity"/>
+        <activity android:name=".H5Activity"/>
         <activity android:name=".OptimizeActivity"/>
         <activity android:name=".StorageActivity"/>
         <activity android:name=".WidgetActivity"/>

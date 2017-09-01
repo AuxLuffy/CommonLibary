@@ -13,8 +13,8 @@ import com.loopeer.cardstack.StackAdapter;
 
 /**
  * 版权所有 ,lenovo保留所有版权。<br>
- * 项目描述：
- * 作者：Jiao
+ * 项目描述：卡片式布局adapter
+ * 作者：Jiao 使用方式同 RecyclerView
  * 日期：2017/8/25
  **/
 public class TestStackAdapter extends StackAdapter<Integer> {
