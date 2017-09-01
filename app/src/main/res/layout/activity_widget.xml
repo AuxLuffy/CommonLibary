@@ -123,6 +123,15 @@
             android:textColor="#CCCCCC"
 
             />
-
+        <TextView
+            android:id="@+id/tv_chartview"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#7CFC00"
+            android:gravity="center"
+            android:text="图表"
+            android:textColor="#CCCCCC"
+            android:onClick="onClick"
+            />
     </LinearLayout>
 </ScrollView>

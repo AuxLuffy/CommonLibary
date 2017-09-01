@@ -92,6 +92,7 @@
             android:name=".cameraDemo.RecordMainAcitivity"
             android:theme="@style/CameraTheme"></activity>
         <activity android:name=".cameraDemo.CameraActivity"></activity>
+        <activity android:name=".chartview.ChartViewActivity"/>
     </application>
 
 </manifest>
