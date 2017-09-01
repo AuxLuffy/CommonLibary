@@ -8,6 +8,8 @@ import android.widget.TextView;
 
 import com.lenovo.service.basicpubliclibrary.maillistananimation.MaillistActivity;
 import com.lenovo.service.basicpubliclibrary.multitype.bilibili.BilibiliActivity;
+import com.lenovo.service.basicpubliclibrary.obtainlocalphoto.LocalPhotoActivity;
+import com.lenovo.service.basicpubliclibrary.pullTorefresh_tool.PullTorefreshActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

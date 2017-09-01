@@ -48,6 +48,28 @@
 
         />
     <TextView
+        android:id="@+id/tv_localphoto"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="#CCCCCC"
+        android:text="获取本地图片+拍照+图片显示框架"
+        android:background="#E6E6FA"
+        android:gravity="center"
+
+        />
+
+
+    <TextView
+        android:id="@+id/tv_pulltorefresh"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="#CCCCCC"
+        android:text="pulltorefresh+BaseAdapter高级封装+Rxjava处理异步任务"
+        android:background="#7CFC00"
+        android:gravity="center"
+
+        />
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:textColor="#CCCCCC"
