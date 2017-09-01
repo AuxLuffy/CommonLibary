@@ -15,8 +15,8 @@ public class PinYinUtils {
 	/**
 	 * 得到指定汉字的拼音
 	 * 注意:不应该被频繁调用，它消耗一定内存
-	 * @param hanzi
-	 * @return
+	 * @param hanzi 输入的汉字，可以有其他字符
+	 * @return 返回的拼音
 	 */
 	public static String getPinYin(String hanzi){
 		String pinyin = "";
