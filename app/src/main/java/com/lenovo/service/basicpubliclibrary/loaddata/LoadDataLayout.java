@@ -1,4 +1,4 @@
-package com.lenovo.loaddatalib;
+package com.lenovo.service.basicpubliclibrary.loaddata;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -17,11 +17,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.lenovo.service.basicpubliclibrary.R;
+
 /**
- * Description : 公共组件：加载数据Layout  <br/>
- * author : WangGanxin <br/>
- * date : 2017/3/31 <br/>
- * email : mail@wangganxin.me <br/>
+ * Description : 公共组件：加载数据Layout
  */
 public class LoadDataLayout extends FrameLayout implements View.OnClickListener {
 
