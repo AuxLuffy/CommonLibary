@@ -9,6 +9,7 @@ import android.widget.TextView;
 import com.lenovo.service.basicpubliclibrary.AppStartGuide.AppStartGuide;
 import com.lenovo.service.basicpubliclibrary.boommenu.BoomMenuMainActivity;
 import com.lenovo.service.basicpubliclibrary.cardstatcview.CardStackActivty;
+import com.lenovo.service.basicpubliclibrary.chartview.ChartViewActivity;
 import com.lenovo.service.basicpubliclibrary.colordialog.ColorDialogActivity;
 import com.lenovo.service.basicpubliclibrary.flycotablayout.ui.SimpleHomeActivity;
 import com.lenovo.service.basicpubliclibrary.loaddata.LoadDataActivity;
@@ -16,6 +17,7 @@ import com.lenovo.service.basicpubliclibrary.questionnaire.QuestionActivity;
 import com.lenovo.service.basicpubliclibrary.recyclertablayout.TabLayoutActivity;
 import com.lenovo.service.basicpubliclibrary.recyclerview.item.ui.RecyclerViewActivity;
 import com.lenovo.service.basicpubliclibrary.scoringstrip.ScoringStripActivity;
+import com.lenovo.service.basicpubliclibrary.pickerview.PickerActivity;
 import com.lenovo.service.basicpubliclibrary.smilepraiseview.SmilePraiseActivity;
 
 public class WidgetActivity extends AppCompatActivity implements View.OnClickListener {
@@ -29,6 +31,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     private TextView color_dialog;
     private TextView recycler_tablayout;
     private TextView flytab;
+    private TextView mTxtPicker;
     //RecyclerView条目操作入口按钮
     private TextView recyclerview_item_opt_tv;
     private TextView mTvBoomMenu;
@@ -55,6 +58,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         flytab = (TextView) findViewById(R.id.fly_tab);
         recyclerview_item_opt_tv = (TextView) findViewById(R.id.recyclerview_item_opt_tv);
         mTvBoomMenu = (TextView) findViewById(R.id.tv_boommenu);
+        mTxtPicker = (TextView) findViewById(R.id.tv_picker);
     }
 
     private void init_listener() {
@@ -69,6 +73,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         flytab.setOnClickListener(this);
         recyclerview_item_opt_tv.setOnClickListener(this);
         mTvBoomMenu.setOnClickListener(this);
+        mTxtPicker.setOnClickListener(this);
     }
 
     @Override
@@ -131,6 +136,14 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.tv_boommenu:
                 startActivity(new Intent(WidgetActivity.this, BoomMenuMainActivity.class));
+                break;
+            case R.id.tv_picker:
+                intent = new Intent(WidgetActivity.this, PickerActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.tv_chartview:
+                intent=new Intent(WidgetActivity.this, ChartViewActivity.class);
+                startActivity(intent);
                 break;
         }
     }
