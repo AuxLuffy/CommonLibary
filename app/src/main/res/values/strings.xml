@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">公共基础库</string>
 
-
+    <string name="log_in">Login</string>
+    <string name="create_user">创建用户</string>
     <string name="no_permissions">应用需要必要的运行权限</string>
 
     <string name="settings">设置</string>
@@ -53,7 +54,9 @@
     <string name="info">Info</string>
     <string name="error">Error</string>
     <string name="warning">Warning</string>
-    <string name="text_data">Your info text goes here. Loremipsum dolor sit amet, consecteturn adipisicing elit, sed do eiusmod.</string>
+    <string name="text_data">Your info text goes here. Loremipsum dolor sit amet, consecteturn adipisicing elit, sed do
+        eiusmod.
+    </string>
     <string name="prompt_dialog">Prompt Dialog</string>
     <string name="pic">Pic</string>
     <string name="text">Text</string>

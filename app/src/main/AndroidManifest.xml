@@ -96,7 +96,35 @@
         <activity
             android:name=".pickerview.PickerActivity"
             android:label="@string/title_activity_picker"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".videoplayer.VideoplayerActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/CameraTheme"/>
+
+        <activity android:name=".chartview.ChartViewActivity"/>
+        <activity android:name=".H5Activity"/>
+        <activity android:name=".OptimizeActivity"/>
+        <activity android:name=".StorageActivity"/>
+        <activity android:name=".WidgetActivity"/>
+        <activity android:name=".AppStartGuide.AppStartGuide"/>
+        <activity android:name=".ProgressBaranimation.ProgressActivity"/>
+        <activity android:name=".maillistananimation.MaillistActivity"/>
+        <activity android:name=".meizuweather.MeizuWeacherActivity"/>
+        <activity android:name=".loopview.LoopViewActivity"/>
+        <activity android:name=".scoringstrip.ScoringStripActivity"/>
+        <activity android:name=".cardstatcview.CardStackActivty"/>
+        <activity android:name=".flowwateranimation.FlowWaterAnimationActivity"/>
+        <activity android:name=".questionnaire.QuestionActivity"/>
+        <activity android:name=".rxjava.RxJavaActivity">
+        </activity>
+        <activity
+                android:name=".guideanim.ShowActivity"
+                android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".databinding.DataBindingActivity">
+        </activity>
     </application>
 
 </manifest>

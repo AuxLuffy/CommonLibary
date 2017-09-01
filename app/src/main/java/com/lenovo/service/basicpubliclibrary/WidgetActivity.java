@@ -9,6 +9,7 @@ import android.widget.TextView;
 import com.lenovo.service.basicpubliclibrary.AppStartGuide.AppStartGuide;
 import com.lenovo.service.basicpubliclibrary.boommenu.BoomMenuMainActivity;
 import com.lenovo.service.basicpubliclibrary.cardstatcview.CardStackActivty;
+import com.lenovo.service.basicpubliclibrary.chartview.ChartViewActivity;
 import com.lenovo.service.basicpubliclibrary.colordialog.ColorDialogActivity;
 import com.lenovo.service.basicpubliclibrary.flycotablayout.ui.SimpleHomeActivity;
 import com.lenovo.service.basicpubliclibrary.loaddata.LoadDataActivity;
@@ -138,6 +139,10 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.tv_picker:
                 intent = new Intent(WidgetActivity.this, PickerActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.tv_chartview:
+                intent=new Intent(WidgetActivity.this, ChartViewActivity.class);
                 startActivity(intent);
                 break;
         }

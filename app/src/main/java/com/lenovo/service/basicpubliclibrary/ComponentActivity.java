@@ -18,6 +18,8 @@ public class ComponentActivity extends AppCompatActivity implements View.OnClick
     TextView mtv_maillist;
     @BindView(R.id.tv_multitype)
     TextView mTvMultitype;
+    @BindView(R.id.tv_h5_activity)
+    TextView mTvH5Activity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,7 @@ public class ComponentActivity extends AppCompatActivity implements View.OnClick
     private void init_listener() {
         mtv_maillist.setOnClickListener(this);
         mTvMultitype.setOnClickListener(this);
+        mTvH5Activity.setOnClickListener(this);
     }
 
 
@@ -44,6 +47,11 @@ public class ComponentActivity extends AppCompatActivity implements View.OnClick
             case R.id.tv_multitype:
                 startActivity(new Intent(ComponentActivity.this, BilibiliActivity.class));
             break;
+            case R.id.tv_h5_activity:
+                Intent intent1 = new Intent(ComponentActivity.this, H5Activity.class);
+                intent1.putExtra(H5Activity.H5_URL, "http://www.jianshu.com/");
+                startActivity(intent1);
+                break;
         }
     }
 }
