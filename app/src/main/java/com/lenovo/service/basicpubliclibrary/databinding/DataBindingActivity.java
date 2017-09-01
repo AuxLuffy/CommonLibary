@@ -16,7 +16,8 @@ public class DataBindingActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        View view = DataBindingUtil.setContentView(this, R.layout.main);
+        View view = getLayoutInflater().inflate(R.layout.main, null, true);
+        setContentView(view);
         bind = MainBinding.bind(view);
         mainModel = new MainModel(this);
         bind.setData(mainModel);

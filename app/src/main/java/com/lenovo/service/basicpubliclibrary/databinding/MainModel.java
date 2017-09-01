@@ -6,6 +6,7 @@ import android.databinding.ObservableField;
 import android.os.AsyncTask;
 import android.view.View;
 import android.widget.Toast;
+import com.lenovo.service.basicpubliclibrary.R;
 
 import java.util.Random;
 
