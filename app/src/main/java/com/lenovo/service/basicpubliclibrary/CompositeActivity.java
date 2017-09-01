@@ -8,6 +8,7 @@ import com.lenovo.KotlinActivity;
 import com.lenovo.service.basicpubliclibrary.databinding.DataBindingActivity;
 import com.lenovo.service.basicpubliclibrary.cameraDemo.RecordMainAcitivity;
 import com.lenovo.service.basicpubliclibrary.rxjava.RxJavaActivity;
+import com.lenovo.service.basicpubliclibrary.videoplayer.VideoplayerActivity;
 
 public class CompositeActivity extends AppCompatActivity {
 
@@ -30,5 +31,9 @@ public class CompositeActivity extends AppCompatActivity {
     }
     public void recorder_video(View v) {
         startActivity(new Intent(this,RecordMainAcitivity.class));
+    }
+
+    public void startVideoPlayer(View v) {
+        startActivity(new Intent(this, VideoplayerActivity.class));
     }
 }

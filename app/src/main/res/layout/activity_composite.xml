@@ -1,41 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:tools="http://schemas.android.com/tools"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="vertical"
-              tools:context="com.lenovo.service.basicpubliclibrary.AnimationActivity">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lenovo.service.basicpubliclibrary.AnimationActivity">
 
     <TextView
-            android:id="@+id/text1"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="#FFFFF0"
-            android:gravity="center"
-            android:textColor="#CCCCCC"
-            android:text="综合"
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FFFFF0"
+        android:gravity="center"
+        android:text="综合"
+        android:textColor="#CCCCCC"
 
-    />
-
-    <TextView
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="#F0E68C"
-            android:gravity="center"
-            android:textColor="#CCCCCC"
-            android:onClick="startKotlin"
-            android:text="Kotlin模块"/>
+        />
 
     <TextView
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:textColor="#CCCCCC"
-            android:text="Rxjava实例"
-            android:background="#E6E6FA"
-            android:onClick="startRx"
-            android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#F0E68C"
+        android:gravity="center"
+        android:onClick="startKotlin"
+        android:text="Kotlin模块"
+        android:textColor="#CCCCCC" />
 
-    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#E6E6FA"
+        android:gravity="center"
+        android:onClick="startRx"
+        android:text="Rxjava实例"
+        android:textColor="#CCCCCC"
+
+        />
+
     <TextView
             android:onClick="startDataBinding"
             android:layout_width="match_parent"
@@ -58,41 +59,54 @@
     />
 
     <TextView
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:textColor="#CCCCCC"
-            android:text="未完待续"
-            android:background="#ADD8E6"
-            android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#7CFC00"
+        android:gravity="center"
+        android:onClick="startVideoPlayer"
+        android:text="视频播放器，传入url直接用"
+        android:textColor="#CCCCCC"
 
-    />
+        />
     <TextView
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:textColor="#CCCCCC"
-            android:text="未完待续"
-            android:background="#F08080"
-            android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ADD8E6"
+        android:gravity="center"
+        android:text="未完待续"
+        android:textColor="#CCCCCC"
 
-    />
+        />
+
     <TextView
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:textColor="#CCCCCC"
-            android:text="未完待续"
-            android:background="#E0FFFF"
-            android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#F08080"
+        android:gravity="center"
+        android:text="未完待续"
+        android:textColor="#CCCCCC"
 
-    />
+        />
+
     <TextView
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:textColor="#CCCCCC"
-            android:text="未完待续"
-            android:background="#D3D3D3"
-            android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#E0FFFF"
+        android:gravity="center"
+        android:text="未完待续"
+        android:textColor="#CCCCCC"
 
-    />
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#D3D3D3"
+        android:gravity="center"
+        android:text="未完待续"
+        android:textColor="#CCCCCC"
+
+        />
 
 
 </LinearLayout>
