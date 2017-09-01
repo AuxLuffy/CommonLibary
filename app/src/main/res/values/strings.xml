@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">公共基础库</string>
 
-
+    <string name="log_in">Login</string>
+    <string name="create_user">创建用户</string>
     <string name="no_permissions">应用需要必要的运行权限</string>
 
     <string name="settings">设置</string>
