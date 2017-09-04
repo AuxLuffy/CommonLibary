@@ -96,4 +96,9 @@
     <color name="text_color_main">#000000</color>
     <color name="text_color_child">#6A6A6A</color>
     <color name="text_color_small_child">#C1C1C1</color>
+
+    <color name="scratch_start_gradient">#e5e5e5</color>
+    <color name="scratch_end_gradient">#cccccc</color>
+    <color name="paint_background">#ddd</color>
+    <color name="cart_bg">#f88c00</color>
 </resources>

@@ -149,5 +149,15 @@
             android:textColor="#CCCCCC"
             android:onClick="onClick"
             />
+
+        <TextView
+            android:id="@+id/tv_scratch"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#D3D3D3"
+            android:gravity="center"
+            android:text=" 仿刮刮卡视图"
+            android:textColor="#666666"
+            />
     </LinearLayout>
 </ScrollView>
