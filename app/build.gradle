@@ -63,7 +63,7 @@ dependencies {
     //统计
     compile 'com.umeng.analytics:analytics:latest.integration'
     //汉字转拼音工具包
-    implementation files('src/main/libs/pinyin4j-2.5.0.jar')
+    compile files('src/main/libs/pinyin4j-2.5.0.jar')
 }
 greendao {
     schemaVersion 1
