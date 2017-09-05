@@ -64,6 +64,10 @@ dependencies {
     compile 'com.umeng.analytics:analytics:latest.integration'
     //汉字转拼音工具包
     compile files('src/main/libs/pinyin4j-2.5.0.jar')
+    compile 'cn.bingoogolapple:bga-banner:2.1.7@aar'
+    compile 'com.facebook.fresco:fresco:0.14.1'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
 }
 greendao {
     schemaVersion 1

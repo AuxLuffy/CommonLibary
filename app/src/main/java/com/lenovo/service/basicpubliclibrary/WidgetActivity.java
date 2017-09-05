@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.lenovo.service.basicpubliclibrary.AppStartGuide.AppStartGuide;
+import com.lenovo.service.basicpubliclibrary.bgabanner.GuideActivity;
 import com.lenovo.service.basicpubliclibrary.boommenu.BoomMenuMainActivity;
 import com.lenovo.service.basicpubliclibrary.cardstatcview.CardStackActivty;
 import com.lenovo.service.basicpubliclibrary.chartview.ChartViewActivity;
@@ -40,6 +41,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     private TextView recyclerview_banner_tv;
     private TextView mTvBoomMenu;
     private TextView tvScratch;
+    private TextView mTvGuide;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,6 +70,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTvBoomMenu = (TextView) findViewById(R.id.tv_boommenu);
         mTxtPicker = (TextView) findViewById(R.id.tv_picker);
         tvScratch = (TextView) findViewById(R.id.tv_scratch);
+        mTvGuide = (TextView) findViewById(R.id.tv_guide);
     }
 
     private void init_listener() {
@@ -85,6 +88,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTvBoomMenu.setOnClickListener(this);
         mTxtPicker.setOnClickListener(this);
         tvScratch.setOnClickListener(this);
+        mTvGuide.setOnClickListener(this);
     }
 
     @Override
@@ -163,6 +167,10 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.tv_scratch:
                 intent=new Intent(WidgetActivity.this, ScratchViewActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.tv_guide:
+                intent=new Intent(WidgetActivity.this, GuideActivity.class);
                 startActivity(intent);
                 break;
         }

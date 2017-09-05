@@ -132,6 +132,9 @@
         <activity android:name=".scratchview.ScratchViewActivity" />
         <activity android:name=".scratchview.DemoClothingActivity" />
         <activity android:name=".scratchview.CaptchaActivity" />
+        <activity android:name=".bgabanner.GuideActivity" />
+        <activity android:name=".bgabanner.BannerListActivity" />
+
 
         <activity
             android:name=".boommenu.SquareAndPieceCornerRadiusActivity"
