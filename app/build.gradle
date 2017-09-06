@@ -69,6 +69,7 @@ dependencies {
     compile 'com.facebook.fresco:fresco:0.14.1'
     compile 'com.squareup.retrofit2:retrofit:2.1.0'
     compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.github.baoyachi:StepView:1.9'
     compile "com.github.lzyzsd:jsbridge:${jsb}"
 }
 greendao {

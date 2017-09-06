@@ -22,6 +22,7 @@ import com.lenovo.service.basicpubliclibrary.scoringstrip.ScoringStripActivity;
 import com.lenovo.service.basicpubliclibrary.pickerview.PickerActivity;
 import com.lenovo.service.basicpubliclibrary.scratchview.ScratchViewActivity;
 import com.lenovo.service.basicpubliclibrary.smilepraiseview.SmilePraiseActivity;
+import com.lenovo.service.basicpubliclibrary.stepview.StepViewActivity;
 
 public class WidgetActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -171,6 +172,10 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.tv_guide:
                 intent=new Intent(WidgetActivity.this, GuideActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.tv_step_view:
+                intent=new Intent(WidgetActivity.this, StepViewActivity.class);
                 startActivity(intent);
                 break;
         }

@@ -63,28 +63,6 @@
         <activity android:name=".CompositeActivity" />
         <activity android:name=".pullTorefresh_tool.PullTorefreshActivity" />
         <activity android:name=".smilepraiseview.SmilePraiseActivity" />
-        <!-- 动画  -->
-        <activity android:name=".AnimationActivity"></activity>
-
-
-        <activity android:name=".headerfloatanimation.HeaderFloatActivity"></activity>
-
-
-        <activity android:name=".ComponentActivity"></activity>
-
-
-        <activity android:name=".CompositeActivity"></activity>
-
-        <activity android:name=".smilepraiseview.SmilePraiseActivity"></activity>
-
-        <activity android:name=".OptimizeActivity"></activity>
-        <activity android:name=".StorageActivity"></activity>
-        <activity android:name=".WidgetActivity"></activity>
-        <activity android:name=".AppStartGuide.AppStartGuide"></activity>
-        <activity android:name=".ProgressBaranimation.ProgressActivity"></activity>
-        <activity android:name=".maillistananimation.MaillistActivity"></activity>
-        <activity android:name=".obtainlocalphoto.LocalPhotoActivity"></activity>
-
         <!-- 加载数据页面的activity -->
         <activity android:name=".loaddata.LoadDataActivity" />
         <activity android:name=".loaddata.Sample1Activity" />
@@ -159,9 +137,12 @@
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="portrait"
             android:theme="@style/CameraTheme"/>
-
         <activity android:name=".chartview.ChartViewActivity"/>
         <activity android:name=".H5Activity"/>
+        <activity android:name=".databinding.DataBindingActivity"/>
+        <activity android:name=".stepview.StepViewActivity"/>
+        <activity android:name=".linechart.ui.LineChartActivity"/>
+        <activity android:name="com.lenovo.service.basicpubliclibrary.jsBridge.activity.JSBridgeActivity"/>
         <activity android:name=".OptimizeActivity"/>
         <activity android:name=".StorageActivity"/>
         <activity android:name=".WidgetActivity"/>
