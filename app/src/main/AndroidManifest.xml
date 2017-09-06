@@ -4,6 +4,22 @@
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.READ_CONTACTS"/>
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.RECORD_AUDIO"/>
@@ -22,6 +38,16 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -34,8 +60,8 @@
         <activity android:name=".headerfloatanimation.HeaderFloatActivity"/>
         <activity android:name=".ComponentActivity"/>
         <activity android:name=".CompositeActivity"/>
+        <activity android:name=".pullTorefresh_tool.PullTorefreshActivity" />
         <activity android:name=".smilepraiseview.SmilePraiseActivity"/>
-
         <!-- 加载数据页面的activity -->
         <activity android:name=".loaddata.LoadDataActivity"/>
         <activity android:name=".loaddata.Sample1Activity"/>
@@ -69,6 +95,7 @@
         <activity android:name=".flycotablayout.ui.SimpleHomeActivity"/>
         <activity android:name=".flycotablayout.ui.SlidingTabActivity"/>
         <activity android:name=".recyclerview.item.ui.RecyclerViewActivity"/>
+        <activity android:name=".recyclerview.banner.ui.BannerActivity" />
         <activity android:name=".multitype.bilibili.BilibiliActivity"/>
         <activity android:name=".multitype.multi_select.MultiSelectActivity"/>
         <activity android:name=".multitype.normal.NormalActivity"/>
@@ -79,6 +106,12 @@
         <activity android:name=".multitype.extra_apis.SeldomUsedApisPlayground"/>
         <activity android:name=".svg.WowActivity"/>
         <activity android:name=".boommenu.BoomMenuMainActivity"/>
+        <activity android:name=".scratchview.ScratchViewActivity" />
+        <activity android:name=".scratchview.DemoClothingActivity" />
+        <activity android:name=".scratchview.CaptchaActivity" />
+        <activity android:name=".bgabanner.GuideActivity" />
+        <activity android:name=".bgabanner.BannerListActivity" />
+
         <activity
                 android:name=".boommenu.SquareAndPieceCornerRadiusActivity"
                 android:label="Square &amp; Piece Corner Radius"/>
@@ -103,25 +136,8 @@
                 android:theme="@style/CameraTheme"/>
         <activity android:name=".chartview.ChartViewActivity"/>
         <activity android:name=".H5Activity"/>
-        <activity android:name=".OptimizeActivity"/>
-        <activity android:name=".StorageActivity"/>
-        <activity android:name=".WidgetActivity"/>
-        <activity android:name=".AppStartGuide.AppStartGuide"/>
-        <activity android:name=".ProgressBaranimation.ProgressActivity"/>
-        <activity android:name=".maillistananimation.MaillistActivity"/>
-        <activity android:name=".meizuweather.MeizuWeacherActivity"/>
-        <activity android:name=".loopview.LoopViewActivity"/>
-        <activity android:name=".scoringstrip.ScoringStripActivity"/>
-        <activity android:name=".cardstatcview.CardStackActivty"/>
-        <activity android:name=".flowwateranimation.FlowWaterAnimationActivity"/>
-        <activity android:name=".questionnaire.QuestionActivity"/>
-        <activity android:name=".rxjava.RxJavaActivity">
-        </activity>
-        <activity
-                android:name=".guideanim.ShowActivity"
-                android:theme="@style/Theme.AppCompat.NoActionBar"/>
-        <activity android:name=".databinding.DataBindingActivity">
-        </activity>
+        <activity android:name=".databinding.DataBindingActivity"/>
+        <activity android:name=".stepview.StepViewActivity"/>
         <activity android:name=".roundiamge.RoundImageActivity">
         </activity>
     </application>

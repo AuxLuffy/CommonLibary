@@ -14,6 +14,7 @@
     <color name="custom_progress_orange_progress">#ffff8800</color>
     <color name="baby_blue">#89CFF0</color>
     <color name="e">#EEEEEE</color>
+    <color name="orange_text">#F78A00</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorYellow">#feef50</color>
 
@@ -73,6 +74,13 @@
     <color name="pink">#E07679</color>
     <color name="material_text_primary">#de000000</color>
 
+
+    <color name="black_666">#666666</color>
+    <color name="white_text_f8">#f8f8f8</color>
+    <color name="gray_999">#999999</color>
+    <color name="color_line">#d7d7d7</color>
+
+
     <color name="pageBackground">#F2F4F7</color>
 
     <!-- 统一常见颜色 -->
@@ -88,4 +96,9 @@
     <color name="text_color_main">#000000</color>
     <color name="text_color_child">#6A6A6A</color>
     <color name="text_color_small_child">#C1C1C1</color>
+
+    <color name="scratch_start_gradient">#e5e5e5</color>
+    <color name="scratch_end_gradient">#cccccc</color>
+    <color name="paint_background">#ddd</color>
+    <color name="cart_bg">#f88c00</color>
 </resources>

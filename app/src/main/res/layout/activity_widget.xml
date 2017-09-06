@@ -109,10 +109,18 @@
             android:layout_height="60dp"
             android:background="#E0FFFF"
             android:gravity="center"
-            android:text="Recycler条目操作:拖拽排序,滑动删除"
+            android:text="RecyclerView条目操作:拖拽排序,滑动删除"
             android:textColor="#CCCCCC"
             />
-
+        <TextView
+            android:id="@+id/recyclerview_banner_tv"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#E0FFFF"
+            android:gravity="center"
+            android:text="利用RecyclerView实现图片轮播效果"
+            android:textColor="#CCCCCC"
+            />
         <TextView
             android:id="@+id/tv_boommenu"
             android:layout_width="match_parent"
@@ -141,5 +149,34 @@
             android:textColor="#CCCCCC"
             android:onClick="onClick"
             />
+
+        <TextView
+            android:id="@+id/tv_scratch"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#D3D3D3"
+            android:gravity="center"
+            android:text=" 仿刮刮卡视图"
+            android:textColor="#666666"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_guide"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#F08080"
+            android:gravity="center"
+            android:text="快速实现引导界面滑动导航和轮播图"
+            android:textColor="#CCCCCC" />
+        <TextView
+            android:id="@+id/tv_step_view"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#44FFe5"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="仿京东订单进度"
+            android:textColor="#CCCCCC" />
     </LinearLayout>
 </ScrollView>

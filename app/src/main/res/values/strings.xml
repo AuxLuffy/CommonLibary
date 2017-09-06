@@ -85,7 +85,7 @@
     <string name="three_d_animation_example">3D Animation Example</string>
     <string name="custom_position_example">Custom Position Example</string>
     <string name="fade_views_example">Fade Views Example</string>
-
+    <string name="price_strike"><strike>\u20b9 1400</strike> <font fgcolor="red"> \u20b9 1200 </font></string>
     <string name="text_inside_circle_button_text_normal">Text Inside Circle Button(Normal)</string>
     <string name="text_inside_circle_button_text_highlighted">Text Inside Circle Button(Highlighted)</string>
     <string name="text_inside_circle_button_text_unable">Text Inside Circle Button(Unable)</string>
@@ -107,6 +107,42 @@
     <string name="add">ADD</string>
     <string name="remove">REMOVE</string>
     <string name="clear">CLEAR</string>
+    <string name="price">\u20b9 1400</string>
+    <string name="clothing_title">Basics Blue Casuals</string>
+    <string name="captcha_title">Captcha</string>
+    <string name="scratch_for_offer">Scratch to get offer :</string>
+    <string name="flat_200">FLAT200</string>
+    <string name="flat_200_offer">Get flat \u20b9 200 off with</string>
+    <string name="add_to_cart">ADD TO CART</string>
+    <string name="wish_list">WISHLIST IT!</string>
+    <string name="select_size">Select Size:</string>
+    <string name="scratch_to_find_image">Prove you are not a robot : Scratch and tell what was the image</string>
+    <string name="house">House</string>
+    <string name="train">Train</string>
+    <string name="park">Park</string>
+    <string name="tree">Tree</string>
+    <string name="verify">Verify</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="scratch_text_view_demo">Scratch Text View Demo</string>
+    <string name="scratch_image_view_demo">Scratch Image View Demo</string>
+
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+    <string name="contact_info">zhouzj5@lenovo.com</string>
+    <string name="version_the_new">发现新版本: </string>
+    <string name="text_hint">提示</string>
+
+
+    <string name="loading">正在加载...</string>
+
+
 
     <string name="path_00">M 187.05 28.42 C 189.38 22.60 190.69 16.44 192.59 10.47 C 192.99 16.21 193.57 21.95 193.61
         27.71 C 196.57 29.22 199.80 30.43 202.26 32.75 C 204.81 35.60 205.72 39.46 206.68 43.07 C 207.86 48.30 209.90

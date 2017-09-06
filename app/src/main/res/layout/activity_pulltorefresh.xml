@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white_text_f8"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_pulltore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="下拉刷新~试试"
+        />
+
+    <com.lenovo.service.basicpubliclibrary.pullTorefresh_tool.widget.PullToRefreshListView.PullToRefreshLayout
+        android:id="@+id/refresh_view"
+        android:layout_below="@id/tv_pulltore"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <include layout="@layout/refresh_head"/>
+        <!-- 支持所有实现Pullable接口的View -->
+
+        <com.lenovo.service.basicpubliclibrary.pullTorefresh_tool.widget.PullToRefreshListView.PullableListView
+            android:id="@+id/content_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/white"
+            android:divider="@color/color_line"
+            android:dividerHeight="1px"/>
+
+        <include layout="@layout/load_more"/>
+
+    </com.lenovo.service.basicpubliclibrary.pullTorefresh_tool.widget.PullToRefreshListView.PullToRefreshLayout>
+
+</RelativeLayout>
