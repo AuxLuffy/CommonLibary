@@ -23,6 +23,7 @@ import com.lenovo.service.basicpubliclibrary.pickerview.PickerActivity;
 import com.lenovo.service.basicpubliclibrary.scratchview.ScratchViewActivity;
 import com.lenovo.service.basicpubliclibrary.smilepraiseview.SmilePraiseActivity;
 import com.lenovo.service.basicpubliclibrary.stepview.StepViewActivity;
+import com.lenovo.service.basicpubliclibrary.zoomheader.ZoomHeaderActivity;
 
 public class WidgetActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -43,6 +44,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     private TextView mTvBoomMenu;
     private TextView tvScratch;
     private TextView mTvGuide;
+    private TextView mTvZoomheader;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,6 +74,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTxtPicker = (TextView) findViewById(R.id.tv_picker);
         tvScratch = (TextView) findViewById(R.id.tv_scratch);
         mTvGuide = (TextView) findViewById(R.id.tv_guide);
+        mTvZoomheader = (TextView) findViewById(R.id.tv_zoomheader);
     }
 
     private void init_listener() {
@@ -90,6 +93,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTxtPicker.setOnClickListener(this);
         tvScratch.setOnClickListener(this);
         mTvGuide.setOnClickListener(this);
+        mTvZoomheader.setOnClickListener(this);
     }
 
     @Override
@@ -177,6 +181,9 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
             case R.id.tv_step_view:
                 intent=new Intent(WidgetActivity.this, StepViewActivity.class);
                 startActivity(intent);
+                break;
+            case R.id.tv_zoomheader:
+                startActivity(new Intent(WidgetActivity.this, ZoomHeaderActivity.class));
                 break;
         }
     }

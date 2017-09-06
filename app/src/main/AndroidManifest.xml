@@ -141,6 +141,9 @@
         <activity android:name=".H5Activity"/>
         <activity android:name=".databinding.DataBindingActivity"/>
         <activity android:name=".stepview.StepViewActivity"/>
+
+        <activity android:name=".zoomheader.DetailActivity" />
+        <activity android:name=".zoomheader.ZoomHeaderActivity" />
     </application>
 
 </manifest>
