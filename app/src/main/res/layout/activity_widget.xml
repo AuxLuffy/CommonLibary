@@ -198,5 +198,15 @@
             android:text="自定义涂鸦控件（可保存）"
             android:textColor="#CCCCCC"
             />
+
+        <TextView
+            android:id="@+id/tv_popup"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#66FF4081"
+            android:gravity="center"
+            android:text="自定义弹出视图"
+            android:textColor="#CCCCCC"
+            />
     </LinearLayout>
 </ScrollView>

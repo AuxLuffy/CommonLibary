@@ -15,6 +15,7 @@ import com.lenovo.service.basicpubliclibrary.colordialog.ColorDialogActivity;
 import com.lenovo.service.basicpubliclibrary.doodle.DoodleViewActivity;
 import com.lenovo.service.basicpubliclibrary.flycotablayout.ui.SimpleHomeActivity;
 import com.lenovo.service.basicpubliclibrary.loaddata.LoadDataActivity;
+import com.lenovo.service.basicpubliclibrary.popup.PopUpActivity;
 import com.lenovo.service.basicpubliclibrary.questionnaire.QuestionActivity;
 import com.lenovo.service.basicpubliclibrary.recyclertablayout.TabLayoutActivity;
 import com.lenovo.service.basicpubliclibrary.recyclerview.banner.ui.BannerActivity;
@@ -47,6 +48,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     private TextView mTvGuide;
     private TextView mTvZoomheader;
     private TextView mTvDoodle;
+    private TextView mTvPop;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,6 +80,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTvGuide = (TextView) findViewById(R.id.tv_guide);
         mTvZoomheader = (TextView) findViewById(R.id.tv_zoomheader);
         mTvDoodle = (TextView) findViewById(R.id.tv_doodle);
+        mTvPop = (TextView) findViewById(R.id.tv_popup);
     }
 
     private void init_listener() {
@@ -98,6 +101,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTvGuide.setOnClickListener(this);
         mTvZoomheader.setOnClickListener(this);
         mTvDoodle.setOnClickListener(this);
+        mTvPop.setOnClickListener(this);
     }
 
     @Override
@@ -191,6 +195,9 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.tv_doodle:
                 startActivity(new Intent(WidgetActivity.this, DoodleViewActivity.class));
+                break;
+            case R.id.tv_popup://弹出视图页面
+                startActivity(new Intent(WidgetActivity.this, PopUpActivity.class));
                 break;
         }
     }

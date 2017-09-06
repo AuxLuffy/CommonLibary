@@ -102,6 +102,14 @@
     <color name="paint_background">#ddd</color>
     <color name="cart_bg">#f88c00</color>
 
+    <!-- 弹出视图文字颜色 -->
+    <color name="colorBackground">#FF4081</color>
+    <color name="colorText">#FFFFFF</color>
+    <color name="colorDarkRed">#8b0000</color>
+    <color name="colorOrange">#ffa500</color>
+    <color name="colorLightGreen">#a0db8e</color>
+    <color name="colorBlack">#000000</color>
+
 
     <color name="bg_app">#F1F1F1</color>
     <color name="tab_unselect">#c9c9c9</color>

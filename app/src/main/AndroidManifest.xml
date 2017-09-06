@@ -171,6 +171,7 @@
         <activity
             android:theme="@style/AppTheme.NoActionBar"
             android:name=".fragmentation.demo_flow.FlowMainActivity" />
+        <activity android:name=".popup.PopUpActivity"/>
     </application>
 
 </manifest>
