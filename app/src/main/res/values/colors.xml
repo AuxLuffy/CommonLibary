@@ -101,4 +101,9 @@
     <color name="scratch_end_gradient">#cccccc</color>
     <color name="paint_background">#ddd</color>
     <color name="cart_bg">#f88c00</color>
+
+
+    <color name="bg_app">#F1F1F1</color>
+    <color name="tab_unselect">#c9c9c9</color>
+    <color name="bg_btn">#dadada</color>
 </resources>

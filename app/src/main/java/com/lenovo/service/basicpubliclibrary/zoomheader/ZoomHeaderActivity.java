@@ -29,7 +29,7 @@ public class ZoomHeaderActivity extends AppCompatActivity {
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
       LayoutInflater inflater = LayoutInflater.from(parent.getContext());
 
-      return new ViewHolder(inflater.inflate(R.layout.item_home, parent, false));
+      return new ViewHolder(inflater.inflate(R.layout.item_zoomheader_home, parent, false));
     }
 
     @Override

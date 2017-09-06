@@ -168,6 +168,9 @@
         <activity android:name=".zoomheader.DetailActivity" />
         <activity android:name=".zoomheader.ZoomHeaderActivity" />
         <activity android:name=".doodle.DoodleViewActivity" />
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name=".fragmentation.demo_flow.FlowMainActivity" />
     </application>
 
 </manifest>
