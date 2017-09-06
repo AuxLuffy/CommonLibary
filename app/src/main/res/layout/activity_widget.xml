@@ -187,5 +187,35 @@
             android:onClick="onClick"
             android:text="圆角图片"
             android:textColor="#CCCCCC" />
+
+
+        <TextView
+            android:id="@+id/tv_zoomheader"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#F08080"
+            android:gravity="center"
+            android:text="仿饿了么Image变详情页"
+            android:textColor="#CCCCCC" />
+
+        <TextView
+            android:id="@+id/tv_doodle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#E0FFFF"
+            android:gravity="center"
+            android:text="自定义涂鸦控件（可保存）"
+            android:textColor="#CCCCCC"
+            />
+
+        <TextView
+            android:id="@+id/tv_popup"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#66FF4081"
+            android:gravity="center"
+            android:text="自定义弹出视图"
+            android:textColor="#CCCCCC"
+            />
     </LinearLayout>
 </ScrollView>

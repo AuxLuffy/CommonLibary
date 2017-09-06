@@ -11,9 +11,11 @@ import com.lenovo.service.basicpubliclibrary.boommenu.BoomMenuMainActivity;
 import com.lenovo.service.basicpubliclibrary.cardstatcview.CardStackActivty;
 import com.lenovo.service.basicpubliclibrary.chartview.ChartViewActivity;
 import com.lenovo.service.basicpubliclibrary.colordialog.ColorDialogActivity;
+import com.lenovo.service.basicpubliclibrary.doodle.DoodleViewActivity;
 import com.lenovo.service.basicpubliclibrary.flycotablayout.ui.SimpleHomeActivity;
 import com.lenovo.service.basicpubliclibrary.loaddata.LoadDataActivity;
 import com.lenovo.service.basicpubliclibrary.pickerview.PickerActivity;
+import com.lenovo.service.basicpubliclibrary.popup.PopUpActivity;
 import com.lenovo.service.basicpubliclibrary.questionnaire.QuestionActivity;
 import com.lenovo.service.basicpubliclibrary.recyclertablayout.TabLayoutActivity;
 import com.lenovo.service.basicpubliclibrary.recyclerview.banner.ui.BannerActivity;
@@ -23,6 +25,7 @@ import com.lenovo.service.basicpubliclibrary.scoringstrip.ScoringStripActivity;
 import com.lenovo.service.basicpubliclibrary.scratchview.ScratchViewActivity;
 import com.lenovo.service.basicpubliclibrary.smilepraiseview.SmilePraiseActivity;
 import com.lenovo.service.basicpubliclibrary.stepview.StepViewActivity;
+import com.lenovo.service.basicpubliclibrary.zoomheader.ZoomHeaderActivity;
 
 public class WidgetActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -44,6 +47,9 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     private TextView mTvBoomMenu;
     private TextView tvScratch;
     private TextView mTvGuide;
+    private TextView mTvZoomheader;
+    private TextView mTvDoodle;
+    private TextView mTvPop;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,6 +79,9 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTxtPicker = (TextView) findViewById(R.id.tv_picker);
         tvScratch = (TextView) findViewById(R.id.tv_scratch);
         mTvGuide = (TextView) findViewById(R.id.tv_guide);
+        mTvZoomheader = (TextView) findViewById(R.id.tv_zoomheader);
+        mTvDoodle = (TextView) findViewById(R.id.tv_doodle);
+        mTvPop = (TextView) findViewById(R.id.tv_popup);
     }
 
     private void init_listener() {
@@ -92,6 +101,9 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTxtPicker.setOnClickListener(this);
         tvScratch.setOnClickListener(this);
         mTvGuide.setOnClickListener(this);
+        mTvZoomheader.setOnClickListener(this);
+        mTvDoodle.setOnClickListener(this);
+        mTvPop.setOnClickListener(this);
     }
 
     @Override
@@ -182,6 +194,15 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
             case R.id.tvRoundImage:
                 intent = new Intent(WidgetActivity.this, RoundImageActivity.class);
                 startActivity(intent);
+                break;
+            case R.id.tv_zoomheader:
+                startActivity(new Intent(WidgetActivity.this, ZoomHeaderActivity.class));
+                break;
+            case R.id.tv_doodle:
+                startActivity(new Intent(WidgetActivity.this, DoodleViewActivity.class));
+                break;
+            case R.id.tv_popup://弹出视图页面
+                startActivity(new Intent(WidgetActivity.this, PopUpActivity.class));
                 break;
         }
     }

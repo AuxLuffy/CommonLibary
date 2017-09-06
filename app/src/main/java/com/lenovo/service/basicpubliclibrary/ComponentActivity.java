@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
+import com.lenovo.service.basicpubliclibrary.fragmentation.demo_flow.FlowMainActivity;
 import com.lenovo.service.basicpubliclibrary.maillistananimation.MaillistActivity;
 import com.lenovo.service.basicpubliclibrary.multitype.bilibili.BilibiliActivity;
 import com.lenovo.service.basicpubliclibrary.obtainlocalphoto.LocalPhotoActivity;
@@ -24,6 +25,8 @@ public class ComponentActivity extends AppCompatActivity implements View.OnClick
     TextView mtv_localphoto;
     @BindView(R.id.tv_pulltorefresh)
     TextView mtv_pulltorefresh;
+    @BindView(R.id.tv_fragmentation)
+    TextView mTvFragmentation;
 
     @BindView(R.id.tv_h5_activity)
     TextView mTvH5Activity;
@@ -42,6 +45,7 @@ public class ComponentActivity extends AppCompatActivity implements View.OnClick
         mTvMultitype.setOnClickListener(this);
         mTvH5Activity.setOnClickListener(this);
         mtv_pulltorefresh.setOnClickListener(this);
+        mTvFragmentation.setOnClickListener(this);
     }
 
 
@@ -70,6 +74,9 @@ public class ComponentActivity extends AppCompatActivity implements View.OnClick
                 break;
             case R.id.tv_pulltorefresh:
                 startActivity(new Intent(ComponentActivity.this, PullTorefreshActivity.class));
+                break;
+            case R.id.tv_fragmentation:
+                startActivity(new Intent(ComponentActivity.this, FlowMainActivity.class));
                 break;
         }
     }
