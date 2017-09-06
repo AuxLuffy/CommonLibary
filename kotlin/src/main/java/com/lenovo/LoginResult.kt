@@ -1,6 +1,5 @@
 package com.lenovo
 
-import com.google.gson.annotations.SerializedName
 
 /**
  * Created by Administrator on 2017/8/4.
@@ -13,4 +12,4 @@ data class User(
         var identity: Int = 0
 )
 
-data class LoginResult(@SerializedName("data") var u: User, var status_code:Int, var message:String)
+data class LoginResult(  var u: User, var status_code:Int, var message:String)

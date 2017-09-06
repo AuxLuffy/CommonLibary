@@ -178,5 +178,14 @@
             android:onClick="onClick"
             android:text="仿京东订单进度"
             android:textColor="#CCCCCC" />
+        <TextView
+            android:id="@+id/tvRoundImage"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#44FFe5"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="圆角图片"
+            android:textColor="#CCCCCC" />
     </LinearLayout>
 </ScrollView>
