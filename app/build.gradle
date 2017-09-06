@@ -58,6 +58,8 @@ dependencies {
     compile 'fm.jiecao:jiecaovideoplayer:5.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
     compile 'com.diogobernardino:williamchart:2.5.0'
+    compile 'com.wx.ovalimageview:roundimageview:1.1.0'
+
 }
 greendao {
     schemaVersion 1
