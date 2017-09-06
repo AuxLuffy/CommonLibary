@@ -169,5 +169,14 @@
             android:gravity="center"
             android:text="快速实现引导界面滑动导航和轮播图"
             android:textColor="#CCCCCC" />
+        <TextView
+            android:id="@+id/tv_step_view"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#44FFe5"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="仿京东订单进度"
+            android:textColor="#CCCCCC" />
     </LinearLayout>
 </ScrollView>
