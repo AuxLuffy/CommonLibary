@@ -25,6 +25,7 @@ android {
 }
 ext {
     supportVersion = '26.0.0-alpha1'
+    jsb = '1.0.4'
 }
 dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
@@ -69,10 +70,10 @@ dependencies {
     compile 'com.squareup.retrofit2:retrofit:2.1.0'
     compile 'com.squareup.retrofit2:converter-gson:2.1.0'
     compile 'com.github.baoyachi:StepView:1.9'
+    compile "com.github.lzyzsd:jsbridge:${jsb}"
 }
 greendao {
     schemaVersion 1
     daoPackage 'com.lenovo.service.basicpubliclibrary.greendao'
     targetGenDir 'src/main/java'
-
 }
