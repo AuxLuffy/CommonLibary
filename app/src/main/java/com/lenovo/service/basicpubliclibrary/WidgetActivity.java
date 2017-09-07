@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 import com.lenovo.service.basicpubliclibrary.AppStartGuide.AppStartGuide;
+import com.lenovo.service.basicpubliclibrary.Tastytoast.ToastActivity;
 import com.lenovo.service.basicpubliclibrary.bgabanner.GuideActivity;
 import com.lenovo.service.basicpubliclibrary.boommenu.BoomMenuMainActivity;
 import com.lenovo.service.basicpubliclibrary.cardstatcview.CardStackActivty;
@@ -50,6 +51,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     private TextView mTvZoomheader;
     private TextView mTvDoodle;
     private TextView mTvPop;
+    private TextView mTvToast;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,6 +84,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTvZoomheader = (TextView) findViewById(R.id.tv_zoomheader);
         mTvDoodle = (TextView) findViewById(R.id.tv_doodle);
         mTvPop = (TextView) findViewById(R.id.tv_popup);
+        mTvToast = (TextView) findViewById(R.id.tv_toast);
     }
 
     private void init_listener() {
@@ -104,6 +107,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTvZoomheader.setOnClickListener(this);
         mTvDoodle.setOnClickListener(this);
         mTvPop.setOnClickListener(this);
+        mTvToast.setOnClickListener(this);
     }
 
     @Override
@@ -203,6 +207,9 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.tv_popup://弹出视图页面
                 startActivity(new Intent(WidgetActivity.this, PopUpActivity.class));
+                break;
+            case R.id.tv_toast://土司
+                startActivity(new Intent(WidgetActivity.this, ToastActivity.class));
                 break;
         }
     }
