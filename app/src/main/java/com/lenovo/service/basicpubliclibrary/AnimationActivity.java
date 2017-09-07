@@ -12,6 +12,7 @@ import com.lenovo.service.basicpubliclibrary.guideanim.ShowActivity;
 import com.lenovo.service.basicpubliclibrary.headerfloatanimation.HeaderFloatActivity;
 import com.lenovo.service.basicpubliclibrary.loopview.LoopViewActivity;
 import com.lenovo.service.basicpubliclibrary.meizuweather.MeizuWeacherActivity;
+import com.lenovo.service.basicpubliclibrary.roll3dimageview.RollImageActivity;
 import com.lenovo.service.basicpubliclibrary.svg.WowActivity;
 
 public class AnimationActivity extends AppCompatActivity {
@@ -22,6 +23,7 @@ public class AnimationActivity extends AppCompatActivity {
     private TextView mWateranimation;
     private TextView mTvGuideAnim;
     private TextView mTvGuideAnimSvg;
+    private TextView mTvRollImage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +36,7 @@ public class AnimationActivity extends AppCompatActivity {
         mWateranimation = (TextView) findViewById(R.id.water_animation);
         mTvGuideAnim = (TextView) findViewById(R.id.guide_anim);
         mTvGuideAnimSvg = (TextView) findViewById(R.id.guide_anim_svg);
+        mTvRollImage = (TextView) findViewById(R.id.roll_image);
         text1.setOnClickListener(new TextViewClickListener());
         mTvLoopView.setOnClickListener(new TextViewClickListener());
         mTv_progressBar.setOnClickListener(new TextViewClickListener());
@@ -41,6 +44,7 @@ public class AnimationActivity extends AppCompatActivity {
         mWateranimation.setOnClickListener(new TextViewClickListener());
         mTvGuideAnim.setOnClickListener(new TextViewClickListener());
         mTvGuideAnimSvg.setOnClickListener(new TextViewClickListener());
+        mTvRollImage.setOnClickListener(new TextViewClickListener());
     }
 
     public class TextViewClickListener implements View.OnClickListener {
@@ -82,6 +86,9 @@ public class AnimationActivity extends AppCompatActivity {
                     break;
                 case R.id.guide_anim_svg:
                     startActivity(new Intent(AnimationActivity.this, WowActivity.class));
+                    break;
+                case R.id.roll_image:
+                    startActivity(new Intent(AnimationActivity.this, RollImageActivity.class));
                     break;
 
                 default:

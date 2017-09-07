@@ -149,6 +149,10 @@
             android:name=".fragmentation.demo_flow.FlowMainActivity" />
         <activity android:name=".popup.PopUpActivity"/>
         <activity android:name=".Tastytoast.ToastActivity"/>
+        <activity android:name=".roll3dimageview.RollImageActivity"/>
+        <activity android:name=".roll3dimageview.DemoAct"/>
+        <activity android:name=".roll3dimageview.RollDebugAct"/>
+
     </application>
 
 </manifest>
