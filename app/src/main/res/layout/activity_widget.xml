@@ -107,7 +107,7 @@
             android:id="@+id/recyclerview_item_opt_tv"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:background="#E0FFFF"
+            android:background="#F08080"
             android:gravity="center"
             android:text="RecyclerView条目操作:拖拽排序,滑动删除"
             android:textColor="#CCCCCC"
@@ -182,7 +182,7 @@
             android:id="@+id/tvRoundImage"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:background="#44FFe5"
+            android:background="#7CFC00"
             android:gravity="center"
             android:onClick="onClick"
             android:text="圆角图片"
@@ -226,6 +226,15 @@
             android:gravity="center"
             android:text="自定义土司"
             android:textColor="#CCCCCC"
+            />
+        <TextView
+            android:id="@+id/tvJike"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#E0FFFF"
+            android:gravity="center"
+            android:text="仿即刻刷新效果"
+            android:textColor="@android:color/darker_gray"
             />
     </LinearLayout>
 </ScrollView>

@@ -8,7 +8,7 @@ import com.lenovo.service.basicpubliclibrary.R;
 import java.util.ArrayList;
 import java.util.List;
 
-public class JikeGallery extends AppCompatActivity {
+public class JikeGalleryActivity extends AppCompatActivity {
     private List<GalleryView> mGalleryList = new ArrayList<>();
     private List<GalleryEntity> mEntities = new ArrayList<>();
 

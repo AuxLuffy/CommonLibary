@@ -14,6 +14,7 @@ import com.lenovo.service.basicpubliclibrary.chartview.ChartViewActivity;
 import com.lenovo.service.basicpubliclibrary.colordialog.ColorDialogActivity;
 import com.lenovo.service.basicpubliclibrary.doodle.DoodleViewActivity;
 import com.lenovo.service.basicpubliclibrary.flycotablayout.ui.SimpleHomeActivity;
+import com.lenovo.service.basicpubliclibrary.jike.JikeGalleryActivity;
 import com.lenovo.service.basicpubliclibrary.loaddata.LoadDataActivity;
 import com.lenovo.service.basicpubliclibrary.pickerview.PickerActivity;
 import com.lenovo.service.basicpubliclibrary.popup.PopUpActivity;
@@ -52,6 +53,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     private TextView mTvDoodle;
     private TextView mTvPop;
     private TextView mTvToast;
+    private TextView tvJike;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,6 +65,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
 
 
     private void init_view() {
+        tvJike = (TextView) findViewById(R.id.tvJike);
         mText1 = (TextView) findViewById(R.id.text1);
         smileview = (TextView) findViewById(R.id.smileview);
         loaddata = (TextView) findViewById(R.id.loaddata);
@@ -91,6 +94,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mText1.setOnClickListener(this);
         tvRoundImage.setOnClickListener(this);
         smileview.setOnClickListener(this);
+        tvJike.setOnClickListener(this);
         mTvRatingbar.setOnClickListener(this);
         mCardStack.setOnClickListener(this);
         mTextQuestionnaire.setOnClickListener(this);
@@ -210,6 +214,9 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.tv_toast://土司
                 startActivity(new Intent(WidgetActivity.this, ToastActivity.class));
+                break;
+            case R.id.tvJike:
+                startActivity(new Intent(WidgetActivity.this, JikeGalleryActivity.class));
                 break;
         }
     }

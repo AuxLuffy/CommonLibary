@@ -178,7 +178,7 @@
 
         <activity android:name=".roundiamge.RoundImageActivity">
         </activity>
-        <activity android:name=".jike.JikeGallery">
+        <activity android:name=".jike.JikeGalleryActivity">
         </activity>
     </application>
 
