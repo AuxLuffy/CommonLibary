@@ -113,6 +113,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTvDoodle.setOnClickListener(this);
         mTvPop.setOnClickListener(this);
         mTvToast.setOnClickListener(this);
+        findViewById(R.id.tv_recyclerview).setOnClickListener(this);
     }
 
     @Override
