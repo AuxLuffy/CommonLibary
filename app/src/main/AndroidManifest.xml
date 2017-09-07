@@ -140,27 +140,6 @@
         <activity android:name=".stepview.StepViewActivity"/>
         <activity android:name=".linechart.ui.LineChartActivity"/>
         <activity android:name="com.lenovo.service.basicpubliclibrary.jsBridge.activity.JSBridgeActivity"/>
-        <activity android:name=".OptimizeActivity"/>
-        <activity android:name=".StorageActivity"/>
-        <activity android:name=".WidgetActivity"/>
-        <activity android:name=".AppStartGuide.AppStartGuide"/>
-        <activity android:name=".ProgressBaranimation.ProgressActivity"/>
-        <activity android:name=".maillistananimation.MaillistActivity"/>
-        <activity android:name=".meizuweather.MeizuWeacherActivity"/>
-        <activity android:name=".loopview.LoopViewActivity"/>
-        <activity android:name=".scoringstrip.ScoringStripActivity"/>
-        <activity android:name=".cardstatcview.CardStackActivty"/>
-        <activity android:name=".flowwateranimation.FlowWaterAnimationActivity"/>
-        <activity android:name=".questionnaire.QuestionActivity"/>
-        <activity android:name=".rxjava.RxJavaActivity">
-        </activity>
-        <activity
-            android:name=".guideanim.ShowActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
-        <activity android:name=".databinding.DataBindingActivity">
-        </activity>
-        <activity android:name=".linechart.ui.LineChartActivity"/>
-        <activity android:name="com.lenovo.service.basicpubliclibrary.jsBridge.activity.JSBridgeActivity"/>
 
         <activity android:name=".zoomheader.DetailActivity" />
         <activity android:name=".zoomheader.ZoomHeaderActivity" />
@@ -169,8 +148,7 @@
             android:theme="@style/AppTheme.NoActionBar"
             android:name=".fragmentation.demo_flow.FlowMainActivity" />
         <activity android:name=".popup.PopUpActivity"/>
-        <activity android:name=".roundiamge.RoundImageActivity">
-        </activity>
+        <activity android:name=".Tastytoast.ToastActivity"/>
     </application>
 
 </manifest>
