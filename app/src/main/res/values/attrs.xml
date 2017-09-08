@@ -109,5 +109,9 @@
         <attr name="ripple_alpha" format="integer"/>
         <attr name="ripple_maxRadius" format="dimension"/>
     </declare-styleable>
-
+    <declare-styleable name="CardView">
+        <attr name="cirlceColor" format="color" />
+        <attr name="radiuss" format="integer" />
+        <attr name="gap" format="integer" />
+    </declare-styleable>
 </resources>

@@ -13,6 +13,7 @@ import com.lenovo.service.basicpubliclibrary.UserGuideView.UserGuideActivity;
 import com.lenovo.service.basicpubliclibrary.bgabanner.GuideActivity;
 import com.lenovo.service.basicpubliclibrary.boommenu.BoomMenuMainActivity;
 import com.lenovo.service.basicpubliclibrary.cardstatcview.CardStackActivty;
+import com.lenovo.service.basicpubliclibrary.cardview.CardActivity;
 import com.lenovo.service.basicpubliclibrary.chartview.ChartViewActivity;
 import com.lenovo.service.basicpubliclibrary.colordialog.ColorDialogActivity;
 import com.lenovo.service.basicpubliclibrary.doodle.DoodleViewActivity;
@@ -62,6 +63,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     private TextView tv_gesture_lock;
     private TextView mUserGuide;
     private TextView tagview;
+    private TextView mCard;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -99,6 +101,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mUserGuide = (TextView) findViewById(R.id.user_guide);
         tv_gesture_lock = (TextView) findViewById(R.id.tv_gesture_lock);
         tagview = (TextView) findViewById(R.id.tv_tagview);
+        mCard = (TextView) findViewById(R.id.card);
     }
 
     private void init_listener() {
@@ -126,6 +129,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mUserGuide.setOnClickListener(this);
         tv_gesture_lock.setOnClickListener(this);
         tagview.setOnClickListener(this);
+        mCard.setOnClickListener(this);
     }
 
     @Override
@@ -243,6 +247,9 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.tv_tagview:
                 startActivity(new Intent(WidgetActivity.this, TagViewGroupActivity.class));
+                break;
+            case R.id.card:
+                startActivity(new Intent(WidgetActivity.this, CardActivity.class));
                 break;
         }
     }

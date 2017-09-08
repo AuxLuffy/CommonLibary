@@ -273,5 +273,14 @@
             android:gravity="center"
             android:text="tagview标签"
             android:textColor="#CCCCCC" />
+
+        <TextView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#b6E6FA"
+            android:gravity="center"
+            android:text="自定义卡券"
+            android:textColor="#CCCCCC" />
     </LinearLayout>
 </ScrollView>
