@@ -58,6 +58,8 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     private TextView mTvPop;
     private TextView mTvToast;
     private TextView tvJike;
+    private TextView tv_gesture_lock;
+    private TextView mUserGuide;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
