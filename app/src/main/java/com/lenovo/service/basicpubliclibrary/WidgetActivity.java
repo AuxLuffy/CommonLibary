@@ -31,6 +31,7 @@ import com.lenovo.service.basicpubliclibrary.scoringstrip.ScoringStripActivity;
 import com.lenovo.service.basicpubliclibrary.scratchview.ScratchViewActivity;
 import com.lenovo.service.basicpubliclibrary.smilepraiseview.SmilePraiseActivity;
 import com.lenovo.service.basicpubliclibrary.stepview.StepViewActivity;
+import com.lenovo.service.basicpubliclibrary.tagviewgroup.TagViewGroupActivity;
 import com.lenovo.service.basicpubliclibrary.zoomheader.ZoomHeaderActivity;
 
 public class WidgetActivity extends AppCompatActivity implements View.OnClickListener {
@@ -60,6 +61,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     private TextView tvJike;
     private TextView tv_gesture_lock;
     private TextView mUserGuide;
+    private TextView tagview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -96,6 +98,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTvToast = (TextView) findViewById(R.id.tv_toast);
         mUserGuide = (TextView) findViewById(R.id.user_guide);
         tv_gesture_lock = (TextView) findViewById(R.id.tv_gesture_lock);
+        tagview = (TextView) findViewById(R.id.tv_tagview);
     }
 
     private void init_listener() {
@@ -122,6 +125,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTvToast.setOnClickListener(this);
         mUserGuide.setOnClickListener(this);
         tv_gesture_lock.setOnClickListener(this);
+        tagview.setOnClickListener(this);
     }
 
     @Override
@@ -236,6 +240,10 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.tv_gesture_lock:
                 startActivity(new Intent(WidgetActivity.this, GestureLockActivity.class));
+                break;
+            case R.id.tv_tagview:
+                startActivity(new Intent(WidgetActivity.this, TagViewGroupActivity.class));
+                break;
         }
     }
 }

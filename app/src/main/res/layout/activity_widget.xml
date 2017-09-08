@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -265,5 +264,14 @@
             android:text="九宫格解锁控件"
             android:textColor="#CCCCCC"
             />
+
+        <TextView
+            android:id="@+id/tv_tagview"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#b6E6FA"
+            android:gravity="center"
+            android:text="tagview标签"
+            android:textColor="#CCCCCC" />
     </LinearLayout>
 </ScrollView>
