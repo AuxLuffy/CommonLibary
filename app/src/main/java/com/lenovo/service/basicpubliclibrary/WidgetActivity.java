@@ -17,6 +17,7 @@ import com.lenovo.service.basicpubliclibrary.chartview.ChartViewActivity;
 import com.lenovo.service.basicpubliclibrary.colordialog.ColorDialogActivity;
 import com.lenovo.service.basicpubliclibrary.doodle.DoodleViewActivity;
 import com.lenovo.service.basicpubliclibrary.flycotablayout.ui.SimpleHomeActivity;
+import com.lenovo.service.basicpubliclibrary.gesturelock.GestureLockActivity;
 import com.lenovo.service.basicpubliclibrary.jike.JikeGalleryActivity;
 import com.lenovo.service.basicpubliclibrary.loaddata.LoadDataActivity;
 import com.lenovo.service.basicpubliclibrary.pickerview.PickerActivity;
@@ -57,7 +58,6 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     private TextView mTvPop;
     private TextView mTvToast;
     private TextView tvJike;
-    private TextView mUserGuide;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -93,6 +93,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTvPop = (TextView) findViewById(R.id.tv_popup);
         mTvToast = (TextView) findViewById(R.id.tv_toast);
         mUserGuide = (TextView) findViewById(R.id.user_guide);
+        tv_gesture_lock = (TextView) findViewById(R.id.tv_gesture_lock);
     }
 
     private void init_listener() {
@@ -118,6 +119,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTvPop.setOnClickListener(this);
         mTvToast.setOnClickListener(this);
         mUserGuide.setOnClickListener(this);
+        tv_gesture_lock.setOnClickListener(this);
     }
 
     @Override
@@ -230,6 +232,8 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
             case R.id.user_guide:
                 startActivity(new Intent(WidgetActivity.this, UserGuideActivity.class));
                 break;
+            case R.id.tv_gesture_lock:
+                startActivity(new Intent(WidgetActivity.this, GestureLockActivity.class));
         }
     }
 }
