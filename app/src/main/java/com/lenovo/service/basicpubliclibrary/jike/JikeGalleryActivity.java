@@ -4,6 +4,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import com.lenovo.service.basicpubliclibrary.R;
+import me.wangyuwei.galleryview.GalleryEntity;
+import me.wangyuwei.galleryview.GalleryView;
 
 import java.util.ArrayList;
 import java.util.List;

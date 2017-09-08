@@ -1,4 +1,4 @@
-package com.lenovo.service.basicpubliclibrary.jike;
+package me.wangyuwei.galleryview;
 
 import android.content.Context;
 import android.graphics.Color;
