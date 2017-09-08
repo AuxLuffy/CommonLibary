@@ -35,4 +35,14 @@ public class UserData extends BaseModel{
 //备注：DBFlow会根据你的类名自动生成一个表明，以此为例：
 //这个类对应的表名为：UserData_Table，
 
+
+    @Override
+    public String toString() {
+        return "UserData{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", sex=" + sex +
+                '}';
+    }
 }
