@@ -138,42 +138,6 @@
         <activity android:name=".stepview.StepViewActivity" />
         <activity android:name=".linechart.ui.LineChartActivity" />
         <activity android:name=".jsBridge.activity.JSBridgeActivity" />
-        <activity android:name=".OptimizeActivity" />
-        <activity android:name=".StorageActivity" />
-        <activity android:name=".WidgetActivity" />
-        <activity android:name=".AppStartGuide.AppStartGuide" />
-        <activity android:name=".ProgressBaranimation.ProgressActivity" />
-        <activity android:name=".maillistananimation.MaillistActivity" />
-        <activity android:name=".meizuweather.MeizuWeacherActivity" />
-        <activity android:name=".loopview.LoopViewActivity" />
-        <activity android:name=".scoringstrip.ScoringStripActivity" />
-        <activity android:name=".cardstatcview.CardStackActivty" />
-        <activity android:name=".flowwateranimation.FlowWaterAnimationActivity" />
-        <activity android:name=".questionnaire.QuestionActivity" />
-        <activity android:name=".rxjava.RxJavaActivity" />
-        <activity
-            android:name=".guideanim.ShowActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity android:name=".databinding.DataBindingActivity" />
-        <activity android:name=".linechart.ui.LineChartActivity" />
-        <activity android:name=".jsBridge.activity.JSBridgeActivity" />
-        <activity android:name=".zoomheader.DetailActivity" />
-        <activity android:name=".zoomheader.ZoomHeaderActivity" />
-        <activity android:name=".doodle.DoodleViewActivity" />
-        <activity android:name=".jsBridge.activity.JSBridgeActivity" />
-        <activity android:name=".zoomheader.DetailActivity" />
-        <activity android:name=".zoomheader.ZoomHeaderActivity" />
-        <activity android:name=".doodle.DoodleViewActivity" />
-        android:name=".videoplayer.VideoplayerActivity"
-        android:configChanges="orientation|screenSize|keyboardHidden"
-        android:screenOrientation="portrait"
-        android:theme="@style/CameraTheme" />
-        <activity android:name=".chartview.ChartViewActivity" />
-        <activity android:name=".H5Activity" />
-        <activity android:name=".databinding.DataBindingActivity" />
-        <activity android:name=".stepview.StepViewActivity" />
-        <activity android:name=".linechart.ui.LineChartActivity" />
-        <activity android:name=".jsBridge.activity.JSBridgeActivity" />
         <activity android:name=".zoomheader.DetailActivity" />
         <activity android:name=".zoomheader.ZoomHeaderActivity" />
         <activity android:name=".doodle.DoodleViewActivity" />
@@ -189,32 +153,12 @@
         <activity android:name=".jike.JikeGalleryActivity" />
         <activity android:name=".jobservice.JobServiceActivity" />
         <!-- 注册 -->
-        android:name=".fragmentation.demo_flow.FlowMainActivity"
-        android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".popup.PopUpActivity" />
-        <activity android:name=".Tastytoast.ToastActivity" />
-        <activity android:name=".roll3dimageview.RollImageActivity" />
-        <activity android:name=".roll3dimageview.DemoAct" />
-        <activity android:name=".roll3dimageview.RollDebugAct" />
-        <activity android:name=".roundiamge.RoundImageActivity" />
-        <activity android:name=".jike.JikeGalleryActivity" />
-        <activity android:name=".jobservice.JobServiceActivity" />
-        <activity android:name=".tagviewgroup.TagViewGroupActivity" />
-        <activity android:name=".tagviewgroup.TagEditActivity" />
-        <activity android:name=".tagviewgroup.TagListActivity" />
-        <!-- 注册 -->
         <service
             android:name=".jobservice.MyJobService"
             android:permission="android.permission.BIND_JOB_SERVICE" />
 
         <activity android:name=".LoadMoreRecyclerView.MyRecyclerViewActivity" />
-        <activity android:name=".gesturelock.GestureLockActivity" />
-        <activity android:name=".gesturelock.DrawPasswordActivity" />
-        <activity android:name=".bezier.BezierActivity" />
-        <activity android:name=".UserGuideView.UserGuideActivity" />
-        <activity android:name=".dbflow.DBFlowActivity" />
-        <activity android:name=".cardview.CardActivity" />
-        <activity android:name=".avatarlabelview.AvatarLabelActivity"></activity>
+        <activity android:name=".validation.ValidateActivity"></activity>
     </application>
 
 </manifest>

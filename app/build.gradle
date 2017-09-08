@@ -27,8 +27,6 @@ android {
     dataBinding {
         enabled = true
     }
-
-
 }
 ext {
     supportVersion = '26.0.0-alpha1'
@@ -100,7 +98,7 @@ dependencies {
     compile 'com.leo.gesturelibray:GestureLibray:1.0.9'
     compile 'com.r0adkll:slidableactivity:2.0.5'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
-
+    compile group: 'com.mobsandgeeks', name: 'android-saripaar', version: '2.0.3'
     compile 'com.squareup.picasso:picasso:2.5.2'
 }
 greendao {
