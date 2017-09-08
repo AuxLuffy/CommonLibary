@@ -5,9 +5,11 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
+
 import com.lenovo.service.basicpubliclibrary.AppStartGuide.AppStartGuide;
 import com.lenovo.service.basicpubliclibrary.LoadMoreRecyclerView.MyRecyclerViewActivity;
 import com.lenovo.service.basicpubliclibrary.Tastytoast.ToastActivity;
+import com.lenovo.service.basicpubliclibrary.UserGuideView.UserGuideActivity;
 import com.lenovo.service.basicpubliclibrary.bgabanner.GuideActivity;
 import com.lenovo.service.basicpubliclibrary.boommenu.BoomMenuMainActivity;
 import com.lenovo.service.basicpubliclibrary.cardstatcview.CardStackActivty;
@@ -55,6 +57,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     private TextView mTvPop;
     private TextView mTvToast;
     private TextView tvJike;
+    private TextView mUserGuide;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -89,6 +92,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTvDoodle = (TextView) findViewById(R.id.tv_doodle);
         mTvPop = (TextView) findViewById(R.id.tv_popup);
         mTvToast = (TextView) findViewById(R.id.tv_toast);
+        mUserGuide = (TextView) findViewById(R.id.user_guide);
     }
 
     private void init_listener() {
@@ -114,6 +118,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTvPop.setOnClickListener(this);
         mTvToast.setOnClickListener(this);
         findViewById(R.id.tv_recyclerview).setOnClickListener(this);
+        mUserGuide.setOnClickListener(this);
     }
 
     @Override
@@ -222,6 +227,9 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.tv_recyclerview:
                 startActivity(new Intent(WidgetActivity.this, MyRecyclerViewActivity.class));
+                break;
+            case R.id.user_guide:
+                startActivity(new Intent(WidgetActivity.this, UserGuideActivity.class));
                 break;
         }
     }
