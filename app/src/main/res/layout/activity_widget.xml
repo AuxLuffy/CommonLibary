@@ -236,5 +236,34 @@
             android:text="仿即刻刷新效果"
             android:textColor="@android:color/darker_gray"
             />
+
+        <TextView
+            android:id="@+id/tv_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#66FF4081"
+            android:gravity="center"
+            android:text="recyclerview封装"
+            android:textColor="#CCCCCC"
+            />
+
+        <TextView
+            android:id="@+id/user_guide"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#F0E68C"
+            android:gravity="center"
+            android:text="新手引导"
+            android:textColor="#CCCCCC" />
+
+        <TextView
+            android:id="@+id/tv_gesture_lock"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#7CFC00"
+            android:gravity="center"
+            android:text="九宫格解锁控件"
+            android:textColor="#CCCCCC"
+            />
     </LinearLayout>
 </ScrollView>

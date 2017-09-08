@@ -5,8 +5,11 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
+
 import com.lenovo.service.basicpubliclibrary.AppStartGuide.AppStartGuide;
+import com.lenovo.service.basicpubliclibrary.LoadMoreRecyclerView.MyRecyclerViewActivity;
 import com.lenovo.service.basicpubliclibrary.Tastytoast.ToastActivity;
+import com.lenovo.service.basicpubliclibrary.UserGuideView.UserGuideActivity;
 import com.lenovo.service.basicpubliclibrary.bgabanner.GuideActivity;
 import com.lenovo.service.basicpubliclibrary.boommenu.BoomMenuMainActivity;
 import com.lenovo.service.basicpubliclibrary.cardstatcview.CardStackActivty;
@@ -14,6 +17,7 @@ import com.lenovo.service.basicpubliclibrary.chartview.ChartViewActivity;
 import com.lenovo.service.basicpubliclibrary.colordialog.ColorDialogActivity;
 import com.lenovo.service.basicpubliclibrary.doodle.DoodleViewActivity;
 import com.lenovo.service.basicpubliclibrary.flycotablayout.ui.SimpleHomeActivity;
+import com.lenovo.service.basicpubliclibrary.gesturelock.GestureLockActivity;
 import com.lenovo.service.basicpubliclibrary.jike.JikeGalleryActivity;
 import com.lenovo.service.basicpubliclibrary.loaddata.LoadDataActivity;
 import com.lenovo.service.basicpubliclibrary.pickerview.PickerActivity;
@@ -88,6 +92,8 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTvDoodle = (TextView) findViewById(R.id.tv_doodle);
         mTvPop = (TextView) findViewById(R.id.tv_popup);
         mTvToast = (TextView) findViewById(R.id.tv_toast);
+        mUserGuide = (TextView) findViewById(R.id.user_guide);
+        tv_gesture_lock = (TextView) findViewById(R.id.tv_gesture_lock);
     }
 
     private void init_listener() {
@@ -112,6 +118,8 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTvDoodle.setOnClickListener(this);
         mTvPop.setOnClickListener(this);
         mTvToast.setOnClickListener(this);
+        mUserGuide.setOnClickListener(this);
+        tv_gesture_lock.setOnClickListener(this);
     }
 
     @Override
@@ -218,6 +226,14 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
             case R.id.tvJike:
                 startActivity(new Intent(WidgetActivity.this, JikeGalleryActivity.class));
                 break;
+            case R.id.tv_recyclerview:
+                startActivity(new Intent(WidgetActivity.this, MyRecyclerViewActivity.class));
+                break;
+            case R.id.user_guide:
+                startActivity(new Intent(WidgetActivity.this, UserGuideActivity.class));
+                break;
+            case R.id.tv_gesture_lock:
+                startActivity(new Intent(WidgetActivity.this, GestureLockActivity.class));
         }
     }
 }

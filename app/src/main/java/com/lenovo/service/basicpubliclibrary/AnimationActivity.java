@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.lenovo.service.basicpubliclibrary.ProgressBaranimation.ProgressActivity;
+import com.lenovo.service.basicpubliclibrary.bezier.BezierActivity;
 import com.lenovo.service.basicpubliclibrary.flowwateranimation.FlowWaterAnimationActivity;
 import com.lenovo.service.basicpubliclibrary.guideanim.ShowActivity;
 import com.lenovo.service.basicpubliclibrary.headerfloatanimation.HeaderFloatActivity;
@@ -24,6 +25,7 @@ public class AnimationActivity extends AppCompatActivity {
     private TextView mTvGuideAnim;
     private TextView mTvGuideAnimSvg;
     private TextView mTvRollImage;
+    private TextView tv_bezier;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +39,8 @@ public class AnimationActivity extends AppCompatActivity {
         mTvGuideAnim = (TextView) findViewById(R.id.guide_anim);
         mTvGuideAnimSvg = (TextView) findViewById(R.id.guide_anim_svg);
         mTvRollImage = (TextView) findViewById(R.id.roll_image);
+        tv_bezier = (TextView) findViewById(R.id.tv_bezier);
+        tv_bezier.setOnClickListener(new TextViewClickListener());
         text1.setOnClickListener(new TextViewClickListener());
         mTvLoopView.setOnClickListener(new TextViewClickListener());
         mTv_progressBar.setOnClickListener(new TextViewClickListener());
@@ -89,6 +93,9 @@ public class AnimationActivity extends AppCompatActivity {
                     break;
                 case R.id.roll_image:
                     startActivity(new Intent(AnimationActivity.this, RollImageActivity.class));
+                    break;
+                case R.id.tv_bezier:
+                    startActivity(new Intent(AnimationActivity.this, BezierActivity.class));
                     break;
 
                 default:
