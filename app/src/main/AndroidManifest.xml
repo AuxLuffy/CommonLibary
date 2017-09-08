@@ -150,11 +150,11 @@
         <activity android:name=".cardstatcview.CardStackActivty" />
         <activity android:name=".flowwateranimation.FlowWaterAnimationActivity" />
         <activity android:name=".questionnaire.QuestionActivity" />
-        <activity android:name=".rxjava.RxJavaActivity"></activity>
+        <activity android:name=".rxjava.RxJavaActivity" />
         <activity
             android:name=".guideanim.ShowActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity android:name=".databinding.DataBindingActivity"></activity>
+        <activity android:name=".databinding.DataBindingActivity" />
         <activity android:name=".linechart.ui.LineChartActivity" />
         <activity android:name=".jsBridge.activity.JSBridgeActivity" />
         <activity android:name=".zoomheader.DetailActivity" />
@@ -212,8 +212,9 @@
         <activity android:name=".gesturelock.DrawPasswordActivity" />
         <activity android:name=".bezier.BezierActivity" />
         <activity android:name=".UserGuideView.UserGuideActivity" />
-        <activity android:name=".dbflow.DBFlowActivity"></activity>
-        <activity android:name=".cardview.CardActivity"></activity>
+        <activity android:name=".dbflow.DBFlowActivity" />
+        <activity android:name=".cardview.CardActivity" />
+        <activity android:name=".avatarlabelview.AvatarLabelActivity"></activity>
     </application>
 
 </manifest>

@@ -10,6 +10,7 @@ import com.lenovo.service.basicpubliclibrary.AppStartGuide.AppStartGuide;
 import com.lenovo.service.basicpubliclibrary.LoadMoreRecyclerView.MyRecyclerViewActivity;
 import com.lenovo.service.basicpubliclibrary.Tastytoast.ToastActivity;
 import com.lenovo.service.basicpubliclibrary.UserGuideView.UserGuideActivity;
+import com.lenovo.service.basicpubliclibrary.avatarlabelview.AvatarLabelActivity;
 import com.lenovo.service.basicpubliclibrary.bgabanner.GuideActivity;
 import com.lenovo.service.basicpubliclibrary.boommenu.BoomMenuMainActivity;
 import com.lenovo.service.basicpubliclibrary.cardstatcview.CardStackActivty;
@@ -64,6 +65,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     private TextView mUserGuide;
     private TextView tagview;
     private TextView mCard;
+    private TextView mAvatarLabel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -102,6 +104,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         tv_gesture_lock = (TextView) findViewById(R.id.tv_gesture_lock);
         tagview = (TextView) findViewById(R.id.tv_tagview);
         mCard = (TextView) findViewById(R.id.card);
+        mAvatarLabel = (TextView) findViewById(R.id.avatar_label);
     }
 
     private void init_listener() {
@@ -130,6 +133,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         tv_gesture_lock.setOnClickListener(this);
         tagview.setOnClickListener(this);
         mCard.setOnClickListener(this);
+        mAvatarLabel.setOnClickListener(this);
     }
 
     @Override
@@ -250,6 +254,9 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.card:
                 startActivity(new Intent(WidgetActivity.this, CardActivity.class));
+                break;
+            case R.id.avatar_label:
+                startActivity(new Intent(WidgetActivity.this, AvatarLabelActivity.class));
                 break;
         }
     }

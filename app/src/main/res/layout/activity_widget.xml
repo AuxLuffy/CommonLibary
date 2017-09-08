@@ -278,9 +278,18 @@
             android:id="@+id/card"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:background="#b6E6FA"
+            android:background="#F0E68C"
             android:gravity="center"
             android:text="自定义卡券"
             android:textColor="#CCCCCC" />
+
+        <TextView
+            android:id="@+id/avatar_label"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#E0FFFF"
+            android:gravity="center"
+            android:text="头像标签"
+            android:textColor="@android:color/darker_gray" />
     </LinearLayout>
 </ScrollView>
