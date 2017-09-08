@@ -1,6 +1,5 @@
 package com.lenovo.service.basicpubliclibrary.databinding;
 
-import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;

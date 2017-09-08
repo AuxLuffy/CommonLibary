@@ -162,11 +162,10 @@
         <activity android:name=".zoomheader.DetailActivity"/>
         <activity android:name=".zoomheader.ZoomHeaderActivity"/>
         <activity android:name=".doodle.DoodleViewActivity"/>
-        <activity android:name="com.lenovo.service.basicpubliclibrary.jsBridge.activity.JSBridgeActivity"/>
-
-        <activity android:name=".zoomheader.DetailActivity" />
-        <activity android:name=".zoomheader.ZoomHeaderActivity" />
-        <activity android:name=".doodle.DoodleViewActivity" />
+        <activity android:name=".jsBridge.activity.JSBridgeActivity"/>
+        <activity android:name=".zoomheader.DetailActivity"/>
+        <activity android:name=".zoomheader.ZoomHeaderActivity"/>
+        <activity android:name=".doodle.DoodleViewActivity"/>
         <activity
                 android:name=".fragmentation.demo_flow.FlowMainActivity"
                 android:theme="@style/AppTheme.NoActionBar"/>
@@ -175,10 +174,11 @@
         <activity android:name=".roll3dimageview.RollImageActivity"/>
         <activity android:name=".roll3dimageview.DemoAct"/>
         <activity android:name=".roll3dimageview.RollDebugAct"/>
-
         <activity android:name=".roundiamge.RoundImageActivity">
         </activity>
         <activity android:name=".jike.JikeGalleryActivity">
+        </activity>
+        <activity android:name=".dbflow.DBFlowActivity">
         </activity>
     </application>
 
