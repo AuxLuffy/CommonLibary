@@ -157,6 +157,7 @@
             android:name=".jobservice.MyJobService"
             android:permission="android.permission.BIND_JOB_SERVICE"/>
         <activity android:name="com.lenovo.service.basicpubliclibrary.LoadMoreRecyclerView.MyRecyclerViewActivity" />
+        <activity android:name=".UserGuideView.UserGuideActivity"></activity>
     </application>
 
 </manifest>
