@@ -102,6 +102,7 @@ public class ValidateActivity extends AppCompatActivity implements Validator.Val
             } else {
                 Toast.makeText(this, message, Toast.LENGTH_LONG).show();
             }
+            break;
         }
     }
 }

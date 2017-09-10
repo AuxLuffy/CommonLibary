@@ -1,94 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/bg_second"
+    android:orientation="vertical"
     android:padding="15dp"
     tools:context="com.lenovo.service.basicpubliclibrary.validation.ValidateActivity">
-<EditText
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:hint="账号"
-    android:textColorHint="#999999"
-    android:textSize="16dp"
-    android:textColor="#666666"
-    android:id="@+id/editUserId"/>
+
     <EditText
-        android:layout_marginTop="10dp"
+        android:id="@+id/editUserId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="账号"
+        android:textColor="#666666"
+        android:textColorHint="#999999"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/editPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:hint="手机/电话"
-        android:textColorHint="#999999"
-        android:textSize="14dp"
         android:textColor="#666666"
-        android:id="@+id/editPhone"/>
+        android:textColorHint="#999999"
+        android:textSize="14dp" />
+
     <EditText
-        android:layout_marginTop="10dp"
+        android:id="@+id/editEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:hint="邮箱"
-        android:textColorHint="#999999"
-        android:textSize="14dp"
         android:textColor="#666666"
-        android:id="@+id/editEmail"/>
+        android:textColorHint="#999999"
+        android:textSize="14dp" />
+
     <EditText
-        android:layout_marginTop="10dp"
+        android:id="@+id/editPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:hint="密码"
-        android:textColorHint="#999999"
-        android:textSize="14dp"
         android:textColor="#666666"
-        android:id="@+id/editPassword"/>
+        android:textColorHint="#999999"
+        android:textSize="14dp" />
+
     <EditText
+        android:id="@+id/editRepeatPw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:hint="重复密码"
-        android:textColorHint="#999999"
-        android:textSize="14dp"
         android:textColor="#666666"
-        android:id="@+id/editRepeatPw"/>
+        android:textColorHint="#999999"
+        android:textSize="14dp" />
+
     <LinearLayout
-        android:paddingTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:gravity="center_vertical">
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
         <TextView
-            android:textSize="14dp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
+            android:text="我已同意全部使用条款"
             android:textColor="@color/red"
-            android:text="我已同意全部使用条款"/>
-     <!--   <com.lenovo.service.basicpubliclibrary.widget.SwitchButton
-            android:layout_height="30dp"
-            android:id="@+id/switchBtn"
-            android:layout_width="60dp"></com.lenovo.service.basicpubliclibrary.widget.SwitchButton>-->
+            android:textSize="14dp" />
+
         <CheckBox
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:id="@+id/checkBox"/>
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
     </LinearLayout>
+
     <TextView
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_weight="1"/>
-    <TextView
+        android:layout_weight="1" />
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:text="自动登录"
+            android:textColor="@android:color/holo_purple"
+            android:textSize="14dp" />
+
+        <com.lenovo.service.basicpubliclibrary.widget.SwitchButton
+            android:id="@+id/switchBtn"
+            android:layout_width="60dp"
+            android:layout_height="30dp"></com.lenovo.service.basicpubliclibrary.widget.SwitchButton>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
         android:layout_marginBottom="20dp"
+        android:background="@drawable/selector_btn_normal"
         android:gravity="center"
+        android:padding="10dp"
         android:text="登录"
         android:textColor="@color/baby_blue"
-        android:textSize="18dp"
-        android:padding="10dp"
-        android:layout_gravity="bottom"
-        android:background="@drawable/selector_btn_normal"
-        android:id="@+id/txtLogin"/>
+        android:textSize="18dp" />
 </LinearLayout>
