@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/activity_dbflow"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+    <EditText android:id="@+id/etID"
+              android:singleLine="true"
+              android:layout_width="100dp"
+              android:gravity="center_vertical"
+              android:layout_height="50dp"
+              android:hint="记录ID"/>
+
+    <EditText android:id="@+id/etName"
+              android:singleLine="true"
+              android:layout_width="100dp"
+              android:gravity="center_vertical"
+              android:layout_height="50dp"
+              android:hint="姓名"/>
+    <EditText android:id="@+id/etAge"
+              android:singleLine="true"
+              android:layout_marginLeft="@dimen/dp_10"
+              android:gravity="center_vertical"
+              android:layout_width="100dp"
+              android:layout_height="50dp"
+              android:inputType="number"
+              android:digits="0123456789"
+              android:hint="年龄"/>
+    <LinearLayout
+            android:gravity="center"
+            android:layout_width="100dp"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_height="50dp">
+        <CheckBox
+                android:id="@+id/cbMan"
+                android:layout_width="50dp"
+                android:gravity="center"
+                android:checked="true"
+                android:layout_height="match_parent"
+                android:text="男"/>
+        <CheckBox
+                android:id="@+id/cbWman"
+                android:layout_width="50dp"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="女"/>
+    </LinearLayout>
+
+    <Button
+            android:id="@+id/btnAdd"
+            android:text="添加"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+    <Button
+            android:id="@+id/btnUpdate"
+            android:text="更新"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+    <Button
+            android:id="@+id/btnSelect"
+            android:text="查询"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+    <Button
+            android:id="@+id/btnDelete"
+            android:text="删除"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+    <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+</LinearLayout>

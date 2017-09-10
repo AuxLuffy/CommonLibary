@@ -4,26 +4,70 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import com.lenovo.KotlinActivity;
+import android.widget.TextView;
+import android.widget.Toast;
+
+//import com.lenovo.KotlinActivity;
+import com.lenovo.service.basicpubliclibrary.AppStartGuide.AppStartGuide;
+import com.lenovo.service.basicpubliclibrary.jsBridge.activity.JSBridgeActivity;
+import com.lenovo.service.basicpubliclibrary.jsBridge.common.LocalConstant;
+import com.lenovo.service.basicpubliclibrary.linechart.ui.LineChartActivity;
 import com.lenovo.service.basicpubliclibrary.databinding.DataBindingActivity;
 import com.lenovo.service.basicpubliclibrary.cameraDemo.RecordMainAcitivity;
 import com.lenovo.service.basicpubliclibrary.rxjava.RxJavaActivity;
+import com.lenovo.service.basicpubliclibrary.validation.ValidateActivity;
 import com.lenovo.service.basicpubliclibrary.videoplayer.VideoplayerActivity;
 
-public class CompositeActivity extends AppCompatActivity {
+public class CompositeActivity extends AppCompatActivity implements View.OnClickListener{
+
+    private TextView[] textviews;
+
+    private int[] ids = new int[]{R.id.helloChart,R.id.jsBridge};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_composite);
+        initView();
+    }
+
+    private void initView() {
+        textviews = new TextView[ids.length];
+        for(int i = 0;i < textviews.length; i ++){
+            textviews[i] = (TextView) findViewById(ids[i]);
+            textviews[i].setOnClickListener(this);
+        }
     }
 
     public void startKotlin(View view) {
-        startActivity(new Intent(this, KotlinActivity.class));
+//        startActivity(new Intent(this, KotlinActivity.class));
     }
 
     public void startRx(View view) {
         startActivity(new Intent(this, RxJavaActivity.class));
+    }
+
+    @Override
+    public void onClick(View view) {
+
+        Intent intent = new Intent();
+
+        switch (view.getId()){
+
+            case R.id.helloChart:
+
+                intent.setClass(this, LineChartActivity.class);
+
+                break;
+
+            case R.id.jsBridge:
+
+                intent.setClass(this,JSBridgeActivity.class);
+                intent.putExtra("extra1", LocalConstant.H5URL.page_register);
+
+                break;
+        }
+        startActivity(intent);
     }
 
     public void startDataBinding(View view) {
@@ -35,5 +79,8 @@ public class CompositeActivity extends AppCompatActivity {
 
     public void startVideoPlayer(View v) {
         startActivity(new Intent(this, VideoplayerActivity.class));
+    }
+    public void startValidateActivity(View v) {
+        startActivity(new Intent(this, ValidateActivity.class));
     }
 }

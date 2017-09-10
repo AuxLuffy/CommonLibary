@@ -2,9 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.lenovo.service.basicpubliclibrary">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.READ_CONTACTS"/>
-
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS" />
     <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
@@ -17,12 +17,10 @@
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
-
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.CAMERA" />
@@ -39,7 +37,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <provider
             android:name="android.support.v4.content.FileProvider"
             android:authorities="${applicationId}.provider"
@@ -47,8 +44,9 @@
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/provider_paths"/>
+                android:resource="@xml/provider_paths" />
         </provider>
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -63,28 +61,6 @@
         <activity android:name=".CompositeActivity" />
         <activity android:name=".pullTorefresh_tool.PullTorefreshActivity" />
         <activity android:name=".smilepraiseview.SmilePraiseActivity" />
-        <!-- 动画  -->
-        <activity android:name=".AnimationActivity"></activity>
-
-
-        <activity android:name=".headerfloatanimation.HeaderFloatActivity"></activity>
-
-
-        <activity android:name=".ComponentActivity"></activity>
-
-
-        <activity android:name=".CompositeActivity"></activity>
-
-        <activity android:name=".smilepraiseview.SmilePraiseActivity"></activity>
-
-        <activity android:name=".OptimizeActivity"></activity>
-        <activity android:name=".StorageActivity"></activity>
-        <activity android:name=".WidgetActivity"></activity>
-        <activity android:name=".AppStartGuide.AppStartGuide"></activity>
-        <activity android:name=".ProgressBaranimation.ProgressActivity"></activity>
-        <activity android:name=".maillistananimation.MaillistActivity"></activity>
-        <activity android:name=".obtainlocalphoto.LocalPhotoActivity"></activity>
-
         <!-- 加载数据页面的activity -->
         <activity android:name=".loaddata.LoadDataActivity" />
         <activity android:name=".loaddata.Sample1Activity" />
@@ -132,7 +108,8 @@
         <activity android:name=".scratchview.ScratchViewActivity" />
         <activity android:name=".scratchview.DemoClothingActivity" />
         <activity android:name=".scratchview.CaptchaActivity" />
-
+        <activity android:name=".bgabanner.GuideActivity" />
+        <activity android:name=".bgabanner.BannerListActivity" />
         <activity
             android:name=".boommenu.SquareAndPieceCornerRadiusActivity"
             android:label="Square &amp; Piece Corner Radius" />
@@ -149,31 +126,39 @@
         <activity
             android:name=".pickerview.PickerActivity"
             android:label="@string/title_activity_picker"
-            android:theme="@style/AppTheme.NoActionBar"/>
-
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".videoplayer.VideoplayerActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="portrait"
-            android:theme="@style/CameraTheme"/>
-
-        <activity android:name=".chartview.ChartViewActivity"/>
-        <activity android:name=".H5Activity"/>
-        <activity android:name=".OptimizeActivity"/>
-        <activity android:name=".StorageActivity"/>
-        <activity android:name=".WidgetActivity"/>
-        <activity android:name=".AppStartGuide.AppStartGuide"/>
-        <activity android:name=".ProgressBaranimation.ProgressActivity"/>
-        <activity android:name=".maillistananimation.MaillistActivity"/>
-        <activity android:name=".meizuweather.MeizuWeacherActivity"/>
-        <activity android:name=".loopview.LoopViewActivity"/>
-        <activity android:name=".scoringstrip.ScoringStripActivity"/>
-        <activity android:name=".cardstatcview.CardStackActivty"/>
-        <activity android:name=".flowwateranimation.FlowWaterAnimationActivity"/>
-        <activity android:name=".questionnaire.QuestionActivity"/>
-        <activity android:name=".rxjava.RxJavaActivity">
-        </activity>
+            android:theme="@style/CameraTheme" />
+        <activity android:name=".chartview.ChartViewActivity" />
+        <activity android:name=".H5Activity" />
+        <activity android:name=".databinding.DataBindingActivity" />
+        <activity android:name=".stepview.StepViewActivity" />
+        <activity android:name=".linechart.ui.LineChartActivity" />
+        <activity android:name=".jsBridge.activity.JSBridgeActivity" />
+        <activity android:name=".zoomheader.DetailActivity" />
+        <activity android:name=".zoomheader.ZoomHeaderActivity" />
+        <activity android:name=".doodle.DoodleViewActivity" />
         <activity
+            android:name=".fragmentation.demo_flow.FlowMainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".popup.PopUpActivity" />
+        <activity android:name=".Tastytoast.ToastActivity" />
+        <activity android:name=".roll3dimageview.RollImageActivity" />
+        <activity android:name=".roll3dimageview.DemoAct" />
+        <activity android:name=".roll3dimageview.RollDebugAct" />
+        <activity android:name=".roundiamge.RoundImageActivity" />
+        <activity android:name=".jike.JikeGalleryActivity" />
+        <activity android:name=".jobservice.JobServiceActivity" />
+        <!-- 注册 -->
+        <service
+            android:name=".jobservice.MyJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <activity android:name=".LoadMoreRecyclerView.MyRecyclerViewActivity" />
+        <activity android:name=".validation.ValidateActivity"></activity>
                 android:name=".guideanim.ShowActivity"
                 android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity android:name=".databinding.DataBindingActivity">

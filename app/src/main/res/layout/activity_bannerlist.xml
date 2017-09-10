@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchMatch"
+    android:scrollbars="none">
+
+    <LinearLayout style="@style/MatchWrap.Vertical">
+        
+        <cn.bingoogolapple.bgabanner.BGABanner
+            android:id="@+id/banner_main_default"
+            style="@style/BannerDefaultStyle"
+            app:banner_indicatorGravity="bottom|right"
+            app:banner_isNeedShowIndicatorOnOnlyOnePage="true"
+            app:banner_isNumberIndicator="true"
+            app:banner_numberIndicatorBackground="@drawable/shape_number_indicator_background"
+            app:banner_numberIndicatorTextColor="@android:color/white"
+            app:banner_numberIndicatorTextSize="10sp"
+            app:banner_pointAutoPlayAble="true"
+            app:banner_pointContainerBackground="@android:color/transparent"
+            app:banner_transitionEffect="defaultEffect"/>
+
+        <cn.bingoogolapple.bgabanner.BGABanner
+            android:id="@+id/banner_main_cube"
+            style="@style/BannerDefaultStyle"
+            app:banner_contentBottomMargin="40dp"
+            app:banner_indicatorGravity="bottom|center_horizontal"
+            app:banner_transitionEffect="cube"/>
+
+        <cn.bingoogolapple.bgabanner.BGABanner
+            android:id="@+id/banner_main_accordion"
+            style="@style/BannerDefaultStyle"
+            app:banner_pointDrawable="@drawable/selector_banner_unequal"
+            app:banner_transitionEffect="accordion"/>
+
+        <cn.bingoogolapple.bgabanner.BGABanner
+            android:id="@+id/banner_main_flip"
+            style="@style/BannerDefaultStyle"
+            app:banner_indicatorGravity="bottom|left"
+            app:banner_pointDrawable="@drawable/bga_banner_selector_point_solid"
+            app:banner_transitionEffect="flip"/>
+
+        <cn.bingoogolapple.bgabanner.BGABanner
+            android:id="@+id/banner_main_rotate"
+            style="@style/BannerDefaultStyle"
+            app:banner_pointDrawable="@drawable/selector_banner_point"
+            app:banner_transitionEffect="rotate"/>
+
+        <cn.bingoogolapple.bgabanner.BGABanner
+            android:id="@+id/banner_main_alpha"
+            style="@style/BannerDefaultStyle"
+            app:banner_indicatorGravity="bottom|right"
+            app:banner_transitionEffect="alpha"/>
+
+        <cn.bingoogolapple.bgabanner.BGABanner
+            android:id="@+id/banner_main_zoomFade"
+            style="@style/BannerDefaultStyle"
+            app:banner_transitionEffect="zoomFade"/>
+
+        <cn.bingoogolapple.bgabanner.BGABanner
+            android:id="@+id/banner_main_fade"
+            style="@style/BannerDefaultStyle"
+            app:banner_transitionEffect="fade"/>
+
+        <cn.bingoogolapple.bgabanner.BGABanner
+            android:id="@+id/banner_main_zoomCenter"
+            style="@style/BannerDefaultStyle"
+            app:banner_pointDrawable="@drawable/selector_banner_point"
+            app:banner_transitionEffect="zoomCenter"/>
+
+        <cn.bingoogolapple.bgabanner.BGABanner
+            android:id="@+id/banner_main_zoom"
+            style="@style/BannerDefaultStyle"
+            app:banner_transitionEffect="zoom"/>
+
+        <cn.bingoogolapple.bgabanner.BGABanner
+            android:id="@+id/banner_main_stack"
+            style="@style/BannerDefaultStyle"
+            app:banner_indicatorGravity="bottom|right"
+            app:banner_transitionEffect="stack"/>
+
+        <cn.bingoogolapple.bgabanner.BGABanner
+            android:id="@+id/banner_main_zoomStack"
+            style="@style/BannerDefaultStyle"
+            app:banner_indicatorGravity="bottom|left"
+            app:banner_transitionEffect="zoomStack"/>
+
+        <cn.bingoogolapple.bgabanner.BGABanner
+            android:id="@+id/banner_main_depth"
+            style="@style/BannerDefaultStyle"
+            app:banner_transitionEffect="depth"/>
+    </LinearLayout>
+</ScrollView>

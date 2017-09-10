@@ -4,8 +4,8 @@ import android.app.Activity
 import android.content.Intent
 import android.graphics.BitmapFactory
 import android.os.Bundle
-import com.google.gson.Gson
 import org.jetbrains.anko.*
+import org.json.JSONObject
 import java.net.URL
 
 class HomeActivity : Activity() {
@@ -36,7 +36,8 @@ class HomeActivity : Activity() {
         showLoading()
         doAsync {
             Thread.sleep(1000)
-            val res = Gson().fromJson(loginJSON, LoginResult::class.java)
+
+            val res = convert2Obj(loginJSON, LoginResult::class.java)
             uiThread {
                 if (res.status_code == 200) {
                     success(res)
@@ -46,6 +47,10 @@ class HomeActivity : Activity() {
                 dismissLoading()
             }
         }
+    }
+
+    private fun  convert2Obj(loginJSON: String, objClass: Class<LoginResult>): LoginResult {
+        return LoginResult(User("","","","",0),200,"")
     }
 
     private fun error(msg: String) {

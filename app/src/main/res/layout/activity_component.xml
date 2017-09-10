@@ -71,6 +71,16 @@
         />
 
     <TextView
+        android:id="@+id/tv_fragmentation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="#CCCCCC"
+        android:text="Fragmentation—超好用的Fragment封装库"
+        android:background="#F08080"
+        android:gravity="center"
+        />
+
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:textColor="#CCCCCC"

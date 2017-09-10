@@ -69,31 +69,34 @@
 
         />
     <TextView
+        android:id="@+id/helloChart"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="#ADD8E6"
-        android:gravity="center"
-        android:text="未完待续"
         android:textColor="#CCCCCC"
+        android:text="折线图"
+        android:background="#FFF0F5"
+        android:gravity="center"
+
+        />
+    <TextView
+        android:id="@+id/jsBridge"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="#CCCCCC"
+        android:text="jsBridge使用封装"
+        android:background="#7CFC00"
+        android:gravity="center"
 
         />
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="#F08080"
-        android:gravity="center"
-        android:text="未完待续"
-        android:textColor="#CCCCCC"
-
-        />
-
-    <TextView
+        android:id="@+id/linearValidate"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="#E0FFFF"
         android:gravity="center"
-        android:text="未完待续"
+        android:onClick="startValidateActivity"
+        android:text="Validation控件格式校验"
         android:textColor="#CCCCCC"
 
         />

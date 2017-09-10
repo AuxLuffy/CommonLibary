@@ -169,4 +169,17 @@
     <dimen name="item_dish_account_width">30dp</dimen>
     <dimen name="item_dish_small_word_size">18sp</dimen>
     <dimen name="item_dish_hight">55dp</dimen>
+
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="bottombar_height">48dp</dimen>
+    <dimen name="bottombar_wechat_height">52dp</dimen>
+
+    <dimen name="default_label_title_size">10sp</dimen>
+    <dimen name="default_label_content_size">12sp</dimen>
+    <dimen name="default_label_top_padding">15dp</dimen>
+    <dimen name="default_label_bottom_padding">10dp</dimen>
 </resources>

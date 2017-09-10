@@ -8,12 +8,14 @@ import android.widget.TextView;
 
 import com.lenovo.service.basicpubliclibrary.ProgressBaranimation.ProgressActivity;
 import com.lenovo.service.basicpubliclibrary.colorfultoast.ColorfulToastActivity;
+import com.lenovo.service.basicpubliclibrary.bezier.BezierActivity;
 import com.lenovo.service.basicpubliclibrary.flowwateranimation.FlowWaterAnimationActivity;
 import com.lenovo.service.basicpubliclibrary.guideanim.ShowActivity;
 import com.lenovo.service.basicpubliclibrary.headerfloatanimation.HeaderFloatActivity;
 import com.lenovo.service.basicpubliclibrary.loadingart.Loadingart_activity;
 import com.lenovo.service.basicpubliclibrary.loopview.LoopViewActivity;
 import com.lenovo.service.basicpubliclibrary.meizuweather.MeizuWeacherActivity;
+import com.lenovo.service.basicpubliclibrary.roll3dimageview.RollImageActivity;
 import com.lenovo.service.basicpubliclibrary.svg.WowActivity;
 import com.lenovo.service.basicpubliclibrary.takeaway.TakeawayActivity;
 
@@ -25,6 +27,8 @@ public class AnimationActivity extends AppCompatActivity {
     private TextView mWateranimation;
     private TextView mTvGuideAnim;
     private TextView mTvGuideAnimSvg;
+    private TextView mTvRollImage;
+    private TextView tv_bezier;
     private TextView mTv_loading_art;
     private TextView mTvTakeaway;
     private TextView mTvColorfulToast;
@@ -40,6 +44,9 @@ public class AnimationActivity extends AppCompatActivity {
         mWateranimation = (TextView) findViewById(R.id.water_animation);
         mTvGuideAnim = (TextView) findViewById(R.id.guide_anim);
         mTvGuideAnimSvg = (TextView) findViewById(R.id.guide_anim_svg);
+        mTvRollImage = (TextView) findViewById(R.id.roll_image);
+        tv_bezier = (TextView) findViewById(R.id.tv_bezier);
+        tv_bezier.setOnClickListener(new TextViewClickListener());
         mTv_loading_art = (TextView) findViewById(R.id.tv_loading_art);
         mTvTakeaway = (TextView) findViewById(R.id.tvTakeaway);
         mTvColorfulToast = (TextView) findViewById(R.id.tvColorfulToast);
@@ -51,6 +58,7 @@ public class AnimationActivity extends AppCompatActivity {
         mWateranimation.setOnClickListener(new TextViewClickListener());
         mTvGuideAnim.setOnClickListener(new TextViewClickListener());
         mTvGuideAnimSvg.setOnClickListener(new TextViewClickListener());
+        mTvRollImage.setOnClickListener(new TextViewClickListener());
         mTv_loading_art.setOnClickListener(new TextViewClickListener());
         mTvTakeaway.setOnClickListener(new TextViewClickListener());
         mTvColorfulToast.setOnClickListener(new TextViewClickListener());
@@ -96,6 +104,12 @@ public class AnimationActivity extends AppCompatActivity {
 
                 case R.id.guide_anim_svg:
                     startActivity(new Intent(AnimationActivity.this, WowActivity.class));
+                    break;
+                case R.id.roll_image:
+                    startActivity(new Intent(AnimationActivity.this, RollImageActivity.class));
+                    break;
+                case R.id.tv_bezier:
+                    startActivity(new Intent(AnimationActivity.this, BezierActivity.class));
                     break;
 
                 case R.id.tv_loading_art:
