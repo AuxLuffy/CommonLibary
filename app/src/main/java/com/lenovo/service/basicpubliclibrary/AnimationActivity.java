@@ -10,9 +10,11 @@ import com.lenovo.service.basicpubliclibrary.ProgressBaranimation.ProgressActivi
 import com.lenovo.service.basicpubliclibrary.flowwateranimation.FlowWaterAnimationActivity;
 import com.lenovo.service.basicpubliclibrary.guideanim.ShowActivity;
 import com.lenovo.service.basicpubliclibrary.headerfloatanimation.HeaderFloatActivity;
+import com.lenovo.service.basicpubliclibrary.loadingart.Loadingart_activity;
 import com.lenovo.service.basicpubliclibrary.loopview.LoopViewActivity;
 import com.lenovo.service.basicpubliclibrary.meizuweather.MeizuWeacherActivity;
 import com.lenovo.service.basicpubliclibrary.svg.WowActivity;
+import com.lenovo.service.basicpubliclibrary.takeaway.TakeawayActivity;
 
 public class AnimationActivity extends AppCompatActivity {
     TextView text1 = null;
@@ -22,6 +24,8 @@ public class AnimationActivity extends AppCompatActivity {
     private TextView mWateranimation;
     private TextView mTvGuideAnim;
     private TextView mTvGuideAnimSvg;
+    private TextView mTv_loading_art;
+    private TextView mTvTakeaway;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +38,9 @@ public class AnimationActivity extends AppCompatActivity {
         mWateranimation = (TextView) findViewById(R.id.water_animation);
         mTvGuideAnim = (TextView) findViewById(R.id.guide_anim);
         mTvGuideAnimSvg = (TextView) findViewById(R.id.guide_anim_svg);
+        mTv_loading_art = (TextView) findViewById(R.id.tv_loading_art);
+        mTvTakeaway = (TextView) findViewById(R.id.tvTakeaway);
+
         text1.setOnClickListener(new TextViewClickListener());
         mTvLoopView.setOnClickListener(new TextViewClickListener());
         mTv_progressBar.setOnClickListener(new TextViewClickListener());
@@ -41,6 +48,8 @@ public class AnimationActivity extends AppCompatActivity {
         mWateranimation.setOnClickListener(new TextViewClickListener());
         mTvGuideAnim.setOnClickListener(new TextViewClickListener());
         mTvGuideAnimSvg.setOnClickListener(new TextViewClickListener());
+        mTv_loading_art.setOnClickListener(new TextViewClickListener());
+        mTvTakeaway.setOnClickListener(new TextViewClickListener());
     }
 
     public class TextViewClickListener implements View.OnClickListener {
@@ -52,16 +61,16 @@ public class AnimationActivity extends AppCompatActivity {
 
                 case R.id.text1:
 
-                    intent.setClass(AnimationActivity.this,
-                            HeaderFloatActivity.class);
+                    intent.setClass(AnimationActivity.this, HeaderFloatActivity.class);
                     startActivity(intent);
                     break;
+
                 // 进度条的艺术
                 case R.id.tv_progressBar:
-                    intent.setClass(AnimationActivity.this,
-                            ProgressActivity.class);
+                    intent.setClass(AnimationActivity.this, ProgressActivity.class);
                     startActivity(intent);
                     break;
+
                 case R.id.meizu_weather:
                     intent.setClass(AnimationActivity.this, MeizuWeacherActivity.class);
                     startActivity(intent);
@@ -80,9 +89,17 @@ public class AnimationActivity extends AppCompatActivity {
                 case R.id.guide_anim:
                     startActivity(new Intent(AnimationActivity.this, ShowActivity.class));
                     break;
+
                 case R.id.guide_anim_svg:
                     startActivity(new Intent(AnimationActivity.this, WowActivity.class));
                     break;
+
+                case R.id.tv_loading_art:
+                    startActivity(new Intent(AnimationActivity.this, Loadingart_activity.class));
+                    break;
+
+                case R.id.tvTakeaway:
+                    startActivity(new Intent(AnimationActivity.this, TakeawayActivity.class));
 
                 default:
                     break;

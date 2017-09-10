@@ -83,4 +83,5 @@
     <item>@string/permission_read_external_hint</item>
     <item>@string/permission_white_external_hint</item>
   </string-array>
+  <attr name="SpinKitViewStyle" format="reference" />
 </resources>

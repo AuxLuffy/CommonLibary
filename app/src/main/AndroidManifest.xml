@@ -178,6 +178,8 @@
                 android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity android:name=".databinding.DataBindingActivity">
         </activity>
+        <activity android:name=".loadingart.Loadingart_activity" />
+        <activity android:name=".takeaway.TakeawayActivity"></activity>
     </application>
 
 </manifest>
