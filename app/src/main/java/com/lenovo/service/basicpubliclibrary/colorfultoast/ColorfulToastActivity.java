@@ -19,10 +19,12 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-/**
- * Created by lenovo on 2017/9/10.
- */
 
+/**
+ * 五彩toast显示
+ * @Author 李巷阳
+ * Created at 2017/9/10 16:43
+ */
 public class ColorfulToastActivity extends Activity{
 
     @BindView(R.id.button_error_toast)

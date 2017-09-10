@@ -12,10 +12,12 @@ import com.lenovo.service.basicpubliclibrary.R;
 import com.lenovo.service.basicpubliclibrary.loadingart.fragment.Page1Fragment;
 import com.lenovo.service.basicpubliclibrary.loadingart.fragment.Page2Fragment;
 
-/**
- * Created by lenovo on 2017/9/8.
- */
 
+/**
+ * 加载的艺术
+ * @Author 李巷阳
+ * Created at 2017/9/10 16:42
+ */
 public class Loadingart_activity extends AppCompatActivity {
     TabLayout mTabLayout;
     ViewPager mViewPager;

@@ -35,10 +35,12 @@ import com.lenovo.service.basicpubliclibrary.takeaway.view.RxPointFTypeEvaluator
 import java.util.ArrayList;
 
 
-/**
- * Created by lenovo on 2017/9/10.
- */
 
+/**
+ * 模仿饿了吗 外卖点餐页面
+ * @Author 李巷阳
+ * Created at 2017/9/10 16:43
+ */
 public class TakeawayActivity extends FragmentActivity implements AdapterLeftMenu.onItemSelectedListener,ShopCartInterface,RxDialogShopCart.ShopCartDialogImp {
 
 
