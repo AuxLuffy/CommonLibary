@@ -1,8 +1,6 @@
 apply plugin: 'com.android.application'
 apply plugin: 'org.greenrobot.greendao'
 apply plugin: 'com.jakewharton.butterknife'
-apply plugin: 'com.neenbedankt.android-apt'
-apply plugin: 'android-apt'
 
 def dbflow_version = "4.1.1"
 
@@ -39,7 +37,7 @@ dependencies {
 
 
     // if Java use this. If using Kotlin do NOT use this.
-    apt "com.github.Raizlabs.DBFlow:dbflow-processor:${dbflow_version}"
+    annotationProcessor "com.github.Raizlabs.DBFlow:dbflow-processor:${dbflow_version}"
     compile "com.github.Raizlabs.DBFlow:dbflow-core:${dbflow_version}"
     compile "com.github.Raizlabs.DBFlow:dbflow:${dbflow_version}"
     // sql-cipher database encyrption (optional)
