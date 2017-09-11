@@ -160,10 +160,6 @@
 
         <activity android:name=".LoadMoreRecyclerView.MyRecyclerViewActivity" />
         <activity android:name=".validation.ValidateActivity"/>
-        <activity android:name=".validation.ValidateActivity"></activity>
-                android:name=".guideanim.ShowActivity"
-                android:theme="@style/Theme.AppCompat.NoActionBar"/>
-
         <activity android:name=".loadingart.Loadingart_activity" />
         <activity android:name=".takeaway.TakeawayActivity"></activity>
         <activity android:name=".colorfultoast.ColorfulToastActivity"></activity>
