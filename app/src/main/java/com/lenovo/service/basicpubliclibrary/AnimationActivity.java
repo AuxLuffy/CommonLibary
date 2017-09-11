@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.lenovo.service.basicpubliclibrary.ProgressBaranimation.ProgressActivity;
+import com.lenovo.service.basicpubliclibrary.bezier.DotsLoaderActivity;
 import com.lenovo.service.basicpubliclibrary.colorfultoast.ColorfulToastActivity;
 import com.lenovo.service.basicpubliclibrary.bezier.BezierActivity;
 import com.lenovo.service.basicpubliclibrary.flowwateranimation.FlowWaterAnimationActivity;
@@ -32,6 +33,7 @@ public class AnimationActivity extends AppCompatActivity {
     private TextView mTv_loading_art;
     private TextView mTvTakeaway;
     private TextView mTvColorfulToast;
+    private TextView tv_dots_loader;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +52,7 @@ public class AnimationActivity extends AppCompatActivity {
         mTv_loading_art = (TextView) findViewById(R.id.tv_loading_art);
         mTvTakeaway = (TextView) findViewById(R.id.tvTakeaway);
         mTvColorfulToast = (TextView) findViewById(R.id.tvColorfulToast);
+        tv_dots_loader = (TextView) findViewById(R.id.tv_dots_loader);
 
         text1.setOnClickListener(new TextViewClickListener());
         mTvLoopView.setOnClickListener(new TextViewClickListener());
@@ -62,6 +65,7 @@ public class AnimationActivity extends AppCompatActivity {
         mTv_loading_art.setOnClickListener(new TextViewClickListener());
         mTvTakeaway.setOnClickListener(new TextViewClickListener());
         mTvColorfulToast.setOnClickListener(new TextViewClickListener());
+        tv_dots_loader.setOnClickListener(new TextViewClickListener());
     }
 
     public class TextViewClickListener implements View.OnClickListener {
@@ -122,6 +126,9 @@ public class AnimationActivity extends AppCompatActivity {
 
                 case R.id.tvColorfulToast:
                     startActivity(new Intent(AnimationActivity.this, ColorfulToastActivity.class));
+                    break;
+                case R.id.tv_dots_loader:
+                    startActivity(new Intent(AnimationActivity.this, DotsLoaderActivity.class));
                     break;
                 default:
                     break;
