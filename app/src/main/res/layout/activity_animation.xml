@@ -105,5 +105,36 @@
             android:textColor="#CCCCCC"
 
             />
+
+
+        <TextView
+            android:id="@+id/tv_loading_art"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColor="#CCCCCC"
+            android:text="加载的艺术"
+            android:background="#E0FFFF"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/tvTakeaway"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColor="#CCCCCC"
+            android:text="仿饿了吗外卖"
+            android:background="#D3D3D3"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/tvColorfulToast"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColor="#CCCCCC"
+            android:text="五彩Toast"
+            android:background="#F0E68C"
+            android:gravity="center"
+            />
+
     </LinearLayout>
 </ScrollView>
