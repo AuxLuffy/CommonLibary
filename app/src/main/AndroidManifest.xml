@@ -162,6 +162,8 @@
         <activity android:name=".loadingart.Loadingart_activity" />
         <activity android:name=".takeaway.TakeawayActivity"></activity>
         <activity android:name=".colorfultoast.ColorfulToastActivity"></activity>
+
+        <activity android:name=".dbflow.DBFlowActivity"/>
     </application>
 
 </manifest>

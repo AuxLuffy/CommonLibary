@@ -86,7 +86,7 @@ public class App extends Application {
         //设置输出日志
         Config.setDebug(true);
 
-        FlowManager.init(new FlowConfig.Builder(this).build());
+        FlowManager.init(this);
 
 
     }

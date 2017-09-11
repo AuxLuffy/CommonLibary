@@ -5,29 +5,40 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.*;
+import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 import com.lenovo.service.basicpubliclibrary.R;
 import com.lenovo.service.basicpubliclibrary.dbflow.model.UserData;
-import com.lenovo.service.basicpubliclibrary.dbflow.model.UserData_Table;
+import com.raizlabs.android.dbflow.config.FlowConfig;
 import com.raizlabs.android.dbflow.config.FlowManager;
-import com.raizlabs.android.dbflow.sql.language.SQLite;
 import com.raizlabs.android.dbflow.sql.language.Select;
 import com.raizlabs.android.dbflow.structure.ModelAdapter;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class DBFlowActivity extends AppCompatActivity implements CompoundButton.OnCheckedChangeListener, View.OnClickListener {
     ModelAdapter<UserData> adapter;
+
+    @BindView(R.id.etName)
     EditText etName;
+    @BindView(R.id.etAge)
     EditText etAge;
+    @BindView(R.id.etID)
     EditText etID;
+    @BindView(R.id.tvResult)
     TextView tvResult;
+    @BindView(R.id.cbMan)
     CheckBox cbMan;
+    @BindView(R.id.cbWman)
     CheckBox cbWman;
+    @BindView(R.id.btnAdd)
     Button btnAdd;
+    @BindView(R.id.btnUpdate)
     Button btnUpdate;
+    @BindView(R.id.btnDelete)
     Button btnDelete;
+    @BindView(R.id.btnSelect)
     Button btnSelect;
 
     private int sex;
@@ -42,14 +53,6 @@ public class DBFlowActivity extends AppCompatActivity implements CompoundButton.
         setContentView(R.layout.activity_dbflow);
         ButterKnife.bind(this);
 
-        btnSelect = find(R.id.btnSelect);
-        tvResult = find(R.id.tvResult);
-        btnAdd = find(R.id.btnAdd);
-        btnAdd.setOnClickListener(this);
-        btnUpdate = find(R.id.btnUpdate);
-        btnUpdate.setOnClickListener(this);
-        btnDelete = find(R.id.btnDelete);
-        btnDelete.setOnClickListener(this);
         btnSelect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -57,25 +60,11 @@ public class DBFlowActivity extends AppCompatActivity implements CompoundButton.
                 tvResult.setText(list.toString());
             }
         });
-
-        etName = find(R.id.etName);
-        etAge = find(R.id.etAge);
-        etID = find(R.id.etID);
-        cbMan = find(R.id.cbMan);
-        cbWman = find(R.id.cbWman);
-
+//
         cbMan.setOnCheckedChangeListener(this);
         cbWman.setOnCheckedChangeListener(this);
 
         adapter = FlowManager.getModelAdapter(UserData.class);
-
-
-//再来点福利，update高级用法，增删改查都是同理，就不一一列举了
-        SQLite.update(UserData.class).set(UserData_Table.name.eq("888")).where(UserData_Table.id.eq((long) 1)).execute();
-//UserData_Table就是DBFlow自动生成的表明，在(5)的备注中已经提到了
-
-//查询
-        List<UserData> list = SQLite.select().from(UserData.class).queryList();
 
     }
 
@@ -120,28 +109,28 @@ public class DBFlowActivity extends AppCompatActivity implements CompoundButton.
         }
     }
 
-    @Override
+    @OnClick({R.id.btnAdd,R.id.btnUpdate,R.id.btnDelete})
     public void onClick(View view) {
         UserData userData = getUserData();
         if (userData == null) return;
         switch (view.getId()) {
             case R.id.btnAdd:
                 long inserRes = adapter.insert(userData);
-                tvResult.setText(""+inserRes);
+                tvResult.setText("" + inserRes);
                 break;
             case R.id.btnUpdate:
                 String idStr = etID.getText().toString().trim();
-                if (TextUtils.isEmpty(idStr)){
-                    Toast.makeText(this,"更新ID不能为空",Toast.LENGTH_SHORT).show();
+                if (TextUtils.isEmpty(idStr)) {
+                    Toast.makeText(this, "更新ID不能为空", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 userData.id = Long.parseLong(idStr);
                 boolean updateRes = adapter.update(userData);
-                tvResult.setText(""+updateRes);
+                tvResult.setText("" + updateRes);
                 break;
             case R.id.btnDelete:
                 boolean deleteRes = adapter.delete(userData);
-                tvResult.setText(""+deleteRes);
+                tvResult.setText("" + deleteRes);
                 break;
         }
     }
