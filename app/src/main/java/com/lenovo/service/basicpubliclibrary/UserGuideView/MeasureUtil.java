@@ -10,7 +10,7 @@ import android.view.View.MeasureSpec;
 /**
  * 测绘工具类
  *
- * @since 2014/11/19
+ *
  */
 public final class MeasureUtil {
     public static final int RATION_WIDTH = 0;

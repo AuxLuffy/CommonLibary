@@ -207,6 +207,9 @@
         <activity android:name=".bottleLoadingView.GABottleLoadingViewAcivity" />
 
         <activity android:name=".dbflow.DBFlowActivity"/>
+        <activity android:name=".UserGuideView.UserGuideActivity" />
+        <activity android:name=".cardview.CardActivity" />
+        <activity android:name=".avatarlabelview.AvatarLabelActivity" />
     </application>
 
 </manifest>
