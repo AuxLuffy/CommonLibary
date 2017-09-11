@@ -61,9 +61,13 @@ public class JSBridgeActivity extends AppCompatActivity implements JSBridgeContr
         firstUrl = url;
 
         if (NetWorkUtil.IsNetWorkAvailable(this)) {
+
             webView.loadUrl(url);
+
         } else {
+
             webView.loadUrl(URLConstants.PAGE_ERROR);
+
         }
     }
 

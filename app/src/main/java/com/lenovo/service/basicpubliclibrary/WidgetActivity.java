@@ -35,6 +35,7 @@ import com.lenovo.service.basicpubliclibrary.scratchview.ScratchViewActivity;
 import com.lenovo.service.basicpubliclibrary.smilepraiseview.SmilePraiseActivity;
 import com.lenovo.service.basicpubliclibrary.stepview.StepViewActivity;
 import com.lenovo.service.basicpubliclibrary.tagviewgroup.TagViewGroupActivity;
+import com.lenovo.service.basicpubliclibrary.toolbar.TestToolbarActivity;
 import com.lenovo.service.basicpubliclibrary.zoomheader.ZoomHeaderActivity;
 
 
@@ -135,6 +136,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTvPop.setOnClickListener(this);
         mTvToast.setOnClickListener(this);
         findViewById(R.id.tv_recyclerview).setOnClickListener(this);
+        findViewById(R.id.tv_toolbar).setOnClickListener(this);
         mUserGuide.setOnClickListener(this);
         tv_gesture_lock.setOnClickListener(this);
         tagview.setOnClickListener(this);
@@ -267,6 +269,9 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.tv_bottleloading:
                 startActivity(new Intent(WidgetActivity.this, GABottleLoadingViewAcivity.class));
+                break;
+            case R.id.tv_toolbar:
+                startActivity(new Intent(WidgetActivity.this, TestToolbarActivity.class));
                 break;
         }
     }

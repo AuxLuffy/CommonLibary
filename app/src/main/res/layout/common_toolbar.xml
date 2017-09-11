@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/id_toolbar"
+    android:background="@color/gray_f7f7f7"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_45"
+    android:fitsSystemWindows="true"
+    android:contentInsetEnd="0dp"
+    android:contentInsetLeft="0dp"
+    android:contentInsetStart="0dp"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/toolbar_imgv_nav"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/dp_10"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/dp_35"
+                android:layout_height="@dimen/dp_20"
+                android:paddingLeft="@dimen/dp_15"
+                android:paddingRight="@dimen/dp_10"
+                android:src="@drawable/back_arrow"/>
+
+            <View
+                android:layout_width="1px"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_12"
+                android:background="@color/color_line"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/toolbar_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="title"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/toolbar_imgv_nav"
+            android:textColor="@color/black_666"
+            android:textSize="@dimen/normal_16_text" />
+        <!--<ImageView-->
+        <!--android:id="@+id/toolbar_imgv_nav"-->
+        <!--android:layout_width="@dimen/dp_50"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:padding="@dimen/dp_20"-->
+        <!--android:src="@drawable/back_arrow" />-->
+
+
+        <!--<TextView-->
+        <!--android:id="@+id/toolbar_tv_title"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:text=""-->
+        <!--android:textColor="@color/black_666"-->
+        <!--android:textSize="17sp" />-->
+        <TextView
+            android:id="@+id/toolbar_tv_titlefront"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_28"
+            android:layout_toRightOf="@+id/toolbar_tv_title"
+            android:layout_toLeftOf="@+id/toolbar_text_right"
+            android:text="222222"
+            android:singleLine="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black_666"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/toolbar_tv_titleend"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_28"
+            android:layout_toRightOf="@id/toolbar_imgv_nav"
+            android:text="44444444"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/black_666"
+            android:textSize="12sp" />
+        <ImageView
+            android:id="@+id/toolbar_img_right"
+            android:layout_width="@dimen/dp_28"
+            android:layout_height="@dimen/dp_28"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitXY"
+            android:text="right" />
+        <TextView
+            android:id="@+id/toolbar_text_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_10"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            android:gravity="center"
+            android:textSize="@dimen/normal_14_text"
+            android:text="提交" />
+        <View
+            android:id="@+id/v_parting_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1f"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray"
+            ></View>
+    </RelativeLayout>
+
+
+</android.support.v7.widget.Toolbar>

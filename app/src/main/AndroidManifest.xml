@@ -208,6 +208,9 @@
         <activity android:name=".gesturelock.DrawPasswordActivity" />
         <activity android:name=".bezier.BezierActivity" />
         <activity android:name=".bezier.DotsLoaderActivity"></activity>
+
+        <activity android:name=".dbflow.DBFlowActivity"/>
+        <activity android:name=".toolbar.TestToolbarActivity"/>
     </application>
 
 </manifest>
