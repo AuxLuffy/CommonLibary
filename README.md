@@ -38,3 +38,12 @@
 3.工具类-日常用到的基本工具
 4.控件-一款仿照iOS开关SwitchButton
 5.框架-验证表单输入内容格式Validation
+
+#汪雅菁
+1.MultiType——Android复杂的列表视图新写法
+2.Fragmentation——单Fragment多Activity封装
+3.使用SCViewPager实现的视差变化引导页动画
+4.使用svg动画实现的引导页动画
+5.仿饿了么的Image向详情页转换效果
+6.动态问卷生成控件，包括单选题多选题填空题
+7.涂鸦版控件
