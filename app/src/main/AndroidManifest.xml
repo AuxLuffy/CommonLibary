@@ -158,19 +158,10 @@
             android:permission="android.permission.BIND_JOB_SERVICE" />
 
         <activity android:name=".LoadMoreRecyclerView.MyRecyclerViewActivity" />
-<<<<<<< HEAD
         <activity android:name=".validation.ValidateActivity"/>
-=======
-        <activity android:name=".validation.ValidateActivity"></activity>
->>>>>>> origin/master
         <activity android:name=".loadingart.Loadingart_activity" />
         <activity android:name=".takeaway.TakeawayActivity"></activity>
         <activity android:name=".colorfultoast.ColorfulToastActivity"></activity>
-
-
-
-
-
         <activity
             android:name=".SADL.SADLActivity"
             android:label="SADLMainActivity"></activity>
