@@ -152,6 +152,7 @@
         <activity android:name=".roundiamge.RoundImageActivity" />
         <activity android:name=".jike.JikeGalleryActivity" />
         <activity android:name=".jobservice.JobServiceActivity" />
+        <activity android:name=".tagviewgroup.TagViewGroupActivity" />
         <!-- 注册 -->
         <service
             android:name=".jobservice.MyJobService"
@@ -159,6 +160,10 @@
 
         <activity android:name=".LoadMoreRecyclerView.MyRecyclerViewActivity" />
         <activity android:name=".validation.ValidateActivity"/>
+        <activity android:name=".validation.ValidateActivity"></activity>
+                android:name=".guideanim.ShowActivity"
+                android:theme="@style/Theme.AppCompat.NoActionBar"/>
+
         <activity android:name=".loadingart.Loadingart_activity" />
         <activity android:name=".takeaway.TakeawayActivity"></activity>
         <activity android:name=".colorfultoast.ColorfulToastActivity"></activity>
@@ -203,6 +208,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
 
+        <activity android:name=".bottleLoadingView.GABottleLoadingViewAcivity" />
     </application>
 
 </manifest>

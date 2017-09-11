@@ -13,6 +13,7 @@ import com.lenovo.service.basicpubliclibrary.UserGuideView.UserGuideActivity;
 import com.lenovo.service.basicpubliclibrary.avatarlabelview.AvatarLabelActivity;
 import com.lenovo.service.basicpubliclibrary.bgabanner.GuideActivity;
 import com.lenovo.service.basicpubliclibrary.boommenu.BoomMenuMainActivity;
+import com.lenovo.service.basicpubliclibrary.bottleLoadingView.GABottleLoadingViewAcivity;
 import com.lenovo.service.basicpubliclibrary.cardstatcview.CardStackActivty;
 import com.lenovo.service.basicpubliclibrary.cardview.CardActivity;
 import com.lenovo.service.basicpubliclibrary.chartview.ChartViewActivity;
@@ -35,6 +36,8 @@ import com.lenovo.service.basicpubliclibrary.smilepraiseview.SmilePraiseActivity
 import com.lenovo.service.basicpubliclibrary.stepview.StepViewActivity;
 import com.lenovo.service.basicpubliclibrary.tagviewgroup.TagViewGroupActivity;
 import com.lenovo.service.basicpubliclibrary.zoomheader.ZoomHeaderActivity;
+
+
 
 public class WidgetActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -66,6 +69,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     private TextView tagview;
     private TextView mCard;
     private TextView mAvatarLabel;
+    private TextView mTvBottleloading;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -105,6 +109,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         tagview = (TextView) findViewById(R.id.tv_tagview);
         mCard = (TextView) findViewById(R.id.card);
         mAvatarLabel = (TextView) findViewById(R.id.avatar_label);
+        mTvBottleloading = (TextView) findViewById(R.id.tv_bottleloading);
     }
 
     private void init_listener() {
@@ -135,6 +140,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         tagview.setOnClickListener(this);
         mCard.setOnClickListener(this);
         mAvatarLabel.setOnClickListener(this);
+        mTvBottleloading.setOnClickListener(this);
     }
 
     @Override
@@ -258,6 +264,9 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.avatar_label:
                 startActivity(new Intent(WidgetActivity.this, AvatarLabelActivity.class));
+                break;
+            case R.id.tv_bottleloading:
+                startActivity(new Intent(WidgetActivity.this, GABottleLoadingViewAcivity.class));
                 break;
         }
     }

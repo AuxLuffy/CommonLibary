@@ -109,8 +109,8 @@
             android:background="#F08080"
             android:gravity="center"
             android:text="RecyclerView条目操作:拖拽排序,滑动删除"
-            android:textColor="#CCCCCC"
-            />
+            android:textColor="#CCCCCC" />
+
         <TextView
             android:id="@+id/recyclerview_banner_tv"
             android:layout_width="match_parent"
@@ -118,8 +118,8 @@
             android:background="#E0FFFF"
             android:gravity="center"
             android:text="利用RecyclerView实现图片轮播效果"
-            android:textColor="#CCCCCC"
-            />
+            android:textColor="#CCCCCC" />
+
         <TextView
             android:id="@+id/tv_boommenu"
             android:layout_width="match_parent"
@@ -127,8 +127,8 @@
             android:background="#D3D3D3"
             android:gravity="center"
             android:text="弹出菜单"
-            android:textColor="#CCCCCC"
-            />
+            android:textColor="#CCCCCC" />
+
         <TextView
             android:id="@+id/tv_picker"
             android:layout_width="match_parent"
@@ -136,18 +136,17 @@
             android:background="#A8A8A8"
             android:gravity="center"
             android:text="时间选择器"
-            android:textColor="#666666"
-            />
+            android:textColor="#666666" />
+
         <TextView
             android:id="@+id/tv_chartview"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:background="#7CFC00"
             android:gravity="center"
-            android:text="图表"
-            android:textColor="#CCCCCC"
             android:onClick="onClick"
-            />
+            android:text="图表"
+            android:textColor="#CCCCCC" />
 
         <TextView
             android:id="@+id/tv_scratch"
@@ -156,8 +155,7 @@
             android:background="#D3D3D3"
             android:gravity="center"
             android:text=" 仿刮刮卡视图"
-            android:textColor="#666666"
-            />
+            android:textColor="#666666" />
 
 
         <TextView
@@ -168,6 +166,7 @@
             android:gravity="center"
             android:text="快速实现引导界面滑动导航和轮播图"
             android:textColor="#CCCCCC" />
+
         <TextView
             android:id="@+id/tv_step_view"
             android:layout_width="match_parent"
@@ -177,6 +176,7 @@
             android:onClick="onClick"
             android:text="仿京东订单进度"
             android:textColor="#CCCCCC" />
+
         <TextView
             android:id="@+id/tvRoundImage"
             android:layout_width="match_parent"
@@ -204,8 +204,7 @@
             android:background="#E0FFFF"
             android:gravity="center"
             android:text="自定义涂鸦控件（可保存）"
-            android:textColor="#CCCCCC"
-            />
+            android:textColor="#CCCCCC" />
 
         <TextView
             android:id="@+id/tv_popup"
@@ -214,8 +213,7 @@
             android:background="#66FF4081"
             android:gravity="center"
             android:text="自定义弹出视图"
-            android:textColor="#CCCCCC"
-            />
+            android:textColor="#CCCCCC" />
 
         <TextView
             android:id="@+id/tv_toast"
@@ -224,8 +222,8 @@
             android:background="#b6E6FA"
             android:gravity="center"
             android:text="自定义土司"
-            android:textColor="#CCCCCC"
-            />
+            android:textColor="#CCCCCC" />
+
         <TextView
             android:id="@+id/tvJike"
             android:layout_width="match_parent"
@@ -233,8 +231,7 @@
             android:background="#E0FFFF"
             android:gravity="center"
             android:text="仿即刻刷新效果"
-            android:textColor="@android:color/darker_gray"
-            />
+            android:textColor="@android:color/darker_gray" />
 
         <TextView
             android:id="@+id/tv_recyclerview"
@@ -243,8 +240,7 @@
             android:background="#66FF4081"
             android:gravity="center"
             android:text="recyclerview封装"
-            android:textColor="#CCCCCC"
-            />
+            android:textColor="#CCCCCC" />
 
         <TextView
             android:id="@+id/user_guide"
@@ -262,8 +258,7 @@
             android:background="#7CFC00"
             android:gravity="center"
             android:text="九宫格解锁控件"
-            android:textColor="#CCCCCC"
-            />
+            android:textColor="#CCCCCC" />
 
         <TextView
             android:id="@+id/tv_tagview"
@@ -271,7 +266,7 @@
             android:layout_height="60dp"
             android:background="#b6E6FA"
             android:gravity="center"
-            android:text="tagview标签"
+            android:text="图片标签Group"
             android:textColor="#CCCCCC" />
 
         <TextView
@@ -291,5 +286,15 @@
             android:gravity="center"
             android:text="头像标签"
             android:textColor="@android:color/darker_gray" />
+
+        <TextView
+            android:textColor="#CCCCCC"
+            android:background="#7CFC00"
+            android:gravity="center"
+            android:id="@+id/tv_bottleloading"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="贝塞尔风景" />
+
     </LinearLayout>
 </ScrollView>
