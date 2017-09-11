@@ -90,11 +90,13 @@
         />
 
     <TextView
+        android:id="@+id/linearValidate"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="#E0FFFF"
         android:gravity="center"
-        android:text="未完待续"
+        android:onClick="startValidateActivity"
+        android:text="Validation控件格式校验"
         android:textColor="#CCCCCC"
 
         />

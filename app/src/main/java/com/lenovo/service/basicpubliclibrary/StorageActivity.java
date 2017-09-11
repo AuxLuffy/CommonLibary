@@ -5,13 +5,14 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
-
+import com.lenovo.service.basicpubliclibrary.dbflow.DBFlowActivity;
 import com.lenovo.service.basicpubliclibrary.greendao.GreenDaoDemoActivity;
 import com.lenovo.service.basicpubliclibrary.ormlite.OrmLiteActivity;
 
 public class StorageActivity extends AppCompatActivity implements View.OnClickListener {
 
     private TextView ormlite;
+    private TextView tvDBFlow;
     private TextView greenDao;
 
     @Override
@@ -21,6 +22,7 @@ public class StorageActivity extends AppCompatActivity implements View.OnClickLi
 
         ormlite = (TextView) findViewById(R.id.ormlite);
         greenDao = (TextView) findViewById(R.id.greenDao);
+        tvDBFlow = (TextView) findViewById(R.id.tvDBFlow);
 
         setOnClickListener();
     }
@@ -28,6 +30,7 @@ public class StorageActivity extends AppCompatActivity implements View.OnClickLi
     private void setOnClickListener() {
         ormlite.setOnClickListener(this);
         greenDao.setOnClickListener(this);
+        tvDBFlow.setOnClickListener(this);
     }
 
     @Override
@@ -41,6 +44,11 @@ public class StorageActivity extends AppCompatActivity implements View.OnClickLi
                 Intent green = new Intent(this, GreenDaoDemoActivity.class);
                 startActivity(green);
                 break;
+            case R.id.tvDBFlow:
+                Intent dbflow = new Intent(this, DBFlowActivity.class);
+                startActivity(dbflow);
+                break;
+
         }
     }
 }

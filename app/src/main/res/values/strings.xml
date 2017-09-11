@@ -141,7 +141,7 @@
     <string name="contact_info">zhouzj5@lenovo.com</string>
     <string name="version_the_new">发现新版本:</string>
     <string name="text_hint">提示</string>
-
+    <string name="info_string">"1. 点击创建按钮开始创建标签组\n2. 按住标签组滑动，调整位置\n3.点击单个标签，调整该标签的方向\n4. 点击中心圆弹出dialog\n5. 长按标签组删除"</string>
 
     <string name="loading">正在加载...</string>
     <string name="load_more">点击加载更多</string>
@@ -783,6 +783,11 @@
         599.68 C 343.75 596.19 343.58 592.39 343.41 588.69 C 342.76 589.08 341.45 589.86 340.79 590.24 Z
     </string>
     <string name="title_activity_picker">PickerActivity</string>
+
+    <string name="menu_name">菜单</string>
+    <string name="shopcart">购物车</string>
+    <string name="dish_name">菜名</string>
+
 
 
     <string name="PaintColor">画笔颜色</string>

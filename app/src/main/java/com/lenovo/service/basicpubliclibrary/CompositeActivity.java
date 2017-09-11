@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.lenovo.KotlinActivity;
+//import com.lenovo.KotlinActivity;
 import com.lenovo.service.basicpubliclibrary.AppStartGuide.AppStartGuide;
 import com.lenovo.service.basicpubliclibrary.jsBridge.activity.JSBridgeActivity;
 import com.lenovo.service.basicpubliclibrary.jsBridge.common.LocalConstant;
@@ -15,6 +15,7 @@ import com.lenovo.service.basicpubliclibrary.linechart.ui.LineChartActivity;
 import com.lenovo.service.basicpubliclibrary.databinding.DataBindingActivity;
 import com.lenovo.service.basicpubliclibrary.cameraDemo.RecordMainAcitivity;
 import com.lenovo.service.basicpubliclibrary.rxjava.RxJavaActivity;
+import com.lenovo.service.basicpubliclibrary.validation.ValidateActivity;
 import com.lenovo.service.basicpubliclibrary.videoplayer.VideoplayerActivity;
 
 public class CompositeActivity extends AppCompatActivity implements View.OnClickListener{
@@ -39,7 +40,7 @@ public class CompositeActivity extends AppCompatActivity implements View.OnClick
     }
 
     public void startKotlin(View view) {
-        startActivity(new Intent(this, KotlinActivity.class));
+//        startActivity(new Intent(this, KotlinActivity.class));
     }
 
     public void startRx(View view) {
@@ -78,5 +79,8 @@ public class CompositeActivity extends AppCompatActivity implements View.OnClick
 
     public void startVideoPlayer(View v) {
         startActivity(new Intent(this, VideoplayerActivity.class));
+    }
+    public void startValidateActivity(View v) {
+        startActivity(new Intent(this, ValidateActivity.class));
     }
 }

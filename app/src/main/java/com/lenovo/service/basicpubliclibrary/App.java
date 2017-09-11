@@ -3,11 +3,14 @@ package com.lenovo.service.basicpubliclibrary;
 import android.app.Application;
 import android.content.Context;
 
+import android.support.multidex.MultiDex;
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.lenovo.service.basicpubliclibrary.bgabanner.Engine;
 import com.lenovo.service.basicpubliclibrary.config.Config;
 import com.lenovo.service.basicpubliclibrary.loaddata.LoadDataLayout;
 
+import com.raizlabs.android.dbflow.config.FlowConfig;
+import com.raizlabs.android.dbflow.config.FlowManager;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
@@ -82,6 +85,10 @@ public class App extends Application {
                 .setReloadClickArea(SwipeLoadDataLayout.FULL);*/
         //设置输出日志
         Config.setDebug(true);
+
+        FlowManager.init(new FlowConfig.Builder(this).build());
+
+
     }
 
     public static Context getContext() {
@@ -95,4 +102,10 @@ public class App extends Application {
     public Engine getEngine() {
         return mEngine;
     }
+    @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(base);
+        MultiDex.install(this);
+    }
+
 }

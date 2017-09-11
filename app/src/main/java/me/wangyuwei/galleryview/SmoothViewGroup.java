@@ -1,4 +1,4 @@
-package com.lenovo.service.basicpubliclibrary.jike;
+package me.wangyuwei.galleryview;
 
 import android.animation.ValueAnimator;
 import android.content.Context;

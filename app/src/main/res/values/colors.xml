@@ -102,6 +102,23 @@
     <color name="paint_background">#ddd</color>
     <color name="cart_bg">#f88c00</color>
 
+
+    <color name="gray1">#e7e4e4</color>
+    <color name="light_black">#fd383838</color>
+    <color name="slateblue">#6A5ACD</color><!--石蓝色 -->
+    <color name="light_gray">#efefef</color>
+    <color name="f6">#f6f6f6</color>
+    <color name="_6">#666666</color>
+    <color name="deep_gray">#afaeae</color>
+    <color name="deep_gray_2">#636262</color>
+
+
+    <color name="hot_pink">#FD4C5B</color><!-- Acfun主题色 -->
+    <color name="SUCCESS_COLOR">#388E3C</color>
+    <color name="INFO_COLOR">#3F51B5</color>
+    <color name="WARNING_COLOR">#FFA900</color>
+
+
     <!-- 弹出视图文字颜色 -->
     <color name="colorBackground">#FF4081</color>
     <color name="colorText">#FFFFFF</color>

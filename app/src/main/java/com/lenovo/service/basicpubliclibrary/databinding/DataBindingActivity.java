@@ -1,6 +1,5 @@
 package com.lenovo.service.basicpubliclibrary.databinding;
 
-import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -9,7 +8,7 @@ import com.lenovo.service.basicpubliclibrary.R;
 public class DataBindingActivity extends AppCompatActivity {
 
 
-    private MainBinding bind;
+//    private MainBinding bind;
     private MainModel mainModel;
 
 
@@ -18,19 +17,19 @@ public class DataBindingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         View view = getLayoutInflater().inflate(R.layout.main, null, true);
         setContentView(view);
-        bind = MainBinding.bind(view);
+//        bind = MainBinding.bind(view);
         mainModel = new MainModel(this);
-        bind.setData(mainModel);
+//        bind.setData(mainModel);
         attachButtonListener();
     }
 
     private void attachButtonListener() {
-        bind.loginOrCreateButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                mainModel.loginClicked();
-            }
-        });
+//        bind.loginOrCreateButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                mainModel.loginClicked();
+//            }
+//        });
     }
 
     @Override

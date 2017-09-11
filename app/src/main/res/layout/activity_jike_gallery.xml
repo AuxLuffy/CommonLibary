@@ -9,21 +9,21 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true">
 
-        <com.lenovo.service.basicpubliclibrary.jike.GalleryView
+        <me.wangyuwei.galleryview.GalleryView
                 android:id="@+id/gallery0"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:layout_weight="1"/>
 
-        <com.lenovo.service.basicpubliclibrary.jike.GalleryView
+        <me.wangyuwei.galleryview.GalleryView
                 android:id="@+id/gallery1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:layout_weight="1"/>
 
-        <com.lenovo.service.basicpubliclibrary.jike.GalleryView
+        <me.wangyuwei.galleryview.GalleryView
                 android:id="@+id/gallery2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

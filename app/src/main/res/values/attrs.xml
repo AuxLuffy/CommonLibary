@@ -82,7 +82,56 @@
         <attr name="reloadBtnVisible"/>
         <attr name="reloadClickArea"/>
     </declare-styleable>
+    <declare-styleable name="SwitchButton">
+        <attr name="sb_shadow_radius" format="reference|dimension"/>
+        <attr name="sb_shadow_offset" format="reference|dimension"/>
+        <attr name="sb_shadow_color" format="reference|color"/>
+        <attr name="sb_uncheck_color" format="reference|color"/>
+        <attr name="sb_checked_color" format="reference|color"/>
 
+    <declare-styleable name="RxTitle">
+        <attr name="title" format="string"/>
+        <attr name="titleColor" format="color"/>
+        <attr name="titleSize" format="dimension"/>
+        <attr name="titleVisibility" format="boolean"/>
+
+        <attr name="leftText" format="string"/>
+        <attr name="leftTextColor" format="color"/>
+        <attr name="leftTextSize" format="dimension"/>
+        <attr name="leftTextVisibility" format="boolean"/>
+
+        <attr name="rightText" format="string"/>
+        <attr name="rightTextColor" format="color"/>
+        <attr name="rightTextSize" format="dimension"/>
+        <attr name="rightTextVisibility" format="boolean"/>
+
+        <attr name="leftIcon" format="reference"/>
+        <attr name="leftIconVisibility" format="boolean"/>
+
+        <attr name="rightIcon" format="reference"/>
+        <attr name="rightIconVisibility" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="ShoppingView">
+        <attr name="sv_bg_color" format="color"/>
+        <attr name="sv_text" format="string"/>
+        <attr name="sv_text_size" format="dimension"/>
+        <attr name="sv_duration" format="integer"/>
+    </declare-styleable>
+        <attr name="sb_border_width" format="reference|dimension"/>
+        <attr name="sb_checkline_color" format="reference|color"/>
+        <attr name="sb_checkline_width" format="reference|dimension"/>
+        <attr name="sb_uncheckcircle_color" format="reference|color"/>
+        <attr name="sb_uncheckcircle_width" format="reference|dimension"/>
+        <attr name="sb_uncheckcircle_radius" format="reference|dimension"/>
+
+        <attr name="sb_checked" format="reference|boolean"/>
+        <attr name="sb_shadow_effect" format="reference|boolean"/>
+        <attr name="sb_effect_duration" format="reference|integer"/>
+        <attr name="sb_button_color" format="reference|color"/>
+        <attr name="sb_show_indicator" format="reference|boolean"/>
+        <attr name="sb_background" format="reference|color"/>
+        <attr name="sb_enable_effect" format="reference|boolean"/>
+    </declare-styleable>
 
     <declare-styleable name="UserGuideView">
 
@@ -100,4 +149,52 @@
 
     </declare-styleable>
 
+    <declare-styleable name="TagViewGroup">
+        <attr name="inner_radius" format="dimension"/>
+        <attr name="radiu" format="dimension"/>
+        <attr name="line_width" format="dimension"/>
+        <attr name="v_distance" format="dimension"/>
+        <attr name="tilt_distance" format="dimension"/>
+        <attr name="ripple_alpha" format="integer"/>
+        <attr name="ripple_maxRadius" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="CardView">
+        <attr name="cirlceColor" format="color" />
+        <attr name="radiuss" format="integer" />
+        <attr name="gap" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="LabelView">
+        <attr name="backgroundColor" format="color" />
+        <attr name="textTitleColor" format="color" />
+        <attr name="textContentColor" format="color" />
+
+        <attr name="textTitle" format="string" />
+        <attr name="textContent" format="string" />
+
+        <attr name="textTitleSize" format="dimension" />
+        <attr name="textContentSize" format="dimension" />
+
+        <attr name="labelTopPadding" format="dimension" />
+        <attr name="labelCenterPadding" format="dimension" />
+        <attr name="labelBottomPadding" format="dimension" />
+        <attr name="labelTopDistance" format="dimension" />
+
+        <attr name="textTitleStyle">
+            <enum name="normal" value="0" />
+            <enum name="italic" value="1" />
+            <enum name="bold" value="2" />
+        </attr>
+
+        <attr name="textContentStyle">
+            <enum name="normal" value="0" />
+            <enum name="italic" value="1" />
+            <enum name="bold" value="2" />
+        </attr>
+
+        <attr name="directions">
+            <enum name="leftTop" value="-45" />
+            <enum name="rightTop" value="45" />
+        </attr>
+    </declare-styleable>
 </resources>

@@ -3,12 +3,12 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.lenovo.service.basicpubliclibrary.jike.GalleryView
+    <me.wangyuwei.galleryview.Gallery
         android:id="@+id/gallery"
         android:layout_width="match_parent"
         android:layout_height="100dp"/>
 
-    <com.lenovo.service.basicpubliclibrary.jike.TitleView
+    <me.wangyuwei.galleryview.TitleView
         android:id="@+id/title_view"
         android:layout_width="match_parent"
         android:layout_height="50dp"/>

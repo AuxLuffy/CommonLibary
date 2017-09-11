@@ -10,13 +10,16 @@ import com.lenovo.service.basicpubliclibrary.AppStartGuide.AppStartGuide;
 import com.lenovo.service.basicpubliclibrary.LoadMoreRecyclerView.MyRecyclerViewActivity;
 import com.lenovo.service.basicpubliclibrary.Tastytoast.ToastActivity;
 import com.lenovo.service.basicpubliclibrary.UserGuideView.UserGuideActivity;
+import com.lenovo.service.basicpubliclibrary.avatarlabelview.AvatarLabelActivity;
 import com.lenovo.service.basicpubliclibrary.bgabanner.GuideActivity;
 import com.lenovo.service.basicpubliclibrary.boommenu.BoomMenuMainActivity;
 import com.lenovo.service.basicpubliclibrary.cardstatcview.CardStackActivty;
+import com.lenovo.service.basicpubliclibrary.cardview.CardActivity;
 import com.lenovo.service.basicpubliclibrary.chartview.ChartViewActivity;
 import com.lenovo.service.basicpubliclibrary.colordialog.ColorDialogActivity;
 import com.lenovo.service.basicpubliclibrary.doodle.DoodleViewActivity;
 import com.lenovo.service.basicpubliclibrary.flycotablayout.ui.SimpleHomeActivity;
+import com.lenovo.service.basicpubliclibrary.gesturelock.GestureLockActivity;
 import com.lenovo.service.basicpubliclibrary.jike.JikeGalleryActivity;
 import com.lenovo.service.basicpubliclibrary.loaddata.LoadDataActivity;
 import com.lenovo.service.basicpubliclibrary.pickerview.PickerActivity;
@@ -30,6 +33,7 @@ import com.lenovo.service.basicpubliclibrary.scoringstrip.ScoringStripActivity;
 import com.lenovo.service.basicpubliclibrary.scratchview.ScratchViewActivity;
 import com.lenovo.service.basicpubliclibrary.smilepraiseview.SmilePraiseActivity;
 import com.lenovo.service.basicpubliclibrary.stepview.StepViewActivity;
+import com.lenovo.service.basicpubliclibrary.tagviewgroup.TagViewGroupActivity;
 import com.lenovo.service.basicpubliclibrary.zoomheader.ZoomHeaderActivity;
 
 public class WidgetActivity extends AppCompatActivity implements View.OnClickListener {
@@ -57,7 +61,11 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     private TextView mTvPop;
     private TextView mTvToast;
     private TextView tvJike;
+    private TextView tv_gesture_lock;
     private TextView mUserGuide;
+    private TextView tagview;
+    private TextView mCard;
+    private TextView mAvatarLabel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -93,6 +101,10 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTvPop = (TextView) findViewById(R.id.tv_popup);
         mTvToast = (TextView) findViewById(R.id.tv_toast);
         mUserGuide = (TextView) findViewById(R.id.user_guide);
+        tv_gesture_lock = (TextView) findViewById(R.id.tv_gesture_lock);
+        tagview = (TextView) findViewById(R.id.tv_tagview);
+        mCard = (TextView) findViewById(R.id.card);
+        mAvatarLabel = (TextView) findViewById(R.id.avatar_label);
     }
 
     private void init_listener() {
@@ -119,6 +131,10 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTvToast.setOnClickListener(this);
         findViewById(R.id.tv_recyclerview).setOnClickListener(this);
         mUserGuide.setOnClickListener(this);
+        tv_gesture_lock.setOnClickListener(this);
+        tagview.setOnClickListener(this);
+        mCard.setOnClickListener(this);
+        mAvatarLabel.setOnClickListener(this);
     }
 
     @Override
@@ -230,6 +246,18 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.user_guide:
                 startActivity(new Intent(WidgetActivity.this, UserGuideActivity.class));
+                break;
+            case R.id.tv_gesture_lock:
+                startActivity(new Intent(WidgetActivity.this, GestureLockActivity.class));
+                break;
+            case R.id.tv_tagview:
+                startActivity(new Intent(WidgetActivity.this, TagViewGroupActivity.class));
+                break;
+            case R.id.card:
+                startActivity(new Intent(WidgetActivity.this, CardActivity.class));
+                break;
+            case R.id.avatar_label:
+                startActivity(new Intent(WidgetActivity.this, AvatarLabelActivity.class));
                 break;
         }
     }

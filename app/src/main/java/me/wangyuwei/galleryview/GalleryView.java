@@ -1,4 +1,4 @@
-package com.lenovo.service.basicpubliclibrary.jike;
+package me.wangyuwei.galleryview;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -8,7 +8,6 @@ import com.lenovo.service.basicpubliclibrary.R;
 
 import java.util.ArrayList;
 import java.util.List;
-
 
 public class GalleryView extends FrameLayout {
 
@@ -25,9 +24,9 @@ public class GalleryView extends FrameLayout {
     }
 
     private void initView() {
-        View.inflate(getContext(), R.layout.gallery_view, this);
-        mGallery = (Gallery) findViewById(R.id.gallery);
-        mTitleView = (TitleView) findViewById(R.id.title_view);
+        View view = View.inflate(getContext(), R.layout.gallery_view, this);
+        mGallery = view.findViewById(R.id.gallery);
+        mTitleView = view.findViewById(R.id.title_view);
     }
 
     public void startSmooth() {

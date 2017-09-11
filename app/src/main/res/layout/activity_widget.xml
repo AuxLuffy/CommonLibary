@@ -254,5 +254,42 @@
             android:gravity="center"
             android:text="新手引导"
             android:textColor="#CCCCCC" />
+
+        <TextView
+            android:id="@+id/tv_gesture_lock"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#7CFC00"
+            android:gravity="center"
+            android:text="九宫格解锁控件"
+            android:textColor="#CCCCCC"
+            />
+
+        <TextView
+            android:id="@+id/tv_tagview"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#b6E6FA"
+            android:gravity="center"
+            android:text="tagview标签"
+            android:textColor="#CCCCCC" />
+
+        <TextView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#F0E68C"
+            android:gravity="center"
+            android:text="自定义卡券"
+            android:textColor="#CCCCCC" />
+
+        <TextView
+            android:id="@+id/avatar_label"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#E0FFFF"
+            android:gravity="center"
+            android:text="头像标签"
+            android:textColor="@android:color/darker_gray" />
     </LinearLayout>
 </ScrollView>
