@@ -182,4 +182,17 @@
     <dimen name="default_label_content_size">12sp</dimen>
     <dimen name="default_label_top_padding">15dp</dimen>
     <dimen name="default_label_bottom_padding">10dp</dimen>
+
+
+    <dimen name="slv_item_height">66dip</dimen>
+    <dimen name="slv_item_height2">120dip</dimen>
+
+    <dimen name="slv_item_bg_btn_width">48dip</dimen>
+    <dimen name="slv_item_bg_btn2_width">60dip</dimen>
+    <dimen name="slv_item_bg_btn_width_img">100dip</dimen>
+
+
+    <dimen name="spacing_16">16dp</dimen>
+
+    <dimen name="font_26">26sp</dimen>
 </resources>

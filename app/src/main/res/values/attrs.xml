@@ -82,13 +82,6 @@
         <attr name="reloadBtnVisible"/>
         <attr name="reloadClickArea"/>
     </declare-styleable>
-    <declare-styleable name="SwitchButton">
-        <attr name="sb_shadow_radius" format="reference|dimension"/>
-        <attr name="sb_shadow_offset" format="reference|dimension"/>
-        <attr name="sb_shadow_color" format="reference|color"/>
-        <attr name="sb_uncheck_color" format="reference|color"/>
-        <attr name="sb_checked_color" format="reference|color"/>
-
     <declare-styleable name="RxTitle">
         <attr name="title" format="string"/>
         <attr name="titleColor" format="color"/>

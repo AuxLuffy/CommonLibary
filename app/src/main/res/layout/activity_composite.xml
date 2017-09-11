@@ -1,115 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.lenovo.service.basicpubliclibrary.AnimationActivity">
 
-    <TextView
-        android:id="@+id/text1"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="#FFFFF0"
-        android:gravity="center"
-        android:text="综合"
-        android:textColor="#CCCCCC"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="#F0E68C"
-        android:gravity="center"
-        android:onClick="startKotlin"
-        android:text="Kotlin模块"
-        android:textColor="#CCCCCC" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="#E6E6FA"
-        android:gravity="center"
-        android:onClick="startRx"
-        android:text="Rxjava实例"
-        android:textColor="#CCCCCC"
-
-        />
-
-    <TextView
-            android:onClick="startDataBinding"
+        <TextView
+            android:id="@+id/text1"
             android:layout_width="match_parent"
             android:layout_height="60dp"
+            android:background="#FFFFF0"
+            android:gravity="center"
+            android:text="综合"
             android:textColor="#CCCCCC"
-            android:text="DataBinding实现MVVM"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#F0E68C"
+            android:gravity="center"
+            android:onClick="startKotlin"
+            android:text="Kotlin模块"
+            android:textColor="#CCCCCC" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#E6E6FA"
+            android:gravity="center"
+            android:onClick="startRx"
+            android:text="Rxjava实例"
+            android:textColor="#CCCCCC"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
             android:background="#7CFC00"
             android:gravity="center"
+            android:onClick="startDataBinding"
+            android:text="DataBinding实现MVVM"
+            android:textColor="#CCCCCC"
 
-    />
-    <TextView
+            />
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:textColor="#CCCCCC"
-            android:text="仿微信拍摄短视频"
-            android:onClick="recorder_video"
             android:background="#FFF0F5"
             android:gravity="center"
+            android:onClick="recorder_video"
+            android:text="仿微信拍摄短视频"
+            android:textColor="#CCCCCC"
 
-    />
+            />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="#7CFC00"
-        android:gravity="center"
-        android:onClick="startVideoPlayer"
-        android:text="视频播放器，传入url直接用"
-        android:textColor="#CCCCCC"
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#7CFC00"
+            android:gravity="center"
+            android:onClick="startVideoPlayer"
+            android:text="视频播放器，传入url直接用"
+            android:textColor="#CCCCCC"
 
-        />
-    <TextView
-        android:id="@+id/helloChart"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:textColor="#CCCCCC"
-        android:text="折线图"
-        android:background="#FFF0F5"
-        android:gravity="center"
+            />
 
-        />
-    <TextView
-        android:id="@+id/jsBridge"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:textColor="#CCCCCC"
-        android:text="jsBridge使用封装"
-        android:background="#7CFC00"
-        android:gravity="center"
+        <TextView
+            android:id="@+id/helloChart"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#FFF0F5"
+            android:gravity="center"
+            android:text="折线图"
+            android:textColor="#CCCCCC"
 
-        />
+            />
 
-    <TextView
-        android:id="@+id/linearValidate"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="#E0FFFF"
-        android:gravity="center"
-        android:onClick="startValidateActivity"
-        android:text="Validation控件格式校验"
-        android:textColor="#CCCCCC"
+        <TextView
+            android:id="@+id/jsBridge"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#7CFC00"
+            android:gravity="center"
+            android:text="jsBridge使用封装"
+            android:textColor="#CCCCCC"
 
-        />
+            />
+        <TextView
+            android:id="@+id/linearValidate"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#E0FFFF"
+            android:gravity="center"
+            android:onClick="startValidateActivity"
+            android:text="Validation控件格式校验"
+            android:textColor="#CCCCCC"
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="#D3D3D3"
-        android:gravity="center"
-        android:text="未完待续"
-        android:textColor="#CCCCCC"
+            />
+        <TextView
+            android:id="@+id/SADL"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#E0FFFF"
+            android:gravity="center"
+            android:text="SlideAndDragListView"
+            android:textColor="#CCCCCC"
 
-        />
+            />
 
+        <TextView
+            android:id="@+id/ilog_demo"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#D3D3D3"
+            android:gravity="center"
+            android:text="ALog使用示例"
+            android:textColor="#7CFC00"
 
-</LinearLayout>
+            />
+    </LinearLayout>
+
+</ScrollView>
