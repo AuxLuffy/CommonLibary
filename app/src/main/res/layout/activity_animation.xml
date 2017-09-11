@@ -136,5 +136,15 @@
             android:gravity="center"
             />
 
+        <TextView
+            android:id="@+id/tv_dots_loader"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColor="#CCCCCC"
+            android:text="界面加载动画"
+            android:background="#ADD8E6"
+            android:gravity="center"
+            />
+
     </LinearLayout>
 </ScrollView>

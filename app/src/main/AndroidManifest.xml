@@ -159,13 +159,13 @@
             android:permission="android.permission.BIND_JOB_SERVICE" />
 
         <activity android:name=".LoadMoreRecyclerView.MyRecyclerViewActivity" />
-        <activity android:name=".validation.ValidateActivity"/>
+        <activity android:name=".validation.ValidateActivity" />
         <activity android:name=".loadingart.Loadingart_activity" />
-        <activity android:name=".takeaway.TakeawayActivity"></activity>
-        <activity android:name=".colorfultoast.ColorfulToastActivity"></activity>
+        <activity android:name=".takeaway.TakeawayActivity" />
+        <activity android:name=".colorfultoast.ColorfulToastActivity" />
         <activity
             android:name=".SADL.SADLActivity"
-            android:label="SADLMainActivity"></activity>
+            android:label="SADLMainActivity" />
         <activity
             android:name=".SADL.HeaderFooterActivity"
             android:label="SDLV with headers and footers" />
@@ -187,30 +187,27 @@
         <activity
             android:name=".SADL.SimpleAdapterActivity"
             android:label="SDLV with SimpleAdapter" />
-
         <activity android:name=".ALogActivity" />
-
         <activity
             android:name=".picture_cut.SampleActivity"
-            android:screenOrientation="portrait">
-        </activity>
-
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".picture_cut.ResultActivity"
-            android:screenOrientation="portrait"/>
-
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.yalantis.ucrop.UCropActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".bottleLoadingView.GABottleLoadingViewAcivity" />
-
-        <activity android:name=".dbflow.DBFlowActivity"/>
+        <activity android:name=".dbflow.DBFlowActivity" />
         <activity android:name=".UserGuideView.UserGuideActivity" />
         <activity android:name=".cardview.CardActivity" />
         <activity android:name=".avatarlabelview.AvatarLabelActivity" />
         <activity android:name=".obtainlocalphoto.LocalPhotoActivity"></activity>
+        <activity android:name=".gesturelock.GestureLockActivity" />
+        <activity android:name=".gesturelock.DrawPasswordActivity" />
+        <activity android:name=".bezier.BezierActivity" />
+        <activity android:name=".bezier.DotsLoaderActivity"></activity>
     </application>
 
 </manifest>

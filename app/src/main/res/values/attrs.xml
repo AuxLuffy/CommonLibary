@@ -201,4 +201,9 @@
         <attr name="bottle_color" format="color" />
         <attr name="water_color" format="color" />
     </declare-styleable>
+
+    <declare-styleable name="DotsLoaderView">
+        <attr name="dlv_item_drawable" format="integer"/>
+        <attr name="dlv_line_color" format="color"/>
+    </declare-styleable>
 </resources>

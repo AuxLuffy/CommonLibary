@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lenovo.service.basicpubliclibrary.bezier.DotsLoaderActivity">
+
+
+    <com.lenovo.service.basicpubliclibrary.widget.DotsLoaderView
+        android:id="@+id/dotsLoaderView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        app:dlv_item_drawable="@drawable/circle_background"
+        app:dlv_line_color="@color/point_color">
+    </com.lenovo.service.basicpubliclibrary.widget.DotsLoaderView>
+</LinearLayout>
