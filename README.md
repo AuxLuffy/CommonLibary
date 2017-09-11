@@ -19,10 +19,17 @@
 5.控件-贝塞尔风景
 6.动画-水流动的动画
 
-#司马奔    
-1. 综合-Kotlin     
-2. 综合-RxJava     
-3. 综合-DataBinding        
-4. 数据-DBFlow     
-5. 控件-头像控件       
-6. 控件-仿即刻ICON刷新      
+#司马奔
+1. 综合-Kotlin
+2. 综合-RxJava
+3. 综合-DataBinding
+4. 数据-DBFlow
+5. 控件-头像控件
+6. 控件-仿即刻ICON刷新
+
+#赵彤
+1.框架-数据库greenDao
+2.控件-时间/条件三级联动仿iOS选择器 TimePickerView/OptionPickerView
+3.工具类-日常用到的基本工具
+4.控件-一款仿照iOS开关SwitchButton
+5.框架-验证表单输入内容格式Validation
