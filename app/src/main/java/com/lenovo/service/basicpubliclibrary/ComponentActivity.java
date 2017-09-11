@@ -10,6 +10,7 @@ import com.lenovo.service.basicpubliclibrary.fragmentation.demo_flow.FlowMainAct
 import com.lenovo.service.basicpubliclibrary.maillistananimation.MaillistActivity;
 import com.lenovo.service.basicpubliclibrary.multitype.bilibili.BilibiliActivity;
 import com.lenovo.service.basicpubliclibrary.obtainlocalphoto.LocalPhotoActivity;
+import com.lenovo.service.basicpubliclibrary.picture_cut.SampleActivity;
 import com.lenovo.service.basicpubliclibrary.pullTorefresh_tool.PullTorefreshActivity;
 
 import butterknife.BindView;
@@ -30,6 +31,8 @@ public class ComponentActivity extends AppCompatActivity implements View.OnClick
 
     @BindView(R.id.tv_h5_activity)
     TextView mTvH5Activity;
+    @BindView(R.id.tv_picut)
+    TextView mTvPicut;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,27 +49,27 @@ public class ComponentActivity extends AppCompatActivity implements View.OnClick
         mTvH5Activity.setOnClickListener(this);
         mtv_pulltorefresh.setOnClickListener(this);
         mTvFragmentation.setOnClickListener(this);
+        mTvPicut.setOnClickListener(this);
     }
 
 
     @Override
     public void onClick(View view) {
-        Intent intent=new Intent();
-        switch (view.getId())
-        {
+        Intent intent = new Intent();
+        switch (view.getId()) {
             case R.id.tv_maillist:
                 intent.setClass(ComponentActivity.this,
                         MaillistActivity.class);
                 startActivity(intent);
-            break;
+                break;
             case R.id.tv_localphoto:
                 intent.setClass(ComponentActivity.this,
                         LocalPhotoActivity.class);
                 startActivity(intent);
-            break;
+                break;
             case R.id.tv_multitype:
                 startActivity(new Intent(ComponentActivity.this, BilibiliActivity.class));
-            break;
+                break;
             case R.id.tv_h5_activity:
                 Intent intent1 = new Intent(ComponentActivity.this, H5Activity.class);
                 intent1.putExtra(H5Activity.H5_URL, "http://www.jianshu.com/");
@@ -77,6 +80,9 @@ public class ComponentActivity extends AppCompatActivity implements View.OnClick
                 break;
             case R.id.tv_fragmentation:
                 startActivity(new Intent(ComponentActivity.this, FlowMainActivity.class));
+                break;
+            case R.id.tv_picut:
+                startActivity(new Intent(ComponentActivity.this, SampleActivity.class));
                 break;
         }
     }

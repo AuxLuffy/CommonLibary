@@ -425,4 +425,23 @@
         <item name="android:textSize">16sp</item>
     </style>
 
-    </resources>
+
+
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="actionMenuTextColor">@android:color/white</item>
+    </style>
+
+    <style name="TextStyle">
+        <item name="android:textSize">@dimen/font_26</item>
+        <item name="android:textColor">@color/light_black</item>
+    </style>
+
+    <style name="WideBtnStyle">
+        <item name="android:textAllCaps" tools:targetApi="ice_cream_sandwich">false</item>
+        <item name="android:textSize">@dimen/font_26</item>
+    </style>
+
+
+
+
+</resources>

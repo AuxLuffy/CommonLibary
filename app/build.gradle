@@ -2,6 +2,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'org.greenrobot.greendao'
 apply plugin: 'com.jakewharton.butterknife'
 apply plugin: 'com.neenbedankt.android-apt'
+apply plugin: 'android-apt'
 
 def dbflow_version = "4.1.1"
 
@@ -44,7 +45,6 @@ dependencies {
     // sql-cipher database encyrption (optional)
     compile "com.github.Raizlabs.DBFlow:dbflow-sqlcipher:${dbflow_version}"
 
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile "com.android.support:support-v4:${supportVersion}"
     compile "com.android.support:appcompat-v7:${supportVersion}"
@@ -95,6 +95,13 @@ dependencies {
     compile 'com.r0adkll:slidableactivity:2.0.5'
     compile group: 'com.mobsandgeeks', name: 'android-saripaar', version: '2.0.3'
     compile 'com.squareup.picasso:picasso:2.5.2'
+
+    //支持左右滑菜单和上下拖动切换位置
+    compile 'com.yydcdut.sdlv:sdlv:0.7.0'
+    //Log库
+    compile 'com.blankj:alog:1.3.0'
+    //图片剪辑
+    compile 'com.github.yalantis:ucrop:2.2.1'
     compile 'com.jakewharton:butterknife:8.4.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
 }

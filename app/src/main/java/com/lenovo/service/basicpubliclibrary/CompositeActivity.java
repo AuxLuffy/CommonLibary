@@ -5,24 +5,24 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
-//import com.lenovo.KotlinActivity;
-import com.lenovo.service.basicpubliclibrary.AppStartGuide.AppStartGuide;
+import com.lenovo.service.basicpubliclibrary.SADL.SADLActivity;
+import com.lenovo.service.basicpubliclibrary.cameraDemo.RecordMainAcitivity;
+import com.lenovo.service.basicpubliclibrary.databinding.DataBindingActivity;
 import com.lenovo.service.basicpubliclibrary.jsBridge.activity.JSBridgeActivity;
 import com.lenovo.service.basicpubliclibrary.jsBridge.common.LocalConstant;
 import com.lenovo.service.basicpubliclibrary.linechart.ui.LineChartActivity;
-import com.lenovo.service.basicpubliclibrary.databinding.DataBindingActivity;
-import com.lenovo.service.basicpubliclibrary.cameraDemo.RecordMainAcitivity;
 import com.lenovo.service.basicpubliclibrary.rxjava.RxJavaActivity;
 import com.lenovo.service.basicpubliclibrary.validation.ValidateActivity;
 import com.lenovo.service.basicpubliclibrary.videoplayer.VideoplayerActivity;
+
+//import com.lenovo.KotlinActivity;
 
 public class CompositeActivity extends AppCompatActivity implements View.OnClickListener{
 
     private TextView[] textviews;
 
-    private int[] ids = new int[]{R.id.helloChart,R.id.jsBridge};
+    private int[] ids = new int[]{R.id.helloChart,R.id.jsBridge,R.id.SADL,R.id.ilog_demo};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,6 +65,12 @@ public class CompositeActivity extends AppCompatActivity implements View.OnClick
                 intent.setClass(this,JSBridgeActivity.class);
                 intent.putExtra("extra1", LocalConstant.H5URL.page_register);
 
+                break;
+            case R.id.SADL:
+                intent.setClass(this, SADLActivity.class);
+                break;
+            case R.id.ilog_demo:
+                intent.setClass(this,ALogActivity.class);
                 break;
         }
         startActivity(intent);
