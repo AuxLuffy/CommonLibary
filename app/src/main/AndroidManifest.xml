@@ -162,6 +162,52 @@
         <activity android:name=".loadingart.Loadingart_activity" />
         <activity android:name=".takeaway.TakeawayActivity"></activity>
         <activity android:name=".colorfultoast.ColorfulToastActivity"></activity>
+
+
+
+
+
+        <activity
+            android:name=".SADL.SADLActivity"
+            android:label="SADLMainActivity"></activity>
+        <activity
+            android:name=".SADL.HeaderFooterActivity"
+            android:label="SDLV with headers and footers" />
+        <activity
+            android:name=".SADL.DifferentMenuActivity"
+            android:label="SDLV with different menus" />
+        <activity
+            android:name=".SADL.NormalListViewActivity"
+            android:label="Normal ListView" />
+        <activity
+            android:name=".SADL.SlideAndDragListViewActivity"
+            android:label="SlideAndDragListView" />
+        <activity
+            android:name=".SADL.ItemDragActivity"
+            android:label="Touch Item to Drag" />
+        <activity
+            android:name=".SADL.HeaderFooterViewTypeActivity"
+            android:label="SDLV with headers and footers (viewType)" />
+        <activity
+            android:name=".SADL.SimpleAdapterActivity"
+            android:label="SDLV with SimpleAdapter" />
+
+        <activity android:name=".ALogActivity" />
+
+        <activity
+            android:name=".picture_cut.SampleActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".picture_cut.ResultActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
     </application>
 
 </manifest>
