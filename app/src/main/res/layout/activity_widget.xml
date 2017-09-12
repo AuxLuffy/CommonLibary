@@ -304,5 +304,14 @@
             android:gravity="center"
             android:text="自定义toolbar"
             android:textColor="#CCCCCC" />
+
+        <TextView
+            android:id="@+id/tv_timepicker"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#F0E68C"
+            android:gravity="center"
+            android:text="时间选择器"
+            android:textColor="#CCCCCC" />
     </LinearLayout>
 </ScrollView>

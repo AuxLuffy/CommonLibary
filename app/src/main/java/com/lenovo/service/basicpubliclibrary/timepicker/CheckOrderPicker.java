@@ -142,7 +142,7 @@ public class CheckOrderPicker extends WheelPicker {
         layoutContain.setOrientation(LinearLayout.VERTICAL);
 
 
-        if (requireAppoint.isRechckDateNess) {
+        if (false) {//requireAppoint.isRechckDateNess
             TextView tvFujian = new TextView(activity);
             tvFujian.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT));
             tvFujian.setTextSize(16);
@@ -152,12 +152,12 @@ public class CheckOrderPicker extends WheelPicker {
             layoutContain.addView(tvFujian);
 //            layoutContain.addView(getFujianView());
         }
-        if (requireAppoint.isNextStepDateNesss) {
+        if (true) {//requireAppoint.isNextStepDateNesss
             TextView tvNextItem = new TextView(activity);
             tvNextItem.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT));
             tvNextItem.setTextSize(16);
             tvNextItem.setPadding(DisplayUtil.dip2px(16), 16, 16, 25);
-            tvNextItem.setText("请预约" + requireAppoint.nextStepName + "时间");
+            tvNextItem.setText("请预约" + "next" + "时间");//requireAppoint.nextStepName
             tvNextItem.setGravity(Gravity.CENTER);
             layoutContain.addView(tvNextItem);
 //            layoutContain.addView(getNextAppointView());

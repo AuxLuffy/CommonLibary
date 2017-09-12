@@ -211,6 +211,7 @@
 
         <activity android:name=".dbflow.DBFlowActivity"/>
         <activity android:name=".toolbar.TestToolbarActivity"/>
+        <activity android:name=".timepicker.TimePickerActivity"/>
     </application>
 
 </manifest>
