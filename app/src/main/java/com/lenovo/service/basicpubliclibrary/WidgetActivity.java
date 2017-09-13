@@ -39,6 +39,7 @@ import com.lenovo.service.basicpubliclibrary.stepview.StepViewActivity;
 import com.lenovo.service.basicpubliclibrary.tagviewgroup.TagViewGroupActivity;
 import com.lenovo.service.basicpubliclibrary.timepicker.TimePickerActivity;
 import com.lenovo.service.basicpubliclibrary.toolbar.TestToolbarActivity;
+import com.lenovo.service.basicpubliclibrary.ultraviewpager.UPVDemoActivity;
 import com.lenovo.service.basicpubliclibrary.weekview.WeekViewActivity;
 import com.lenovo.service.basicpubliclibrary.zoomheader.ZoomHeaderActivity;
 
@@ -78,6 +79,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     private TextView mTvWeekview;
     private TextView mTvDialogfragment;
     private TextView mTvFlowflag;
+    private TextView mTvViewpager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -122,6 +124,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTvDialogfragment = (TextView) findViewById(R.id.tv_dialogfragment);
         mTvWeekview = (TextView) findViewById(R.id.tv_weekview);
         mTvFlowflag = (TextView) findViewById(R.id.tv_flowflag);
+        mTvViewpager = (TextView) findViewById(R.id.tv_viewpager);
     }
 
     private void init_listener() {
@@ -158,6 +161,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTvWeekview.setOnClickListener(this);
         mTvDialogfragment.setOnClickListener(this);
         mTvFlowflag.setOnClickListener(this);
+        mTvViewpager.setOnClickListener(this);
     }
 
     @Override
@@ -299,6 +303,9 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.tv_flowflag:
                 startActivity(new Intent(WidgetActivity.this, CategoryActivity.class));
+                break;
+            case R.id.tv_viewpager:
+                startActivity(new Intent(WidgetActivity.this, UPVDemoActivity.class));
                 break;
         }
     }

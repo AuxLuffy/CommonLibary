@@ -105,6 +105,9 @@ dependencies {
     compile 'com.github.alamkanak:android-week-view:1.2.6'
     compile 'com.zhy:flowlayout-lib:1.0.3'
     compile 'com.zhy:base-adapter:2.0.1'
+    compile ('com.alibaba.android:ultraviewpager:1.0.6.1@aar') {
+        transitive = true
+    }
 }
 greendao {
     schemaVersion 1

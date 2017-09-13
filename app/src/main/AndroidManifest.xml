@@ -216,6 +216,8 @@
         <activity android:name=".weekview.WeekViewActivity"/>
         <activity android:name=".dialogfragment.DialogActivity"></activity>
         <activity android:name=".flowlayout.CategoryActivity"/>
+        <activity android:name=".ultraviewpager.UPVDemoActivity"/>
+        <activity android:name=".ultraviewpager.PagerActivity"/>
     </application>
 
 </manifest>

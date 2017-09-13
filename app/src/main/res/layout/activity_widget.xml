@@ -341,5 +341,15 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="流式标签布局" />
+
+
+        <TextView
+            android:id="@+id/tv_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#F0E68C"
+            android:gravity="center"
+            android:text="ViewPager封装库"
+            android:textColor="#CCCCCC" />
     </LinearLayout>
 </ScrollView>
