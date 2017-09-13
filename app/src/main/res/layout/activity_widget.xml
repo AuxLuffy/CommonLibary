@@ -323,5 +323,14 @@
             android:gravity="center"
             android:text="周日程视图"
             android:textColor="#CCCCCC" />
+
+        <TextView
+            android:textColor="#CCCCCC"
+            android:background="#FFF0F5"
+            android:gravity="center"
+            android:id="@+id/tv_dialogfragment"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="dialogfragment的封装" />
     </LinearLayout>
 </ScrollView>

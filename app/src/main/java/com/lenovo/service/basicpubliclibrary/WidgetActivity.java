@@ -18,6 +18,7 @@ import com.lenovo.service.basicpubliclibrary.cardstatcview.CardStackActivty;
 import com.lenovo.service.basicpubliclibrary.cardview.CardActivity;
 import com.lenovo.service.basicpubliclibrary.chartview.ChartViewActivity;
 import com.lenovo.service.basicpubliclibrary.colordialog.ColorDialogActivity;
+import com.lenovo.service.basicpubliclibrary.dialogfragment.DialogActivity;
 import com.lenovo.service.basicpubliclibrary.doodle.DoodleViewActivity;
 import com.lenovo.service.basicpubliclibrary.flycotablayout.ui.SimpleHomeActivity;
 import com.lenovo.service.basicpubliclibrary.gesturelock.GestureLockActivity;
@@ -74,6 +75,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     private TextView mAvatarLabel;
     private TextView mTvBottleloading;
     private TextView mTvWeekview;
+    private TextView mTvDialogfragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -115,6 +117,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mAvatarLabel = (TextView) findViewById(R.id.avatar_label);
         mTvBottleloading = (TextView) findViewById(R.id.tv_bottleloading);
         mTvWeekview= (TextView) findViewById(R.id.tv_weekview);
+        mTvDialogfragment = (TextView) findViewById(R.id.tv_dialogfragment);
     }
 
     private void init_listener() {
@@ -149,6 +152,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mAvatarLabel.setOnClickListener(this);
         mTvBottleloading.setOnClickListener(this);
         mTvWeekview.setOnClickListener(this);
+        mTvDialogfragment.setOnClickListener(this);
     }
 
     @Override
@@ -284,6 +288,9 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.tv_weekview:
                 startActivity(new Intent(WidgetActivity.this, WeekViewActivity.class));
+                break;
+            case R.id.tv_dialogfragment:
+                startActivity(new Intent(WidgetActivity.this, DialogActivity.class));
                 break;
         }
     }

@@ -214,6 +214,7 @@
                   android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity android:name=".timepicker.TimePickerActivity"/>
         <activity android:name=".weekview.WeekViewActivity"/>
+        <activity android:name=".dialogfragment.DialogActivity"></activity>
     </application>
 
 </manifest>
