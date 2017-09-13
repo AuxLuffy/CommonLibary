@@ -37,6 +37,7 @@ import com.lenovo.service.basicpubliclibrary.stepview.StepViewActivity;
 import com.lenovo.service.basicpubliclibrary.tagviewgroup.TagViewGroupActivity;
 import com.lenovo.service.basicpubliclibrary.timepicker.TimePickerActivity;
 import com.lenovo.service.basicpubliclibrary.toolbar.TestToolbarActivity;
+import com.lenovo.service.basicpubliclibrary.weekview.WeekViewActivity;
 import com.lenovo.service.basicpubliclibrary.zoomheader.ZoomHeaderActivity;
 
 
@@ -72,6 +73,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     private TextView mCard;
     private TextView mAvatarLabel;
     private TextView mTvBottleloading;
+    private TextView mTvWeekview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -112,6 +114,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mCard = (TextView) findViewById(R.id.card);
         mAvatarLabel = (TextView) findViewById(R.id.avatar_label);
         mTvBottleloading = (TextView) findViewById(R.id.tv_bottleloading);
+        mTvWeekview= (TextView) findViewById(R.id.tv_weekview);
     }
 
     private void init_listener() {
@@ -145,6 +148,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mCard.setOnClickListener(this);
         mAvatarLabel.setOnClickListener(this);
         mTvBottleloading.setOnClickListener(this);
+        mTvWeekview.setOnClickListener(this);
     }
 
     @Override
@@ -277,6 +281,9 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.tv_timepicker:
                 startActivity(new Intent(WidgetActivity.this, TimePickerActivity.class));
+                break;
+            case R.id.tv_weekview:
+                startActivity(new Intent(WidgetActivity.this, WeekViewActivity.class));
                 break;
         }
     }

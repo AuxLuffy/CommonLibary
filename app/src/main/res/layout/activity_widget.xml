@@ -313,5 +313,15 @@
             android:gravity="center"
             android:text="时间选择器"
             android:textColor="#CCCCCC" />
+
+
+        <TextView
+            android:id="@+id/tv_weekview"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#F08080"
+            android:gravity="center"
+            android:text="周日程视图"
+            android:textColor="#CCCCCC" />
     </LinearLayout>
 </ScrollView>
