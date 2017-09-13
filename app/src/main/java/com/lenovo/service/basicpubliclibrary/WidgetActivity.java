@@ -19,6 +19,7 @@ import com.lenovo.service.basicpubliclibrary.cardview.CardActivity;
 import com.lenovo.service.basicpubliclibrary.chartview.ChartViewActivity;
 import com.lenovo.service.basicpubliclibrary.colordialog.ColorDialogActivity;
 import com.lenovo.service.basicpubliclibrary.doodle.DoodleViewActivity;
+import com.lenovo.service.basicpubliclibrary.flowlayout.CategoryActivity;
 import com.lenovo.service.basicpubliclibrary.flycotablayout.ui.SimpleHomeActivity;
 import com.lenovo.service.basicpubliclibrary.gesturelock.GestureLockActivity;
 import com.lenovo.service.basicpubliclibrary.jike.JikeGalleryActivity;
@@ -74,6 +75,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     private TextView mAvatarLabel;
     private TextView mTvBottleloading;
     private TextView mTvWeekview;
+    private TextView mTvFlowflag;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -114,7 +116,8 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mCard = (TextView) findViewById(R.id.card);
         mAvatarLabel = (TextView) findViewById(R.id.avatar_label);
         mTvBottleloading = (TextView) findViewById(R.id.tv_bottleloading);
-        mTvWeekview= (TextView) findViewById(R.id.tv_weekview);
+        mTvWeekview = (TextView) findViewById(R.id.tv_weekview);
+        mTvFlowflag = (TextView) findViewById(R.id.tv_flowflag);
     }
 
     private void init_listener() {
@@ -149,6 +152,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mAvatarLabel.setOnClickListener(this);
         mTvBottleloading.setOnClickListener(this);
         mTvWeekview.setOnClickListener(this);
+        mTvFlowflag.setOnClickListener(this);
     }
 
     @Override
@@ -284,6 +288,9 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.tv_weekview:
                 startActivity(new Intent(WidgetActivity.this, WeekViewActivity.class));
+                break;
+            case R.id.tv_flowflag:
+                startActivity(new Intent(WidgetActivity.this, CategoryActivity.class));
                 break;
         }
     }
