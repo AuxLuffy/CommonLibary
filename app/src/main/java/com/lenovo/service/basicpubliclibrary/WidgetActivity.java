@@ -21,6 +21,7 @@ import com.lenovo.service.basicpubliclibrary.colordialog.ColorDialogActivity;
 import com.lenovo.service.basicpubliclibrary.dialogfragment.DialogActivity;
 import com.lenovo.service.basicpubliclibrary.doodle.DoodleViewActivity;
 import com.lenovo.service.basicpubliclibrary.flowlayout.CategoryActivity;
+import com.lenovo.service.basicpubliclibrary.dropdownmenu.DropDownActivity;
 import com.lenovo.service.basicpubliclibrary.flycotablayout.ui.SimpleHomeActivity;
 import com.lenovo.service.basicpubliclibrary.gesturelock.GestureLockActivity;
 import com.lenovo.service.basicpubliclibrary.jike.JikeGalleryActivity;
@@ -80,6 +81,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     private TextView mTvDialogfragment;
     private TextView mTvFlowflag;
     private TextView mTvViewpager;
+    private TextView mTvDropDownMenu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -125,6 +127,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTvWeekview = (TextView) findViewById(R.id.tv_weekview);
         mTvFlowflag = (TextView) findViewById(R.id.tv_flowflag);
         mTvViewpager = (TextView) findViewById(R.id.tv_viewpager);
+        mTvDropDownMenu = (TextView) findViewById(R.id.tv_dropdownmenu);
     }
 
     private void init_listener() {
@@ -162,6 +165,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTvDialogfragment.setOnClickListener(this);
         mTvFlowflag.setOnClickListener(this);
         mTvViewpager.setOnClickListener(this);
+        mTvDropDownMenu.setOnClickListener(this);
     }
 
     @Override
@@ -306,6 +310,9 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.tv_viewpager:
                 startActivity(new Intent(WidgetActivity.this, UPVDemoActivity.class));
+                break;
+            case R.id.tv_dropdownmenu:
+                startActivity(new Intent(WidgetActivity.this, DropDownActivity.class));
                 break;
         }
     }

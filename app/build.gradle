@@ -108,6 +108,8 @@ dependencies {
     compile ('com.alibaba.android:ultraviewpager:1.0.6.1@aar') {
         transitive = true
     }
+    compile 'com.github.dongjunkun:DropDownMenu:1.0.4'
+
 }
 greendao {
     schemaVersion 1
