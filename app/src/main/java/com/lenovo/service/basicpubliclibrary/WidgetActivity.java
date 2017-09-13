@@ -18,6 +18,7 @@ import com.lenovo.service.basicpubliclibrary.cardstatcview.CardStackActivty;
 import com.lenovo.service.basicpubliclibrary.cardview.CardActivity;
 import com.lenovo.service.basicpubliclibrary.chartview.ChartViewActivity;
 import com.lenovo.service.basicpubliclibrary.colordialog.ColorDialogActivity;
+import com.lenovo.service.basicpubliclibrary.dialogfragment.DialogActivity;
 import com.lenovo.service.basicpubliclibrary.doodle.DoodleViewActivity;
 import com.lenovo.service.basicpubliclibrary.flowlayout.CategoryActivity;
 import com.lenovo.service.basicpubliclibrary.flycotablayout.ui.SimpleHomeActivity;
@@ -75,6 +76,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     private TextView mAvatarLabel;
     private TextView mTvBottleloading;
     private TextView mTvWeekview;
+    private TextView mTvDialogfragment;
     private TextView mTvFlowflag;
 
     @Override
@@ -116,6 +118,8 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mCard = (TextView) findViewById(R.id.card);
         mAvatarLabel = (TextView) findViewById(R.id.avatar_label);
         mTvBottleloading = (TextView) findViewById(R.id.tv_bottleloading);
+        mTvWeekview= (TextView) findViewById(R.id.tv_weekview);
+        mTvDialogfragment = (TextView) findViewById(R.id.tv_dialogfragment);
         mTvWeekview = (TextView) findViewById(R.id.tv_weekview);
         mTvFlowflag = (TextView) findViewById(R.id.tv_flowflag);
     }
@@ -152,6 +156,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mAvatarLabel.setOnClickListener(this);
         mTvBottleloading.setOnClickListener(this);
         mTvWeekview.setOnClickListener(this);
+        mTvDialogfragment.setOnClickListener(this);
         mTvFlowflag.setOnClickListener(this);
     }
 
@@ -288,6 +293,9 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.tv_weekview:
                 startActivity(new Intent(WidgetActivity.this, WeekViewActivity.class));
+                break;
+            case R.id.tv_dialogfragment:
+                startActivity(new Intent(WidgetActivity.this, DialogActivity.class));
                 break;
             case R.id.tv_flowflag:
                 startActivity(new Intent(WidgetActivity.this, CategoryActivity.class));
