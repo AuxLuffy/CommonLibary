@@ -6,6 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
+import com.lenovo.service.basicpubliclibrary.Frostedglasseffect.FrostedGlassEffectActivity;
+import com.lenovo.service.basicpubliclibrary.Frostedglasseffect.util.BlurBehind;
+import com.lenovo.service.basicpubliclibrary.Frostedglasseffect.util.OnBlurCompleteListener;
 import com.lenovo.service.basicpubliclibrary.fragmentation.demo_flow.FlowMainActivity;
 import com.lenovo.service.basicpubliclibrary.maillistananimation.MaillistActivity;
 import com.lenovo.service.basicpubliclibrary.multitype.bilibili.BilibiliActivity;
@@ -33,6 +36,8 @@ public class ComponentActivity extends AppCompatActivity implements View.OnClick
     TextView mTvH5Activity;
     @BindView(R.id.tv_picut)
     TextView mTvPicut;
+    @BindView(R.id.tv_frosted_galss_effect)
+    TextView mTvFrosted;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +55,7 @@ public class ComponentActivity extends AppCompatActivity implements View.OnClick
         mtv_pulltorefresh.setOnClickListener(this);
         mTvFragmentation.setOnClickListener(this);
         mTvPicut.setOnClickListener(this);
+        mTvFrosted.setOnClickListener(this);
     }
 
 
@@ -83,6 +89,16 @@ public class ComponentActivity extends AppCompatActivity implements View.OnClick
                 break;
             case R.id.tv_picut:
                 startActivity(new Intent(ComponentActivity.this, SampleActivity.class));
+                break;
+            case R.id.tv_frosted_galss_effect://毛玻璃效果的activity
+                BlurBehind.getInstance().execute(ComponentActivity.this, new OnBlurCompleteListener() {
+                    @Override
+                    public void onBlurComplete() {
+                        Intent intent = new Intent(ComponentActivity.this, FrostedGlassEffectActivity.class);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                        startActivity(intent);
+                    }
+                });
                 break;
         }
     }

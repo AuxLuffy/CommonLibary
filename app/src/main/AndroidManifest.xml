@@ -209,8 +209,9 @@
         <activity android:name=".bezier.BezierActivity" />
         <activity android:name=".bezier.DotsLoaderActivity"></activity>
 
-        <activity android:name=".dbflow.DBFlowActivity"/>
         <activity android:name=".toolbar.TestToolbarActivity"/>
+        <activity android:name=".Frostedglasseffect.FrostedGlassEffectActivity"
+                  android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity android:name=".timepicker.TimePickerActivity"/>
     </application>
 
