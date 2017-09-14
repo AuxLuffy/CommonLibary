@@ -109,6 +109,7 @@ dependencies {
         transitive = true
     }
     compile 'com.github.dongjunkun:DropDownMenu:1.0.4'
+    compile 'com.github.sujithkanna:smileyrating:1.6.8'
 
 }
 greendao {

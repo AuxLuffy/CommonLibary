@@ -219,6 +219,7 @@
         <activity android:name=".ultraviewpager.UPVDemoActivity"/>
         <activity android:name=".ultraviewpager.PagerActivity"/>
         <activity android:name=".dropdownmenu.DropDownActivity"/>
+        <activity android:name=".smileyrating.SmileRatingActivity"/>
     </application>
 
 </manifest>

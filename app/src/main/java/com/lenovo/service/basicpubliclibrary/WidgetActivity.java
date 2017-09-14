@@ -36,6 +36,7 @@ import com.lenovo.service.basicpubliclibrary.roundiamge.RoundImageActivity;
 import com.lenovo.service.basicpubliclibrary.scoringstrip.ScoringStripActivity;
 import com.lenovo.service.basicpubliclibrary.scratchview.ScratchViewActivity;
 import com.lenovo.service.basicpubliclibrary.smilepraiseview.SmilePraiseActivity;
+import com.lenovo.service.basicpubliclibrary.smileyrating.SmileRatingActivity;
 import com.lenovo.service.basicpubliclibrary.stepview.StepViewActivity;
 import com.lenovo.service.basicpubliclibrary.tagviewgroup.TagViewGroupActivity;
 import com.lenovo.service.basicpubliclibrary.timepicker.TimePickerActivity;
@@ -82,6 +83,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     private TextView mTvFlowflag;
     private TextView mTvViewpager;
     private TextView mTvDropDownMenu;
+    private TextView mTvSmileRating;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -128,6 +130,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTvFlowflag = (TextView) findViewById(R.id.tv_flowflag);
         mTvViewpager = (TextView) findViewById(R.id.tv_viewpager);
         mTvDropDownMenu = (TextView) findViewById(R.id.tv_dropdownmenu);
+        mTvSmileRating = (TextView) findViewById(R.id.tv_smilerating);
     }
 
     private void init_listener() {
@@ -166,6 +169,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTvFlowflag.setOnClickListener(this);
         mTvViewpager.setOnClickListener(this);
         mTvDropDownMenu.setOnClickListener(this);
+        mTvSmileRating.setOnClickListener(this);
     }
 
     @Override
@@ -313,6 +317,9 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.tv_dropdownmenu:
                 startActivity(new Intent(WidgetActivity.this, DropDownActivity.class));
+                break;
+            case R.id.tv_smilerating:
+                startActivity(new Intent(WidgetActivity.this, SmileRatingActivity.class));
                 break;
         }
     }
