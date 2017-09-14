@@ -9,8 +9,11 @@ import com.facebook.drawee.backends.pipeline.Fresco;
 import com.lenovo.service.basicpubliclibrary.bgabanner.Engine;
 import com.lenovo.service.basicpubliclibrary.config.Config;
 import com.lenovo.service.basicpubliclibrary.loaddata.LoadDataLayout;
+import com.orm.SugarApp;
 import com.raizlabs.android.dbflow.config.FlowConfig;
 import com.raizlabs.android.dbflow.config.FlowManager;
+import com.squareup.leakcanary.LeakCanary;
+import com.squareup.leakcanary.RefWatcher;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -22,12 +25,12 @@ import retrofit2.converter.gson.GsonConverterFactory;
  * date : 2017/3/31 <br/>
  * email : mail@wangganxin.me <br/>
  */
-public class App extends Application {
+public class App extends SugarApp {
 
     private static Context mContext;
     private static App sInstance;
     private Engine mEngine;
-
+    private RefWatcher refWatcher;
     @Override
     public void onCreate() {
         super.onCreate();
@@ -90,6 +93,9 @@ public class App extends Application {
         FlowManager.init(this);
 
         initALog();
+        if (!LeakCanary.isInAnalyzerProcess(this)) {
+            refWatcher=  LeakCanary.install(this);
+        }
     }
 
     public static Context getContext() {
@@ -128,5 +134,8 @@ public class App extends Application {
                 .setStackDeep(1);// log栈深度，默认为1
         ALog.d(config.toString());
     }
-
+    public static RefWatcher getRefWatcher(Context context){
+        App app=(App)context.getApplicationContext();
+        return app.refWatcher;
+    }
 }

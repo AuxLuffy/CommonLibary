@@ -153,4 +153,14 @@
     <color name="holo_gray_light">#33999999</color>
     <color name="holo_orange_light">#ffffbb33</color>
     <color name="holo_orange_dark">#ffff8800</color>
+
+    <color name="point_color">#4e4e4e</color>
+    <color name="background_color">#9db6c4</color>
+    <color name="event_color_01">#59dbe0</color>
+    <color name="event_color_02">#f57f68</color>
+    <color name="event_color_03">#87d288</color>
+    <color name="event_color_04">#f8b552</color>
+    <color name="toolbar">#efefef</color>
+    <color name="toolbar_text">#8f000000</color>
+    <color name="accent">#2789e4</color>
 </resources>

@@ -23,7 +23,7 @@ import com.lenovo.service.basicpubliclibrary.R;
 
 /**
  * 描述：一个用于“应用新特性”的用户指引view
- * Created by zhaohl on 2015-11-26.
+ *
  */
 public class UserGuideView extends View {
     public static final int VIEWSTYLE_RECT = 0;

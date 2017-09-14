@@ -91,15 +91,25 @@
 
         />
     <TextView
-            android:id="@+id/tvNightMode"
+        android:id="@+id/tv_frosted_galss_effect"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:textColor="#CCCCCC"
-        android:text="夜间模式"
+        android:text="Activity毛玻璃效果"
         android:background="#F08080"
         android:gravity="center"
 
         />
+    <TextView
+            android:id="@+id/tvNightMode"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColor="#CCCCCC"
+            android:text="夜间模式"
+            android:background="#7CFC00"
+            android:gravity="center"
+
+    />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="60dp"

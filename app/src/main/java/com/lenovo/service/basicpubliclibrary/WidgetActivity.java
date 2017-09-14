@@ -18,7 +18,10 @@ import com.lenovo.service.basicpubliclibrary.cardstatcview.CardStackActivty;
 import com.lenovo.service.basicpubliclibrary.cardview.CardActivity;
 import com.lenovo.service.basicpubliclibrary.chartview.ChartViewActivity;
 import com.lenovo.service.basicpubliclibrary.colordialog.ColorDialogActivity;
+import com.lenovo.service.basicpubliclibrary.dialogfragment.DialogActivity;
 import com.lenovo.service.basicpubliclibrary.doodle.DoodleViewActivity;
+import com.lenovo.service.basicpubliclibrary.flowlayout.CategoryActivity;
+import com.lenovo.service.basicpubliclibrary.dropdownmenu.DropDownActivity;
 import com.lenovo.service.basicpubliclibrary.flycotablayout.ui.SimpleHomeActivity;
 import com.lenovo.service.basicpubliclibrary.gesturelock.GestureLockActivity;
 import com.lenovo.service.basicpubliclibrary.jike.JikeGalleryActivity;
@@ -33,8 +36,14 @@ import com.lenovo.service.basicpubliclibrary.roundiamge.RoundImageActivity;
 import com.lenovo.service.basicpubliclibrary.scoringstrip.ScoringStripActivity;
 import com.lenovo.service.basicpubliclibrary.scratchview.ScratchViewActivity;
 import com.lenovo.service.basicpubliclibrary.smilepraiseview.SmilePraiseActivity;
+import com.lenovo.service.basicpubliclibrary.smileyrating.SmileRatingActivity;
 import com.lenovo.service.basicpubliclibrary.stepview.StepViewActivity;
 import com.lenovo.service.basicpubliclibrary.tagviewgroup.TagViewGroupActivity;
+import com.lenovo.service.basicpubliclibrary.textstyle.TextActivity;
+import com.lenovo.service.basicpubliclibrary.timepicker.TimePickerActivity;
+import com.lenovo.service.basicpubliclibrary.toolbar.TestToolbarActivity;
+import com.lenovo.service.basicpubliclibrary.ultraviewpager.UPVDemoActivity;
+import com.lenovo.service.basicpubliclibrary.weekview.WeekViewActivity;
 import com.lenovo.service.basicpubliclibrary.zoomheader.ZoomHeaderActivity;
 
 
@@ -70,6 +79,13 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     private TextView mCard;
     private TextView mAvatarLabel;
     private TextView mTvBottleloading;
+    private TextView mTvWeekview;
+    private TextView mTvDialogfragment;
+    private TextView mTvFlowflag;
+    private TextView mTvViewpager;
+    private TextView mTvDropDownMenu;
+    private TextView mTvSmileRating;
+    private TextView mTvText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -110,6 +126,14 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mCard = (TextView) findViewById(R.id.card);
         mAvatarLabel = (TextView) findViewById(R.id.avatar_label);
         mTvBottleloading = (TextView) findViewById(R.id.tv_bottleloading);
+        mTvWeekview= (TextView) findViewById(R.id.tv_weekview);
+        mTvDialogfragment = (TextView) findViewById(R.id.tv_dialogfragment);
+        mTvWeekview = (TextView) findViewById(R.id.tv_weekview);
+        mTvFlowflag = (TextView) findViewById(R.id.tv_flowflag);
+        mTvViewpager = (TextView) findViewById(R.id.tv_viewpager);
+        mTvDropDownMenu = (TextView) findViewById(R.id.tv_dropdownmenu);
+        mTvSmileRating = (TextView) findViewById(R.id.tv_smilerating);
+        mTvText = (TextView) findViewById(R.id.tv_text);
     }
 
     private void init_listener() {
@@ -135,12 +159,21 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTvPop.setOnClickListener(this);
         mTvToast.setOnClickListener(this);
         findViewById(R.id.tv_recyclerview).setOnClickListener(this);
+        findViewById(R.id.tv_toolbar).setOnClickListener(this);
+        findViewById(R.id.tv_timepicker).setOnClickListener(this);
         mUserGuide.setOnClickListener(this);
         tv_gesture_lock.setOnClickListener(this);
         tagview.setOnClickListener(this);
         mCard.setOnClickListener(this);
         mAvatarLabel.setOnClickListener(this);
         mTvBottleloading.setOnClickListener(this);
+        mTvWeekview.setOnClickListener(this);
+        mTvDialogfragment.setOnClickListener(this);
+        mTvFlowflag.setOnClickListener(this);
+        mTvViewpager.setOnClickListener(this);
+        mTvDropDownMenu.setOnClickListener(this);
+        mTvSmileRating.setOnClickListener(this);
+        mTvText.setOnClickListener(this);
     }
 
     @Override
@@ -267,6 +300,33 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.tv_bottleloading:
                 startActivity(new Intent(WidgetActivity.this, GABottleLoadingViewAcivity.class));
+                break;
+            case R.id.tv_toolbar:
+                startActivity(new Intent(WidgetActivity.this, TestToolbarActivity.class));
+                break;
+            case R.id.tv_timepicker:
+                startActivity(new Intent(WidgetActivity.this, TimePickerActivity.class));
+                break;
+            case R.id.tv_weekview:
+                startActivity(new Intent(WidgetActivity.this, WeekViewActivity.class));
+                break;
+            case R.id.tv_dialogfragment:
+                startActivity(new Intent(WidgetActivity.this, DialogActivity.class));
+                break;
+            case R.id.tv_flowflag:
+                startActivity(new Intent(WidgetActivity.this, CategoryActivity.class));
+                break;
+            case R.id.tv_viewpager:
+                startActivity(new Intent(WidgetActivity.this, UPVDemoActivity.class));
+                break;
+            case R.id.tv_dropdownmenu:
+                startActivity(new Intent(WidgetActivity.this, DropDownActivity.class));
+                break;
+            case R.id.tv_smilerating:
+                startActivity(new Intent(WidgetActivity.this, SmileRatingActivity.class));
+                break;
+            case R.id.tv_text://文本多样化
+                startActivity(new Intent(WidgetActivity.this, TextActivity.class));
                 break;
         }
     }

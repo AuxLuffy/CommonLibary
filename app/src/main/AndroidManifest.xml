@@ -158,14 +158,14 @@
                 android:name=".jobservice.MyJobService"
                 android:permission="android.permission.BIND_JOB_SERVICE"/>
 
-        <activity android:name=".LoadMoreRecyclerView.MyRecyclerViewActivity"/>
+        <activity android:name=".LoadMoreRecyclerView.MyRecyclerViewActivity" />
         <activity android:name=".validation.ValidateActivity"/>
-        <activity android:name=".loadingart.Loadingart_activity"/>
+        <activity android:name=".loadingart.Loadingart_activity" />
         <activity android:name=".takeaway.TakeawayActivity"/>
         <activity android:name=".colorfultoast.ColorfulToastActivity"/>
         <activity
-                android:name=".SADL.SADLActivity"
-                android:label="SADLMainActivity"/>
+            android:name=".SADL.SADLActivity"
+            android:label="SADLMainActivity"/>
         <activity
                 android:name=".SADL.HeaderFooterActivity"
                 android:label="SDLV with headers and footers"/>
@@ -189,13 +189,78 @@
                 android:label="SDLV with SimpleAdapter"/>
         <activity android:name=".ALogActivity"/>
         <activity
-                android:name=".picture_cut.SampleActivity"
-                android:screenOrientation="portrait">
-        </activity>
+            android:name=".picture_cut.SampleActivity"
+            android:screenOrientation="portrait"/>
+
         <activity
                 android:name=".picture_cut.ResultActivity"
-                android:screenOrientation="portrait"/>
+                android:screenOrientation="portrait" />
         <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".bottleLoadingView.GABottleLoadingViewAcivity" />
+        <activity android:name=".dbflow.DBFlowActivity" />
+        <activity android:name=".UserGuideView.UserGuideActivity" />
+        <activity android:name=".cardview.CardActivity" />
+        <activity android:name=".avatarlabelview.AvatarLabelActivity" />
+        <activity android:name=".obtainlocalphoto.LocalPhotoActivity" />
+        <activity android:name=".gesturelock.GestureLockActivity" />
+        <activity android:name=".gesturelock.DrawPasswordActivity" />
+        <activity android:name=".bezier.BezierActivity" />
+        <activity android:name=".bezier.DotsLoaderActivity"/>
+        <activity android:name=".leakcanary.LeakCanaryActivity"/>
+        <service
+            android:name="com.squareup.leakcanary.internal.HeapAnalyzerService"
+            android:enabled="false"
+            android:process=":leakcanary" />
+        <service
+            android:name="com.squareup.leakcanary.DisplayLeakService"
+            android:enabled="false" />
+        <activity
+            android:name="com.squareup.leakcanary.internal.DisplayLeakActivity"
+            android:enabled="false"
+            android:icon="@drawable/__leak_canary_icon"
+            android:label="@string/__leak_canary_display_activity_label"
+            android:taskAffinity="com.squareup.leakcanary"
+            android:theme="@style/__LeakCanary.Base" >
+        </activity>
+
+        <activity android:name=".toolbar.TestToolbarActivity"/>
+        <activity android:name=".textstyle.TextActivity"/>
+        <activity android:name=".Frostedglasseffect.FrostedGlassEffectActivity"
+                  android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name=".timepicker.TimePickerActivity"/>
+        <activity android:name=".weekview.WeekViewActivity"/>
+        <activity android:name=".dialogfragment.DialogActivity"/>
+        <activity android:name=".flowlayout.CategoryActivity"/>
+        <activity android:name=".ultraviewpager.UPVDemoActivity"/>
+        <activity android:name=".ultraviewpager.PagerActivity"/>
+        <activity android:name=".dropdownmenu.DropDownActivity"/>
+        <activity android:name=".smileyrating.SmileRatingActivity"/>
+
+        <!-- sugar -->
+        <!-- 数据库名字 -->
+        <meta-data
+            android:name="DATABASE"
+            android:value="family.db" />
+        <!-- 数据库版本号，可以用来更新数据库 -->
+        <meta-data
+            android:name="VERSION"
+            android:value="1" />
+        <!-- true会打印一些日志 -->
+        <meta-data
+            android:name="QUERY_LOG"
+            android:value="true" />
+        <!-- 创建数据库的bean的路径 -->
+        <meta-data
+            android:name="DOMAIN_PACKAGE_NAME"
+            android:value="com.lenovo.service.basicpubliclibrary.sugar.bean" />
+        <!-- sugar -->
+        <activity android:name=".sugar.SugarActivity"/>
+        <activity android:name=".camerakit.CamerakitActivity"/>
+        <activity android:name=".camerakit.PreviewActivity"
+            android:screenOrientation="portrait" />
                 android:name="com.yalantis.ucrop.UCropActivity"
                 android:screenOrientation="portrait"
                 android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
