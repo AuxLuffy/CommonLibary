@@ -110,7 +110,7 @@ dependencies {
     }
     compile 'com.github.dongjunkun:DropDownMenu:1.0.4'
     compile 'com.github.sujithkanna:smileyrating:1.6.8'
-
+    compile 'com.github.satyan:sugar:1.5'
 }
 greendao {
     schemaVersion 1
