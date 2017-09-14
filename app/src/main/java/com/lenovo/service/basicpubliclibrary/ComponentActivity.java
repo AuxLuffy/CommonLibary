@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
+import com.lenovo.service.basicpubliclibrary.colortheme.ColorThemeActivity;
 import com.lenovo.service.basicpubliclibrary.fragmentation.demo_flow.FlowMainActivity;
 import com.lenovo.service.basicpubliclibrary.maillistananimation.MaillistActivity;
 import com.lenovo.service.basicpubliclibrary.multitype.bilibili.BilibiliActivity;
@@ -33,6 +34,8 @@ public class ComponentActivity extends AppCompatActivity implements View.OnClick
     TextView mTvH5Activity;
     @BindView(R.id.tv_picut)
     TextView mTvPicut;
+    @BindView(R.id.tvNightMode)
+    TextView tvNightNode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +53,7 @@ public class ComponentActivity extends AppCompatActivity implements View.OnClick
         mtv_pulltorefresh.setOnClickListener(this);
         mTvFragmentation.setOnClickListener(this);
         mTvPicut.setOnClickListener(this);
+        tvNightNode.setOnClickListener(this);
     }
 
 
@@ -83,6 +87,9 @@ public class ComponentActivity extends AppCompatActivity implements View.OnClick
                 break;
             case R.id.tv_picut:
                 startActivity(new Intent(ComponentActivity.this, SampleActivity.class));
+                break;
+            case R.id.tvNightMode:
+                startActivity(new Intent(ComponentActivity.this, ColorThemeActivity.class));
                 break;
         }
     }

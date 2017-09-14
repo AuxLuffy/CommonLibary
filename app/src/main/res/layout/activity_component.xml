@@ -91,10 +91,11 @@
 
         />
     <TextView
+            android:id="@+id/tvNightMode"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:textColor="#CCCCCC"
-        android:text="未完待续"
+        android:text="夜间模式"
         android:background="#F08080"
         android:gravity="center"
 
