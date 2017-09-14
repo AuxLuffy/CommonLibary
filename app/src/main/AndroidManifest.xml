@@ -269,6 +269,9 @@
         <activity android:name=".colortheme.ColorThemeActivity"
                   android:theme="@style/DayTheme" />
         <activity android:name=".colortheme.RecyclerActivity"/>
+        <activity android:name=".jniDemo.JNITestActivity"
+            android:screenOrientation="portrait"
+            />
     </application>
 
 </manifest>
