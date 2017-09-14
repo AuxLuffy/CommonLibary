@@ -190,7 +190,7 @@
         <activity android:name=".ALogActivity" />
         <activity
             android:name=".picture_cut.SampleActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".picture_cut.ResultActivity"
             android:screenOrientation="portrait" />
@@ -203,7 +203,7 @@
         <activity android:name=".UserGuideView.UserGuideActivity" />
         <activity android:name=".cardview.CardActivity" />
         <activity android:name=".avatarlabelview.AvatarLabelActivity" />
-        <activity android:name=".obtainlocalphoto.LocalPhotoActivity"></activity>
+        <activity android:name=".obtainlocalphoto.LocalPhotoActivity" />
         <activity android:name=".gesturelock.GestureLockActivity" />
         <activity android:name=".gesturelock.DrawPasswordActivity" />
         <activity android:name=".bezier.BezierActivity" />
@@ -214,6 +214,33 @@
         <activity android:name=".Frostedglasseffect.FrostedGlassEffectActivity"
                   android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity android:name=".timepicker.TimePickerActivity"/>
+        <activity android:name=".weekview.WeekViewActivity"/>
+        <activity android:name=".dialogfragment.DialogActivity"></activity>
+        <activity android:name=".flowlayout.CategoryActivity"/>
+        <activity android:name=".ultraviewpager.UPVDemoActivity"/>
+        <activity android:name=".ultraviewpager.PagerActivity"/>
+        <activity android:name=".dropdownmenu.DropDownActivity"/>
+        <activity android:name=".smileyrating.SmileRatingActivity"/>
+
+        <!-- sugar -->
+        <!-- 数据库名字 -->
+        <meta-data
+            android:name="DATABASE"
+            android:value="family.db" />
+        <!-- 数据库版本号，可以用来更新数据库 -->
+        <meta-data
+            android:name="VERSION"
+            android:value="1" />
+        <!-- true会打印一些日志 -->
+        <meta-data
+            android:name="QUERY_LOG"
+            android:value="true" />
+        <!-- 创建数据库的bean的路径 -->
+        <meta-data
+            android:name="DOMAIN_PACKAGE_NAME"
+            android:value="com.lenovo.service.basicpubliclibrary.sugar.bean" />
+        <!-- sugar -->
+        <activity android:name=".sugar.SugarActivity"></activity>
     </application>
 
 </manifest>

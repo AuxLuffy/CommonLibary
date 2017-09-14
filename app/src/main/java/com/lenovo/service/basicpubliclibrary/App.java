@@ -9,6 +9,7 @@ import com.facebook.drawee.backends.pipeline.Fresco;
 import com.lenovo.service.basicpubliclibrary.bgabanner.Engine;
 import com.lenovo.service.basicpubliclibrary.config.Config;
 import com.lenovo.service.basicpubliclibrary.loaddata.LoadDataLayout;
+import com.orm.SugarApp;
 import com.raizlabs.android.dbflow.config.FlowConfig;
 import com.raizlabs.android.dbflow.config.FlowManager;
 
@@ -22,7 +23,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
  * date : 2017/3/31 <br/>
  * email : mail@wangganxin.me <br/>
  */
-public class App extends Application {
+public class App extends SugarApp {
 
     private static Context mContext;
     private static App sInstance;

@@ -37,10 +37,11 @@
 
     />
     <TextView
+            android:id="@+id/sugar"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:textColor="#CCCCCC"
-            android:text="未完待续"
+            android:text="sugar"
             android:background="#FFF0F5"
             android:gravity="center"
 
