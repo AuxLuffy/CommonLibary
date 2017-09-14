@@ -207,7 +207,23 @@
         <activity android:name=".gesturelock.GestureLockActivity" />
         <activity android:name=".gesturelock.DrawPasswordActivity" />
         <activity android:name=".bezier.BezierActivity" />
-        <activity android:name=".bezier.DotsLoaderActivity"></activity>
+        <activity android:name=".bezier.DotsLoaderActivity"/>
+        <activity android:name=".leakcanary.LeakCanaryActivity"/>
+        <service
+            android:name="com.squareup.leakcanary.internal.HeapAnalyzerService"
+            android:enabled="false"
+            android:process=":leakcanary" />
+        <service
+            android:name="com.squareup.leakcanary.DisplayLeakService"
+            android:enabled="false" />
+        <activity
+            android:name="com.squareup.leakcanary.internal.DisplayLeakActivity"
+            android:enabled="false"
+            android:icon="@drawable/__leak_canary_icon"
+            android:label="@string/__leak_canary_display_activity_label"
+            android:taskAffinity="com.squareup.leakcanary"
+            android:theme="@style/__LeakCanary.Base" >
+        </activity>
 
         <activity android:name=".toolbar.TestToolbarActivity"/>
         <activity android:name=".textstyle.TextActivity"/>
@@ -215,7 +231,7 @@
                   android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity android:name=".timepicker.TimePickerActivity"/>
         <activity android:name=".weekview.WeekViewActivity"/>
-        <activity android:name=".dialogfragment.DialogActivity"></activity>
+        <activity android:name=".dialogfragment.DialogActivity"/>
         <activity android:name=".flowlayout.CategoryActivity"/>
         <activity android:name=".ultraviewpager.UPVDemoActivity"/>
         <activity android:name=".ultraviewpager.PagerActivity"/>
@@ -240,7 +256,7 @@
             android:name="DOMAIN_PACKAGE_NAME"
             android:value="com.lenovo.service.basicpubliclibrary.sugar.bean" />
         <!-- sugar -->
-        <activity android:name=".sugar.SugarActivity"></activity>
+        <activity android:name=".sugar.SugarActivity"/>
     </application>
 
 </manifest>
