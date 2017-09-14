@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import com.lenovo.service.basicpubliclibrary.SADL.SADLActivity;
 import com.lenovo.service.basicpubliclibrary.cameraDemo.RecordMainAcitivity;
+import com.lenovo.service.basicpubliclibrary.camerakit.CamerakitActivity;
 import com.lenovo.service.basicpubliclibrary.databinding.DataBindingActivity;
 import com.lenovo.service.basicpubliclibrary.jsBridge.activity.JSBridgeActivity;
 import com.lenovo.service.basicpubliclibrary.jsBridge.common.LocalConstant;
@@ -88,5 +89,9 @@ public class CompositeActivity extends AppCompatActivity implements View.OnClick
     }
     public void startValidateActivity(View v) {
         startActivity(new Intent(this, ValidateActivity.class));
+    }
+
+    public  void  startCamerkitActivity(View view){
+        startActivity(new Intent(this, CamerakitActivity.class));
     }
 }

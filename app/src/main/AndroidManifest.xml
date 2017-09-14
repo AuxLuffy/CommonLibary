@@ -257,6 +257,9 @@
             android:value="com.lenovo.service.basicpubliclibrary.sugar.bean" />
         <!-- sugar -->
         <activity android:name=".sugar.SugarActivity"/>
+        <activity android:name=".camerakit.CamerakitActivity"/>
+        <activity android:name=".camerakit.PreviewActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
