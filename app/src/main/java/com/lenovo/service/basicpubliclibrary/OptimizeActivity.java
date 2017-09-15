@@ -9,6 +9,7 @@ import com.j256.ormlite.stmt.query.In;
 import com.lenovo.service.basicpubliclibrary.jobservice.JobServiceActivity;
 import com.lenovo.service.basicpubliclibrary.jobservice.MyJobService;
 import com.lenovo.service.basicpubliclibrary.leakcanary.LeakCanaryActivity;
+import com.lenovo.service.basicpubliclibrary.schedule.ScheduleActivity;
 
 public class OptimizeActivity extends AppCompatActivity {
 
@@ -25,6 +26,10 @@ public class OptimizeActivity extends AppCompatActivity {
                 break;
             case R.id.leak_canary:
                 intent=new Intent(this, LeakCanaryActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.schedule_service:
+                intent=new Intent(this,ScheduleActivity.class);
                 startActivity(intent);
                 break;
         }
