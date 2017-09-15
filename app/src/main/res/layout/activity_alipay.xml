@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/activity_alipay"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+            android:id="@+id/tvTips"
+            android:text="要首先设置好appid和scret，所有的信息都要由服务器生成，不要在本地生成"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <Button
+            android:id="@+id/tvPay"
+            android:text="支付" android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"/>
+</LinearLayout>
