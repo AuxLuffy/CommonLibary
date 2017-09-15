@@ -292,6 +292,15 @@
         <activity android:name=".zxing.activity.CaptureActivity"/>
         <activity android:name=".addsub.AddSubActivity" />
         <activity android:name=".floatingbutton.FLoatingBtnActivity"/>
+        <service
+            android:name=".schedule.AlarmScheduleService"
+            android:exported="false" />
+        <service
+            android:name=".schedule.JobScheduleService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <activity android:name=".schedule.ScheduleActivity"></activity>
     </application>
 
 </manifest>
