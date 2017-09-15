@@ -16,6 +16,7 @@ import com.lenovo.service.basicpubliclibrary.jniDemo.JNITestActivity;
 import com.lenovo.service.basicpubliclibrary.jsBridge.activity.JSBridgeActivity;
 import com.lenovo.service.basicpubliclibrary.jsBridge.common.LocalConstant;
 import com.lenovo.service.basicpubliclibrary.linechart.ui.LineChartActivity;
+import com.lenovo.service.basicpubliclibrary.permissionDemo.PermissionDemoActivity;
 import com.lenovo.service.basicpubliclibrary.rxjava.RxJavaActivity;
 import com.lenovo.service.basicpubliclibrary.validation.ValidateActivity;
 import com.lenovo.service.basicpubliclibrary.videoplayer.VideoplayerActivity;
@@ -28,7 +29,7 @@ public class CompositeActivity extends AppCompatActivity implements View.OnClick
     private TextView[] textviews;
 
     private int[] ids = new int[]{R.id.helloChart, R.id.jsBridge, R.id.SADL, R.id.ilog_demo,
-            R.id.tv_jnidemo,R.id.scan_code,R.id.tv_getui
+            R.id.tv_jnidemo, R.id.scan_code, R.id.tv_getui, R.id.tv_permission
     };
 
     @Override
@@ -86,12 +87,16 @@ public class CompositeActivity extends AppCompatActivity implements View.OnClick
 
                 break;
 
-            case  R.id.scan_code:
-                intent.setClass(this,ZxingActivity.class);
+            case R.id.scan_code:
+                intent.setClass(this, ZxingActivity.class);
                 break;
 
-            case  R.id.tv_getui:
-                intent.setClass(this,GetuiActivity.class);
+            case R.id.tv_getui:
+                intent.setClass(this, GetuiActivity.class);
+                break;
+
+            case R.id.tv_permission:
+                intent.setClass(this, PermissionDemoActivity.class);
                 break;
         }
         startActivity(intent);
@@ -116,6 +121,7 @@ public class CompositeActivity extends AppCompatActivity implements View.OnClick
     public void startCamerkitActivity(View view) {
         startActivity(new Intent(this, CamerakitActivity.class));
     }
+
     public void startAlipayActivity(View view) {
         startActivity(new Intent(this, AlipayActivity.class));
     }

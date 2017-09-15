@@ -176,6 +176,14 @@
             android:gravity="center"
             android:text="个推"
             android:textColor="#CCCCCC" />
+        <TextView
+            android:id="@+id/tv_permission"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#06E6FA"
+            android:gravity="center"
+            android:text="权限申请demo"
+            android:textColor="#CCCCCC" />
     </LinearLayout>
 
 </ScrollView>
