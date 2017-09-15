@@ -275,6 +275,7 @@
             android:name=".jniDemo.JNITestActivity"
             android:screenOrientation="portrait" />
         <activity android:name=".signcalendar.SignCalendarActivity"></activity>
+        <activity android:name=".floatingbutton.FLoatingBtnActivity"/>
     </application>
 
 </manifest>
