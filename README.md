@@ -110,8 +110,11 @@
 2.综合-recyclerview使用封装
 3.控件-mvp+折线图使用封装
 4.控件-自定义toolbar
-5.综合-jni开发初步探究
+5.综合-jni开发初步探究  
+注：关于jni开发，更新代码后，如果报错，则说明需要配置你的ndk。
+请在local.properties文件中，添加ndk.dir=E\:\\ndk\\android-ndk-r14b 来标示你的ndk本地路径
 
 非原创部分
 
 1.控件-时间选择器
+2.floatingbutton隐藏菜单
