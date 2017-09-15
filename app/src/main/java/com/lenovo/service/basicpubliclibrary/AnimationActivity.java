@@ -10,6 +10,7 @@ import com.lenovo.service.basicpubliclibrary.ProgressBaranimation.ProgressActivi
 import com.lenovo.service.basicpubliclibrary.bezier.DotsLoaderActivity;
 import com.lenovo.service.basicpubliclibrary.colorfultoast.ColorfulToastActivity;
 import com.lenovo.service.basicpubliclibrary.bezier.BezierActivity;
+import com.lenovo.service.basicpubliclibrary.expandablelvanimated.ExpandableListViewActivity;
 import com.lenovo.service.basicpubliclibrary.flowwateranimation.FlowWaterAnimationActivity;
 import com.lenovo.service.basicpubliclibrary.guideanim.ShowActivity;
 import com.lenovo.service.basicpubliclibrary.headerfloatanimation.HeaderFloatActivity;
@@ -34,6 +35,7 @@ public class AnimationActivity extends AppCompatActivity {
     private TextView mTvTakeaway;
     private TextView mTvColorfulToast;
     private TextView tv_dots_loader;
+    private TextView mTvExamplelv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +55,7 @@ public class AnimationActivity extends AppCompatActivity {
         mTvTakeaway = (TextView) findViewById(R.id.tvTakeaway);
         mTvColorfulToast = (TextView) findViewById(R.id.tvColorfulToast);
         tv_dots_loader = (TextView) findViewById(R.id.tv_dots_loader);
+        mTvExamplelv = (TextView)findViewById(R.id.tv_examplelv);
 
         text1.setOnClickListener(new TextViewClickListener());
         mTvLoopView.setOnClickListener(new TextViewClickListener());
@@ -66,6 +69,7 @@ public class AnimationActivity extends AppCompatActivity {
         mTvTakeaway.setOnClickListener(new TextViewClickListener());
         mTvColorfulToast.setOnClickListener(new TextViewClickListener());
         tv_dots_loader.setOnClickListener(new TextViewClickListener());
+        mTvExamplelv.setOnClickListener(new TextViewClickListener());
     }
 
     public class TextViewClickListener implements View.OnClickListener {
@@ -129,6 +133,9 @@ public class AnimationActivity extends AppCompatActivity {
                     break;
                 case R.id.tv_dots_loader:
                     startActivity(new Intent(AnimationActivity.this, DotsLoaderActivity.class));
+                    break;
+                case R.id.tv_examplelv:
+                    startActivity(new Intent(AnimationActivity.this, ExpandableListViewActivity.class));
                     break;
                 default:
                     break;

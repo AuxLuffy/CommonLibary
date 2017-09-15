@@ -278,6 +278,7 @@
         <activity android:name=".shadowmasking.ShadowmaskingActivity"></activity>
         <activity android:name=".shadowmasking.ShadowmaskingproActivity"></activity>
         <activity android:name=".networkokhttp.NetokhttpActivity"></activity>
+        <activity android:name=".expandablelvanimated.ExpandableListViewActivity"></activity>
     </application>
 
 </manifest>
