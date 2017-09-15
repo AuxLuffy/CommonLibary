@@ -1,4 +1,4 @@
-package com.lenovo.service.basicpubliclibrary.recyclerview.item.ui;
+package com.lenovo.service.basicpubliclibrary.recyclerview.itemhandle.ui;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -16,11 +16,11 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.lenovo.service.basicpubliclibrary.R;
-import com.lenovo.service.basicpubliclibrary.recyclerview.item.adapter.HistoryAdapter;
-import com.lenovo.service.basicpubliclibrary.recyclerview.item.data.Weather;
-import com.lenovo.service.basicpubliclibrary.recyclerview.item.listener.ItemTouchHelperCallback;
-import com.lenovo.service.basicpubliclibrary.recyclerview.item.listener.OnDragListener;
-import com.lenovo.service.basicpubliclibrary.recyclerview.item.listener.OnItemClickListener;
+import com.lenovo.service.basicpubliclibrary.recyclerview.itemhandle.adapter.HistoryAdapter;
+import com.lenovo.service.basicpubliclibrary.recyclerview.itemhandle.data.Weather;
+import com.lenovo.service.basicpubliclibrary.recyclerview.itemhandle.listener.ItemTouchHelperCallback;
+import com.lenovo.service.basicpubliclibrary.recyclerview.itemhandle.listener.OnDragListener;
+import com.lenovo.service.basicpubliclibrary.recyclerview.itemhandle.listener.OnItemClickListener;
 
 import java.util.ArrayList;
 

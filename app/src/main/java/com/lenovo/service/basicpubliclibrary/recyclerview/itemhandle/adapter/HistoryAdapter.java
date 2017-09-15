@@ -1,4 +1,4 @@
-package com.lenovo.service.basicpubliclibrary.recyclerview.item.adapter;
+package com.lenovo.service.basicpubliclibrary.recyclerview.itemhandle.adapter;
 
 import android.app.Activity;
 import android.os.Handler;
@@ -13,11 +13,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.lenovo.service.basicpubliclibrary.R;
-import com.lenovo.service.basicpubliclibrary.recyclerview.item.data.Weather;
-import com.lenovo.service.basicpubliclibrary.recyclerview.item.listener.OnDragListener;
-import com.lenovo.service.basicpubliclibrary.recyclerview.item.listener.OnItemClickListener;
-import com.lenovo.service.basicpubliclibrary.recyclerview.item.listener.OnMoveAndSwipedListener;
-import com.lenovo.service.basicpubliclibrary.recyclerview.item.listener.OnStateChangedListener;
+import com.lenovo.service.basicpubliclibrary.recyclerview.itemhandle.data.Weather;
+import com.lenovo.service.basicpubliclibrary.recyclerview.itemhandle.listener.OnDragListener;
+import com.lenovo.service.basicpubliclibrary.recyclerview.itemhandle.listener.OnItemClickListener;
+import com.lenovo.service.basicpubliclibrary.recyclerview.itemhandle.listener.OnMoveAndSwipedListener;
+import com.lenovo.service.basicpubliclibrary.recyclerview.itemhandle.listener.OnStateChangedListener;
 
 import java.util.ArrayList;
 import java.util.Collections;
