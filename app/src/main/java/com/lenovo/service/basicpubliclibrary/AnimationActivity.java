@@ -11,6 +11,8 @@ import com.lenovo.service.basicpubliclibrary.bezier.DotsLoaderActivity;
 import com.lenovo.service.basicpubliclibrary.colorfultoast.ColorfulToastActivity;
 import com.lenovo.service.basicpubliclibrary.bezier.BezierActivity;
 import com.lenovo.service.basicpubliclibrary.expandablelvanimated.ExpandableListViewActivity;
+import com.lenovo.service.basicpubliclibrary.floatingbutton.FLoatingBtnActivity;
+import com.lenovo.service.basicpubliclibrary.floatingbutton.util.FloatingActionButton;
 import com.lenovo.service.basicpubliclibrary.flowwateranimation.FlowWaterAnimationActivity;
 import com.lenovo.service.basicpubliclibrary.guideanim.ShowActivity;
 import com.lenovo.service.basicpubliclibrary.headerfloatanimation.HeaderFloatActivity;
@@ -55,6 +57,8 @@ public class AnimationActivity extends AppCompatActivity {
         mTvTakeaway = (TextView) findViewById(R.id.tvTakeaway);
         mTvColorfulToast = (TextView) findViewById(R.id.tvColorfulToast);
         tv_dots_loader = (TextView) findViewById(R.id.tv_dots_loader);
+        findViewById(R.id.tv_floatbtn).setOnClickListener(new TextViewClickListener());
+
         mTvExamplelv = (TextView)findViewById(R.id.tv_examplelv);
 
         text1.setOnClickListener(new TextViewClickListener());
@@ -136,6 +140,10 @@ public class AnimationActivity extends AppCompatActivity {
                     break;
                 case R.id.tv_examplelv:
                     startActivity(new Intent(AnimationActivity.this, ExpandableListViewActivity.class));
+                    break;
+
+                case R.id.tv_floatbtn:
+                    startActivity(new Intent(AnimationActivity.this, FLoatingBtnActivity.class));
                     break;
                 default:
                     break;

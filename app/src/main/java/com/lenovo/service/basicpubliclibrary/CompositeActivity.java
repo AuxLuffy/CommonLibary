@@ -5,8 +5,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
-
 import com.lenovo.service.basicpubliclibrary.SADL.SADLActivity;
+import com.lenovo.service.basicpubliclibrary.alipay.AlipayActivity;
 import com.lenovo.service.basicpubliclibrary.cameraDemo.RecordMainAcitivity;
 import com.lenovo.service.basicpubliclibrary.camerakit.CamerakitActivity;
 import com.lenovo.service.basicpubliclibrary.databinding.DataBindingActivity;
@@ -17,15 +17,16 @@ import com.lenovo.service.basicpubliclibrary.linechart.ui.LineChartActivity;
 import com.lenovo.service.basicpubliclibrary.rxjava.RxJavaActivity;
 import com.lenovo.service.basicpubliclibrary.validation.ValidateActivity;
 import com.lenovo.service.basicpubliclibrary.videoplayer.VideoplayerActivity;
+import com.lenovo.service.basicpubliclibrary.zxing.activity.ZxingActivity;
 
 //import com.lenovo.KotlinActivity;
 
-public class CompositeActivity extends AppCompatActivity implements View.OnClickListener{
+public class CompositeActivity extends AppCompatActivity implements View.OnClickListener {
 
     private TextView[] textviews;
 
-    private int[] ids = new int[]{R.id.helloChart,R.id.jsBridge,R.id.SADL,R.id.ilog_demo,
-            R.id.tv_jnidemo
+    private int[] ids = new int[]{R.id.helloChart, R.id.jsBridge, R.id.SADL, R.id.ilog_demo,
+            R.id.tv_jnidemo,R.id.scan_code
     };
 
     @Override
@@ -37,7 +38,7 @@ public class CompositeActivity extends AppCompatActivity implements View.OnClick
 
     private void initView() {
         textviews = new TextView[ids.length];
-        for(int i = 0;i < textviews.length; i ++){
+        for (int i = 0; i < textviews.length; i++) {
             textviews[i] = (TextView) findViewById(ids[i]);
             textviews[i].setOnClickListener(this);
         }
@@ -56,7 +57,7 @@ public class CompositeActivity extends AppCompatActivity implements View.OnClick
 
         Intent intent = new Intent();
 
-        switch (view.getId()){
+        switch (view.getId()) {
 
             case R.id.helloChart:
 
@@ -66,7 +67,7 @@ public class CompositeActivity extends AppCompatActivity implements View.OnClick
 
             case R.id.jsBridge:
 
-                intent.setClass(this,JSBridgeActivity.class);
+                intent.setClass(this, JSBridgeActivity.class);
                 intent.putExtra("extra1", LocalConstant.H5URL.page_register);
 
                 break;
@@ -74,13 +75,17 @@ public class CompositeActivity extends AppCompatActivity implements View.OnClick
                 intent.setClass(this, SADLActivity.class);
                 break;
             case R.id.ilog_demo:
-                intent.setClass(this,ALogActivity.class);
+                intent.setClass(this, ALogActivity.class);
                 break;
 
-            case  R.id.tv_jnidemo:
+            case R.id.tv_jnidemo:
 
-                intent.setClass(this,JNITestActivity.class);
+                intent.setClass(this, JNITestActivity.class);
 
+                break;
+
+            case  R.id.scan_code:
+                intent.setClass(this,ZxingActivity.class);
                 break;
         }
         startActivity(intent);
@@ -89,18 +94,23 @@ public class CompositeActivity extends AppCompatActivity implements View.OnClick
     public void startDataBinding(View view) {
         startActivity(new Intent(this, DataBindingActivity.class));
     }
+
     public void recorder_video(View v) {
-        startActivity(new Intent(this,RecordMainAcitivity.class));
+        startActivity(new Intent(this, RecordMainAcitivity.class));
     }
 
     public void startVideoPlayer(View v) {
         startActivity(new Intent(this, VideoplayerActivity.class));
     }
+
     public void startValidateActivity(View v) {
         startActivity(new Intent(this, ValidateActivity.class));
     }
 
-    public  void  startCamerkitActivity(View view){
+    public void startCamerkitActivity(View view) {
         startActivity(new Intent(this, CamerakitActivity.class));
+    }
+    public void startAlipayActivity(View view) {
+        startActivity(new Intent(this, AlipayActivity.class));
     }
 }

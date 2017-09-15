@@ -1,277 +1,302 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.lenovo.service.basicpubliclibrary">
+          package="com.lenovo.service.basicpubliclibrary">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_CONTACTS" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS" />
-    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
-    <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
-    <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.RECORD_AUDIO" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_CONTACTS" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.RECORD_AUDIO" />
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <!-- 二维码扫描 相机，闪光灯权限 -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
 
-    <uses-feature android:name="android.hardware.camera" />
-    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <!-- end 二维码扫描 相机，闪光灯权限 -->
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
 
     <application
-        android:name=".App"
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+            android:name=".App"
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
         <provider
-            android:name="android.support.v4.content.FileProvider"
-            android:authorities="${applicationId}.provider"
-            android:exported="false"
-            android:grantUriPermissions="true">
+                android:name="android.support.v4.content.FileProvider"
+                android:authorities="${applicationId}.provider"
+                android:exported="false"
+                android:grantUriPermissions="true">
             <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/provider_paths" />
+                    android:name="android.support.FILE_PROVIDER_PATHS"
+                    android:resource="@xml/provider_paths"/>
         </provider>
 
         <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
         <!-- 动画 -->
-        <activity android:name=".AnimationActivity" />
-        <activity android:name=".headerfloatanimation.HeaderFloatActivity" />
-        <activity android:name=".ComponentActivity" />
-        <activity android:name=".CompositeActivity" />
-        <activity android:name=".pullTorefresh_tool.PullTorefreshActivity" />
-        <activity android:name=".smilepraiseview.SmilePraiseActivity" />
+        <activity android:name=".AnimationActivity"/>
+        <activity android:name=".headerfloatanimation.HeaderFloatActivity"/>
+        <activity android:name=".ComponentActivity"/>
+        <activity android:name=".CompositeActivity"/>
+        <activity android:name=".pullTorefresh_tool.PullTorefreshActivity"/>
+        <activity android:name=".smilepraiseview.SmilePraiseActivity"/>
         <!-- 加载数据页面的activity -->
-        <activity android:name=".loaddata.LoadDataActivity" />
-        <activity android:name=".loaddata.Sample1Activity" />
-        <activity android:name=".loaddata.Sample2Activity" />
-        <activity android:name=".colordialog.ColorDialogActivity" />
+        <activity android:name=".loaddata.LoadDataActivity"/>
+        <activity android:name=".loaddata.Sample1Activity"/>
+        <activity android:name=".loaddata.Sample2Activity"/>
+        <activity android:name=".colordialog.ColorDialogActivity"/>
         <!-- 动画 -->
-        <activity android:name=".OptimizeActivity" />
-        <activity android:name=".StorageActivity" />
-        <activity android:name=".WidgetActivity" />
-        <activity android:name=".AppStartGuide.AppStartGuide" />
-        <activity android:name=".ProgressBaranimation.ProgressActivity" />
-        <activity android:name=".maillistananimation.MaillistActivity" />
-        <activity android:name=".meizuweather.MeizuWeacherActivity" />
-        <activity android:name=".loopview.LoopViewActivity" />
-        <activity android:name=".scoringstrip.ScoringStripActivity" />
-        <activity android:name=".cardstatcview.CardStackActivty" />
-        <activity android:name=".flowwateranimation.FlowWaterAnimationActivity" />
-        <activity android:name=".questionnaire.QuestionActivity" />
-        <activity android:name=".rxjava.RxJavaActivity" />
+        <activity android:name=".OptimizeActivity"/>
+        <activity android:name=".StorageActivity"/>
+        <activity android:name=".WidgetActivity"/>
+        <activity android:name=".AppStartGuide.AppStartGuide"/>
+        <activity android:name=".ProgressBaranimation.ProgressActivity"/>
+        <activity android:name=".maillistananimation.MaillistActivity"/>
+        <activity android:name=".meizuweather.MeizuWeacherActivity"/>
+        <activity android:name=".loopview.LoopViewActivity"/>
+        <activity android:name=".scoringstrip.ScoringStripActivity"/>
+        <activity android:name=".cardstatcview.CardStackActivty"/>
+        <activity android:name=".flowwateranimation.FlowWaterAnimationActivity"/>
+        <activity android:name=".questionnaire.QuestionActivity"/>
+        <activity android:name=".rxjava.RxJavaActivity"/>
         <activity
-            android:name=".guideanim.ShowActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity android:name=".recyclertablayout.TabLayoutActivity" />
-        <activity android:name=".ormlite.OrmLiteActivity" />
+                android:name=".guideanim.ShowActivity"
+                android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".recyclertablayout.TabLayoutActivity"/>
+        <activity android:name=".ormlite.OrmLiteActivity"/>
         <activity
-            android:name=".greendao.GreenDaoDemoActivity"
-            android:label="@string/title_activity_green_dao_demo"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".flycotablayout.ui.CommonTabActivity" />
-        <activity android:name=".flycotablayout.ui.SegmentTabActivity" />
-        <activity android:name=".flycotablayout.ui.SimpleHomeActivity" />
-        <activity android:name=".flycotablayout.ui.SlidingTabActivity" />
-        <activity android:name=".recyclerview.itemhandle.ui.RecyclerViewActivity" />
-        <activity android:name=".recyclerview.banner.ui.BannerActivity" />
-        <activity android:name=".multitype.bilibili.BilibiliActivity" />
-        <activity android:name=".multitype.multi_select.MultiSelectActivity" />
-        <activity android:name=".multitype.normal.NormalActivity" />
-        <activity android:name=".multitype.weibo.WeiboActivity" />
-        <activity android:name=".multitype.communicate_with_binder.SimpleActivity" />
-        <activity android:name=".multitype.one2many.OneDataToManyActivity" />
-        <activity android:name=".multitype.payload.TestPayloadActivity" />
-        <activity android:name=".multitype.extra_apis.SeldomUsedApisPlayground" />
-        <activity android:name=".svg.WowActivity" />
-        <activity android:name=".boommenu.BoomMenuMainActivity" />
-        <activity android:name=".scratchview.ScratchViewActivity" />
-        <activity android:name=".scratchview.DemoClothingActivity" />
-        <activity android:name=".scratchview.CaptchaActivity" />
-        <activity android:name=".bgabanner.GuideActivity" />
-        <activity android:name=".bgabanner.BannerListActivity" />
+                android:name=".greendao.GreenDaoDemoActivity"
+                android:label="@string/title_activity_green_dao_demo"
+                android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".flycotablayout.ui.CommonTabActivity"/>
+        <activity android:name=".flycotablayout.ui.SegmentTabActivity"/>
+        <activity android:name=".flycotablayout.ui.SimpleHomeActivity"/>
+        <activity android:name=".flycotablayout.ui.SlidingTabActivity"/>
+        <activity android:name=".recyclerview.itemhandle.ui.RecyclerViewActivity"/>
+        <activity android:name=".recyclerview.banner.ui.BannerActivity"/>
+        <activity android:name=".multitype.bilibili.BilibiliActivity"/>
+        <activity android:name=".multitype.multi_select.MultiSelectActivity"/>
+        <activity android:name=".multitype.normal.NormalActivity"/>
+        <activity android:name=".multitype.weibo.WeiboActivity"/>
+        <activity android:name=".multitype.communicate_with_binder.SimpleActivity"/>
+        <activity android:name=".multitype.one2many.OneDataToManyActivity"/>
+        <activity android:name=".multitype.payload.TestPayloadActivity"/>
+        <activity android:name=".multitype.extra_apis.SeldomUsedApisPlayground"/>
+        <activity android:name=".svg.WowActivity"/>
+        <activity android:name=".boommenu.BoomMenuMainActivity"/>
+        <activity android:name=".scratchview.ScratchViewActivity"/>
+        <activity android:name=".scratchview.DemoClothingActivity"/>
+        <activity android:name=".scratchview.CaptchaActivity"/>
+        <activity android:name=".bgabanner.GuideActivity"/>
+        <activity android:name=".bgabanner.BannerListActivity"/>
         <activity
-            android:name=".boommenu.SquareAndPieceCornerRadiusActivity"
-            android:label="Square &amp; Piece Corner Radius" />
+                android:name=".boommenu.SquareAndPieceCornerRadiusActivity"
+                android:label="Square &amp; Piece Corner Radius"/>
         <activity
-            android:name=".boommenu.ActionBarActivity"
-            android:label="ActionBar" />
+                android:name=".boommenu.ActionBarActivity"
+                android:label="ActionBar"/>
         <activity
-            android:name=".boommenu.EaseActivity"
-            android:label="Ease" />
+                android:name=".boommenu.EaseActivity"
+                android:label="Ease"/>
         <activity
-            android:name=".cameraDemo.RecordMainAcitivity"
-            android:theme="@style/CameraTheme" />
-        <activity android:name=".cameraDemo.CameraActivity" />
+                android:name=".cameraDemo.RecordMainAcitivity"
+                android:theme="@style/CameraTheme"/>
+        <activity android:name=".cameraDemo.CameraActivity"/>
         <activity
-            android:name=".pickerview.PickerActivity"
-            android:label="@string/title_activity_picker"
-            android:theme="@style/AppTheme.NoActionBar" />
+                android:name=".pickerview.PickerActivity"
+                android:label="@string/title_activity_picker"
+                android:theme="@style/AppTheme.NoActionBar"/>
         <activity
-            android:name=".videoplayer.VideoplayerActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden"
-            android:screenOrientation="portrait"
-            android:theme="@style/CameraTheme" />
-        <activity android:name=".chartview.ChartViewActivity" />
-        <activity android:name=".H5Activity" />
-        <activity android:name=".databinding.DataBindingActivity" />
-        <activity android:name=".stepview.StepViewActivity" />
-        <activity android:name=".linechart.ui.LineChartActivity" />
-        <activity android:name=".jsBridge.activity.JSBridgeActivity" />
-        <activity android:name=".zoomheader.DetailActivity" />
-        <activity android:name=".zoomheader.ZoomHeaderActivity" />
-        <activity android:name=".doodle.DoodleViewActivity" />
+                android:name=".videoplayer.VideoplayerActivity"
+                android:configChanges="orientation|screenSize|keyboardHidden"
+                android:screenOrientation="portrait"
+                android:theme="@style/CameraTheme"/>
+        <activity android:name=".chartview.ChartViewActivity"/>
+        <activity android:name=".H5Activity"/>
+        <activity android:name=".databinding.DataBindingActivity"/>
+        <activity android:name=".stepview.StepViewActivity"/>
+        <activity android:name=".linechart.ui.LineChartActivity"/>
+        <activity android:name=".jsBridge.activity.JSBridgeActivity"/>
+        <activity android:name=".zoomheader.DetailActivity"/>
+        <activity android:name=".zoomheader.ZoomHeaderActivity"/>
+        <activity android:name=".doodle.DoodleViewActivity"/>
         <activity
-            android:name=".fragmentation.demo_flow.FlowMainActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".popup.PopUpActivity" />
-        <activity android:name=".Tastytoast.ToastActivity" />
-        <activity android:name=".roll3dimageview.RollImageActivity" />
-        <activity android:name=".roll3dimageview.DemoAct" />
-        <activity android:name=".roll3dimageview.RollDebugAct" />
-        <activity android:name=".roundiamge.RoundImageActivity" />
-        <activity android:name=".jike.JikeGalleryActivity" />
-        <activity android:name=".jobservice.JobServiceActivity" />
-        <activity android:name=".tagviewgroup.TagViewGroupActivity" />
+                android:name=".fragmentation.demo_flow.FlowMainActivity"
+                android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".popup.PopUpActivity"/>
+        <activity android:name=".Tastytoast.ToastActivity"/>
+        <activity android:name=".roll3dimageview.RollImageActivity"/>
+        <activity android:name=".roll3dimageview.DemoAct"/>
+        <activity android:name=".roll3dimageview.RollDebugAct"/>
+        <activity android:name=".roundiamge.RoundImageActivity"/>
+        <activity android:name=".jike.JikeGalleryActivity"/>
+        <activity android:name=".jobservice.JobServiceActivity"/>
+        <activity android:name=".tagviewgroup.TagViewGroupActivity"/>
         <!-- 注册 -->
         <service
-            android:name=".jobservice.MyJobService"
-            android:permission="android.permission.BIND_JOB_SERVICE" />
+                android:name=".jobservice.MyJobService"
+                android:permission="android.permission.BIND_JOB_SERVICE"/>
 
-        <activity android:name=".LoadMoreRecyclerView.MyRecyclerViewActivity" />
-        <activity android:name=".validation.ValidateActivity" />
-        <activity android:name=".loadingart.Loadingart_activity" />
-        <activity android:name=".takeaway.TakeawayActivity" />
-        <activity android:name=".colorfultoast.ColorfulToastActivity" />
+        <activity android:name=".LoadMoreRecyclerView.MyRecyclerViewActivity"/>
+        <activity android:name=".validation.ValidateActivity"/>
+        <activity android:name=".loadingart.Loadingart_activity"/>
+        <activity android:name=".takeaway.TakeawayActivity"/>
+        <activity android:name=".colorfultoast.ColorfulToastActivity"/>
         <activity
-            android:name=".SADL.SADLActivity"
-            android:label="SADLMainActivity" />
+                android:name=".SADL.SADLActivity"
+                android:label="SADLMainActivity"/>
         <activity
-            android:name=".SADL.HeaderFooterActivity"
-            android:label="SDLV with headers and footers" />
+                android:name=".SADL.HeaderFooterActivity"
+                android:label="SDLV with headers and footers"/>
         <activity
-            android:name=".SADL.DifferentMenuActivity"
-            android:label="SDLV with different menus" />
+                android:name=".SADL.DifferentMenuActivity"
+                android:label="SDLV with different menus"/>
         <activity
-            android:name=".SADL.NormalListViewActivity"
-            android:label="Normal ListView" />
+                android:name=".SADL.NormalListViewActivity"
+                android:label="Normal ListView"/>
         <activity
-            android:name=".SADL.SlideAndDragListViewActivity"
-            android:label="SlideAndDragListView" />
+                android:name=".SADL.SlideAndDragListViewActivity"
+                android:label="SlideAndDragListView"/>
         <activity
-            android:name=".SADL.ItemDragActivity"
-            android:label="Touch Item to Drag" />
+                android:name=".SADL.ItemDragActivity"
+                android:label="Touch Item to Drag"/>
         <activity
-            android:name=".SADL.HeaderFooterViewTypeActivity"
-            android:label="SDLV with headers and footers (viewType)" />
+                android:name=".SADL.HeaderFooterViewTypeActivity"
+                android:label="SDLV with headers and footers (viewType)"/>
         <activity
-            android:name=".SADL.SimpleAdapterActivity"
-            android:label="SDLV with SimpleAdapter" />
-        <activity android:name=".ALogActivity" />
+                android:name=".SADL.SimpleAdapterActivity"
+                android:label="SDLV with SimpleAdapter"/>
+        <activity android:name=".ALogActivity"/>
         <activity
-            android:name=".picture_cut.SampleActivity"
-            android:screenOrientation="portrait" />
+                android:name=".picture_cut.SampleActivity"
+                android:screenOrientation="portrait"/>
         <activity
-            android:name=".picture_cut.ResultActivity"
-            android:screenOrientation="portrait" />
+                android:name=".picture_cut.ResultActivity"
+                android:screenOrientation="portrait"/>
         <activity
-            android:name="com.yalantis.ucrop.UCropActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".bottleLoadingView.GABottleLoadingViewAcivity" />
-        <activity android:name=".dbflow.DBFlowActivity" />
-        <activity android:name=".UserGuideView.UserGuideActivity" />
-        <activity android:name=".cardview.CardActivity" />
-        <activity android:name=".avatarlabelview.AvatarLabelActivity" />
-        <activity android:name=".obtainlocalphoto.LocalPhotoActivity" />
-        <activity android:name=".gesturelock.GestureLockActivity" />
-        <activity android:name=".gesturelock.DrawPasswordActivity" />
-        <activity android:name=".bezier.BezierActivity" />
-        <activity android:name=".bezier.DotsLoaderActivity" />
-        <activity android:name=".leakcanary.LeakCanaryActivity" />
+                android:name="com.yalantis.ucrop.UCropActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name=".bottleLoadingView.GABottleLoadingViewAcivity"/>
+        <activity android:name=".dbflow.DBFlowActivity"/>
+        <activity android:name=".UserGuideView.UserGuideActivity"/>
+        <activity android:name=".cardview.CardActivity"/>
+        <activity android:name=".avatarlabelview.AvatarLabelActivity"/>
+        <activity android:name=".obtainlocalphoto.LocalPhotoActivity"/>
+        <activity android:name=".gesturelock.GestureLockActivity"/>
+        <activity android:name=".gesturelock.DrawPasswordActivity"/>
+        <activity android:name=".bezier.BezierActivity"/>
+        <activity android:name=".bezier.DotsLoaderActivity"/>
+        <activity android:name=".leakcanary.LeakCanaryActivity"/>
 
         <service
-            android:name="com.squareup.leakcanary.internal.HeapAnalyzerService"
-            android:enabled="false"
-            android:process=":leakcanary" />
+                android:name="com.squareup.leakcanary.internal.HeapAnalyzerService"
+                android:enabled="false"
+                android:process=":leakcanary"/>
         <service
-            android:name="com.squareup.leakcanary.DisplayLeakService"
-            android:enabled="false" />
+                android:name="com.squareup.leakcanary.DisplayLeakService"
+                android:enabled="false"/>
 
         <activity
-            android:name="com.squareup.leakcanary.internal.DisplayLeakActivity"
-            android:enabled="false"
-            android:icon="@drawable/__leak_canary_icon"
-            android:label="@string/__leak_canary_display_activity_label"
-            android:taskAffinity="com.squareup.leakcanary"
-            android:theme="@style/__LeakCanary.Base"></activity>
-        <activity android:name=".toolbar.TestToolbarActivity" />
-        <activity android:name=".textstyle.TextActivity" />
+                android:name="com.squareup.leakcanary.internal.DisplayLeakActivity"
+                android:enabled="false"
+                android:icon="@drawable/__leak_canary_icon"
+                android:label="@string/__leak_canary_display_activity_label"
+                android:taskAffinity="com.squareup.leakcanary"
+                android:theme="@style/__LeakCanary.Base"/>
+        <activity android:name="lenovo.com.zxing.MipcaActivityCapture"/>
+        <activity android:name=".toolbar.TestToolbarActivity"/>
+        <activity android:name=".textstyle.TextActivity"/>
         <activity
-            android:name=".Frostedglasseffect.FrostedGlassEffectActivity"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-        <activity android:name=".timepicker.TimePickerActivity" />
-        <activity android:name=".weekview.WeekViewActivity" />
-        <activity android:name=".dialogfragment.DialogActivity" />
-        <activity android:name=".flowlayout.CategoryActivity" />
-        <activity android:name=".ultraviewpager.UPVDemoActivity" />
-        <activity android:name=".ultraviewpager.PagerActivity" />
-        <activity android:name=".dropdownmenu.DropDownActivity" />
-        <activity android:name=".smileyrating.SmileRatingActivity" />
+                android:name=".Frostedglasseffect.FrostedGlassEffectActivity"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name=".timepicker.TimePickerActivity"/>
+        <activity android:name=".weekview.WeekViewActivity"/>
+        <activity android:name=".dialogfragment.DialogActivity"/>
+        <activity android:name=".flowlayout.CategoryActivity"/>
+        <activity android:name=".ultraviewpager.UPVDemoActivity"/>
+        <activity android:name=".ultraviewpager.PagerActivity"/>
+        <activity android:name=".dropdownmenu.DropDownActivity"/>
+        <activity android:name=".smileyrating.SmileRatingActivity"/>
 
         <!-- sugar -->
         <!-- 数据库名字 -->
         <meta-data
-            android:name="DATABASE"
-            android:value="family.db" />
+                android:name="DATABASE"
+                android:value="family.db"/>
         <!-- 数据库版本号，可以用来更新数据库 -->
         <meta-data
-            android:name="VERSION"
-            android:value="1" />
+                android:name="VERSION"
+                android:value="1"/>
         <!-- true会打印一些日志 -->
         <meta-data
-            android:name="QUERY_LOG"
-            android:value="true" />
+                android:name="QUERY_LOG"
+                android:value="true"/>
         <!-- 创建数据库的bean的路径 -->
         <meta-data
-            android:name="DOMAIN_PACKAGE_NAME"
-            android:value="com.lenovo.service.basicpubliclibrary.sugar.bean" />
+                android:name="DOMAIN_PACKAGE_NAME"
+                android:value="com.lenovo.service.basicpubliclibrary.sugar.bean"/>
         <!-- sugar -->
-        <activity android:name=".sugar.SugarActivity" />
-        <activity android:name=".camerakit.CamerakitActivity" />
+        <activity android:name=".sugar.SugarActivity"/>
+        <activity android:name=".camerakit.CamerakitActivity"/>
         <activity
-            android:name=".camerakit.PreviewActivity"
-            android:screenOrientation="portrait" />
-        android:name="com.yalantis.ucrop.UCropActivity"
-        android:screenOrientation="portrait"
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity android:name=".bottleLoadingView.GABottleLoadingViewAcivity" />
-        <activity android:name=".dbflow.DBFlowActivity" />
+                android:name=".camerakit.PreviewActivity"
+                android:screenOrientation="portrait"/>
+
         <activity
-            android:name=".colortheme.ColorThemeActivity"
-            android:theme="@style/DayTheme" />
-        <activity android:name=".colortheme.RecyclerActivity" />
+                android:name=".colortheme.ColorThemeActivity"
+                android:theme="@style/DayTheme"/>
+        <activity android:name=".colortheme.RecyclerActivity"/>
         <activity
+                android:name=".jniDemo.JNITestActivity"
+                android:screenOrientation="portrait"/>
+        <activity android:name=".signcalendar.SignCalendarActivity"/>
+        <activity android:name=".alipay.AlipayActivity">
+        </activity>
+        <activity android:name=".zxing.activity.ZxingActivity"/>
+        <activity android:name=".zxing.activity.CaptureActivity"/>
+        <activity android:name=".addsub.AddSubActivity" />
+        <activity android:name=".floatingbutton.FLoatingBtnActivity"/>
+        <service
+            android:name=".schedule.AlarmScheduleService"
+            android:exported="false" />
+        <service
+            android:name=".schedule.JobScheduleService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <activity android:name=".schedule.ScheduleActivity"></activity>
             android:name=".jniDemo.JNITestActivity"
             android:screenOrientation="portrait" />
         <activity android:name=".signcalendar.SignCalendarActivity"></activity>

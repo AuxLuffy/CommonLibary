@@ -10,6 +10,7 @@ import com.lenovo.service.basicpubliclibrary.AppStartGuide.AppStartGuide;
 import com.lenovo.service.basicpubliclibrary.LoadMoreRecyclerView.MyRecyclerViewActivity;
 import com.lenovo.service.basicpubliclibrary.Tastytoast.ToastActivity;
 import com.lenovo.service.basicpubliclibrary.UserGuideView.UserGuideActivity;
+import com.lenovo.service.basicpubliclibrary.addsub.AddSubActivity;
 import com.lenovo.service.basicpubliclibrary.avatarlabelview.AvatarLabelActivity;
 import com.lenovo.service.basicpubliclibrary.bgabanner.GuideActivity;
 import com.lenovo.service.basicpubliclibrary.boommenu.BoomMenuMainActivity;
@@ -88,6 +89,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     private TextView mTvSmileRating;
     private TextView mTvText;
     private TextView mTvSignCalendar;
+    private TextView mTvAddSub;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -137,6 +139,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTvSmileRating = (TextView) findViewById(R.id.tv_smilerating);
         mTvText = (TextView) findViewById(R.id.tv_text);
         mTvSignCalendar = (TextView) findViewById(R.id.sign_calendar);
+        mTvAddSub = (TextView) findViewById(R.id.tv_addsub);
     }
 
     private void init_listener() {
@@ -178,6 +181,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTvSmileRating.setOnClickListener(this);
         mTvText.setOnClickListener(this);
         mTvSignCalendar.setOnClickListener(this);
+        mTvAddSub.setOnClickListener(this);
     }
 
     @Override
@@ -332,8 +336,11 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
             case R.id.tv_text://文本多样化
                 startActivity(new Intent(WidgetActivity.this, TextActivity.class));
                 break;
-            case R.id.sign_calendar://文本多样化
+            case R.id.sign_calendar:
                 startActivity(new Intent(WidgetActivity.this, SignCalendarActivity.class));
+                break;
+            case R.id.tv_addsub:
+                startActivity(new Intent(WidgetActivity.this, AddSubActivity.class));
                 break;
         }
     }

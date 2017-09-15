@@ -1,15 +1,21 @@
 package com.lenovo.service.basicpubliclibrary;
 
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.hardware.Camera;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
-
-import com.lenovo.service.basicpubliclibrary.colortheme.ColorThemeActivity;
+import butterknife.BindView;
+import butterknife.ButterKnife;
 import com.lenovo.service.basicpubliclibrary.Frostedglasseffect.FrostedGlassEffectActivity;
 import com.lenovo.service.basicpubliclibrary.Frostedglasseffect.util.BlurBehind;
 import com.lenovo.service.basicpubliclibrary.Frostedglasseffect.util.OnBlurCompleteListener;
+import com.lenovo.service.basicpubliclibrary.colortheme.ColorThemeActivity;
 import com.lenovo.service.basicpubliclibrary.fragmentation.demo_flow.FlowMainActivity;
 import com.lenovo.service.basicpubliclibrary.maillistananimation.MaillistActivity;
 import com.lenovo.service.basicpubliclibrary.multitype.bilibili.BilibiliActivity;
@@ -20,9 +26,12 @@ import com.lenovo.service.basicpubliclibrary.shadowmasking.ShadowmaskingActivity
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import lenovo.com.zxing.MipcaActivityCapture;
 
 public class ComponentActivity extends AppCompatActivity implements View.OnClickListener {
 
+    private static final int REQUEST_CODE = 1;
+    private static final int PERMISSION_CAMARA_REQUEST = 2;
     @BindView(R.id.tv_maillist)
     TextView mtv_maillist;
     @BindView(R.id.tv_multitype)
@@ -46,6 +55,8 @@ public class ComponentActivity extends AppCompatActivity implements View.OnClick
     TextView mTvShadowmasking;
 
 
+    @BindView(R.id.tvQRCode)
+    TextView tvQRCode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,6 +76,7 @@ public class ComponentActivity extends AppCompatActivity implements View.OnClick
         mTvPicut.setOnClickListener(this);
         mTvFrosted.setOnClickListener(this);
         tvNightNode.setOnClickListener(this);
+        tvQRCode.setOnClickListener(this);
         mTvShadowmasking.setOnClickListener(this);
     }
 
@@ -116,6 +128,45 @@ public class ComponentActivity extends AppCompatActivity implements View.OnClick
             case R.id.tvShadowmasking://指引遮盖蒙版
                 startActivity(new Intent(ComponentActivity.this, ShadowmaskingActivity.class));
                 break;
+            case R.id.tvQRCode:
+                // 扫描二维码
+                if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
+                    ActivityCompat.requestPermissions(this, new String[]{android.Manifest.permission.CAMERA}, PERMISSION_CAMARA_REQUEST);
+                } else {
+                    MipcaActivityCapture.openMipcapActivity(this, REQUEST_CODE);
+                }
+
+                break;
+        }
+    }
+
+
+    //  重写方法    当权限申请后     执行 接收结果的作用
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+
+        // 先判断请求码 与 请求时的  是否一致
+        if (requestCode == PERMISSION_CAMARA_REQUEST) {
+            //  判断请求结果长度     且  结果 为  允许访问  则 进行使用
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                // 可以使用
+                MipcaActivityCapture.openMipcapActivity(this, REQUEST_CODE);
+            }
+        } else {
+            super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        }
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == RESULT_OK) {
+            if (requestCode == REQUEST_CODE) {
+                if (data != null) {
+                    String msg = data.getStringExtra(MipcaActivityCapture.RESULT_MSG);
+                    tvQRCode.setText(tvQRCode.getText() + "\n" + msg);
+                }
+            }
         }
     }
 }

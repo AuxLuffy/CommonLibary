@@ -146,6 +146,16 @@
             android:gravity="center"
             />
 
+        <TextView
+            android:id="@+id/tv_floatbtn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#E6E6FA"
+            android:gravity="center"
+            android:text="floatingbutton隐藏菜单"
+            android:textColor="#CCCCCC"
+
+            />
 
         <TextView
             android:id="@+id/tv_examplelv"
