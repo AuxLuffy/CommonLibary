@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
+
+import com.example.getui.GetuiActivity;
 import com.lenovo.service.basicpubliclibrary.SADL.SADLActivity;
 import com.lenovo.service.basicpubliclibrary.alipay.AlipayActivity;
 import com.lenovo.service.basicpubliclibrary.cameraDemo.RecordMainAcitivity;
@@ -26,7 +28,7 @@ public class CompositeActivity extends AppCompatActivity implements View.OnClick
     private TextView[] textviews;
 
     private int[] ids = new int[]{R.id.helloChart, R.id.jsBridge, R.id.SADL, R.id.ilog_demo,
-            R.id.tv_jnidemo,R.id.scan_code
+            R.id.tv_jnidemo,R.id.scan_code,R.id.tv_getui
     };
 
     @Override
@@ -86,6 +88,10 @@ public class CompositeActivity extends AppCompatActivity implements View.OnClick
 
             case  R.id.scan_code:
                 intent.setClass(this,ZxingActivity.class);
+                break;
+
+            case  R.id.tv_getui:
+                intent.setClass(this,GetuiActivity.class);
                 break;
         }
         startActivity(intent);
