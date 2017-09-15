@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_head"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:visibility="visible"
+        android:background="@mipmap/mypage_bg"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="内容模块1"
+            android:textSize="24sp"
+            android:gravity="center"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:visibility="visible"
+            android:layout_below="@+id/ll_fans"
+            android:background="#11000000"
+            >
+
+            <LinearLayout
+                android:id="@+id/ll_taInfo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center"
+
+                >
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@mipmap/tdzl_icon48x48"
+                    android:layout_marginRight="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ta的资料"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_sendMs"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_sendMs"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@mipmap/send_icon48x48"
+                    android:layout_marginRight="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_sendMs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="发消息"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="内容模块2"
+        android:background="#DBFDEC"
+        android:gravity="center"
+        android:layout_below="@+id/ll_head"
+        android:textSize="24sp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#bb000000"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:visibility="gone"
+        >
+        <LinearLayout
+            android:id="@+id/ll_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@android:color/white"
+            android:visibility="visible"
+            >
+            <ImageView
+                android:id="@+id/iv_guide"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@mipmap/send_icon48x48"
+                android:layout_marginRight="10dp"
+                />
+            <TextView
+                android:id="@+id/tv_guide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发消息"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_imageGuide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/guide_msg"
+            android:layout_below="@+id/ll_guide"
+            android:visibility="gone"
+            android:clickable="true"
+            />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="33dp"
+        android:layout_marginStart="33dp"
+        android:layout_toRightOf="@+id/rl_guide"
+        android:text="跳转第二页"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>

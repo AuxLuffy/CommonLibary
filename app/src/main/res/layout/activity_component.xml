@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.lenovo.service.basicpubliclibrary.AnimationActivity">
+
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.lenovo.service.basicpubliclibrary.AnimationActivity">
+ >
 
     <TextView
         android:id="@+id/text1"
@@ -111,10 +115,11 @@
 
     />
     <TextView
+        android:id="@+id/tvShadowmasking"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:textColor="#CCCCCC"
-        android:text="未完待续"
+        android:text="指引遮盖蒙版"
         android:background="#E0FFFF"
         android:gravity="center"
 
@@ -125,8 +130,7 @@
     android:text="未完待续"
     android:background="#D3D3D3"
     android:gravity="center"
-
     />
 
-
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>
