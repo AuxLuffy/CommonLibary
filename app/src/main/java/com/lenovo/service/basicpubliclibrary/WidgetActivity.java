@@ -20,8 +20,8 @@ import com.lenovo.service.basicpubliclibrary.chartview.ChartViewActivity;
 import com.lenovo.service.basicpubliclibrary.colordialog.ColorDialogActivity;
 import com.lenovo.service.basicpubliclibrary.dialogfragment.DialogActivity;
 import com.lenovo.service.basicpubliclibrary.doodle.DoodleViewActivity;
-import com.lenovo.service.basicpubliclibrary.flowlayout.CategoryActivity;
 import com.lenovo.service.basicpubliclibrary.dropdownmenu.DropDownActivity;
+import com.lenovo.service.basicpubliclibrary.flowlayout.CategoryActivity;
 import com.lenovo.service.basicpubliclibrary.flycotablayout.ui.SimpleHomeActivity;
 import com.lenovo.service.basicpubliclibrary.gesturelock.GestureLockActivity;
 import com.lenovo.service.basicpubliclibrary.jike.JikeGalleryActivity;
@@ -31,10 +31,11 @@ import com.lenovo.service.basicpubliclibrary.popup.PopUpActivity;
 import com.lenovo.service.basicpubliclibrary.questionnaire.QuestionActivity;
 import com.lenovo.service.basicpubliclibrary.recyclertablayout.TabLayoutActivity;
 import com.lenovo.service.basicpubliclibrary.recyclerview.banner.ui.BannerActivity;
-import com.lenovo.service.basicpubliclibrary.recyclerview.item.ui.RecyclerViewActivity;
+import com.lenovo.service.basicpubliclibrary.recyclerview.itemhandle.ui.RecyclerViewActivity;
 import com.lenovo.service.basicpubliclibrary.roundiamge.RoundImageActivity;
 import com.lenovo.service.basicpubliclibrary.scoringstrip.ScoringStripActivity;
 import com.lenovo.service.basicpubliclibrary.scratchview.ScratchViewActivity;
+import com.lenovo.service.basicpubliclibrary.signcalendar.SignCalendarActivity;
 import com.lenovo.service.basicpubliclibrary.smilepraiseview.SmilePraiseActivity;
 import com.lenovo.service.basicpubliclibrary.smileyrating.SmileRatingActivity;
 import com.lenovo.service.basicpubliclibrary.stepview.StepViewActivity;
@@ -86,6 +87,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     private TextView mTvDropDownMenu;
     private TextView mTvSmileRating;
     private TextView mTvText;
+    private TextView mTvSignCalendar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -134,6 +136,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTvDropDownMenu = (TextView) findViewById(R.id.tv_dropdownmenu);
         mTvSmileRating = (TextView) findViewById(R.id.tv_smilerating);
         mTvText = (TextView) findViewById(R.id.tv_text);
+        mTvSignCalendar = (TextView) findViewById(R.id.sign_calendar);
     }
 
     private void init_listener() {
@@ -174,6 +177,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTvDropDownMenu.setOnClickListener(this);
         mTvSmileRating.setOnClickListener(this);
         mTvText.setOnClickListener(this);
+        mTvSignCalendar.setOnClickListener(this);
     }
 
     @Override
@@ -327,6 +331,9 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.tv_text://文本多样化
                 startActivity(new Intent(WidgetActivity.this, TextActivity.class));
+                break;
+            case R.id.sign_calendar://文本多样化
+                startActivity(new Intent(WidgetActivity.this, SignCalendarActivity.class));
                 break;
         }
     }

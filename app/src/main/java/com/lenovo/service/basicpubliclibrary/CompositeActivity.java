@@ -10,6 +10,7 @@ import com.lenovo.service.basicpubliclibrary.SADL.SADLActivity;
 import com.lenovo.service.basicpubliclibrary.cameraDemo.RecordMainAcitivity;
 import com.lenovo.service.basicpubliclibrary.camerakit.CamerakitActivity;
 import com.lenovo.service.basicpubliclibrary.databinding.DataBindingActivity;
+import com.lenovo.service.basicpubliclibrary.jniDemo.JNITestActivity;
 import com.lenovo.service.basicpubliclibrary.jsBridge.activity.JSBridgeActivity;
 import com.lenovo.service.basicpubliclibrary.jsBridge.common.LocalConstant;
 import com.lenovo.service.basicpubliclibrary.linechart.ui.LineChartActivity;
@@ -23,7 +24,9 @@ public class CompositeActivity extends AppCompatActivity implements View.OnClick
 
     private TextView[] textviews;
 
-    private int[] ids = new int[]{R.id.helloChart,R.id.jsBridge,R.id.SADL,R.id.ilog_demo};
+    private int[] ids = new int[]{R.id.helloChart,R.id.jsBridge,R.id.SADL,R.id.ilog_demo,
+            R.id.tv_jnidemo
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,6 +75,12 @@ public class CompositeActivity extends AppCompatActivity implements View.OnClick
                 break;
             case R.id.ilog_demo:
                 intent.setClass(this,ALogActivity.class);
+                break;
+
+            case  R.id.tv_jnidemo:
+
+                intent.setClass(this,JNITestActivity.class);
+
                 break;
         }
         startActivity(intent);

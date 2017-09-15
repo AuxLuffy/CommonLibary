@@ -1,4 +1,4 @@
-package com.lenovo.service.basicpubliclibrary.recyclerview.item.listener;
+package com.lenovo.service.basicpubliclibrary.recyclerview.itemhandle.listener;
 
 /**
  * @description:条目状态改变的接口,只需要让ViewHoulder的itemView实现这个接口就ok了,目的是改变itemView的背景色

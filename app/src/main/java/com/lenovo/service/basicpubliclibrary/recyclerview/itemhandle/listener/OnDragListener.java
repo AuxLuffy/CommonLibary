@@ -1,4 +1,4 @@
-package com.lenovo.service.basicpubliclibrary.recyclerview.item.listener;
+package com.lenovo.service.basicpubliclibrary.recyclerview.itemhandle.listener;
 
 import android.support.v7.widget.RecyclerView;
 
