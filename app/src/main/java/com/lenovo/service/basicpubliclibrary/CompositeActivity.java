@@ -17,6 +17,7 @@ import com.lenovo.service.basicpubliclibrary.linechart.ui.LineChartActivity;
 import com.lenovo.service.basicpubliclibrary.rxjava.RxJavaActivity;
 import com.lenovo.service.basicpubliclibrary.validation.ValidateActivity;
 import com.lenovo.service.basicpubliclibrary.videoplayer.VideoplayerActivity;
+import com.lenovo.service.basicpubliclibrary.zxing.activity.ZxingActivity;
 
 //import com.lenovo.KotlinActivity;
 
@@ -25,7 +26,7 @@ public class CompositeActivity extends AppCompatActivity implements View.OnClick
     private TextView[] textviews;
 
     private int[] ids = new int[]{R.id.helloChart,R.id.jsBridge,R.id.SADL,R.id.ilog_demo,
-            R.id.tv_jnidemo
+            R.id.tv_jnidemo,R.id.scan_code
     };
 
     @Override
@@ -81,6 +82,10 @@ public class CompositeActivity extends AppCompatActivity implements View.OnClick
 
                 intent.setClass(this,JNITestActivity.class);
 
+                break;
+
+            case  R.id.scan_code:
+                intent.setClass(this,ZxingActivity.class);
                 break;
         }
         startActivity(intent);

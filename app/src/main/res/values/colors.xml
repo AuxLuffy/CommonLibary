@@ -164,6 +164,16 @@
     <color name="toolbar_text">#8f000000</color>
     <color name="accent">#2789e4</color>
 
+
+    <color name="possible_result_points">#c0ffbd21</color> <!-- Android standard ICS color -->
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_laser">#25a0f5</color> <!-- Android standard ICS color -->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="crn0">#25a0f5</color>
+    <color name="f">#ffffff</color>
+    <color name="e5">#e5e5e5</color>
+    <color name="cb9">#999999</color>
+
     <color name="black_semi_transparent">#B2000000</color>
     <color name="background">#e5e5e5</color>
     <color name="half_black">#808080</color>
