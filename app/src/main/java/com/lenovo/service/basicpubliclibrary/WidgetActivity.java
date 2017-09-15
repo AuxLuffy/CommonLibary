@@ -31,7 +31,7 @@ import com.lenovo.service.basicpubliclibrary.popup.PopUpActivity;
 import com.lenovo.service.basicpubliclibrary.questionnaire.QuestionActivity;
 import com.lenovo.service.basicpubliclibrary.recyclertablayout.TabLayoutActivity;
 import com.lenovo.service.basicpubliclibrary.recyclerview.banner.ui.BannerActivity;
-import com.lenovo.service.basicpubliclibrary.recyclerview.item.ui.RecyclerViewActivity;
+import com.lenovo.service.basicpubliclibrary.recyclerview.itemhandle.ui.RecyclerViewActivity;
 import com.lenovo.service.basicpubliclibrary.roundiamge.RoundImageActivity;
 import com.lenovo.service.basicpubliclibrary.scoringstrip.ScoringStripActivity;
 import com.lenovo.service.basicpubliclibrary.scratchview.ScratchViewActivity;
