@@ -494,4 +494,24 @@
         <item name="colorAccent">#3F51B5</item>
     </style>
 
+    <style name="TextAppear.Theme.f_Size18" parent="android:TextAppearance.Theme">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/f</item>
+    </style>
+
+    <style name="TextAppear.Theme.cb9_Size14" parent="android:TextAppearance.Theme">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/cb9</item>
+    </style>
+
+    <style name="TextAppear.Theme.f_Size14" parent="android:TextAppearance.Theme">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/f</item>
+    </style>
+
+    <style name="TextAppear.Theme.f_Size15" parent="android:TextAppearance.Theme">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/f</item>
+    </style>
+
 </resources>

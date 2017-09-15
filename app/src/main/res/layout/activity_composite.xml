@@ -150,6 +150,15 @@
             android:gravity="center"
             android:text="jni 初步探究"
             android:textColor="#CCCCCC" />
+
+        <TextView
+            android:id="@+id/scan_code"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#F08080"
+            android:gravity="center"
+            android:text="二维码扫描"
+            android:textColor="#CCCCCC" />
     </LinearLayout>
 
 </ScrollView>

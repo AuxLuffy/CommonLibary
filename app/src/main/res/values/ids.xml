@@ -27,4 +27,8 @@
 
 <resources>
     <item name="item_id" type="id" />
+    <item name="decode" type="id" />
+    <item name="decode_failed" type="id" />
+    <item name="decode_succeeded" type="id" />
+    <item name="quit" type="id" />
 </resources>

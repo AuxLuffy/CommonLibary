@@ -31,6 +31,10 @@ public class App extends SugarApp {
     private static App sInstance;
     private Engine mEngine;
     private RefWatcher refWatcher;
+
+    public static int widthPixels = 720;// 屏幕宽度
+    public static int heightPixels = 1280;// 屏幕高度
+
     @Override
     public void onCreate() {
         super.onCreate();
