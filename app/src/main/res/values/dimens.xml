@@ -200,4 +200,26 @@
     <dimen name="arc_width">70dp</dimen>
     <dimen name="bottom_line_margin">12dp</dimen>
     <dimen name="line_width">19dp</dimen>
+
+    <dimen name="addsubutils_btn_width">30dp</dimen>
+    <dimen name="addsubutils_btn_padding">10dp</dimen>
+    <dimen name="addsubutils_textsize">15sp</dimen>
+    <dimen name="addsubutils_et_minwidth">65dp</dimen>
+
+
+    <dimen name="fab_size_normal">56dp</dimen>
+    <dimen name="fab_size_mini">40dp</dimen>
+
+    <dimen name="fab_icon_size">24dp</dimen>
+
+    <dimen name="fab_plus_icon_size">14dp</dimen>
+    <dimen name="fab_plus_icon_stroke">2dp</dimen>
+
+    <dimen name="fab_shadow_offset">3dp</dimen>
+    <dimen name="fab_shadow_radius">9dp</dimen>
+
+    <dimen name="fab_stroke_width">1dp</dimen>
+
+    <dimen name="fab_actions_spacing">16dp</dimen>
+    <dimen name="fab_labels_margin">8dp</dimen>
 </resources>

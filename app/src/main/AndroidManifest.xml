@@ -35,6 +35,9 @@
     <!-- end 二维码扫描 相机，闪光灯权限 -->
     <uses-feature android:name="android.hardware.camera"/>
     <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
 
     <application
             android:name=".App"
@@ -285,6 +288,10 @@
         <activity android:name=".signcalendar.SignCalendarActivity"/>
         <activity android:name=".alipay.AlipayActivity">
         </activity>
+        <activity android:name=".zxing.activity.ZxingActivity"/>
+        <activity android:name=".zxing.activity.CaptureActivity"/>
+        <activity android:name=".addsub.AddSubActivity" />
+        <activity android:name=".floatingbutton.FLoatingBtnActivity"/>
     </application>
 
 </manifest>
