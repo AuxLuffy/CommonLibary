@@ -277,6 +277,7 @@
         <activity android:name=".signcalendar.SignCalendarActivity"></activity>
         <activity android:name=".shadowmasking.ShadowmaskingActivity"></activity>
         <activity android:name=".shadowmasking.ShadowmaskingproActivity"></activity>
+        <activity android:name=".networkokhttp.NetokhttpActivity"></activity>
     </application>
 
 </manifest>
