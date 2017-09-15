@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white_normal">#FFFFFF</color>
+    <dimen name="normal_18_text">18sp</dimen>
+    <dimen name="normal_16_text">16sp</dimen>
+    <!-- QR SCAN -->
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#00000000</color>
+    <color name="busy_indicator">#C0202020</color>
+    <color name="black_text_666">#666666</color>
+</resources>

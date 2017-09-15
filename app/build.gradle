@@ -34,7 +34,6 @@ dependencies {
     //65535解决
     compile 'com.android.support:multidex:1.0.0'
 
-
     // if Java use this. If using Kotlin do NOT use this.
     annotationProcessor "com.github.Raizlabs.DBFlow:dbflow-processor:${dbflow_version}"
     compile "com.github.Raizlabs.DBFlow:dbflow-core:${dbflow_version}"
@@ -114,6 +113,7 @@ dependencies {
     releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.3'
     compile 'com.flurgle:camerakit:0.9.17'
 
+    compile project(path: ':qrcode')
 }
 greendao {
     schemaVersion 1
