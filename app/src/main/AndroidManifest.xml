@@ -287,6 +287,7 @@
         <activity android:name=".signcalendar.SignCalendarActivity"></activity>
         <activity android:name=".zxing.activity.ZxingActivity"/>
         <activity android:name=".zxing.activity.CaptureActivity"/>
+        <activity android:name=".addsub.AddSubActivity" />
         <activity android:name=".floatingbutton.FLoatingBtnActivity"/>
     </application>
 

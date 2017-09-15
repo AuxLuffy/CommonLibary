@@ -387,7 +387,15 @@
             android:gravity="center"
             android:text="签到日历"
             android:textColor="#CCCCCC"
-
             />
+
+        <TextView
+            android:id="@+id/tv_addsub"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#A8A8A8"
+            android:gravity="center"
+            android:text="购物添加删除控件"
+            android:textColor="#666666" />
     </LinearLayout>
 </ScrollView>
