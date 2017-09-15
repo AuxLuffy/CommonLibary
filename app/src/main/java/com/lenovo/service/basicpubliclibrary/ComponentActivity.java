@@ -22,6 +22,10 @@ import com.lenovo.service.basicpubliclibrary.multitype.bilibili.BilibiliActivity
 import com.lenovo.service.basicpubliclibrary.obtainlocalphoto.LocalPhotoActivity;
 import com.lenovo.service.basicpubliclibrary.picture_cut.SampleActivity;
 import com.lenovo.service.basicpubliclibrary.pullTorefresh_tool.PullTorefreshActivity;
+import com.lenovo.service.basicpubliclibrary.shadowmasking.ShadowmaskingActivity;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
 import lenovo.com.zxing.MipcaActivityCapture;
 
 public class ComponentActivity extends AppCompatActivity implements View.OnClickListener {
@@ -47,6 +51,10 @@ public class ComponentActivity extends AppCompatActivity implements View.OnClick
     TextView tvNightNode;
     @BindView(R.id.tv_frosted_galss_effect)
     TextView mTvFrosted;
+    @BindView(R.id.tvShadowmasking)
+    TextView mTvShadowmasking;
+
+
     @BindView(R.id.tvQRCode)
     TextView tvQRCode;
 
@@ -69,6 +77,7 @@ public class ComponentActivity extends AppCompatActivity implements View.OnClick
         mTvFrosted.setOnClickListener(this);
         tvNightNode.setOnClickListener(this);
         tvQRCode.setOnClickListener(this);
+        mTvShadowmasking.setOnClickListener(this);
     }
 
 
@@ -115,6 +124,9 @@ public class ComponentActivity extends AppCompatActivity implements View.OnClick
                         startActivity(intent);
                     }
                 });
+                break;
+            case R.id.tvShadowmasking://指引遮盖蒙版
+                startActivity(new Intent(ComponentActivity.this, ShadowmaskingActivity.class));
                 break;
             case R.id.tvQRCode:
                 // 扫描二维码

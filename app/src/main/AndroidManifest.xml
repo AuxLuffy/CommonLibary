@@ -297,6 +297,13 @@
             android:permission="android.permission.BIND_JOB_SERVICE" />
 
         <activity android:name=".schedule.ScheduleActivity"></activity>
+            android:name=".jniDemo.JNITestActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".signcalendar.SignCalendarActivity"></activity>
+        <activity android:name=".shadowmasking.ShadowmaskingActivity"></activity>
+        <activity android:name=".shadowmasking.ShadowmaskingproActivity"></activity>
+        <activity android:name=".networkokhttp.NetokhttpActivity"></activity>
+        <activity android:name=".expandablelvanimated.ExpandableListViewActivity"></activity>
     </application>
 
 </manifest>

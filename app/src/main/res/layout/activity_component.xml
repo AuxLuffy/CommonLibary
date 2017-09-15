@@ -121,6 +121,15 @@
                 android:text="二维码"
                 android:background="#F08080"
                 android:gravity="center"
+    />
+    <TextView
+        android:id="@+id/tvShadowmasking"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="#CCCCCC"
+        android:text="指引遮盖蒙版"
+        android:background="#E0FFFF"
+        android:gravity="center"
 
         />
         <TextView
@@ -133,6 +142,5 @@
 
         />
     </LinearLayout>
-
 
 </ScrollView>
