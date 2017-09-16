@@ -1,4 +1,4 @@
-package com.lenovo.service.basicpubliclibrary.recyclerview.itemhandle.listener;
+package com.lenovo.service.basicpubliclibrary.recyclerview.item.handle.listener;
 
 /**
  * @description:当拖拽或者侧滑的时候,需要回调此接口中的方法,来操作adapter中的数据

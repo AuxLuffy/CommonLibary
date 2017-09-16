@@ -103,22 +103,14 @@
             android:textColor="#CCCCCC" />
 
         <TextView
-            android:id="@+id/recyclerview_item_opt_tv"
+            android:id="@+id/recyclerview_tv"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:background="#F08080"
+            android:background="@color/colorPrimary"
             android:gravity="center"
-            android:text="RecyclerView条目操作:拖拽排序,滑动删除"
-            android:textColor="#CCCCCC" />
+            android:text="RecyclerView相关效果演示入口"
+            android:textColor="@color/white" />
 
-        <TextView
-            android:id="@+id/recyclerview_banner_tv"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="#E0FFFF"
-            android:gravity="center"
-            android:text="利用RecyclerView实现图片轮播效果"
-            android:textColor="#CCCCCC" />
 
         <TextView
             android:id="@+id/tv_boommenu"
@@ -288,13 +280,13 @@
             android:textColor="@android:color/darker_gray" />
 
         <TextView
-            android:textColor="#CCCCCC"
-            android:background="#7CFC00"
-            android:gravity="center"
             android:id="@+id/tv_bottleloading"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:text="贝塞尔风景" />
+            android:background="#7CFC00"
+            android:gravity="center"
+            android:text="贝塞尔风景"
+            android:textColor="#CCCCCC" />
 
         <TextView
             android:id="@+id/tv_toolbar"
@@ -325,22 +317,22 @@
             android:textColor="#CCCCCC" />
 
         <TextView
-            android:textColor="#CCCCCC"
-            android:background="#FFF0F5"
-            android:gravity="center"
             android:id="@+id/tv_dialogfragment"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:text="dialogfragment的封装" />
+            android:background="#FFF0F5"
+            android:gravity="center"
+            android:text="dialogfragment的封装"
+            android:textColor="#CCCCCC" />
 
         <TextView
-            android:textColor="#CCCCCC"
-            android:background="#7CFC00"
-            android:gravity="center"
             android:id="@+id/tv_flowflag"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:text="流式标签布局" />
+            android:background="#7CFC00"
+            android:gravity="center"
+            android:text="流式标签布局"
+            android:textColor="#CCCCCC" />
 
 
         <TextView
@@ -386,8 +378,7 @@
             android:background="#E6E6FA"
             android:gravity="center"
             android:text="签到日历"
-            android:textColor="#CCCCCC"
-            />
+            android:textColor="#CCCCCC" />
 
         <TextView
             android:id="@+id/tv_addsub"

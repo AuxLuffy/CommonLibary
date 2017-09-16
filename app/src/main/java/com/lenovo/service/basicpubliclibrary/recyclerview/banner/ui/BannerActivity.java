@@ -5,7 +5,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
 import com.lenovo.service.basicpubliclibrary.R;
-import com.lenovo.service.basicpubliclibrary.recyclerview.banner.RecyclerBanner;
+import com.lenovo.service.basicpubliclibrary.recyclerview.banner.view.RecyclerBanner;
 
 import java.util.ArrayList;
 import java.util.List;

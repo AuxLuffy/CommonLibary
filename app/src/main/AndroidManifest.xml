@@ -70,6 +70,18 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <!--袁东华开始-->
+        <!--RecyclerView相关实现效果演示界面-->
+        <activity android:name=".recyclerview.entrance.ui.RecyclerViewActivity" />
+        <!--RecyclerView的条目操作演示界面-->
+        <activity android:name=".recyclerview.item.handle.ui.ItemHandleActivity" />
+        <!--RecyclerView的条目分割线演示界面-->
+        <activity android:name=".recyclerview.item.decoration.line.ui.DecorationActivity" />
+        <!--利用RecyclerView实现图片轮播效果演示界面-->
+        <activity android:name=".recyclerview.banner.ui.BannerActivity" />
+        <!--利用ItemDecoration实现时光轴效果演示界面-->
+        <activity android:name=".recyclerview.item.decoration.timeline.ui.TimeLineActivity" />
+        <!--袁东华结束-->
         <!-- 动画 -->
         <activity android:name=".AnimationActivity"/>
         <activity android:name=".headerfloatanimation.HeaderFloatActivity"/>
@@ -109,8 +121,6 @@
         <activity android:name=".flycotablayout.ui.SegmentTabActivity"/>
         <activity android:name=".flycotablayout.ui.SimpleHomeActivity"/>
         <activity android:name=".flycotablayout.ui.SlidingTabActivity"/>
-        <activity android:name=".recyclerview.itemhandle.ui.RecyclerViewActivity"/>
-        <activity android:name=".recyclerview.banner.ui.BannerActivity"/>
         <activity android:name=".multitype.bilibili.BilibiliActivity"/>
         <activity android:name=".multitype.multi_select.MultiSelectActivity"/>
         <activity android:name=".multitype.normal.NormalActivity"/>

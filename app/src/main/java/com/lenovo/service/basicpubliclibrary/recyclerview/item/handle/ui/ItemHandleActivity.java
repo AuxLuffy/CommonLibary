@@ -1,4 +1,4 @@
-package com.lenovo.service.basicpubliclibrary.recyclerview.itemhandle.ui;
+package com.lenovo.service.basicpubliclibrary.recyclerview.item.handle.ui;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -16,27 +16,24 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.lenovo.service.basicpubliclibrary.R;
-import com.lenovo.service.basicpubliclibrary.recyclerview.itemhandle.adapter.HistoryAdapter;
-import com.lenovo.service.basicpubliclibrary.recyclerview.itemhandle.data.Weather;
-import com.lenovo.service.basicpubliclibrary.recyclerview.itemhandle.listener.ItemTouchHelperCallback;
-import com.lenovo.service.basicpubliclibrary.recyclerview.itemhandle.listener.OnDragListener;
-import com.lenovo.service.basicpubliclibrary.recyclerview.itemhandle.listener.OnItemClickListener;
+import com.lenovo.service.basicpubliclibrary.recyclerview.item.handle.adapter.WeatherAdapter;
+import com.lenovo.service.basicpubliclibrary.recyclerview.item.handle.data.Weather;
+import com.lenovo.service.basicpubliclibrary.recyclerview.item.handle.listener.ItemTouchHelperCallback;
+import com.lenovo.service.basicpubliclibrary.recyclerview.item.handle.listener.OnDragListener;
+import com.lenovo.service.basicpubliclibrary.recyclerview.item.handle.listener.OnItemClickListener;
 
 import java.util.ArrayList;
-
-
-
 /**
  * @description:RecyclerView条目操作演示界面
  * @author:袁东华 created at 2016/8/25 0025 下午 5:12
  */
 
-public class RecyclerViewActivity extends AppCompatActivity {
+public class ItemHandleActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
-    private HistoryAdapter historyAdapter;
+    private WeatherAdapter weatherAdapter;
     private ArrayList<Weather> list;
-    private Activity activity = RecyclerViewActivity.this;
+    private Activity activity = ItemHandleActivity.this;
     private int[] imgs = {R.drawable.icon_cloudy, R.drawable.icon_cloudy_nighttime,
             R.drawable.icon_gale, R.drawable.icon_heavy_rain,
             R.drawable.icon_heavy_snow, R.drawable.icon_meteor,
@@ -78,7 +75,7 @@ public class RecyclerViewActivity extends AppCompatActivity {
                     calendar.get(Calendar.HOUR_OF_DAY) + ":" + calendar.get(Calendar.MINUTE) + ":" + calendar.get(Calendar.SECOND));
             weatherList.add(weather);
         }
-        historyAdapter.setList(weatherList);
+        weatherAdapter.setList(weatherList);
     }
 
 
@@ -86,10 +83,10 @@ public class RecyclerViewActivity extends AppCompatActivity {
         recyclerView= (RecyclerView) findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(activity, LinearLayoutManager.VERTICAL, false));
-        historyAdapter = new HistoryAdapter(activity, handler);
-        recyclerView.setAdapter(historyAdapter);
+        weatherAdapter = new WeatherAdapter(activity, handler);
+        recyclerView.setAdapter(weatherAdapter);
         //点击条目
-        historyAdapter.setOnItemClickListener(new OnItemClickListener() {
+        weatherAdapter.setOnItemClickListener(new OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
                 Toast.makeText(activity, "点击了条目" + (position+1), Toast.LENGTH_SHORT).show();
@@ -98,13 +95,13 @@ public class RecyclerViewActivity extends AppCompatActivity {
         });
 
         //historyAdapter就是RecyclerView的适配器,historyAdapter实现了接口OnMoveAndSwipedListener
-        ItemTouchHelperCallback callback = new ItemTouchHelperCallback(historyAdapter);
+        ItemTouchHelperCallback callback = new ItemTouchHelperCallback(weatherAdapter);
         //ItemTouchHelper的构造器需要传入callback,拖拽和滑动事件需要回调callback中的3个方法
         final ItemTouchHelper itemTouchHelper = new ItemTouchHelper(callback);
         //把RecyclerView和ItemTouchHelper关联起来用此方法
         itemTouchHelper.attachToRecyclerView(recyclerView);
         //设置条目拖拽接口
-        historyAdapter.setOnDragListener(new OnDragListener() {
+        weatherAdapter.setOnDragListener(new OnDragListener() {
             /**
              * @param viewHolder
              * @description:当条目需要拖拽的时候,适配器调用onDrag
@@ -135,7 +132,7 @@ public class RecyclerViewActivity extends AppCompatActivity {
                     Bundle data = msg.getData();
                     if (data != null) {
                         list = data.getParcelableArrayList("list");
-                        historyAdapter.setList(list);
+                        weatherAdapter.setList(list);
                     }
 
                     break;

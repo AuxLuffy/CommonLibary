@@ -32,7 +32,9 @@ import com.lenovo.service.basicpubliclibrary.popup.PopUpActivity;
 import com.lenovo.service.basicpubliclibrary.questionnaire.QuestionActivity;
 import com.lenovo.service.basicpubliclibrary.recyclertablayout.TabLayoutActivity;
 import com.lenovo.service.basicpubliclibrary.recyclerview.banner.ui.BannerActivity;
-import com.lenovo.service.basicpubliclibrary.recyclerview.itemhandle.ui.RecyclerViewActivity;
+import com.lenovo.service.basicpubliclibrary.recyclerview.entrance.ui.RecyclerViewActivity;
+import com.lenovo.service.basicpubliclibrary.recyclerview.item.decoration.line.ui.DecorationActivity;
+import com.lenovo.service.basicpubliclibrary.recyclerview.item.handle.ui.ItemHandleActivity;
 import com.lenovo.service.basicpubliclibrary.roundiamge.RoundImageActivity;
 import com.lenovo.service.basicpubliclibrary.scoringstrip.ScoringStripActivity;
 import com.lenovo.service.basicpubliclibrary.scratchview.ScratchViewActivity;
@@ -63,10 +65,8 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     private TextView recycler_tablayout;
     private TextView flytab;
     private TextView mTxtPicker;
-    //RecyclerView条目操作入口按钮
-    private TextView recyclerview_item_opt_tv;
-    //RecyclerView实现图片轮播效果入口按钮
-    private TextView recyclerview_banner_tv;
+    //RecyclerView相关实现效果入口按钮
+    private TextView recyclerview_tv;
     private TextView mTvBoomMenu;
     private TextView tvScratch;
     private TextView mTvGuide;
@@ -112,10 +112,8 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         color_dialog = (TextView) findViewById(R.id.color_dialog);
         recycler_tablayout = (TextView) findViewById(R.id.recycler_tablayout);
         flytab = (TextView) findViewById(R.id.fly_tab);
-        //获取RecyclerView条目操作入口按钮对象
-        recyclerview_item_opt_tv = (TextView) findViewById(R.id.recyclerview_item_opt_tv);
-        //获取RecyclerView实现图片轮播效果入口按钮对象
-        recyclerview_banner_tv = (TextView) findViewById(R.id.recyclerview_banner_tv);
+        //获取RecyclerView相关实现效果入口按钮对象
+        recyclerview_tv = (TextView) findViewById(R.id.recyclerview_tv);
         mTvBoomMenu = (TextView) findViewById(R.id.tv_boommenu);
         mTxtPicker = (TextView) findViewById(R.id.tv_picker);
         tvScratch = (TextView) findViewById(R.id.tv_scratch);
@@ -154,8 +152,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         color_dialog.setOnClickListener(this);
         recycler_tablayout.setOnClickListener(this);
         flytab.setOnClickListener(this);
-        recyclerview_item_opt_tv.setOnClickListener(this);
-        recyclerview_banner_tv.setOnClickListener(this);
+        recyclerview_tv.setOnClickListener(this);
         mTvBoomMenu.setOnClickListener(this);
         mTxtPicker.setOnClickListener(this);
         tvScratch.setOnClickListener(this);
@@ -236,16 +233,11 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
                 intent = new Intent(WidgetActivity.this, SimpleHomeActivity.class);
                 startActivity(intent);
                 break;
-            //点击RecyclerView条目操作按钮
-            case R.id.recyclerview_item_opt_tv:
-                intent = new Intent(WidgetActivity.this, RecyclerViewActivity.class);
-                startActivity(intent);
+            //点击RecyclerView相关实现效果入口按钮
+            case R.id.recyclerview_tv:
+                startActivity(new Intent(WidgetActivity.this, RecyclerViewActivity.class));
                 break;
-            //点击RecyclerView条目操作按钮
-            case R.id.recyclerview_banner_tv:
-                intent = new Intent(WidgetActivity.this, BannerActivity.class);
-                startActivity(intent);
-                break;
+           
             case R.id.tv_boommenu:
                 startActivity(new Intent(WidgetActivity.this, BoomMenuMainActivity.class));
                 break;

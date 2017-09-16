@@ -1,4 +1,4 @@
-package com.lenovo.service.basicpubliclibrary.recyclerview.itemhandle.adapter;
+package com.lenovo.service.basicpubliclibrary.recyclerview.item.handle.adapter;
 
 import android.app.Activity;
 import android.os.Handler;
@@ -13,28 +13,25 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.lenovo.service.basicpubliclibrary.R;
-import com.lenovo.service.basicpubliclibrary.recyclerview.itemhandle.data.Weather;
-import com.lenovo.service.basicpubliclibrary.recyclerview.itemhandle.listener.OnDragListener;
-import com.lenovo.service.basicpubliclibrary.recyclerview.itemhandle.listener.OnItemClickListener;
-import com.lenovo.service.basicpubliclibrary.recyclerview.itemhandle.listener.OnMoveAndSwipedListener;
-import com.lenovo.service.basicpubliclibrary.recyclerview.itemhandle.listener.OnStateChangedListener;
+import com.lenovo.service.basicpubliclibrary.recyclerview.item.handle.data.Weather;
+import com.lenovo.service.basicpubliclibrary.recyclerview.item.handle.listener.OnDragListener;
+import com.lenovo.service.basicpubliclibrary.recyclerview.item.handle.listener.OnItemClickListener;
+import com.lenovo.service.basicpubliclibrary.recyclerview.item.handle.listener.OnMoveAndSwipedListener;
+import com.lenovo.service.basicpubliclibrary.recyclerview.item.handle.listener.OnStateChangedListener;
 
 import java.util.ArrayList;
 import java.util.Collections;
-
-
-
 /**
- * @description:历史记录的适配器
+ * @description: 天气的适配器
  * @author:袁东华 created at 2016/8/30 0030 下午 2:00
  */
-public class HistoryAdapter extends Adapter<HistoryAdapter.ViewHolder> implements OnMoveAndSwipedListener {
+public class WeatherAdapter extends Adapter<WeatherAdapter.ViewHolder> implements OnMoveAndSwipedListener {
     private OnItemClickListener mOnItemClickListener;
     private Activity activity;
     private ArrayList<Weather> list;
     private Handler handler;
 
-    public HistoryAdapter(Activity activity, Handler handler) {
+    public WeatherAdapter(Activity activity, Handler handler) {
         this.activity = activity;
         this.handler = handler;
     }

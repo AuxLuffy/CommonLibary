@@ -1,4 +1,4 @@
-package com.lenovo.service.basicpubliclibrary.recyclerview.banner;
+package com.lenovo.service.basicpubliclibrary.recyclerview.banner.view;
 
 import android.content.Context;
 import android.graphics.drawable.GradientDrawable;

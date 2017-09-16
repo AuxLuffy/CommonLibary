@@ -1,4 +1,4 @@
-package com.lenovo.service.basicpubliclibrary.recyclerview.itemhandle.data;
+package com.lenovo.service.basicpubliclibrary.recyclerview.item.handle.data;
 
 import android.os.Parcel;
 import android.os.Parcelable;

@@ -1,4 +1,4 @@
-package com.lenovo.service.basicpubliclibrary.recyclerview.itemhandle.listener;
+package com.lenovo.service.basicpubliclibrary.recyclerview.item.handle.listener;
 
 import android.graphics.Canvas;
 import android.support.v7.widget.GridLayoutManager;
