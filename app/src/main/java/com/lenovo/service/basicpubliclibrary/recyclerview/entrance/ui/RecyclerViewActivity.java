@@ -23,6 +23,7 @@ import com.lenovo.service.basicpubliclibrary.recyclerview.banner.ui.BannerActivi
 import com.lenovo.service.basicpubliclibrary.recyclerview.entrance.adapter.RecyclerViewAdapter;
 import com.lenovo.service.basicpubliclibrary.recyclerview.item.decoration.line.ui.DecorationActivity;
 import com.lenovo.service.basicpubliclibrary.recyclerview.item.decoration.line.view.DividerItemDecoration;
+import com.lenovo.service.basicpubliclibrary.recyclerview.item.decoration.timeline.ui.TimeLineActivity;
 import com.lenovo.service.basicpubliclibrary.recyclerview.item.handle.adapter.WeatherAdapter;
 import com.lenovo.service.basicpubliclibrary.recyclerview.item.handle.data.Weather;
 import com.lenovo.service.basicpubliclibrary.recyclerview.item.handle.listener.ItemTouchHelperCallback;
@@ -30,6 +31,7 @@ import com.lenovo.service.basicpubliclibrary.recyclerview.item.handle.listener.O
 import com.lenovo.service.basicpubliclibrary.recyclerview.item.handle.listener.OnItemClickListener;
 import com.lenovo.service.basicpubliclibrary.recyclerview.item.handle.ui.ItemHandleActivity;
 import com.lenovo.service.basicpubliclibrary.shadowmasking.utils.ScreenUtils;
+import com.lenovo.service.basicpubliclibrary.timeline.Timeline_Activity;
 
 import java.util.ArrayList;
 
@@ -64,7 +66,7 @@ public class RecyclerViewActivity extends AppCompatActivity {
         list.add("利用RecyclerView实现图片轮播效果");
         list.add("RecyclerView条目操作:拖拽排序,滑动删除");
         list.add("利用RecyclerView的ItemDecoration实现条目分割线效果");
-
+        list.add("利用RecyclerView的ItemDecoration实现时光轴效果");
         recyclerViewAdapter.setList(list);
     }
 
@@ -99,6 +101,10 @@ public class RecyclerViewActivity extends AppCompatActivity {
                     //点击RecyclerView条目分割线效果按钮
                     case 2:
                         startActivity(new Intent(context, DecorationActivity.class));
+                        break;
+                    //点击时光轴效果按钮
+                    case 3:
+                        startActivity(new Intent(context, TimeLineActivity.class));
                         break;
                 }
 
