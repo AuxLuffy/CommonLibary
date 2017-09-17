@@ -129,3 +129,8 @@
 2. RecyclerView条目操作:滑动删除条目,长按条目拖动排序
 3. 利用RecyclerView的ItemDecoration实现条目分割线效果
 4. 利用RecyclerView的ItemDecoration实现时光轴效果
+5. 利用RecyclerView的ItemDecoration实现排行榜效果
+6. 利用RecyclerView实现瀑布流效果
+7. 瀑布流条目操作:滑动删除条目,长按条目拖动排序
+8. 瀑布流式时光轴效果1
+9. 瀑布流式时光轴效果2
