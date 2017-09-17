@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.lenovo.service.basicpubliclibrary.widget.CircleImageActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:src="@drawable/wow_splash_bg3"
+        app:civ_border_color="@color/red"
+        app:civ_border_width="5dp"></de.hdodenhof.circleimageview.CircleImageView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:id="@+id/image2"
+        android:background="@color/black"
+        android:src="@drawable/wow_splash_bg2"
+        app:civ_border_color="@color/green"
+        app:civ_border_width="2dp"></de.hdodenhof.circleimageview.CircleImageView>
+</LinearLayout>

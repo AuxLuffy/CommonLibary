@@ -388,5 +388,21 @@
             android:gravity="center"
             android:text="购物添加删除控件"
             android:textColor="#666666" />
+        <TextView
+            android:id="@+id/tv_headView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#D8D8D8"
+            android:gravity="center"
+            android:text="圆形头型控件"
+            android:textColor="#333333" />
+        <TextView
+            android:id="@+id/tv_alertDialog"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#D8D8D8"
+            android:gravity="center"
+            android:text="自定义提示框"
+            android:textColor="@color/baby_blue" />
     </LinearLayout>
 </ScrollView>

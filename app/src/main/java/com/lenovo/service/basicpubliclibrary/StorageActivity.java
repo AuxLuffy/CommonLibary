@@ -5,9 +5,11 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
+
 import com.lenovo.service.basicpubliclibrary.dbflow.DBFlowActivity;
 import com.lenovo.service.basicpubliclibrary.greendao.GreenDaoDemoActivity;
 import com.lenovo.service.basicpubliclibrary.ormlite.OrmLiteActivity;
+import com.lenovo.service.basicpubliclibrary.realm.RealmActivity;
 import com.lenovo.service.basicpubliclibrary.sugar.SugarActivity;
 
 public class StorageActivity extends AppCompatActivity implements View.OnClickListener {
@@ -16,6 +18,7 @@ public class StorageActivity extends AppCompatActivity implements View.OnClickLi
     private TextView tvDBFlow;
     private TextView greenDao;
     private TextView sugar;
+    private TextView realm;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +29,7 @@ public class StorageActivity extends AppCompatActivity implements View.OnClickLi
         greenDao = (TextView) findViewById(R.id.greenDao);
         tvDBFlow = (TextView) findViewById(R.id.tvDBFlow);
         sugar = (TextView) findViewById(R.id.sugar);
+        realm = (TextView) findViewById(R.id.realm);
 
         setOnClickListener();
     }
@@ -35,6 +39,8 @@ public class StorageActivity extends AppCompatActivity implements View.OnClickLi
         greenDao.setOnClickListener(this);
         tvDBFlow.setOnClickListener(this);
         sugar.setOnClickListener(this);
+        realm.setOnClickListener(this);
+
     }
 
     @Override
@@ -55,6 +61,10 @@ public class StorageActivity extends AppCompatActivity implements View.OnClickLi
             case R.id.sugar:
                 Intent sugar = new Intent(this, SugarActivity.class);
                 startActivity(sugar);
+                break;
+            case R.id.realm:
+                Intent realm = new Intent(this, RealmActivity.class);
+                startActivity(realm);
                 break;
         }
     }

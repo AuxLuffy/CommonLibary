@@ -11,6 +11,7 @@ import com.lenovo.service.basicpubliclibrary.LoadMoreRecyclerView.MyRecyclerView
 import com.lenovo.service.basicpubliclibrary.Tastytoast.ToastActivity;
 import com.lenovo.service.basicpubliclibrary.UserGuideView.UserGuideActivity;
 import com.lenovo.service.basicpubliclibrary.addsub.AddSubActivity;
+import com.lenovo.service.basicpubliclibrary.alerter.AlerterActivity;
 import com.lenovo.service.basicpubliclibrary.avatarlabelview.AvatarLabelActivity;
 import com.lenovo.service.basicpubliclibrary.bgabanner.GuideActivity;
 import com.lenovo.service.basicpubliclibrary.boommenu.BoomMenuMainActivity;
@@ -48,6 +49,7 @@ import com.lenovo.service.basicpubliclibrary.timepicker.TimePickerActivity;
 import com.lenovo.service.basicpubliclibrary.toolbar.TestToolbarActivity;
 import com.lenovo.service.basicpubliclibrary.ultraviewpager.UPVDemoActivity;
 import com.lenovo.service.basicpubliclibrary.weekview.WeekViewActivity;
+import com.lenovo.service.basicpubliclibrary.widget.CircleImageActivity;
 import com.lenovo.service.basicpubliclibrary.zoomheader.ZoomHeaderActivity;
 
 
@@ -90,6 +92,8 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     private TextView mTvText;
     private TextView mTvSignCalendar;
     private TextView mTvAddSub;
+    private TextView mTvHeadView;
+    private TextView mTvAlert;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -138,6 +142,8 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTvText = (TextView) findViewById(R.id.tv_text);
         mTvSignCalendar = (TextView) findViewById(R.id.sign_calendar);
         mTvAddSub = (TextView) findViewById(R.id.tv_addsub);
+        mTvHeadView = (TextView) findViewById(R.id.tv_headView);
+        mTvAlert = (TextView) findViewById(R.id.tv_alertDialog);
     }
 
     private void init_listener() {
@@ -179,6 +185,8 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTvText.setOnClickListener(this);
         mTvSignCalendar.setOnClickListener(this);
         mTvAddSub.setOnClickListener(this);
+        mTvHeadView.setOnClickListener(this);
+        mTvAlert.setOnClickListener(this);
     }
 
     @Override
@@ -333,6 +341,12 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.tv_addsub:
                 startActivity(new Intent(WidgetActivity.this, AddSubActivity.class));
+                break;
+            case R.id.tv_headView:
+                startActivity(new Intent(WidgetActivity.this, CircleImageActivity.class));
+                break;
+            case R.id.tv_alertDialog:
+                startActivity(new Intent(WidgetActivity.this, AlerterActivity.class));
                 break;
         }
     }

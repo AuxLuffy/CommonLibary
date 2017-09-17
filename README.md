@@ -50,6 +50,9 @@
 3. 工具类-日常用到的基本工具
 4. 控件-一款仿照iOS开关SwitchButton
 5. 框架-验证表单输入内容格式Validation
+6. 一款快速易用控件圆形头像CircleImageView
+7. android数据库框架Realm的基本使用方法
+8. 动态显示的提示框Alerter
 
 # 种洋洋
 1. 控件-实现图片花式翻转
