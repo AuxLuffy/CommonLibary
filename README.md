@@ -121,3 +121,11 @@
 
 1.控件-时间选择器
 2.floatingbutton隐藏菜单
+
+
+#袁东华
+控件:
+1.利用RecyclerView实现图片轮播效果
+2.RecyclerView条目操作:滑动删除条目,长按条目拖动排序
+3.利用RecyclerView的ItemDecoration实现条目分割线效果
+4.利用RecyclerView的ItemDecoration实现时光轴效果
