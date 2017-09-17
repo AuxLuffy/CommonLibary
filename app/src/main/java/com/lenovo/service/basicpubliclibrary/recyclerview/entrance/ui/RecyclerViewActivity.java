@@ -61,8 +61,8 @@ public class RecyclerViewActivity extends AppCompatActivity {
         list.add("利用RecyclerView的ItemDecoration实现排行榜效果");
         list.add("利用RecyclerView实现瀑布流效果");
         list.add("瀑布流条目操作:拖拽排序,滑动删除");
-        list.add("瀑布流式时光轴效果");
-        list.add("瀑布流式任务时光轴效果");
+        list.add("瀑布流式时光轴效果1");
+        list.add("瀑布流式时光轴效果2");
         recyclerViewAdapter.setList(list);
     }
 

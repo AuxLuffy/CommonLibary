@@ -40,7 +40,7 @@ public class TimeLine1Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSupportActionBar().setTitle("瀑布流式时光轴效果");
+        getSupportActionBar().setTitle("瀑布流式时光轴效果1");
         setContentView(R.layout.activity_staggered_timeline1);
 
         mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);

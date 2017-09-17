@@ -43,6 +43,7 @@ public class DotTimeLineActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().setTitle("瀑布流式时光轴效果2");
         setContentView(R.layout.dot_timeline_layout);
 
         mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
