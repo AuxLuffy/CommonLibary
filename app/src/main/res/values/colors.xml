@@ -198,4 +198,8 @@
     <color name="pink_pressed">#ec407a</color>
     <color name="blue_semi_transparent">#805677fc</color>
     <color name="blue_semi_transparent_pressed">#80738ffe</color>
+
+    <color name="purple">#69415D</color>
+    <color name="purple_start_color">#6178f2</color>
+    <color name="purple_end_color">#925eff</color>
 </resources>

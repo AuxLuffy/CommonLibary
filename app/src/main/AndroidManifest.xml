@@ -88,6 +88,10 @@
         <activity android:name=".recyclerview.staggeredgrid.ui.StaggeredGridActivity" />
         <!--瀑布流条目操作演示界面-->
         <activity android:name=".recyclerview.staggeredgrid.ui.ItemHandleActivity" />
+        <!--瀑布流式时光轴演示界面-->
+        <activity android:name=".recyclerview.staggeredtimeline.timeline1.TimeLine1Activity" />
+        <!--瀑布流式任务时光轴演示界面-->
+        <activity android:name=".recyclerview.staggeredtimeline.timeline2.DotTimeLineActivity" />
         <!--袁东华结束-->
 
         <!-- 动画 -->
