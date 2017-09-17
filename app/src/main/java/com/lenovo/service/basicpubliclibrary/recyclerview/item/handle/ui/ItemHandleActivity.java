@@ -49,7 +49,7 @@ public class ItemHandleActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recyclerview_item);
-        getSupportActionBar().setTitle("RecyclerView条目操作");
+        getSupportActionBar().setTitle("列表条目操作");
         getSupportActionBar().setSubtitle("长按拖动条目,滑动删除条目");
         initView();
         initData();

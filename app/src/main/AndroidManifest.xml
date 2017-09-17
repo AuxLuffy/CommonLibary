@@ -70,6 +70,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
         <!--袁东华开始-->
         <!--RecyclerView相关实现效果演示界面-->
         <activity android:name=".recyclerview.entrance.ui.RecyclerViewActivity" />
@@ -81,7 +82,14 @@
         <activity android:name=".recyclerview.banner.ui.BannerActivity" />
         <!--利用ItemDecoration实现时光轴效果演示界面-->
         <activity android:name=".recyclerview.item.decoration.timeline.ui.TimeLineActivity" />
+        <!--利用ItemDecoration实现排行榜效果-->
+        <activity android:name=".recyclerview.item.decoration.rankinglist.ui.RankingListActivity" />
+        <!--利用RecyclerView实现瀑布流效果-->
+        <activity android:name=".recyclerview.staggeredgrid.ui.StaggeredGridActivity" />
+        <!--瀑布流条目操作演示界面-->
+        <activity android:name=".recyclerview.staggeredgrid.ui.ItemHandleActivity" />
         <!--袁东华结束-->
+
         <!-- 动画 -->
         <activity android:name=".AnimationActivity"/>
         <activity android:name=".headerfloatanimation.HeaderFloatActivity"/>

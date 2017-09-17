@@ -43,7 +43,7 @@ public class TimeLineItemDecoration extends RecyclerView.ItemDecoration {
         paint = new Paint();
         //设置抗锯齿
         paint.setAntiAlias(true);
-        textPaint=new Paint();
+        textPaint = new Paint();
         textPaint.setAntiAlias(true);
         textPaint.setTextAlign(Paint.Align.CENTER);
 
@@ -90,6 +90,8 @@ public class TimeLineItemDecoration extends RecyclerView.ItemDecoration {
      * 需要注意的一点是 getItemOffsets 是针对每一个 ItemView，
      * 而 onDraw 方法却是针对 RecyclerView 本身，所以在 onDraw 方法中需要遍历屏幕上可见的 ItemView，
      * 分别获取它们的位置信息，然后分别的绘制对应的分割线。
+     * <p>
+     * ondraw方法绘制的内容在itemView下面,onDrawOver方法绘制的内容在itemView上面
      *
      * @param c      Canvas 不止能画直线, 画圆、画矩形、画弧形、绘制图片都不在话下
      * @param parent
@@ -160,16 +162,16 @@ public class TimeLineItemDecoration extends RecyclerView.ItemDecoration {
             paint.setStyle(Paint.Style.FILL_AND_STROKE);
 
             //绘制文字
-            Rect bounds=new Rect();
-            String text=childAdapterPosition+1+"";
-            textPaint.getTextBounds(text,0,text.length(),bounds);
+            Rect bounds = new Rect();
+            String text = childAdapterPosition + 1 + "";
+            textPaint.getTextBounds(text, 0, text.length(), bounds);
             Paint.FontMetrics fontMetrics = textPaint.getFontMetrics();
             float fontHeight = fontMetrics.bottom - fontMetrics.top;
-            float fontWidth=textPaint.measureText(text);
+            float fontWidth = textPaint.measureText(text);
 
-            float baseLine=centerY+(fontMetrics.bottom - fontMetrics.top)/2-fontMetrics.bottom;
+            float baseLine = centerY + (fontMetrics.bottom - fontMetrics.top) / 2 - fontMetrics.bottom;
 
-            c.drawText(text,centerX,baseLine,textPaint);
+            c.drawText(text, centerX, baseLine, textPaint);
 
             if (childAdapterPosition != itemCount - 1) {
                 //绘制下半轴的线
