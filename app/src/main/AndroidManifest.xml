@@ -333,6 +333,8 @@
         <activity android:name=".permissionDemo.PermissionDemoActivity" />
         <activity android:name=".alerter.AlerterActivity" />
         <activity android:name=".bezier.PinViewActivity"></activity>
+        <activity android:name=".bottombar.BottomBarActivity"/>
+        <activity android:name=".floatingmenu.FloatingActionActivity"/>
     </application>
 
 </manifest>

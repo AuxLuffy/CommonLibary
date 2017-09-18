@@ -115,6 +115,8 @@
 5. 综合-可上下拖动位置的带slidemenu的listview
 6. 综合-日志工具
 7. 综合-权限申请的第三方库
+8. 动画-floatingmenu浮动菜单
+9. 动画-bottombar底部栏
 
 
 

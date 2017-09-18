@@ -202,4 +202,5 @@
     <color name="purple">#69415D</color>
     <color name="purple_start_color">#6178f2</color>
     <color name="purple_end_color">#925eff</color>
+    <color name="material_orange">#FF9800</color>
 </resources>
