@@ -5,8 +5,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
-import com.lenovo.KotlinActivity;
-
 import com.example.getui.GetuiActivity;
 import com.lenovo.service.basicpubliclibrary.SADL.SADLActivity;
 import com.lenovo.service.basicpubliclibrary.alipay.AlipayActivity;
@@ -23,7 +21,6 @@ import com.lenovo.service.basicpubliclibrary.validation.ValidateActivity;
 import com.lenovo.service.basicpubliclibrary.videoplayer.VideoplayerActivity;
 import com.lenovo.service.basicpubliclibrary.zxing.activity.ZxingActivity;
 
-//import com.lenovo.KotlinActivity;
 
 public class CompositeActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -49,7 +46,7 @@ public class CompositeActivity extends AppCompatActivity implements View.OnClick
     }
 
     public void startKotlin(View view) {
-        startActivity(new Intent(this, KotlinActivity.class));
+//        startActivity(new Intent(this, KotlinActivity.class));
     }
 
     public void startRx(View view) {
