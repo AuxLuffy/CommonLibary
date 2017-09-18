@@ -1,4 +1,4 @@
-package com.lenovo.service.basicpubliclibrary.request.net;
+package com.lenovo.service.basicpubliclibrary.request.net.rxjava;
 
 
 import rx.Observable;
@@ -7,6 +7,7 @@ import rx.schedulers.Schedulers;
 
 /**
  * Created by cx on 2017/9/18.
+ * 封装配置rxjava
  */
 
 public class ObservableN {

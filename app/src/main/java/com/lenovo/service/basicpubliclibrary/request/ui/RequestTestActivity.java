@@ -9,7 +9,11 @@ import com.lenovo.service.basicpubliclibrary.request.presenter.RequestPresenter;
  *
  * 网络框架封装，持续维护和更新
  *
+ * 网络框架 Okhttp3 + retrofit2 + http/https + mvp
+ *
  * 网络框架 Okhttp3 + retrofit2 + http/https + rxjava + mvp
+ *
+ * 多种方式供你使用，调用简单，一句合成
  */
 
 public class RequestTestActivity extends BaseActivity implements RequestContract.View{

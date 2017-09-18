@@ -1,4 +1,4 @@
-package com.lenovo.service.basicpubliclibrary.request.net;
+package com.lenovo.service.basicpubliclibrary.request.net.rxjava;
 
 import android.util.Log;
 
@@ -16,6 +16,7 @@ import rx.Subscriber;
 
 /**
  * Created by cx on 2017/9/13.
+ * rxjava数据统一封装
  */
 
 public abstract class SubscriberN<T> extends Subscriber<JsonObject> {

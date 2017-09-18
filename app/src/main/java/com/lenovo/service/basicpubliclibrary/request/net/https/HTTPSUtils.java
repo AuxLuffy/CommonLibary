@@ -1,4 +1,4 @@
-package com.lenovo.service.basicpubliclibrary.request.net;
+package com.lenovo.service.basicpubliclibrary.request.net.https;
 
 import android.content.Context;
 
@@ -23,6 +23,7 @@ import okhttp3.OkHttpClient;
 
 /**
  * Created by cx on 2017/9/12.
+ * 封装配置https连接
  */
 
 public class HTTPSUtils {
@@ -55,7 +56,7 @@ public class HTTPSUtils {
             try {
                 trustManager = trustManagerForCertificates(inputStream);//以流的方式读入证书
                 SSLContext sslContext = SSLContext.getInstance("TLS");
-                sslContext.init(null, new TrustManager[]{trustManager} , null);//trustAllCerts
+                sslContext.init(null, new TrustManager[]{trustManager} , null);
                 sslSocketFactory = sslContext.getSocketFactory();
 
             } catch (GeneralSecurityException e) {

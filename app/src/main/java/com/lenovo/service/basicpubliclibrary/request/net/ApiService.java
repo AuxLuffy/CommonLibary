@@ -21,11 +21,11 @@ import rx.Observable;
 public interface ApiService {
 
     /**
-     * 上报记录 rxjava
+     * 上报记录
      */
     @POST("ApiReport/statReportData")
     @FormUrlEncoded
-    Observable<String> getReportRecordwithRxjavaHttp(@Field("shop_number") String shop_id);
+    Call<JsonObject> getReportRecord(@Field("shop_number") String shop_id);
 
     /**
      * 上报记录 rxjava

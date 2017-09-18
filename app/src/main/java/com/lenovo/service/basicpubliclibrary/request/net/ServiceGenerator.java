@@ -1,22 +1,17 @@
 package com.lenovo.service.basicpubliclibrary.request.net;
 
 
-import android.util.Log;
-
 import com.lenovo.service.basicpubliclibrary.App;
-import com.lenovo.service.basicpubliclibrary.request.net.ApiService;
-import com.lenovo.service.basicpubliclibrary.request.net.HTTPSUtils;
+import com.lenovo.service.basicpubliclibrary.request.net.https.HTTPSUtils;
 
-import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
-import rx.android.schedulers.AndroidSchedulers;
-import rx.schedulers.Schedulers;
 
 /**
- * Created by zhaotong on 2016/2/25.
+ * Created by cx on 2016/2/25.
+ * okhttp+retrofit
  */
 public class ServiceGenerator {
 
@@ -34,17 +29,9 @@ public class ServiceGenerator {
                     .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
                     .client(httpsUtils.getInstance())
                     .build();
-            OkHttpClient request = httpsUtils.getInstance();
-            Log.e("http", request.toString());
-
         }
 
-        ApiService apiService = retrofit.create(ApiService.class);
-
-//        apiService.subscribeOn(Schedulers.io())
-//                .unsubscribeOn(Schedulers.io())
-//                .observeOn(AndroidSchedulers.mainThread());
-        return apiService;
+        return retrofit.create(ApiService.class);
 
     }
 
