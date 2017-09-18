@@ -100,6 +100,7 @@ dependencies {
     compile 'com.facebook.fresco:fresco:0.14.1'
     compile 'com.squareup.retrofit2:retrofit:2.1.0'
     compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:+'
     compile 'com.github.baoyachi:StepView:1.9'
     compile 'com.facebook.rebound:rebound:0.3.8'
     compile 'me.yokeyword:fragmentation:1.1.4'

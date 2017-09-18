@@ -59,7 +59,8 @@ public class ItemDecoration extends RecyclerView.ItemDecoration {
     @Override
     public void onDraw(Canvas c, RecyclerView parent, RecyclerView.State state) {
         drawVerticalLine(c, parent);
-        drawHorizontalLine(c, parent);
+        drawHorizontalLineAndNode(c, parent);
+
     }
 
     /**
@@ -74,8 +75,9 @@ public class ItemDecoration extends RecyclerView.ItemDecoration {
         final int bottom = parent.getHeight() - parent.getPaddingBottom();
         //获取RecyclerView的宽度
         final int parentWidth = parent.getMeasuredWidth();
-
+        //设置纵线的边界
         verticalLine.setBounds(parentWidth / 2 - 1, top, parentWidth / 2 + 1,bottom);
+        //绘制纵线
         verticalLine.draw(c);
     }
 
@@ -84,37 +86,48 @@ public class ItemDecoration extends RecyclerView.ItemDecoration {
      * @param c
      * @param parent
      */
-    public void drawHorizontalLine(Canvas c, RecyclerView parent) {
+    public void drawHorizontalLineAndNode(Canvas c, RecyclerView parent) {
         //获取RecyclerView的宽度
         final int parentWidth = parent.getMeasuredWidth();
         //获取当前屏幕itemView的个数
         final int childCount = parent.getChildCount();
+        //时间轴节点的高度
+        int intrinsicHeight = nodeDrawable.getIntrinsicHeight();
+        //时间轴节点的宽度
+        int intrinsicWidth = nodeDrawable.getIntrinsicWidth();
         for (int i = 0; i < childCount; i++) {
             //-1最后一个不画
             final View child = parent.getChildAt(i);
             //时间节点的top
-            final int top = child.getTop() + (child.getBottom() - child.getTop()) / 2 - nodeDrawable.getIntrinsicHeight() / 2;
+            final int top = child.getTop() + (child.getBottom() - child.getTop()) / 2 - intrinsicHeight / 2;
             //时间节点的bottom
-            final int bottom = top + nodeDrawable.getIntrinsicHeight();
+            final int bottom = top + intrinsicHeight;
             //横线的left
             int horizontalLineLeft = child.getRight();
             //横线的right
-            int horizontalLineRight = parentWidth / 2-nodeDrawable.getIntrinsicWidth()/2;
+            int horizontalLineRight = parentWidth / 2-intrinsicWidth/2;
             //横线的top
             int horizontalLineTop = child.getTop() + (child.getBottom() - child.getTop()) / 2;
 
+            //时间轴左边的横线
             if (child.getLeft()<parentWidth/2) {
-                horizontalLineLeft = parentWidth / 2;
-                horizontalLineRight = child.getLeft();
+                //横线的左边等于itemView的右边
+                horizontalLineLeft = child.getRight() ;
+                //横线的右边等于时间节点的左边
+                horizontalLineRight = parentWidth/2-intrinsicWidth/2;
             }
-
+            //设置
             horizontalLine.setBounds(horizontalLineLeft, horizontalLineTop, horizontalLineRight, horizontalLineTop + 2);
+            //绘制横线
             horizontalLine.draw(c);
 
-            int drawableLeft = parentWidth / 2 - nodeDrawable.getIntrinsicWidth() / 2;
-            int drawableRight = parentWidth / 2 + nodeDrawable.getIntrinsicWidth() / 2;
-
+            //时间节点的左边
+            int drawableLeft = parentWidth / 2 - intrinsicWidth / 2;
+            //时间节点的右边
+            int drawableRight = parentWidth / 2 + intrinsicWidth / 2;
+            //设置时间节点的边界
             nodeDrawable.setBounds(drawableLeft, top, drawableRight, bottom);
+            //绘制时间节点
             nodeDrawable.draw(c);
         }
     }
