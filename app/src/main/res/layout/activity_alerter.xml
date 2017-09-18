@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lenovo.service.basicpubliclibrary.alerter.AlerterActivity">
+<Button
+    android:id="@+id/btnAlertDefault"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:text="默认提示框"
+    android:background="@android:color/holo_purple"/>
+    <Button
+        android:id="@+id/btnAlertCustomBg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="自定义背景色"
+        android:background="@android:color/holo_blue_bright"/>
+    <Button
+        android:id="@+id/btnAlertCusduration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="自定义时长"
+        android:background="@android:color/white"/>
+</LinearLayout>

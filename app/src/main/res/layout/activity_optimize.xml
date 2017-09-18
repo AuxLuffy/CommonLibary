@@ -43,9 +43,21 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:textColor="#CCCCCC"
-        android:text="OKHttp网络框架高级封装"
         android:background="#FFF0F5"
         android:gravity="center"
+        android:text="OKHttp网络框架高级封装"
+
+        />
+
+    <TextView
+        android:id="@+id/schedule_service"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="#CCCCCC"
+        android:text="前、台定时执行一项任务"
+        android:background="#FFF0F5"
+        android:gravity="center"
+        android:onClick="onClick"
 
         />
     <TextView

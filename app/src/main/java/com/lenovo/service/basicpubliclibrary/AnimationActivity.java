@@ -7,12 +7,13 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.lenovo.service.basicpubliclibrary.ProgressBaranimation.ProgressActivity;
-import com.lenovo.service.basicpubliclibrary.bezier.DotsLoaderActivity;
-import com.lenovo.service.basicpubliclibrary.colorfultoast.ColorfulToastActivity;
 import com.lenovo.service.basicpubliclibrary.bezier.BezierActivity;
+import com.lenovo.service.basicpubliclibrary.bezier.DotsLoaderActivity;
+import com.lenovo.service.basicpubliclibrary.bottombar.BottomBarActivity;
+import com.lenovo.service.basicpubliclibrary.colorfultoast.ColorfulToastActivity;
 import com.lenovo.service.basicpubliclibrary.expandablelvanimated.ExpandableListViewActivity;
 import com.lenovo.service.basicpubliclibrary.floatingbutton.FLoatingBtnActivity;
-import com.lenovo.service.basicpubliclibrary.floatingbutton.util.FloatingActionButton;
+import com.lenovo.service.basicpubliclibrary.floatingmenu.FloatingActionActivity;
 import com.lenovo.service.basicpubliclibrary.flowwateranimation.FlowWaterAnimationActivity;
 import com.lenovo.service.basicpubliclibrary.guideanim.ShowActivity;
 import com.lenovo.service.basicpubliclibrary.headerfloatanimation.HeaderFloatActivity;
@@ -38,6 +39,7 @@ public class AnimationActivity extends AppCompatActivity {
     private TextView mTvColorfulToast;
     private TextView tv_dots_loader;
     private TextView mTvExamplelv;
+    private TextView tv_floatingmenu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,7 +59,9 @@ public class AnimationActivity extends AppCompatActivity {
         mTvTakeaway = (TextView) findViewById(R.id.tvTakeaway);
         mTvColorfulToast = (TextView) findViewById(R.id.tvColorfulToast);
         tv_dots_loader = (TextView) findViewById(R.id.tv_dots_loader);
+        tv_floatingmenu = (TextView)findViewById(R.id.tv_floatingmenu);
         findViewById(R.id.tv_floatbtn).setOnClickListener(new TextViewClickListener());
+        findViewById(R.id.tv_bottom_bar).setOnClickListener(new TextViewClickListener());
 
         mTvExamplelv = (TextView)findViewById(R.id.tv_examplelv);
 
@@ -74,6 +78,7 @@ public class AnimationActivity extends AppCompatActivity {
         mTvColorfulToast.setOnClickListener(new TextViewClickListener());
         tv_dots_loader.setOnClickListener(new TextViewClickListener());
         mTvExamplelv.setOnClickListener(new TextViewClickListener());
+        tv_floatingmenu.setOnClickListener(new TextViewClickListener());
     }
 
     public class TextViewClickListener implements View.OnClickListener {
@@ -144,6 +149,12 @@ public class AnimationActivity extends AppCompatActivity {
 
                 case R.id.tv_floatbtn:
                     startActivity(new Intent(AnimationActivity.this, FLoatingBtnActivity.class));
+                    break;
+                case R.id.tv_floatingmenu:
+                    startActivity(new Intent(AnimationActivity.this, FloatingActionActivity.class));
+                    break;
+                case R.id.tv_bottom_bar:
+                    startActivity(new Intent(AnimationActivity.this, BottomBarActivity.class));
                     break;
                 default:
                     break;

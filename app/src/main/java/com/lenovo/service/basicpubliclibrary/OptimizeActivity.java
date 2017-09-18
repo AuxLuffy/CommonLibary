@@ -6,9 +6,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
+import com.j256.ormlite.stmt.query.In;
 import com.lenovo.service.basicpubliclibrary.jobservice.JobServiceActivity;
+import com.lenovo.service.basicpubliclibrary.jobservice.MyJobService;
 import com.lenovo.service.basicpubliclibrary.leakcanary.LeakCanaryActivity;
 import com.lenovo.service.basicpubliclibrary.networkokhttp.NetokhttpActivity;
+import com.lenovo.service.basicpubliclibrary.schedule.ScheduleActivity;
 
 public class OptimizeActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -48,6 +51,10 @@ public class OptimizeActivity extends AppCompatActivity implements View.OnClickL
                 break;
             case R.id.tv_okhttpEncapsulation:
                 intent=new Intent(this, NetokhttpActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.schedule_service:
+                intent=new Intent(this,ScheduleActivity.class);
                 startActivity(intent);
                 break;
         }

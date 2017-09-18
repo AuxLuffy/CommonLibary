@@ -166,6 +166,24 @@
             android:background="#ADD8E6"
             android:gravity="center"
             />
+        <TextView
+            android:id="@+id/tv_floatingmenu"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColor="#CCCCCC"
+            android:text="floatingmenu悬浮菜单"
+            android:background="#e28914"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/tv_bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColor="#CCCCCC"
+            android:text="bottombar底部栏"
+            android:background="#f20d8b"
+            android:gravity="center"
+            />
 
     </LinearLayout>
 </ScrollView>
