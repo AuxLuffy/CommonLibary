@@ -15,6 +15,7 @@ import butterknife.ButterKnife;
 import com.lenovo.service.basicpubliclibrary.Frostedglasseffect.FrostedGlassEffectActivity;
 import com.lenovo.service.basicpubliclibrary.Frostedglasseffect.util.BlurBehind;
 import com.lenovo.service.basicpubliclibrary.Frostedglasseffect.util.OnBlurCompleteListener;
+import com.lenovo.service.basicpubliclibrary.bezier.PinViewActivity;
 import com.lenovo.service.basicpubliclibrary.colortheme.ColorThemeActivity;
 import com.lenovo.service.basicpubliclibrary.fragmentation.demo_flow.FlowMainActivity;
 import com.lenovo.service.basicpubliclibrary.maillistananimation.MaillistActivity;
@@ -53,6 +54,8 @@ public class ComponentActivity extends AppCompatActivity implements View.OnClick
     TextView mTvFrosted;
     @BindView(R.id.tvShadowmasking)
     TextView mTvShadowmasking;
+    @BindView(R.id.tv_pinview)
+    TextView tv_pinview;
 
 
     @BindView(R.id.tvQRCode)
@@ -78,6 +81,7 @@ public class ComponentActivity extends AppCompatActivity implements View.OnClick
         tvNightNode.setOnClickListener(this);
         tvQRCode.setOnClickListener(this);
         mTvShadowmasking.setOnClickListener(this);
+        tv_pinview.setOnClickListener(this);
     }
 
 
@@ -136,6 +140,11 @@ public class ComponentActivity extends AppCompatActivity implements View.OnClick
                     MipcaActivityCapture.openMipcapActivity(this, REQUEST_CODE);
                 }
 
+                break;
+
+            case R.id.tv_pinview:
+                // 输入框
+                startActivity(new Intent(ComponentActivity.this, PinViewActivity.class));
                 break;
         }
     }
