@@ -1,1 +1,1 @@
-include ':app', ':kotlin', ':camera', ':qrcode', ':getui'
+include ':app', ':kotlin', ':camera', ':qrcode', ':getui', ':retrofithelper'
