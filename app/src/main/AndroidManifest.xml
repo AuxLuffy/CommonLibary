@@ -335,6 +335,7 @@
         <activity android:name=".bezier.PinViewActivity"></activity>
         <activity android:name=".bottombar.BottomBarActivity"/>
         <activity android:name=".floatingmenu.FloatingActionActivity"/>
+        <activity android:name=".verticaltextview.VerticalTextViewActivity"/>
     </application>
 
 </manifest>

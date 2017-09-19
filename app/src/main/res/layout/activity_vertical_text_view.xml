@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="40dp">
+
+            <com.lenovo.service.basicpubliclibrary.verticaltextview.VerticalTextView
+                android:id="@+id/verticalTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="40dp"
+                android:background="@color/scratch_start_gradient"
+                android:lineSpacingExtra="6dp"
+                android:padding="6dp"
+                android:textColor="@color/text_color_child"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/verticalTextView_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:hint="在此输入文字, 看垂直排版的效果"
+                android:paddingBottom="6dp"
+                android:singleLine="true"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

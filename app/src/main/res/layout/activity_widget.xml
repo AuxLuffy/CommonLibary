@@ -404,5 +404,15 @@
             android:gravity="center"
             android:text="自定义提示框"
             android:textColor="@color/baby_blue" />
+        <TextView
+            android:id="@+id/verticalTextView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#FFF0F5"
+            android:gravity="center"
+            android:text="竖直排版的TextView"
+            android:textColor="#CCCCCC"
+
+            />
     </LinearLayout>
 </ScrollView>
