@@ -105,7 +105,7 @@
         <activity android:name=".loaddata.LoadDataActivity" />
         <activity android:name=".loaddata.Sample1Activity" />
         <activity android:name=".loaddata.Sample2Activity" />
-        <activity android:name=".colordialog.ColorDialogActivity" />
+        <activity android:name=".dialog.ColorDialogActivity" />
         <!-- 动画 -->
         <activity android:name=".OptimizeActivity" />
         <activity android:name=".StorageActivity" />
