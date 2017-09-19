@@ -70,7 +70,7 @@ dependencies {
         transitive = true
     }
     compile project(path: ':qrcode')
-    compile files('src/main/libs/zxing-core-3.3.0.jar')
+    compile files('CommonLibrary/qrcode/libs/zxing-core-3.3.0.jar')
     compile project(':getui')
 
     //权限申请库（适合绝大多数国产手机，小米、魅族、华为、oppo等）
