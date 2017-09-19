@@ -42,7 +42,6 @@ public class MainActivity extends Activity {
             switch (view.getId()){
                 //点击控件
                 case R.id.layout1:
-
                     intent.setClass(MainActivity.this,
                             WidgetActivity.class);
                     startActivity(intent);

@@ -46,7 +46,7 @@
         android:background="#FFF0F5"
         android:gravity="center"
         android:text="OKHttp网络框架高级封装"
-
+        android:onClick="onClick"
         />
 
     <TextView
@@ -61,13 +61,13 @@
 
         />
     <TextView
+        android:id="@+id/tvRetrofitHelper"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:textColor="#CCCCCC"
-        android:text="未完待续"
+        android:text="Retrofit网络框架高级封装"
         android:background="#7CFC00"
         android:gravity="center"
-
         />
     <TextView
         android:layout_width="match_parent"
