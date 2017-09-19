@@ -98,6 +98,8 @@
     <color name="red">#FF2626</color>
     <color name="blue">#4056AB</color>
     <color name="gray_light">#F1F1F1</color>
+    <color name="app_color_theme_3">#FFCF47</color> <!-- Sunflower -->
+    <color name="app_color_theme_5">#3FD0AD</color> <!-- Mint -->
 
     <!-- 统一文字颜色 -->
     <color name="text_color_theme">@color/colorPrimaryDark</color>

@@ -1,4 +1,4 @@
-package com.lenovo.service.basicpubliclibrary.verticaltextview;
+package com.lenovo.service.basicpubliclibrary.textview.verticaltextview;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

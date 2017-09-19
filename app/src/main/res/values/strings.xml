@@ -160,6 +160,14 @@
     <string name="sys">扫一扫</string>
     <string name="shous">手输</string>
 
+    <!-- Span Utils 各种 Span 工具 -->
+    <string name="spanUtils_side_icon_title">在文字左边或者右边直接添加 Icon</string>
+    <string name="spanUtils_align_middle_title">支持垂直居中的 ImageSpan</string>
+    <string name="spanUtils_margin_image_title">支持增加左右间距的 ImageSpan</string>
+    <string name="spanUtils_block_space_title">整行的空白 Span，可用来用于制作段间距</string>
+    <string name="spanUtils_custom_type_face_title">自定义部分文字的字体</string>
+    <string name="spanUtils_rmb">¥</string><!-- ¥相当于&#xA5 -->
+
 
     <string name="path_00">M 187.05 28.42 C 189.38 22.60 190.69 16.44 192.59 10.47 C 192.99 16.21 193.57 21.95 193.61
         27.71 C 196.57 29.22 199.80 30.43 202.26 32.75 C 204.81 35.60 205.72 39.46 206.68 43.07 C 207.86 48.30 209.90

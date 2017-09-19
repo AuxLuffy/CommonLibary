@@ -1,13 +1,12 @@
-package com.lenovo.service.basicpubliclibrary.textstyle;
+package com.lenovo.service.basicpubliclibrary.textview.textstyle;
 
 import android.app.Activity;
-import android.graphics.Color;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.text.Html;
 import android.text.method.ScrollingMovementMethod;
 import android.widget.TextView;
 
-import com.lenovo.service.basicpubliclibrary.Frostedglasseffect.util.BlurBehind;
 import com.lenovo.service.basicpubliclibrary.R;
 
 
@@ -15,7 +14,7 @@ import com.lenovo.service.basicpubliclibrary.R;
  * Created by chongyangyang on 2017/9/14.
  */
 
-public class TextActivity extends Activity {
+public class TextActivity extends AppCompatActivity {
 
 
     @Override

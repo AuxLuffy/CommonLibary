@@ -414,5 +414,16 @@
             android:textColor="#CCCCCC"
 
             />
+
+        <TextView
+            android:id="@+id/spanTextView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#b6E6FA"
+            android:gravity="center"
+            android:text="带有span的TextView"
+            android:textColor="#CCCCCC"
+
+            />
     </LinearLayout>
 </ScrollView>

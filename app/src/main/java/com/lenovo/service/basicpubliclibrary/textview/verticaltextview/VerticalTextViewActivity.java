@@ -1,7 +1,8 @@
-package com.lenovo.service.basicpubliclibrary.verticaltextview;
+package com.lenovo.service.basicpubliclibrary.textview.verticaltextview;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
@@ -14,7 +15,7 @@ import com.lenovo.service.basicpubliclibrary.R;
  * Created by chongyangyang on 2017/9/14.
  */
 
-public class VerticalTextViewActivity extends Activity {
+public class VerticalTextViewActivity extends AppCompatActivity {
 
 
     private EditText mEditText;
@@ -24,8 +25,8 @@ public class VerticalTextViewActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vertical_text_view);
-        tv = findViewById(R.id.verticalTextView);
-        mEditText = findViewById(R.id.verticalTextView_editText);
+        tv = (VerticalTextView) findViewById(R.id.verticalTextView);
+        mEditText = (EditText) findViewById(R.id.verticalTextView_editText);
         initVerticalTextView();
     }
 

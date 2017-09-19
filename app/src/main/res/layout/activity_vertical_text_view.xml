@@ -17,7 +17,7 @@
             android:paddingRight="16dp"
             android:paddingTop="40dp">
 
-            <com.lenovo.service.basicpubliclibrary.verticaltextview.VerticalTextView
+            <com.lenovo.service.basicpubliclibrary.textview.verticaltextview.VerticalTextView
                 android:id="@+id/verticalTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"

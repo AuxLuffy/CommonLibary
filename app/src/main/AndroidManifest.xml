@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.lenovo.service.basicpubliclibrary">
+    package="com.lenovo.service.basicpubliclibrary">
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.READ_CONTACTS"/>
@@ -265,7 +265,7 @@
                 android:theme="@style/__LeakCanary.Base"/>
         <activity android:name="lenovo.com.zxing.MipcaActivityCapture"/>
         <activity android:name=".toolbar.TestToolbarActivity"/>
-        <activity android:name=".textstyle.TextActivity"/>
+        <activity android:name=".textview.textstyle.TextActivity" />
         <activity
                 android:name=".Frostedglasseffect.FrostedGlassEffectActivity"
                 android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
@@ -337,9 +337,10 @@
         <activity android:name=".floatingmenu.FloatingActionActivity"/>
         <activity android:name=".eventbus.EventBusActivity">
         </activity>
-        <activity android:name=".verticaltextview.VerticalTextViewActivity"/>
         <activity android:name=".uploadfile.UploadFileActivity">
         </activity>
+        <activity android:name=".textview.verticaltextview.VerticalTextViewActivity"/>
+        <activity android:name=".textview.spantext.SpanTextActivity"/>
     </application>
 
 </manifest>

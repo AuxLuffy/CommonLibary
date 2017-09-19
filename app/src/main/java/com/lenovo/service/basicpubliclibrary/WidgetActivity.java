@@ -41,11 +41,12 @@ import com.lenovo.service.basicpubliclibrary.smilepraiseview.SmilePraiseActivity
 import com.lenovo.service.basicpubliclibrary.smileyrating.SmileRatingActivity;
 import com.lenovo.service.basicpubliclibrary.stepview.StepViewActivity;
 import com.lenovo.service.basicpubliclibrary.tagviewgroup.TagViewGroupActivity;
-import com.lenovo.service.basicpubliclibrary.textstyle.TextActivity;
+import com.lenovo.service.basicpubliclibrary.textview.spantext.SpanTextActivity;
+import com.lenovo.service.basicpubliclibrary.textview.textstyle.TextActivity;
 import com.lenovo.service.basicpubliclibrary.timepicker.TimePickerActivity;
 import com.lenovo.service.basicpubliclibrary.toolbar.TestToolbarActivity;
 import com.lenovo.service.basicpubliclibrary.ultraviewpager.UPVDemoActivity;
-import com.lenovo.service.basicpubliclibrary.verticaltextview.VerticalTextViewActivity;
+import com.lenovo.service.basicpubliclibrary.textview.verticaltextview.VerticalTextViewActivity;
 import com.lenovo.service.basicpubliclibrary.weekview.WeekViewActivity;
 import com.lenovo.service.basicpubliclibrary.widget.CircleImageActivity;
 import com.lenovo.service.basicpubliclibrary.zoomheader.ZoomHeaderActivity;
@@ -93,6 +94,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     private TextView mTvHeadView;
     private TextView mTvAlert;
     private TextView verticalTextView;
+    private TextView spanTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -144,6 +146,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTvHeadView = (TextView) findViewById(R.id.tv_headView);
         mTvAlert = (TextView) findViewById(R.id.tv_alertDialog);
         verticalTextView = (TextView) findViewById(R.id.verticalTextView);
+        spanTextView = (TextView) findViewById(R.id.spanTextView);
     }
 
     private void init_listener() {
@@ -188,6 +191,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTvHeadView.setOnClickListener(this);
         mTvAlert.setOnClickListener(this);
         verticalTextView.setOnClickListener(this);
+        spanTextView.setOnClickListener(this);
     }
 
     @Override
@@ -351,6 +355,9 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.verticalTextView:
                 startActivity(new Intent(WidgetActivity.this, VerticalTextViewActivity.class));
+                break;
+            case R.id.spanTextView:
+                startActivity(new Intent(WidgetActivity.this, SpanTextActivity.class));
                 break;
         }
     }
