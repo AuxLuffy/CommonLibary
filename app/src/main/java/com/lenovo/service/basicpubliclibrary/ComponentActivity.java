@@ -27,6 +27,7 @@ import com.lenovo.service.basicpubliclibrary.shadowmasking.ShadowmaskingActivity
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import com.lenovo.service.basicpubliclibrary.uploadfile.UploadFileActivity;
 import lenovo.com.zxing.MipcaActivityCapture;
 
 public class ComponentActivity extends AppCompatActivity implements View.OnClickListener {
@@ -56,6 +57,8 @@ public class ComponentActivity extends AppCompatActivity implements View.OnClick
     TextView mTvShadowmasking;
     @BindView(R.id.tv_pinview)
     TextView tv_pinview;
+    @BindView(R.id.tvUpload)
+    TextView tvUpload;
 
 
     @BindView(R.id.tvQRCode)
@@ -81,6 +84,7 @@ public class ComponentActivity extends AppCompatActivity implements View.OnClick
         tvNightNode.setOnClickListener(this);
         tvQRCode.setOnClickListener(this);
         mTvShadowmasking.setOnClickListener(this);
+        tvUpload.setOnClickListener(this);
         tv_pinview.setOnClickListener(this);
     }
 
@@ -145,6 +149,10 @@ public class ComponentActivity extends AppCompatActivity implements View.OnClick
             case R.id.tv_pinview:
                 // 输入框
                 startActivity(new Intent(ComponentActivity.this, PinViewActivity.class));
+                break;
+            case R.id.tvUpload:
+                // 输入框
+                startActivity(new Intent(ComponentActivity.this, UploadFileActivity.class));
                 break;
         }
     }

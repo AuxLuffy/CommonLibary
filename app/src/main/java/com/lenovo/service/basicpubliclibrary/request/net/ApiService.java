@@ -34,4 +34,11 @@ public interface ApiService {
     @FormUrlEncoded
     Observable<JsonObject> getReportRecordwithRxjava(@Field("shop_number") String shop_id);
 
+
+
+    @Multipart
+    @POST("ApiActivity/reportupload")
+    Call<ResponseBody> couponUploadPic(@Part("product_sn") RequestBody product_sn, @Part("shop_id") RequestBody shop_id, @Part MultipartBody.Part file);
+
+
 }

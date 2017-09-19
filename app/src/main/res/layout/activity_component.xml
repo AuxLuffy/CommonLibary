@@ -141,6 +141,15 @@
             android:background="#F08080"
             android:gravity="center"
         />
+        <TextView
+            android:id="@+id/tvUpload"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColor="@color/black"
+            android:text="上传图片"
+            android:background="#E0FFFF"
+            android:gravity="center"
+        />
     </LinearLayout>
 
 </ScrollView>

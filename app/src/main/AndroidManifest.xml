@@ -338,6 +338,8 @@
         <activity android:name=".eventbus.EventBusActivity">
         </activity>
         <activity android:name=".verticaltextview.VerticalTextViewActivity"/>
+        <activity android:name=".uploadfile.UploadFileActivity">
+        </activity>
     </application>
 
 </manifest>
