@@ -153,7 +153,9 @@
     <string name="load_more">点击加载更多</string>
 
     <!--扫一扫-->
-    <string name="msg_camera_framework_bug">Sorry, the Android camera encountered a problem. Have you given the camera permission to the APP? Or you may need to restart the device.</string>
+    <string name="msg_camera_framework_bug">Sorry, the Android camera encountered a problem. Have you given the camera
+        permission to the APP? Or you may need to restart the device.
+    </string>
     <string name="ss">搜索</string>
     <string name="sys">扫一扫</string>
     <string name="shous">手输</string>

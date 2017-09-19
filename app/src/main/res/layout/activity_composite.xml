@@ -185,6 +185,14 @@
             android:gravity="center"
             android:text="权限申请demo"
             android:textColor="#CCCCCC" />
+        <TextView
+            android:id="@+id/tvEventBus"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#E6E6E6"
+            android:gravity="center"
+            android:text="EventBus3 DEMO"
+            android:textColor="@color/black" />
     </LinearLayout>
 
 </ScrollView>
