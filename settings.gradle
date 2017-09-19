@@ -1,1 +1,2 @@
-include ':app', ':kotlin', ':camera', ':qrcode', ':getui', ':retrofithelper'
+include ':app', ':kotlin', ':camera', ':qrcode', ':getui', ':retrofithelper', ':expandablelib'
+

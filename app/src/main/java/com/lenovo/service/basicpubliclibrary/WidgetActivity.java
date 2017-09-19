@@ -23,6 +23,7 @@ import com.lenovo.service.basicpubliclibrary.dialog.ColorDialogActivity;
 import com.lenovo.service.basicpubliclibrary.dialogfragment.DialogActivity;
 import com.lenovo.service.basicpubliclibrary.doodle.DoodleViewActivity;
 import com.lenovo.service.basicpubliclibrary.dropdownmenu.DropDownActivity;
+import com.lenovo.service.basicpubliclibrary.expandable.ExpandableActivity;
 import com.lenovo.service.basicpubliclibrary.flowlayout.CategoryActivity;
 import com.lenovo.service.basicpubliclibrary.flycotablayout.ui.SimpleHomeActivity;
 import com.lenovo.service.basicpubliclibrary.gesturelock.GestureLockActivity;
@@ -173,6 +174,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         findViewById(R.id.tv_recyclerview).setOnClickListener(this);
         findViewById(R.id.tv_toolbar).setOnClickListener(this);
         findViewById(R.id.tv_timepicker).setOnClickListener(this);
+        findViewById(R.id.tv_expandable).setOnClickListener(this);
         mUserGuide.setOnClickListener(this);
         tv_gesture_lock.setOnClickListener(this);
         tagview.setOnClickListener(this);
@@ -358,6 +360,9 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.spanTextView:
                 startActivity(new Intent(WidgetActivity.this, SpanTextActivity.class));
+                break;
+            case R.id.tv_expandable:
+                startActivity(new Intent(WidgetActivity.this, ExpandableActivity.class));
                 break;
         }
     }

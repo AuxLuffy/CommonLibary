@@ -136,6 +136,7 @@ dependencies {
     compile 'com.novaapps:FloatingActionMenu:1.0'
     compile project(':retrofithelper')
     compile project(path: ':retrofithelper')
+    compile project(':expandablelib')
 }
 greendao {
     schemaVersion 1

@@ -342,6 +342,7 @@
         <activity android:name=".textview.verticaltextview.VerticalTextViewActivity"/>
         <activity android:name=".textview.spantext.SpanTextActivity"/>
         <activity android:name="com.example.lenovo.retrofithelper2.RetrofitHelperActivity"></activity>
+        <activity android:name=".expandable.ExpandableActivity"/>
     </application>
 
 </manifest>

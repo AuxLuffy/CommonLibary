@@ -995,4 +995,8 @@
         <item>Bottom</item>
         <item>Center</item>
     </string-array>
+
+    <string name="app_names">ExpandableLayout</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settingss">Settings</string>
 </resources>

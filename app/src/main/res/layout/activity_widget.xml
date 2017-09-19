@@ -425,5 +425,14 @@
             android:textColor="#CCCCCC"
 
             />
+
+        <TextView
+            android:id="@+id/tv_expandable"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#66FF4081"
+            android:gravity="center"
+            android:text="expandablelayout的使用"
+            android:textColor="#CCCCCC" />
     </LinearLayout>
 </ScrollView>
