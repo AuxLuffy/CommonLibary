@@ -1,4 +1,4 @@
-package com.lenovo.service.basicpubliclibrary.SADL;
+package com.lenovo.service.basicpubliclibrary.sadl;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;

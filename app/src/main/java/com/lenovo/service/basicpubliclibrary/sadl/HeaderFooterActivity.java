@@ -1,15 +1,12 @@
-package com.lenovo.service.basicpubliclibrary.SADL;
+package com.lenovo.service.basicpubliclibrary.sadl;
 
 import android.content.pm.ApplicationInfo;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
@@ -26,11 +23,11 @@ import java.util.List;
 /**
  * Created by sunzf
  */
-public class ItemDragActivity extends AppCompatActivity implements AdapterView.OnItemClickListener,
-        AdapterView.OnItemLongClickListener, AbsListView.OnScrollListener,
+public class HeaderFooterActivity extends AppCompatActivity implements AdapterView.OnItemLongClickListener,
+        AdapterView.OnItemClickListener,
         SlideAndDragListView.OnDragDropListener, SlideAndDragListView.OnSlideListener,
         SlideAndDragListView.OnMenuItemClickListener, SlideAndDragListView.OnItemDeleteListener {
-    private static final String TAG = ItemDragActivity.class.getSimpleName();
+    private static final String TAG = HeaderFooterActivity.class.getSimpleName();
 
     private Menu mMenu;
     private List<ApplicationInfo> mAppList;
@@ -39,13 +36,13 @@ public class ItemDragActivity extends AppCompatActivity implements AdapterView.O
     private ApplicationInfo mDraggedEntity;
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sdlv);
         initData();
         initMenu();
         initUiAndListener();
-        mToast = Toast.makeText(ItemDragActivity.this, "", Toast.LENGTH_SHORT);
+        mToast = Toast.makeText(HeaderFooterActivity.this, "", Toast.LENGTH_SHORT);
     }
 
     public void initData() {
@@ -77,20 +74,27 @@ public class ItemDragActivity extends AppCompatActivity implements AdapterView.O
                 .setBackground(Utils.getDrawable(this, R.drawable.btn_right1))
                 .setDirection(MenuItem.DIRECTION_RIGHT)
                 .setIcon(getResources().getDrawable(R.drawable.ic_launcher))
+                .setText("Four")
+                .setTextColor(Color.BLACK)
+                .setTextSize(14)
                 .build());
     }
 
     public void initUiAndListener() {
         mListView = (SlideAndDragListView) findViewById(R.id.lv_edit);
+        View header = LayoutInflater.from(this).inflate(R.layout.item_header_footer, null);
+        View footer = LayoutInflater.from(this).inflate(R.layout.item_header_footer, null);
+        footer.setBackgroundColor(0xff0000bb);
+        mListView.addHeaderView(header);
+        mListView.addFooterView(footer);
         mListView.setMenu(mMenu);
         mListView.setAdapter(mAdapter);
         mListView.setOnItemClickListener(this);
         mListView.setOnDragDropListener(this);
-//        mListView.setOnItemLongClickListener(this);
+        mListView.setOnItemLongClickListener(this);
         mListView.setOnSlideListener(this);
         mListView.setOnMenuItemClickListener(this);
         mListView.setOnItemDeleteListener(this);
-        mListView.setOnScrollListener(this);
     }
 
     private BaseAdapter mAdapter = new BaseAdapter() {
@@ -114,11 +118,10 @@ public class ItemDragActivity extends AppCompatActivity implements AdapterView.O
             CustomViewHolder cvh;
             if (convertView == null) {
                 cvh = new CustomViewHolder();
-                convertView = LayoutInflater.from(ItemDragActivity.this).inflate(R.layout.item_custom, null);
+                convertView = LayoutInflater.from(HeaderFooterActivity.this).inflate(R.layout.item_custom_2, null);
                 cvh.imgLogo = (ImageView) convertView.findViewById(R.id.img_item_edit);
                 cvh.txtName = (TextView) convertView.findViewById(R.id.txt_item_edit);
                 cvh.imgLogo2 = (ImageView) convertView.findViewById(R.id.img_item_edit2);
-                cvh.imgLogo2.setOnTouchListener(mOnTouchListener);
                 convertView.setTag(cvh);
             } else {
                 cvh = (CustomViewHolder) convertView.getTag();
@@ -126,8 +129,7 @@ public class ItemDragActivity extends AppCompatActivity implements AdapterView.O
             ApplicationInfo item = (ApplicationInfo) this.getItem(position);
             cvh.txtName.setText(item.loadLabel(getPackageManager()));
             cvh.imgLogo.setImageDrawable(item.loadIcon(getPackageManager()));
-            cvh.imgLogo2.setImageDrawable(Utils.getDrawable(ItemDragActivity.this, R.drawable.ic_reorder_grey_500_24dp));
-            cvh.imgLogo2.setTag(Integer.parseInt(position + ""));
+            cvh.imgLogo2.setImageDrawable(item.loadIcon(getPackageManager()));
             return convertView;
         }
 
@@ -136,17 +138,6 @@ public class ItemDragActivity extends AppCompatActivity implements AdapterView.O
             public TextView txtName;
             public ImageView imgLogo2;
         }
-
-        private View.OnTouchListener mOnTouchListener = new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                Object o = v.getTag();
-                if (o != null && o instanceof Integer) {
-                    mListView.startDrag(((Integer) o).intValue());
-                }
-                return false;
-            }
-        };
     };
 
     @Override
@@ -209,20 +200,9 @@ public class ItemDragActivity extends AppCompatActivity implements AdapterView.O
     }
 
     @Override
-    public void onScrollStateChanged(AbsListView view, int scrollState) {
-        switch (scrollState) {
-            case AbsListView.OnScrollListener.SCROLL_STATE_IDLE:
-                break;
-            case AbsListView.OnScrollListener.SCROLL_STATE_TOUCH_SCROLL:
-                break;
-            case AbsListView.OnScrollListener.SCROLL_STATE_FLING:
-                break;
-        }
-    }
-
-    @Override
-    public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
-
+    public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+        toast("onItemLongClick   position--->" + position);
+        return false;
     }
 
     @Override
@@ -230,14 +210,9 @@ public class ItemDragActivity extends AppCompatActivity implements AdapterView.O
         toast("onItemClick   position--->" + position);
     }
 
-    @Override
-    public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
-        toast("onItemLongClick   position--->" + position);
-        return false;
-    }
-
     private void toast(String toast) {
         mToast.setText(toast);
         mToast.show();
     }
+
 }

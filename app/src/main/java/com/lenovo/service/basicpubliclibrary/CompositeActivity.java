@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 import com.example.getui.GetuiActivity;
-import com.lenovo.service.basicpubliclibrary.SADL.SADLActivity;
+import com.lenovo.service.basicpubliclibrary.sadl.SADLActivity;
 import com.lenovo.service.basicpubliclibrary.alipay.AlipayActivity;
 import com.lenovo.service.basicpubliclibrary.cameraDemo.RecordMainAcitivity;
 import com.lenovo.service.basicpubliclibrary.camerakit.CamerakitActivity;

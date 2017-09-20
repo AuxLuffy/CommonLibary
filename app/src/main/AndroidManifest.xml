@@ -202,28 +202,28 @@
         <activity android:name=".takeaway.TakeawayActivity"/>
         <activity android:name=".colorfultoast.ColorfulToastActivity"/>
         <activity
-                android:name=".SADL.SADLActivity"
+                android:name=".sadl.SADLActivity"
                 android:label="SADLMainActivity"/>
         <activity
-                android:name=".SADL.HeaderFooterActivity"
+                android:name=".sadl.HeaderFooterActivity"
                 android:label="SDLV with headers and footers"/>
         <activity
-                android:name=".SADL.DifferentMenuActivity"
+                android:name=".sadl.DifferentMenuActivity"
                 android:label="SDLV with different menus"/>
         <activity
-                android:name=".SADL.NormalListViewActivity"
+                android:name=".sadl.NormalListViewActivity"
                 android:label="Normal ListView"/>
         <activity
-                android:name=".SADL.SlideAndDragListViewActivity"
+                android:name=".sadl.SlideAndDragListViewActivity"
                 android:label="SlideAndDragListView"/>
         <activity
-                android:name=".SADL.ItemDragActivity"
+                android:name=".sadl.ItemDragActivity"
                 android:label="Touch Item to Drag"/>
         <activity
-                android:name=".SADL.HeaderFooterViewTypeActivity"
+                android:name=".sadl.HeaderFooterViewTypeActivity"
                 android:label="SDLV with headers and footers (viewType)"/>
         <activity
-                android:name=".SADL.SimpleAdapterActivity"
+                android:name=".sadl.SimpleAdapterActivity"
                 android:label="SDLV with SimpleAdapter"/>
         <activity android:name=".ALogActivity"/>
         <activity
