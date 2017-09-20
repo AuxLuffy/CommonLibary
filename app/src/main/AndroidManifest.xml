@@ -231,6 +231,7 @@
                 android:screenOrientation="portrait"/>
         <activity
                 android:name=".picture_cut.ResultActivity"
+                android:theme="@style/CameraTheme"
                 android:screenOrientation="portrait"/>
         <activity
                 android:name="com.yalantis.ucrop.UCropActivity"
