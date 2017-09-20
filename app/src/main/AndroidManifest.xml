@@ -281,6 +281,10 @@
         <activity android:name=".realm.RealmActivity"/>
         <activity android:name=".tagviewgroup.TagEditActivity"/>
         <activity android:name=".tagviewgroup.TagListActivity"/>
+        <activity android:name=".iconbadge.IconBadgeActivity"/>
+        <service
+            android:name=".iconbadge.BadgeIntentService"
+            android:exported="false"/>
 
         <!-- sugar -->
         <!-- 数据库名字 -->
