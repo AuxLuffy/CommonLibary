@@ -27,6 +27,7 @@ import com.lenovo.service.basicpubliclibrary.expandable.ExpandableActivity;
 import com.lenovo.service.basicpubliclibrary.flowlayout.CategoryActivity;
 import com.lenovo.service.basicpubliclibrary.flycotablayout.ui.SimpleHomeActivity;
 import com.lenovo.service.basicpubliclibrary.gesturelock.GestureLockActivity;
+import com.lenovo.service.basicpubliclibrary.iconbadge.IconBadgeActivity;
 import com.lenovo.service.basicpubliclibrary.jike.JikeGalleryActivity;
 import com.lenovo.service.basicpubliclibrary.loaddata.LoadDataActivity;
 import com.lenovo.service.basicpubliclibrary.pickerview.PickerActivity;
@@ -96,6 +97,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     private TextView mTvAlert;
     private TextView verticalTextView;
     private TextView spanTextView;
+    private TextView mTvBadge;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -148,6 +150,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTvAlert = (TextView) findViewById(R.id.tv_alertDialog);
         verticalTextView = (TextView) findViewById(R.id.verticalTextView);
         spanTextView = (TextView) findViewById(R.id.spanTextView);
+        mTvBadge = (TextView) findViewById(R.id.tv_badge);
     }
 
     private void init_listener() {
@@ -194,6 +197,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTvAlert.setOnClickListener(this);
         verticalTextView.setOnClickListener(this);
         spanTextView.setOnClickListener(this);
+        mTvBadge.setOnClickListener(this);
     }
 
     @Override
@@ -363,6 +367,9 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.tv_expandable:
                 startActivity(new Intent(WidgetActivity.this, ExpandableActivity.class));
+                break;
+            case R.id.tv_badge:
+                startActivity(new Intent(WidgetActivity.this, IconBadgeActivity.class));
                 break;
         }
     }
