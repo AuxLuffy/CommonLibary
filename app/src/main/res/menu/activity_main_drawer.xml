@@ -25,12 +25,4 @@
         </menu>
     </item>
 
-    <item android:title="@string/swipe">
-        <menu>
-            <item
-                android:id="@+id/nav_swipe_back"
-                android:icon="@drawable/ic_touch_app_white_24dp"
-                android:title="@string/go_swipe_back"/>
-        </menu>
-    </item>
 </menu>

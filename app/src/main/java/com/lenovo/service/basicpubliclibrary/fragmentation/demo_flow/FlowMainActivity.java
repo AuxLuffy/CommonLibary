@@ -1,6 +1,5 @@
 package com.lenovo.service.basicpubliclibrary.fragmentation.demo_flow;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -183,8 +182,6 @@ public class FlowMainActivity extends MySupportActivity
                     }
                 } else if (id == R.id.nav_login) {
                     goLogin();
-                } else if (id == R.id.nav_swipe_back) {
-                    startActivity(new Intent(FlowMainActivity.this, SwipeBackSampleActivity.class));
                 }
             }
         }, 300);

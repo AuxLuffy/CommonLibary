@@ -25,6 +25,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.lenovo.service.basicpubliclibrary.R;
 import com.lenovo.service.basicpubliclibrary.multitype.MenuBaseActivity;
@@ -85,6 +86,10 @@ public class SeldomUsedApisPlayground extends MenuBaseActivity {
 
 
     public void onRemove(View view) {
+        if (items.size() ==0) {
+            Toast.makeText(this, "请先添加item", Toast.LENGTH_SHORT).show();
+            return;
+        }
         int bottom = items.size() - 1;
         recyclerView.scrollToPosition(bottom);
         items.remove(bottom);
