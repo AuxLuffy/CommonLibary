@@ -279,6 +279,8 @@
         <activity android:name=".smileyrating.SmileRatingActivity"/>
         <activity android:name=".widget.CircleImageActivity"/>
         <activity android:name=".realm.RealmActivity"/>
+        <activity android:name=".tagviewgroup.TagEditActivity"/>
+        <activity android:name=".tagviewgroup.TagListActivity"/>
 
         <!-- sugar -->
         <!-- 数据库名字 -->
