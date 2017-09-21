@@ -141,7 +141,8 @@ dependencies {
     compile project(':retrofithelper')
     compile project(path: ':retrofithelper')
     compile project(':expandablelib')
-    compile "me.leolin:ShortcutBadger:1.1.18@aar"
+    compile 'me.leolin:ShortcutBadger:1.1.18@aar'
+    compile project(':watermediary')
 }
 greendao {
     schemaVersion 1

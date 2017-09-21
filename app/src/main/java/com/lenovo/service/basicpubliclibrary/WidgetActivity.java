@@ -52,7 +52,7 @@ import com.lenovo.service.basicpubliclibrary.textview.verticaltextview.VerticalT
 import com.lenovo.service.basicpubliclibrary.weekview.WeekViewActivity;
 import com.lenovo.service.basicpubliclibrary.widget.CircleImageActivity;
 import com.lenovo.service.basicpubliclibrary.zoomheader.ZoomHeaderActivity;
-
+import com.lizehao.watermelondiarynew.ui.WatermelonDiayActivity;
 
 
 public class WidgetActivity extends AppCompatActivity implements View.OnClickListener {
@@ -98,6 +98,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     private TextView verticalTextView;
     private TextView spanTextView;
     private TextView mTvBadge;
+    private TextView mTvWatermediary;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -151,6 +152,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         verticalTextView = (TextView) findViewById(R.id.verticalTextView);
         spanTextView = (TextView) findViewById(R.id.spanTextView);
         mTvBadge = (TextView) findViewById(R.id.tv_badge);
+        mTvWatermediary = (TextView) findViewById(R.id.tvWatermediary);
     }
 
     private void init_listener() {
@@ -198,6 +200,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         verticalTextView.setOnClickListener(this);
         spanTextView.setOnClickListener(this);
         mTvBadge.setOnClickListener(this);
+        mTvWatermediary.setOnClickListener(this);
     }
 
     @Override
@@ -371,6 +374,10 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
             case R.id.tv_badge:
                 startActivity(new Intent(WidgetActivity.this, IconBadgeActivity.class));
                 break;
+            case R.id.tvWatermediary:
+                startActivity(new Intent(WidgetActivity.this, WatermelonDiayActivity.class));
+                break;
+
         }
     }
 }

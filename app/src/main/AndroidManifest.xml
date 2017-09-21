@@ -350,6 +350,10 @@
         <activity android:name=".textview.spantext.SpanTextActivity"/>
         <activity android:name="com.example.lenovo.retrofithelper2.RetrofitHelperActivity"></activity>
         <activity android:name=".expandable.ExpandableActivity"/>
+        <activity android:name="com.lizehao.watermelondiarynew.ui.AddDiaryActivity"></activity>
+        <activity android:name="com.lizehao.watermelondiarynew.ui.UpdateDiaryActivity"></activity>
+        <activity android:name="com.lizehao.watermelondiarynew.ui.WatermelonDiayActivity"></activity>
+
     </application>
 
 </manifest>
