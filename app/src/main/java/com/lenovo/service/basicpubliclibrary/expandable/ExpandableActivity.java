@@ -24,7 +24,7 @@ public class ExpandableActivity extends Activity {
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.view_row, R.id.header_text, array);
         ExpandableLayoutListView expandableLayoutListView = (ExpandableLayoutListView) findViewById(R.id.ExpandableLayoutlistview);
 
-//        expandableLayoutListView.setAdapter(arrayAdapter);
+        expandableLayoutListView.setAdapter(arrayAdapter);
     }
 
 

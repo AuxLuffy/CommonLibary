@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 import com.example.getui.GetuiActivity;
+import com.lenovo.service.basicpubliclibrary.request.ui.RequestTestActivity;
 import com.lenovo.service.basicpubliclibrary.sadl.SADLActivity;
 import com.lenovo.service.basicpubliclibrary.alipay.AlipayActivity;
 import com.lenovo.service.basicpubliclibrary.cameraDemo.RecordMainAcitivity;
@@ -28,7 +29,8 @@ public class CompositeActivity extends AppCompatActivity implements View.OnClick
     private TextView[] textviews;
 
     private int[] ids = new int[]{R.id.helloChart, R.id.jsBridge, R.id.SADL, R.id.ilog_demo,
-            R.id.tv_jnidemo, R.id.scan_code, R.id.tv_getui, R.id.tv_permission,R.id.tvEventBus
+            R.id.tv_jnidemo, R.id.scan_code, R.id.tv_getui, R.id.tv_permission,R.id.tvEventBus,
+            R.id.tv_request
     };
 
     @Override
@@ -100,6 +102,11 @@ public class CompositeActivity extends AppCompatActivity implements View.OnClick
 
             case R.id.tvEventBus:
                 intent.setClass(this, EventBusActivity.class);
+                break;
+            case R.id.tv_request:
+
+                intent.setClass(this, RequestTestActivity.class);
+
                 break;
         }
         startActivity(intent);

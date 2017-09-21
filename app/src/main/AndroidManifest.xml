@@ -350,6 +350,7 @@
         <activity android:name=".textview.spantext.SpanTextActivity"/>
         <activity android:name="com.example.lenovo.retrofithelper2.RetrofitHelperActivity"></activity>
         <activity android:name=".expandable.ExpandableActivity"/>
+        <activity android:name=".request.ui.RequestTestActivity"/>
     </application>
 
 </manifest>

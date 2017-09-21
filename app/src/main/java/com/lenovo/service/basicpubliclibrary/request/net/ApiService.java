@@ -16,29 +16,34 @@ import rx.Observable;
 
 /**
  * Created by cx on 2016/12/15.
+ * 三种请求方式
  */
 
 public interface ApiService {
 
     /**
-     * 上报记录
+     * test https example
+     */
+    @POST("otn/")
+    @FormUrlEncoded
+    Observable<ResponseBody> testHttps(@Field("param") String params);
+
+    /**
+     * noRxjava
      */
     @POST("ApiReport/statReportData")
     @FormUrlEncoded
     Call<JsonObject> getReportRecord(@Field("shop_number") String shop_id);
 
     /**
-     * 上报记录 rxjava
+     *  rxjava
      */
     @POST("ApiReport/statReportData")
     @FormUrlEncoded
     Observable<JsonObject> getReportRecordwithRxjava(@Field("shop_number") String shop_id);
 
-
-
     @Multipart
     @POST("ApiActivity/reportupload")
     Call<ResponseBody> couponUploadPic(@Part("product_sn") RequestBody product_sn, @Part("shop_id") RequestBody shop_id, @Part MultipartBody.Part file);
-
 
 }
