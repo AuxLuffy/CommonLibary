@@ -142,6 +142,7 @@ dependencies {
     compile project(path: ':retrofithelper')
     compile project(':expandablelib')
     compile "me.leolin:ShortcutBadger:1.1.18@aar"
+    compile 'com.gjiazhe:PanoramaImageView:1.0'
 }
 greendao {
     schemaVersion 1

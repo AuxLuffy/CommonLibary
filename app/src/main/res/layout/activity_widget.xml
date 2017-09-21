@@ -443,5 +443,14 @@
             android:gravity="center"
             android:text="应用图标未读消息徽章"
             android:textColor="#CCCCCC" />
+
+        <TextView
+            android:id="@+id/tv_panoraimage"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#7CFC00"
+            android:gravity="center"
+            android:text="随设备旋转自动滚动的imageView"
+            android:textColor="#CCCCCC" />
     </LinearLayout>
 </ScrollView>

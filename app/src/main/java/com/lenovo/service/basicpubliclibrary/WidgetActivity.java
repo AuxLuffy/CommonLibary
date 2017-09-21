@@ -30,6 +30,7 @@ import com.lenovo.service.basicpubliclibrary.gesturelock.GestureLockActivity;
 import com.lenovo.service.basicpubliclibrary.iconbadge.IconBadgeActivity;
 import com.lenovo.service.basicpubliclibrary.jike.JikeGalleryActivity;
 import com.lenovo.service.basicpubliclibrary.loaddata.LoadDataActivity;
+import com.lenovo.service.basicpubliclibrary.panoramimageview.PanoramImageActivity;
 import com.lenovo.service.basicpubliclibrary.pickerview.PickerActivity;
 import com.lenovo.service.basicpubliclibrary.popup.PopUpActivity;
 import com.lenovo.service.basicpubliclibrary.questionnaire.QuestionActivity;
@@ -98,6 +99,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     private TextView verticalTextView;
     private TextView spanTextView;
     private TextView mTvBadge;
+    private TextView mTvPanoraimage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -151,6 +153,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         verticalTextView = (TextView) findViewById(R.id.verticalTextView);
         spanTextView = (TextView) findViewById(R.id.spanTextView);
         mTvBadge = (TextView) findViewById(R.id.tv_badge);
+        mTvPanoraimage = (TextView) findViewById(R.id.tv_panoraimage);
     }
 
     private void init_listener() {
@@ -198,6 +201,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         verticalTextView.setOnClickListener(this);
         spanTextView.setOnClickListener(this);
         mTvBadge.setOnClickListener(this);
+        mTvPanoraimage.setOnClickListener(this);
     }
 
     @Override
@@ -370,6 +374,9 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.tv_badge:
                 startActivity(new Intent(WidgetActivity.this, IconBadgeActivity.class));
+                break;
+            case R.id.tv_panoraimage:
+                startActivity(new Intent(WidgetActivity.this, PanoramImageActivity.class));
                 break;
         }
     }

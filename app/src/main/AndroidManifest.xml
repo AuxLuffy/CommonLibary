@@ -351,6 +351,10 @@
         <activity android:name="com.example.lenovo.retrofithelper2.RetrofitHelperActivity"></activity>
         <activity android:name=".expandable.ExpandableActivity"/>
         <activity android:name=".request.ui.RequestTestActivity"/>
+        <activity android:name=".panoramimageview.HorizontalSampleActivity"/>
+        <activity android:name=".panoramimageview.PanoramImageActivity"/>
+        <activity android:name=".panoramimageview.RecyclerViewSampleActivity"/>
+        <activity android:name=".panoramimageview.VerticalSampleActivity"/>
     </application>
 
 </manifest>
