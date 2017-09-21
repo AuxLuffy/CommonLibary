@@ -9,6 +9,8 @@ import com.lenovo.service.basicpubliclibrary.linechart.model.UploadRecord;
 
 public interface IRequestModel {
 
-    void getUploadRecordData(String id,OnRequestCallback<UploadRecord> callback);
+    void getUploadRecordData(String id, OnRequestCallback<UploadRecord> callback);
+
+    void getHttpsInfo(String id, OnRequestCallback<String> callback);
 
 }

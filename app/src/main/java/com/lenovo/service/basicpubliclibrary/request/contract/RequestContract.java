@@ -18,7 +18,7 @@ public interface RequestContract {
 
         String getId();
 
-        void showData(UploadRecord uploadRecord);
+        void showData(String uploadRecord);
 
     }
 

@@ -43,7 +43,7 @@ public class ServiceGenerator {
 //            return URLConstants.API_HOMEADDRESS_DEBUG;
 //        }
 //        return URLConstants.API_HOMEADDRESS;
-        return "https://kyfw.12306.cn/otn/";
+        return "https://kyfw.12306.cn/";
     }
 
 }

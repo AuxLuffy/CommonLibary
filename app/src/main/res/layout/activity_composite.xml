@@ -193,6 +193,15 @@
             android:gravity="center"
             android:text="EventBus3 DEMO"
             android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_request"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#66FF4081"
+            android:gravity="center"
+            android:text="网络框架演示https请求"
+            android:textColor="#CCCCCC"/>
     </LinearLayout>
 
 </ScrollView>

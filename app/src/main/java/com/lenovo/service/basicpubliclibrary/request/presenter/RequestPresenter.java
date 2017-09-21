@@ -10,7 +10,7 @@ import com.lenovo.service.basicpubliclibrary.request.model.RequestModel;
  * Created by cx on 2017/9/18.
  */
 
-public class RequestPresenter implements RequestContract.Presenter,OnRequestCallback<UploadRecord> {
+public class RequestPresenter implements RequestContract.Presenter,OnRequestCallback<String> {
 
     private RequestContract.View view;
 
@@ -36,16 +36,18 @@ public class RequestPresenter implements RequestContract.Presenter,OnRequestCall
 
         view.showLoading();
 
-        iRequestModel.getUploadRecordData(id,this);
+//        iRequestModel.getUploadRecordData(id,this);
+
+        iRequestModel.getHttpsInfo(id, this);
 
     }
 
     @Override
-    public void onSuccess(UploadRecord uploadRecord) {
+    public void onSuccess(String result) {
 
         view.dismissLoading();
 
-        view.showData(uploadRecord);
+        view.showData(result);
     }
 
     @Override

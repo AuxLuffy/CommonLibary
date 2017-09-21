@@ -65,7 +65,8 @@ public class HTTPSUtils {
 
             client = new OkHttpClient.Builder()
                     .sslSocketFactory(sslSocketFactory, trustManager)
-                    .connectTimeout(10000, TimeUnit.SECONDS)
+                    .connectTimeout(10, TimeUnit.SECONDS)
+                    .readTimeout(20, TimeUnit.SECONDS)
                     .build();
         } catch (IOException e) {
             e.printStackTrace();
