@@ -143,8 +143,8 @@ dependencies {
     compile project(':expandablelib')
     compile 'me.leolin:ShortcutBadger:1.1.18@aar'
     compile project(':watermediary')
-    compile "me.leolin:ShortcutBadger:1.1.18@aar"
     compile 'com.gjiazhe:PanoramaImageView:1.0'
+    compile files('libs/libammsdk.jar')
 }
 greendao {
     schemaVersion 1

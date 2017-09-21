@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:textSize="20sp"
+        android:background="@drawable/bt_shape"
+        android:textColor="@color/SUCCESS_COLOR"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="微信支付"
+        android:onClick="toPay"
+        android:id="@+id/pay_button"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        />
+    <TextView
+        android:textColor="#E53936"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="集成微信支付准备工作:
+         \n 1,微信支付的APPID;
+         \n 2.微信支付依赖包 >>> libammsdk.jar
+         \n 3.一个Activity类 >>> WXPayEntryActivity.java
+         \n 4.其具体逻辑看代码及其注释
+
+"
+        android:onClick="toPay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        />
+</LinearLayout>

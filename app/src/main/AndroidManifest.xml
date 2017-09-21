@@ -359,6 +359,19 @@
         <activity android:name=".panoramimageview.PanoramImageActivity"/>
         <activity android:name=".panoramimageview.RecyclerViewSampleActivity"/>
         <activity android:name=".panoramimageview.VerticalSampleActivity"/>
+        <!-- 微信支付界面 -->
+        <activity android:name=".wechatpay.WeChatPayActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="此处填写自己注册的获得的微信APP_ID" />
+            </intent-filter>
+        </activity>
+        <!-- 微信支付回调界面 -->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
     </application>
 
 </manifest>
