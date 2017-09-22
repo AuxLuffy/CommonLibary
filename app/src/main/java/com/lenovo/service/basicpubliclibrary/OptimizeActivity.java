@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import com.example.lenovo.retrofithelper2.RetrofitHelperActivity;
 import com.lenovo.service.basicpubliclibrary.jobservice.JobServiceActivity;
+import com.lenovo.service.basicpubliclibrary.keyboardpanelswitch.KeyboardPanelSwitchActivity;
 import com.lenovo.service.basicpubliclibrary.leakcanary.LeakCanaryActivity;
 import com.lenovo.service.basicpubliclibrary.networkokhttp.NetokhttpActivity;
 import com.lenovo.service.basicpubliclibrary.schedule.ScheduleActivity;
@@ -17,6 +18,7 @@ public class OptimizeActivity extends AppCompatActivity implements View.OnClickL
 
     private TextView mTv_okhttpEncapsulation;
     private TextView mTvRetrofitHelper;
+    private TextView mTvKeyboard;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +33,7 @@ public class OptimizeActivity extends AppCompatActivity implements View.OnClickL
 
         mTv_okhttpEncapsulation = (TextView) findViewById(R.id.tv_okhttpEncapsulation);
         mTvRetrofitHelper = (TextView) findViewById(R.id.tvRetrofitHelper);
+        mTvKeyboard = (TextView) findViewById(R.id.tv_keyboard);
 
     }
 
@@ -38,6 +41,7 @@ public class OptimizeActivity extends AppCompatActivity implements View.OnClickL
     private void initlistener() {
         mTv_okhttpEncapsulation.setOnClickListener(this);
         mTvRetrofitHelper.setOnClickListener(this);
+        mTvKeyboard.setOnClickListener(this);
 
     }
 
@@ -61,6 +65,10 @@ public class OptimizeActivity extends AppCompatActivity implements View.OnClickL
                 break;
             case R.id.tvRetrofitHelper:
                 intent=new Intent(this, RetrofitHelperActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.tv_keyboard:
+                intent=new Intent(this, KeyboardPanelSwitchActivity.class);
                 startActivity(intent);
                 break;
         }

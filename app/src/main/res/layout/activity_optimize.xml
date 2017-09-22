@@ -70,10 +70,11 @@
         android:gravity="center"
         />
     <TextView
+        android:id="@+id/tv_keyboard"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:textColor="#CCCCCC"
-        android:text="未完待续"
+        android:text="键盘面板冲突及布局闪动处理方案"
         android:background="#ADD8E6"
         android:gravity="center"
 

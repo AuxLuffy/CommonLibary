@@ -450,6 +450,12 @@
         <activity
             android:name=".wowoviewpagerexample.WoWoElevationAnimationActivity"
             android:theme="@style/ShowAppTheme" />
+        <activity android:name=".keyboardpanelswitch.ChattingResolvedActivity" />
+        <activity android:name=".keyboardpanelswitch.ChattingResolvedFragmentActivity" />
+        <activity android:name=".keyboardpanelswitch.KeyboardPanelSwitchActivity" />
+        <activity android:name=".keyboardpanelswitch.TranslucentActivity" />
+        <activity android:name=".keyboardpanelswitch.ChattingResolvedHandleByPlaceholderActivity" />
+        <activity android:name=".keyboardpanelswitch.ChattingUnresolvedActivity" />
     </application>
 
 </manifest>
