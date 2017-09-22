@@ -462,6 +462,14 @@
             android:name=".smallchart.CurveChartActivity"
             android:screenOrientation="landscape" />
         <activity android:name=".sugar.ScanSDActivity"></activity>
+
+        <activity android:name=".hencoder.hencoderpracticedraw1.MainActivity"/>
+        <activity android:name=".hencoder.hencoderpracticedraw2.MainActivity"/>
+        <activity android:name=".hencoder.hencoderpracticedraw3.MainActivity"/>
+        <activity android:name=".hencoder.hencoderpracticedraw4.MainActivity"/>
+        <activity android:name=".hencoder.hencoderpracticedraw5.MainActivity"/>
+        <activity android:name=".hencoder.hencoderpracticedraw6.MainActivity"/>
+        <activity android:name=".hencoder.hencoderpracticedraw7.MainActivity"/>
     </application>
 
 </manifest>

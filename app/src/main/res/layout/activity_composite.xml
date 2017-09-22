@@ -211,6 +211,78 @@
             android:gravity="center"
             android:text="集成微信支付"
             android:textColor="#CCCCCC" />
+
+
+        <TextView
+            android:id="@+id/tv_view1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#F08080"
+            android:onClick="startAlipayActivity"
+            android:gravity="center"
+            android:text="自定义View系列1-绘制基础"
+            android:textColor="#CCCCCC"/>
+
+        <TextView
+            android:id="@+id/tv_view2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#E6E6FA"
+            android:onClick="startAlipayActivity"
+            android:gravity="center"
+            android:text="自定义View系列2-Paint详解"
+            android:textColor="#CCCCCC"/>
+
+        <TextView
+            android:id="@+id/tv_view3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#F08080"
+            android:onClick="startAlipayActivity"
+            android:gravity="center"
+            android:text="自定义View系列3-文字的绘制"
+            android:textColor="#CCCCCC"/>
+
+        <TextView
+            android:id="@+id/tv_view4"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#E6E6FA"
+            android:onClick="startAlipayActivity"
+            android:gravity="center"
+            android:text="自定义View系列4-Canvas对绘制的辅助"
+            android:textColor="#CCCCCC"/>
+
+        <TextView
+            android:id="@+id/tv_view5"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#F08080"
+            android:onClick="startAlipayActivity"
+            android:gravity="center"
+            android:text="自定义View系列5-绘制顺序"
+            android:textColor="#CCCCCC"/>
+
+        <TextView
+            android:id="@+id/tv_view6"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#E6E6FA"
+            android:onClick="startAlipayActivity"
+            android:gravity="center"
+            android:text="自定义View系列6-属性动画进阶"
+            android:textColor="#CCCCCC"/>
+
+        <TextView
+            android:id="@+id/tv_view7"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#F08080"
+            android:onClick="startAlipayActivity"
+            android:gravity="center"
+            android:text="自定义View系列7-属性动画进阶"
+            android:textColor="#CCCCCC"/>
+
     </LinearLayout>
 
 </ScrollView>
