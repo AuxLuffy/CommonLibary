@@ -98,8 +98,10 @@
 8.  动画-ExpandableListView折叠动画
 9.  控件-新手引导,指引遮盖模板
 10. 框架-okHttp网络框架高级封装
-
-
+11. 框架-retrofit网络框架的高级封装
+12. 控件-时间轴日记功能
+13. 控件-RecyclerView双列表联动与悬停
+14. 动画-利用RecyclerView实现顶部悬浮效果
 
 
 # 汪雅菁
