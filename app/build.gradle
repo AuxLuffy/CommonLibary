@@ -52,6 +52,9 @@ repositories {
     mavenCentral()
 }
 dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'net.grandcentrix.tray:tray:0.12.0'
+    compile 'com.github.fernandodev.androidproperties:androidproperties:+'
 
     //65535解决
 
@@ -61,8 +64,6 @@ dependencies {
     compile "com.github.Raizlabs.DBFlow:dbflow:${dbflow_version}"
 
     // sql-cipher database encyrption (optional)
-    compile "com.github.Raizlabs.DBFlow:dbflow-sqlcipher:${dbflow_version}"
-    compile fileTree(include: ['*.jar'], dir: 'libs')
     compile "com.android.support:support-v4:${supportVersion}"
     compile "com.android.support:appcompat-v7:${supportVersion}"
     compile "com.android.support:recyclerview-v7:${supportVersion}"
