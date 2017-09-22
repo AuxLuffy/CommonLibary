@@ -24,6 +24,7 @@ import com.lenovo.service.basicpubliclibrary.meizuweather.MeizuWeacherActivity;
 import com.lenovo.service.basicpubliclibrary.roll3dimageview.RollImageActivity;
 import com.lenovo.service.basicpubliclibrary.svg.WowActivity;
 import com.lenovo.service.basicpubliclibrary.takeaway.TakeawayActivity;
+import com.lenovo.service.basicpubliclibrary.threed.ThreedMainActivity;
 import com.lenovo.service.basicpubliclibrary.wowoviewpagerexample.WowoMainActivity;
 
 public class AnimationActivity extends AppCompatActivity {
@@ -66,6 +67,7 @@ public class AnimationActivity extends AppCompatActivity {
         findViewById(R.id.tv_floatbtn).setOnClickListener(new TextViewClickListener());
         findViewById(R.id.tv_bottom_bar).setOnClickListener(new TextViewClickListener());
         findViewById(R.id.tv_danmu).setOnClickListener(new TextViewClickListener());
+        findViewById(R.id.tv_threed).setOnClickListener(new TextViewClickListener());
 
         mTvExamplelv = (TextView)findViewById(R.id.tv_examplelv);
         mTvWowoviewpager = (TextView)findViewById(R.id.wowo_viewpager);
@@ -167,6 +169,9 @@ public class AnimationActivity extends AppCompatActivity {
                     break;
                 case R.id.tv_danmu:
                     startActivity(new Intent(AnimationActivity.this, DanmuActivity.class));
+                    break;
+                case R.id.tv_threed:
+                    startActivity(new Intent(AnimationActivity.this, ThreedMainActivity.class));
                     break;
                 default:
                     break;
