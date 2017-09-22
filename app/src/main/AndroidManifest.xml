@@ -556,6 +556,7 @@
         <activity android:name=".hencoder.hencoderpracticedraw7.MainActivity"/>
         <activity android:name="com.wind.windlinkrecycleview.WindlinkRecycleviewActivity">
         </activity>
+        <activity android:name=".stikyscrollview.StikyScrollviewActivity"></activity>
     </application>
 
 </manifest>
