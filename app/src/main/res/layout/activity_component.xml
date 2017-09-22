@@ -150,6 +150,33 @@
             android:background="#E0FFFF"
             android:gravity="center"
         />
+
+        <TextView
+            android:id="@+id/tv_piechart"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColor="@color/black"
+            android:text="环形图"
+            android:background="#FFF0F5"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tv_radarchart"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColor="@color/black"
+            android:text="雷达图"
+            android:background="#CCCCCC"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tv_lineXchart"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColor="@color/black"
+            android:text="折线图"
+            android:background="#F08080"
+            android:gravity="center" />
     </LinearLayout>
 
 </ScrollView>
