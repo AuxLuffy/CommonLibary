@@ -5,9 +5,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
+
 import com.example.getui.GetuiActivity;
-import com.lenovo.service.basicpubliclibrary.request.ui.RequestTestActivity;
-import com.lenovo.service.basicpubliclibrary.sadl.SADLActivity;
 import com.lenovo.service.basicpubliclibrary.alipay.AlipayActivity;
 import com.lenovo.service.basicpubliclibrary.cameraDemo.RecordMainAcitivity;
 import com.lenovo.service.basicpubliclibrary.camerakit.CamerakitActivity;
@@ -18,7 +17,9 @@ import com.lenovo.service.basicpubliclibrary.jsBridge.activity.JSBridgeActivity;
 import com.lenovo.service.basicpubliclibrary.jsBridge.common.LocalConstant;
 import com.lenovo.service.basicpubliclibrary.linechart.ui.LineChartActivity;
 import com.lenovo.service.basicpubliclibrary.permissionDemo.PermissionDemoActivity;
+import com.lenovo.service.basicpubliclibrary.request.ui.RequestTestActivity;
 import com.lenovo.service.basicpubliclibrary.rxjava.RxJavaActivity;
+import com.lenovo.service.basicpubliclibrary.sadl.SADLActivity;
 import com.lenovo.service.basicpubliclibrary.validation.ValidateActivity;
 import com.lenovo.service.basicpubliclibrary.videoplayer.VideoplayerActivity;
 import com.lenovo.service.basicpubliclibrary.wechatpay.WeChatPayActivity;
@@ -31,7 +32,8 @@ public class CompositeActivity extends AppCompatActivity implements View.OnClick
 
     private int[] ids = new int[]{R.id.helloChart, R.id.jsBridge, R.id.SADL, R.id.ilog_demo,
             R.id.tv_jnidemo, R.id.scan_code, R.id.tv_getui, R.id.tv_permission,R.id.tvEventBus,
-            R.id.tv_request
+            R.id.tv_request, R.id.tv_view1, R.id.tv_view2, R.id.tv_view3, R.id.tv_view4,
+            R.id.tv_view5, R.id.tv_view6, R.id.tv_view7
     };
 
     @Override
@@ -108,6 +110,27 @@ public class CompositeActivity extends AppCompatActivity implements View.OnClick
 
                 intent.setClass(this, RequestTestActivity.class);
 
+                break;
+            case R.id.tv_view1:
+                intent.setClass(this, com.lenovo.service.basicpubliclibrary.hencoder.hencoderpracticedraw1.MainActivity.class);
+                break;
+            case R.id.tv_view2:
+                intent.setClass(this, com.lenovo.service.basicpubliclibrary.hencoder.hencoderpracticedraw2.MainActivity.class);
+                break;
+            case R.id.tv_view3:
+                intent.setClass(this, com.lenovo.service.basicpubliclibrary.hencoder.hencoderpracticedraw3.MainActivity.class);
+                break;
+            case R.id.tv_view4:
+                intent.setClass(this, com.lenovo.service.basicpubliclibrary.hencoder.hencoderpracticedraw4.MainActivity.class);
+                break;
+            case R.id.tv_view5:
+                intent.setClass(this, com.lenovo.service.basicpubliclibrary.hencoder.hencoderpracticedraw5.MainActivity.class);
+                break;
+            case R.id.tv_view6:
+                intent.setClass(this, com.lenovo.service.basicpubliclibrary.hencoder.hencoderpracticedraw6.MainActivity.class);
+                break;
+            case R.id.tv_view7:
+                intent.setClass(this, com.lenovo.service.basicpubliclibrary.hencoder.hencoderpracticedraw7.MainActivity.class);
                 break;
         }
         startActivity(intent);

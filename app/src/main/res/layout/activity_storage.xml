@@ -67,12 +67,21 @@
                 android:id="@+id/cupboard"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:background="#ADD8E6"
+                android:background="#F0E68C"
                 android:gravity="center"
                 android:text="Cupboard"
                 android:textColor="@color/black"
         />
+        <TextView
+                android:id="@+id/scan_sd_mp3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#ADD8E6"
+                android:gravity="center"
+                android:text="扫描SD卡的.mp3文件"
+                android:textColor="#CCCCCC"
 
+        />
         <TextView
                 android:id="@+id/litepal"
                 android:layout_width="match_parent"

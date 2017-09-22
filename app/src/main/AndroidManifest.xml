@@ -371,16 +371,16 @@
         </activity>
         <!-- 微信支付回调界面 -->
         <activity
-                android:name=".wxapi.WXPayEntryActivity"
-                android:exported="true"
-                android:launchMode="singleTop"/>
-        <activity android:name=".smallchart.PieCharActivity"/>
-        <activity android:name=".smallchart.RadarChartActivity"/>
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity android:name=".smallchart.PieCharActivity" />
+        <activity android:name=".smallchart.RadarChartActivity" />
         <activity
-                android:name=".smallchart.LineChartActivity"
-                android:screenOrientation="landscape"/>
-        <activity android:name=".textview.linktextview.LinkTextViewActivity"/>
-        <activity android:name=".wowoviewpagerexample.WowoMainActivity"/>
+            android:name=".smallchart.LineChartActivity"
+            android:screenOrientation="landscape" ></activity>
+        <activity android:name=".textview.linktextview.LinkTextViewActivity" />
+        <activity android:name=".wowoviewpagerexample.WowoMainActivity" />
         <activity
                 android:name=".wowoviewpagerexample.WoWoTranslationAnimationActivity"
                 android:theme="@style/ShowAppTheme"/>
@@ -540,7 +540,19 @@
                 android:label="@string/sum_sample"
                 android:screenOrientation="portrait" >
         </activity>
-        
+
+        <activity
+            android:name=".smallchart.CurveChartActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".sugar.ScanSDActivity"></activity>
+
+        <activity android:name=".hencoder.hencoderpracticedraw1.MainActivity"/>
+        <activity android:name=".hencoder.hencoderpracticedraw2.MainActivity"/>
+        <activity android:name=".hencoder.hencoderpracticedraw3.MainActivity"/>
+        <activity android:name=".hencoder.hencoderpracticedraw4.MainActivity"/>
+        <activity android:name=".hencoder.hencoderpracticedraw5.MainActivity"/>
+        <activity android:name=".hencoder.hencoderpracticedraw6.MainActivity"/>
+        <activity android:name=".hencoder.hencoderpracticedraw7.MainActivity"/>
     </application>
 
 </manifest>

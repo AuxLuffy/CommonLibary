@@ -11,6 +11,7 @@ import com.lenovo.service.basicpubliclibrary.greendao.GreenDaoDemoActivity;
 import com.lenovo.service.basicpubliclibrary.litepal.activity.LitepalActivity;
 import com.lenovo.service.basicpubliclibrary.ormlite.OrmLiteActivity;
 import com.lenovo.service.basicpubliclibrary.realm.RealmActivity;
+import com.lenovo.service.basicpubliclibrary.sugar.ScanSDActivity;
 import com.lenovo.service.basicpubliclibrary.sugar.SugarActivity;
 import com.lenovo.service.basicpubliclibrary.tray.TrayActivity;
 
@@ -24,6 +25,7 @@ public class StorageActivity extends AppCompatActivity implements View.OnClickLi
     private TextView cupboard;
     private TextView litepal;
     private TextView tray;
+    private TextView scan_sd_mp3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +37,8 @@ public class StorageActivity extends AppCompatActivity implements View.OnClickLi
         tvDBFlow = (TextView) findViewById(R.id.tvDBFlow);
         sugar = (TextView) findViewById(R.id.sugar);
         realm = (TextView) findViewById(R.id.realm);
+        scan_sd_mp3 = (TextView) findViewById(R.id.scan_sd_mp3);
+
         cupboard = (TextView) findViewById(R.id.cupboard);
         litepal = (TextView) findViewById(R.id.litepal);
         tray = (TextView) findViewById(R.id.tray);
@@ -51,6 +55,7 @@ public class StorageActivity extends AppCompatActivity implements View.OnClickLi
         cupboard.setOnClickListener(this);
         litepal.setOnClickListener(this);
         tray.setOnClickListener(this);
+        scan_sd_mp3.setOnClickListener(this);
 
     }
 
@@ -88,6 +93,10 @@ public class StorageActivity extends AppCompatActivity implements View.OnClickLi
             case R.id.tray:
                 Intent tray = new Intent(this, TrayActivity.class);
                 startActivity(tray);
+                break;
+            case R.id.scan_sd_mp3:
+                Intent scan_mp3 = new Intent(this, ScanSDActivity.class);
+                startActivity(scan_mp3);
                 break;
         }
     }
