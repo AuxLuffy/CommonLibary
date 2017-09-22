@@ -31,6 +31,17 @@ android {
     dataBinding {
         enabled = true
     }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+    dexOptions {
+        dexInProcess true
+        preDexLibraries true
+        javaMaxHeapSize "4g"
+        incremental true
+    }
 }
 ext {
     supportVersion = '26.0.0-alpha1'
@@ -83,7 +94,7 @@ dependencies {
     //权限申请库（适合绝大多数国产手机，小米、魅族、华为、oppo等）
     compile project(':retrofithelper')
     compile project(path: ':retrofithelper')
-    compile project(':expandablelib')
+    compile(name: 'expandablelib-release', ext: 'aar')
     compile project(':watermediary')
     compile files('libs/libammsdk.jar')
     compile 'org.greenrobot:eventbus:3.0.0'
