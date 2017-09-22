@@ -377,6 +377,79 @@
         <activity android:name=".smallchart.LineChartActivity"
             android:screenOrientation="landscape"></activity>
         <activity android:name=".textview.linktextview.LinkTextViewActivity"/>
+
+
+        <activity android:name=".wowoviewpagerexample.WowoMainActivity" />
+        <activity
+            android:name=".wowoviewpagerexample.WoWoTranslationAnimationActivity"
+            android:theme="@style/ShowAppTheme" />
+        <activity android:name=".wowoviewpagerexample.SetEaseTypeActivity" />
+        <activity
+            android:name=".wowoviewpagerexample.WoWoScaleAnimationActivity"
+            android:theme="@style/ShowAppTheme" />
+        <activity
+            android:name=".wowoviewpagerexample.WoWoAlphaAnimationActivity"
+            android:theme="@style/ShowAppTheme" />
+        <activity
+            android:name=".wowoviewpagerexample.WoWoShapeColorAnimationActivity"
+            android:theme="@style/ShowAppTheme" />
+        <activity
+            android:name=".wowoviewpagerexample.WoWoTextViewColorAnimationActivity"
+            android:theme="@style/ShowAppTheme" />
+        <activity
+            android:name=".wowoviewpagerexample.WoWoBackgroundColorAnimationActivity"
+            android:theme="@style/ShowAppTheme" />
+        <activity
+            android:name=".wowoviewpagerexample.WoWoLayerListColorAnimationActivity"
+            android:theme="@style/ShowAppTheme" />
+        <activity
+            android:name=".wowoviewpagerexample.WoWoStateListColorAnimationActivity"
+            android:theme="@style/ShowAppTheme" />
+        <activity
+            android:name=".wowoviewpagerexample.WoWoRotationAnimationActivity"
+            android:theme="@style/ShowAppTheme" />
+        <activity
+            android:name=".wowoviewpagerexample.WoWoPathAnimationActivity"
+            android:theme="@style/ShowAppTheme" />
+        <activity
+            android:name=".wowoviewpagerexample.WoWoTextViewTextSizeAnimationActivity"
+            android:theme="@style/ShowAppTheme" />
+        <activity
+            android:name=".wowoviewpagerexample.WoWoPositionAnimationActivity"
+            android:theme="@style/ShowAppTheme" />
+        <activity
+            android:name=".wowoviewpagerexample.WoWoTextViewTextAnimationActivity"
+            android:theme="@style/ShowAppTheme" />
+        <activity
+            android:name=".wowoviewpagerexample.GuidePageActivity1"
+            android:theme="@style/ShowAppTheme" />
+        <activity
+            android:name=".wowoviewpagerexample.GearboxActivity"
+            android:theme="@style/ShowAppTheme" />
+        <activity
+            android:name=".wowoviewpagerexample.StaticActivity"
+            android:theme="@style/ShowAppTheme" />
+        <activity
+            android:name=".wowoviewpagerexample.svg.SVGActivity"
+            android:theme="@style/ShowAppTheme" />
+        <activity
+            android:name=".wowoviewpagerexample.gif.GIFActivity"
+            android:theme="@style/ShowAppTheme" />
+        <activity
+            android:name=".wowoviewpagerexample.AutoScrollActivity"
+            android:theme="@style/ShowAppTheme" />
+        <activity
+            android:name=".wowoviewpagerexample.DirectionActivity"
+            android:theme="@style/ShowAppTheme" />
+        <activity
+            android:name=".wowoviewpagerexample.CustomAnimationActivity"
+            android:theme="@style/ShowAppTheme" />
+        <activity
+            android:name=".wowoviewpagerexample.GuidePageActivity2"
+            android:theme="@style/ShowAppTheme" />
+        <activity
+            android:name=".wowoviewpagerexample.WoWoElevationAnimationActivity"
+            android:theme="@style/ShowAppTheme" />
     </application>
 
 </manifest>

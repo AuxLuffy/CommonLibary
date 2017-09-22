@@ -185,5 +185,15 @@
             android:gravity="center"
             />
 
+        <TextView
+            android:id="@+id/wowo_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#F08080"
+            android:gravity="center"
+            android:text="炫酷ViewPager切换动画库"
+            android:textColor="#CCCCCC"
+
+            />
     </LinearLayout>
 </ScrollView>
