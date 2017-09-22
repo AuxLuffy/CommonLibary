@@ -10,6 +10,7 @@ import com.lenovo.service.basicpubliclibrary.dbflow.DBFlowActivity;
 import com.lenovo.service.basicpubliclibrary.greendao.GreenDaoDemoActivity;
 import com.lenovo.service.basicpubliclibrary.litepal.activity.LitepalActivity;
 import com.lenovo.service.basicpubliclibrary.ormlite.OrmLiteActivity;
+import com.lenovo.service.basicpubliclibrary.properties.PreferencesActivity;
 import com.lenovo.service.basicpubliclibrary.realm.RealmActivity;
 import com.lenovo.service.basicpubliclibrary.sugar.ScanSDActivity;
 import com.lenovo.service.basicpubliclibrary.sugar.SugarActivity;
@@ -25,6 +26,7 @@ public class StorageActivity extends AppCompatActivity implements View.OnClickLi
     private TextView cupboard;
     private TextView litepal;
     private TextView tray;
+    private TextView preferences;
     private TextView scan_sd_mp3;
 
     @Override
@@ -42,6 +44,7 @@ public class StorageActivity extends AppCompatActivity implements View.OnClickLi
         cupboard = (TextView) findViewById(R.id.cupboard);
         litepal = (TextView) findViewById(R.id.litepal);
         tray = (TextView) findViewById(R.id.tray);
+        preferences = (TextView) findViewById(R.id.preferences);
 
         setOnClickListener();
     }
@@ -55,6 +58,7 @@ public class StorageActivity extends AppCompatActivity implements View.OnClickLi
         cupboard.setOnClickListener(this);
         litepal.setOnClickListener(this);
         tray.setOnClickListener(this);
+        preferences.setOnClickListener(this);
         scan_sd_mp3.setOnClickListener(this);
 
     }
@@ -93,6 +97,10 @@ public class StorageActivity extends AppCompatActivity implements View.OnClickLi
             case R.id.tray:
                 Intent tray = new Intent(this, TrayActivity.class);
                 startActivity(tray);
+                break;
+            case R.id.preferences:
+                Intent preferences = new Intent(this, PreferencesActivity.class);
+                startActivity(preferences);
                 break;
             case R.id.scan_sd_mp3:
                 Intent scan_mp3 = new Intent(this, ScanSDActivity.class);

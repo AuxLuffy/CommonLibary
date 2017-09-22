@@ -105,13 +105,13 @@
         />
 
         <TextView
+                android:id="@+id/preferences"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:background="#D3D3D3"
                 android:gravity="center"
-                android:text="未完待续"
-                android:textColor="#CCCCCC"
-
+                android:text="Preferences"
+                android:textColor="@color/black"
         />
 
 

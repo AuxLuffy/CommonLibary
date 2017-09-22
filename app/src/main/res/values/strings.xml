@@ -1295,4 +1295,5 @@
     <string name="read_multiprocess_explaination">Click this button fast and you\'ll see the shared preferences having trouble staying in sync. No problem for tray</string>
     <string name="write_multiprocess_explaination">Only tray is possible to listen to changes made in a different process. The SharedPreferences receive no callback</string>
 
+    <string name="foo">foo</string>
 </resources>

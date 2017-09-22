@@ -461,6 +461,7 @@
         <activity android:name=".litepal.activity.LitepalActivity"/>
         <activity android:name=".danmu.DanmuActivity"></activity>
         <activity android:name=".tray.TrayActivity"></activity>
+        <activity android:name=".properties.PreferencesActivity"></activity>
 
         <activity
                 android:name="com.lenovo.service.basicpubliclibrary.litepal.activity.ManageTablesActivity"

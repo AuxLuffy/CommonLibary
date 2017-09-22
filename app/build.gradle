@@ -54,6 +54,7 @@ repositories {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'net.grandcentrix.tray:tray:0.12.0'
+    compile 'com.github.fernandodev.androidproperties:androidproperties:+'
 
     // if Java use this. If using Kotlin do NOT use this.
     annotationProcessor "com.github.Raizlabs.DBFlow:dbflow-processor:${dbflow_version}"
