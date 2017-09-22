@@ -31,6 +31,7 @@ import com.lenovo.service.basicpubliclibrary.gesturelock.GestureLockActivity;
 import com.lenovo.service.basicpubliclibrary.iconbadge.IconBadgeActivity;
 import com.lenovo.service.basicpubliclibrary.jike.JikeGalleryActivity;
 import com.lenovo.service.basicpubliclibrary.loaddata.LoadDataActivity;
+import com.lenovo.service.basicpubliclibrary.marqueue.MarqueueActivity;
 import com.lenovo.service.basicpubliclibrary.panoramimageview.PanoramImageActivity;
 import com.lenovo.service.basicpubliclibrary.pickerview.PickerActivity;
 import com.lenovo.service.basicpubliclibrary.popup.PopUpActivity;
@@ -107,6 +108,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     private TextView mLinkTextView;
     private TextView mTvCount;
     private TextView mSpanTouchFixTextView;
+    private TextView mTvMarqueue;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -165,6 +167,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mLinkTextView = (TextView) findViewById(R.id.linkTextView);
         mTvCount = (TextView) findViewById(R.id.tv_count);
         mSpanTouchFixTextView = (TextView) findViewById(R.id.spanTouchFixTextView);
+        mTvMarqueue = (TextView) findViewById(R.id.tv_marqueue);
     }
 
     private void init_listener() {
@@ -217,6 +220,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mLinkTextView.setOnClickListener(this);
         mTvCount.setOnClickListener(this);
         mSpanTouchFixTextView.setOnClickListener(this);
+        mTvMarqueue.setOnClickListener(this);
     }
 
     @Override
@@ -404,6 +408,9 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.spanTouchFixTextView:
                 startActivity(new Intent(WidgetActivity.this, SpanTouchFixTextViewActivity.class));
+                break;
+            case R.id.tv_marqueue:
+                startActivity(new Intent(WidgetActivity.this, MarqueueActivity.class));
                 break;
 
         }

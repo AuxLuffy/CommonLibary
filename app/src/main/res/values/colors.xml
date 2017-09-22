@@ -214,4 +214,10 @@
     <color name="light_blue">#13BFFF</color>
     <color name="black_background">#2C2D2E</color>
     <color name="rocket_fire">#EFC75E</color>
+
+    <color name="yellow">#FFFF00</color> <!-- 黄色 -->
+    <color name="gold">#FFD700</color>   <!-- 金色 -->
+    <color name="orange">#FFA500</color> <!-- 橙色 -->
+    <color name="half_transparent">#4f000000</color>
+    <color name="half_transparent_white">#80ffffff</color>
 </resources>

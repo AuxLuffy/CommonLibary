@@ -1311,4 +1311,6 @@
     <string name="write_multiprocess_explaination">Only tray is possible to listen to changes made in a different process. The SharedPreferences receive no callback</string>
 
     <string name="foo">foo</string>
+    <string name="marquee_text">心中有阳光，脚底有力量。</string>
+    <string name="marquee_texts">心中有阳光，脚底有力量。心中有阳光，脚底有力量。心中有阳光，脚底有力量。心中有阳光，脚底有力量。</string>
 </resources>
