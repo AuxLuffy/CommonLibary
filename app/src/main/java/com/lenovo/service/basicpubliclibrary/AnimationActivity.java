@@ -11,6 +11,7 @@ import com.lenovo.service.basicpubliclibrary.bezier.BezierActivity;
 import com.lenovo.service.basicpubliclibrary.bezier.DotsLoaderActivity;
 import com.lenovo.service.basicpubliclibrary.bottombar.BottomBarActivity;
 import com.lenovo.service.basicpubliclibrary.colorfultoast.ColorfulToastActivity;
+import com.lenovo.service.basicpubliclibrary.danmu.DanmuActivity;
 import com.lenovo.service.basicpubliclibrary.expandablelvanimated.ExpandableListViewActivity;
 import com.lenovo.service.basicpubliclibrary.floatingbutton.FLoatingBtnActivity;
 import com.lenovo.service.basicpubliclibrary.floatingmenu.FloatingActionActivity;
@@ -23,6 +24,7 @@ import com.lenovo.service.basicpubliclibrary.meizuweather.MeizuWeacherActivity;
 import com.lenovo.service.basicpubliclibrary.roll3dimageview.RollImageActivity;
 import com.lenovo.service.basicpubliclibrary.svg.WowActivity;
 import com.lenovo.service.basicpubliclibrary.takeaway.TakeawayActivity;
+import com.lenovo.service.basicpubliclibrary.wowoviewpagerexample.WowoMainActivity;
 
 public class AnimationActivity extends AppCompatActivity {
     TextView text1 = null;
@@ -40,6 +42,7 @@ public class AnimationActivity extends AppCompatActivity {
     private TextView tv_dots_loader;
     private TextView mTvExamplelv;
     private TextView tv_floatingmenu;
+    private TextView mTvWowoviewpager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,8 +65,10 @@ public class AnimationActivity extends AppCompatActivity {
         tv_floatingmenu = (TextView)findViewById(R.id.tv_floatingmenu);
         findViewById(R.id.tv_floatbtn).setOnClickListener(new TextViewClickListener());
         findViewById(R.id.tv_bottom_bar).setOnClickListener(new TextViewClickListener());
+        findViewById(R.id.tv_danmu).setOnClickListener(new TextViewClickListener());
 
         mTvExamplelv = (TextView)findViewById(R.id.tv_examplelv);
+        mTvWowoviewpager = (TextView)findViewById(R.id.wowo_viewpager);
 
         text1.setOnClickListener(new TextViewClickListener());
         mTvLoopView.setOnClickListener(new TextViewClickListener());
@@ -79,6 +84,7 @@ public class AnimationActivity extends AppCompatActivity {
         tv_dots_loader.setOnClickListener(new TextViewClickListener());
         mTvExamplelv.setOnClickListener(new TextViewClickListener());
         tv_floatingmenu.setOnClickListener(new TextViewClickListener());
+        mTvWowoviewpager.setOnClickListener(new TextViewClickListener());
     }
 
     public class TextViewClickListener implements View.OnClickListener {
@@ -155,6 +161,12 @@ public class AnimationActivity extends AppCompatActivity {
                     break;
                 case R.id.tv_bottom_bar:
                     startActivity(new Intent(AnimationActivity.this, BottomBarActivity.class));
+                    break;
+                case R.id.wowo_viewpager:
+                    startActivity(new Intent(AnimationActivity.this, WowoMainActivity.class));
+                    break;
+                case R.id.tv_danmu:
+                    startActivity(new Intent(AnimationActivity.this, DanmuActivity.class));
                     break;
                 default:
                     break;

@@ -205,4 +205,13 @@
     <color name="purple_start_color">#6178f2</color>
     <color name="purple_end_color">#925eff</color>
     <color name="material_orange">#FF9800</color>
+
+    <color name="blue_1">#eae9fe</color>
+    <color name="blue_2">#ccc8fc</color>
+    <color name="blue_3">#ada8fb</color>
+    <color name="blue_4">#8f87f9</color>
+    <color name="blue_5">#7067f8</color>
+    <color name="light_blue">#13BFFF</color>
+    <color name="black_background">#2C2D2E</color>
+    <color name="rocket_fire">#EFC75E</color>
 </resources>

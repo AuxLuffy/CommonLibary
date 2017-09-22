@@ -39,4 +39,15 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content" />
 
+    <TextView
+        android:id="@+id/text2"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text=""
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
 </android.support.constraint.ConstraintLayout>

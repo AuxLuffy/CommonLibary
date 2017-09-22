@@ -21,6 +21,7 @@ import com.lenovo.service.basicpubliclibrary.permissionDemo.PermissionDemoActivi
 import com.lenovo.service.basicpubliclibrary.rxjava.RxJavaActivity;
 import com.lenovo.service.basicpubliclibrary.validation.ValidateActivity;
 import com.lenovo.service.basicpubliclibrary.videoplayer.VideoplayerActivity;
+import com.lenovo.service.basicpubliclibrary.wechatpay.WeChatPayActivity;
 import com.lenovo.service.basicpubliclibrary.zxing.activity.ZxingActivity;
 
 
@@ -135,5 +136,9 @@ public class CompositeActivity extends AppCompatActivity implements View.OnClick
 
     public void startAlipayActivity(View view) {
         startActivity(new Intent(this, AlipayActivity.class));
+    }
+
+    public void toWeChatPayActivity(View view) {
+        startActivity(new Intent(this, WeChatPayActivity.class));
     }
 }

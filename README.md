@@ -20,6 +20,8 @@
 9. 综合-动态改变视频大小
 10. 控件-应用图标未读消息徽章
 11. 控件-随设备旋转自动滚动的imageview
+12. 综合-集成微信支付
+13. 优化- 键盘面板冲突及布局闪动处理方案
 
 # 司马奔
 - **原创**     
@@ -71,7 +73,8 @@
 8. 组件-动态设置文字的颜色大小的以及其他样式
 9. 综合-添加二维码扫描功能
 10.控件-添加竖直排版的TextView
-10.控件-添加支持各种文字边距,段落边距,自定义部分文字的TextView
+11.控件-添加支持各种文字边距,段落边距,自定义部分文字的TextView
+12.控件-添加可识别URL/Mail/Tel的TextView
 
 
 # 李巷阳
@@ -113,6 +116,9 @@
 7. 数据-sugar
 8. 个推
 9. 输入框
+10.环形图
+9. 雷达图
+9. 折线图
 
 
 # 孙张飞
@@ -136,8 +142,8 @@
 2. 综合-recyclerview使用封装
 3. 控件-mvp+折线图使用封装
 4. 控件-自定义toolbar
-5. 综合-jni开发初步探究  注：关于jni开发，更新代码后，如果报错，则说明需要配置你的ndk。请在local.properties文件中，添加ndk.dir=E\:\\ndk\\android-ndk-r14b 来标示你的ndk本地路径
-6. 综合-网络框架 Okhttp + retrofit2 + http/https + rxjava + mvp
+5. 综合-jni开发初步探究（已更新：实现java与c互调功能）  注：关于jni开发，更新代码后，如果报错，则说明需要配置你的ndk。请在local.properties文件中，添加ndk.dir=E\:\\ndk\\android-ndk-r14b 来标示你的ndk本地路径
+6. 综合-网络框架 Okhttp + retrofit2 + http/https + rxjava + mvp（已更新：添加https连接演示）
 7. 综合-网络框架 Okhttp + retrofit2 + http/https + mvp
 
 

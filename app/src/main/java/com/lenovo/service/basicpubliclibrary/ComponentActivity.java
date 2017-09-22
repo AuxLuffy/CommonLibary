@@ -27,6 +27,10 @@ import com.lenovo.service.basicpubliclibrary.shadowmasking.ShadowmaskingActivity
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+
+import com.lenovo.service.basicpubliclibrary.smallchart.LineChartActivity;
+import com.lenovo.service.basicpubliclibrary.smallchart.PieCharActivity;
+import com.lenovo.service.basicpubliclibrary.smallchart.RadarChartActivity;
 import com.lenovo.service.basicpubliclibrary.uploadfile.UploadFileActivity;
 import lenovo.com.zxing.MipcaActivityCapture;
 
@@ -59,10 +63,15 @@ public class ComponentActivity extends AppCompatActivity implements View.OnClick
     TextView tv_pinview;
     @BindView(R.id.tvUpload)
     TextView tvUpload;
-
-
     @BindView(R.id.tvQRCode)
     TextView tvQRCode;
+    @BindView(R.id.tv_piechart)
+    TextView tv_piechart;
+    @BindView(R.id.tv_radarchart)
+    TextView tv_radarchart;
+    @BindView(R.id.tv_lineXchart)
+    TextView tv_lineXchart;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -86,6 +95,9 @@ public class ComponentActivity extends AppCompatActivity implements View.OnClick
         mTvShadowmasking.setOnClickListener(this);
         tvUpload.setOnClickListener(this);
         tv_pinview.setOnClickListener(this);
+        tv_piechart.setOnClickListener(this);
+        tv_radarchart.setOnClickListener(this);
+        tv_lineXchart.setOnClickListener(this);
     }
 
 
@@ -153,6 +165,18 @@ public class ComponentActivity extends AppCompatActivity implements View.OnClick
             case R.id.tvUpload:
                 // 输入框
                 startActivity(new Intent(ComponentActivity.this, UploadFileActivity.class));
+                break;
+            case R.id.tv_piechart:
+                // 环形图
+                startActivity(new Intent(ComponentActivity.this, PieCharActivity.class));
+                break;
+            case R.id.tv_radarchart:
+                // 雷达图
+                startActivity(new Intent(ComponentActivity.this, RadarChartActivity.class));
+                break;
+            case R.id.tv_lineXchart:
+                // 折线图
+                startActivity(new Intent(ComponentActivity.this, LineChartActivity.class));
                 break;
         }
     }

@@ -427,6 +427,16 @@
             />
 
         <TextView
+            android:id="@+id/linkTextView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#f6E6FA"
+            android:gravity="center"
+            android:text="可自动识别URL/Mail/Tel的TextView"
+            android:textColor="#CCCCCC"
+
+            />
+        <TextView
             android:id="@+id/tv_expandable"
             android:layout_width="match_parent"
             android:layout_height="60dp"
@@ -460,6 +470,15 @@
             android:background="#b6E6FA"
             android:gravity="center"
             android:text="时间轴日记"
+            android:textColor="#CCCCCC" />
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#F0E68C"
+            android:gravity="center"
+            android:text="数字变化效果"
             android:textColor="#CCCCCC" />
     </LinearLayout>
 </ScrollView>
