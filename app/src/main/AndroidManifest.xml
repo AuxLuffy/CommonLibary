@@ -374,11 +374,10 @@
             android:launchMode="singleTop" />
         <activity android:name=".smallchart.PieCharActivity" />
         <activity android:name=".smallchart.RadarChartActivity" />
-        <activity android:name=".smallchart.LineChartActivity"
-            android:screenOrientation="landscape"></activity>
-        <activity android:name=".textview.linktextview.LinkTextViewActivity"/>
-
-
+        <activity
+            android:name=".smallchart.LineChartActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".textview.linktextview.LinkTextViewActivity" />
         <activity android:name=".wowoviewpagerexample.WowoMainActivity" />
         <activity
             android:name=".wowoviewpagerexample.WoWoTranslationAnimationActivity"
@@ -456,6 +455,7 @@
         <activity android:name=".keyboardpanelswitch.TranslucentActivity" />
         <activity android:name=".keyboardpanelswitch.ChattingResolvedHandleByPlaceholderActivity" />
         <activity android:name=".keyboardpanelswitch.ChattingUnresolvedActivity" />
+        <activity android:name=".counter.CounterActivity"></activity>
     </application>
 
 </manifest>

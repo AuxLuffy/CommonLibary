@@ -471,5 +471,14 @@
             android:gravity="center"
             android:text="时间轴日记"
             android:textColor="#CCCCCC" />
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#F0E68C"
+            android:gravity="center"
+            android:text="数字变化效果"
+            android:textColor="#CCCCCC" />
     </LinearLayout>
 </ScrollView>

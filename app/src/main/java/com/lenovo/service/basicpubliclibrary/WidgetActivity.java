@@ -19,6 +19,7 @@ import com.lenovo.service.basicpubliclibrary.bottleLoadingView.GABottleLoadingVi
 import com.lenovo.service.basicpubliclibrary.cardstatcview.CardStackActivty;
 import com.lenovo.service.basicpubliclibrary.cardview.CardActivity;
 import com.lenovo.service.basicpubliclibrary.chartview.ChartViewActivity;
+import com.lenovo.service.basicpubliclibrary.counter.CounterActivity;
 import com.lenovo.service.basicpubliclibrary.dialog.ColorDialogActivity;
 import com.lenovo.service.basicpubliclibrary.dialogfragment.DialogActivity;
 import com.lenovo.service.basicpubliclibrary.doodle.DoodleViewActivity;
@@ -47,10 +48,10 @@ import com.lenovo.service.basicpubliclibrary.tagviewgroup.TagViewGroupActivity;
 import com.lenovo.service.basicpubliclibrary.textview.linktextview.LinkTextViewActivity;
 import com.lenovo.service.basicpubliclibrary.textview.spantext.SpanTextActivity;
 import com.lenovo.service.basicpubliclibrary.textview.textstyle.TextActivity;
+import com.lenovo.service.basicpubliclibrary.textview.verticaltextview.VerticalTextViewActivity;
 import com.lenovo.service.basicpubliclibrary.timepicker.TimePickerActivity;
 import com.lenovo.service.basicpubliclibrary.toolbar.TestToolbarActivity;
 import com.lenovo.service.basicpubliclibrary.ultraviewpager.UPVDemoActivity;
-import com.lenovo.service.basicpubliclibrary.textview.verticaltextview.VerticalTextViewActivity;
 import com.lenovo.service.basicpubliclibrary.weekview.WeekViewActivity;
 import com.lenovo.service.basicpubliclibrary.widget.CircleImageActivity;
 import com.lenovo.service.basicpubliclibrary.zoomheader.ZoomHeaderActivity;
@@ -103,6 +104,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     private TextView mTvPanoraimage;
     private TextView mTvWatermediary;
     private TextView mLinkTextView;
+    private TextView mTvCount;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -159,6 +161,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTvPanoraimage = (TextView) findViewById(R.id.tv_panoraimage);
         mTvWatermediary = (TextView) findViewById(R.id.tvWatermediary);
         mLinkTextView = (TextView) findViewById(R.id.linkTextView);
+        mTvCount = (TextView) findViewById(R.id.tv_count);
     }
 
     private void init_listener() {
@@ -209,6 +212,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTvPanoraimage.setOnClickListener(this);
         mTvWatermediary.setOnClickListener(this);
         mLinkTextView.setOnClickListener(this);
+        mTvCount.setOnClickListener(this);
     }
 
     @Override
@@ -390,6 +394,9 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.linkTextView:
                 startActivity(new Intent(WidgetActivity.this, LinkTextViewActivity.class));
+                break;
+            case R.id.tv_count:
+                startActivity(new Intent(WidgetActivity.this, CounterActivity.class));
                 break;
 
         }
