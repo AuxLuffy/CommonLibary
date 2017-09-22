@@ -1,4 +1,4 @@
-package com.example.lenovo.retrofithelper2;
+package com.wind.windlinkrecycleview;
 
 import org.junit.Test;
 

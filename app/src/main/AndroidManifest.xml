@@ -470,6 +470,8 @@
         <activity android:name=".hencoder.hencoderpracticedraw5.MainActivity"/>
         <activity android:name=".hencoder.hencoderpracticedraw6.MainActivity"/>
         <activity android:name=".hencoder.hencoderpracticedraw7.MainActivity"/>
+        <activity android:name="com.wind.windlinkrecycleview.WindlinkRecycleviewActivity">
+        </activity>
     </application>
 
 </manifest>

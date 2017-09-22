@@ -56,6 +56,7 @@ import com.lenovo.service.basicpubliclibrary.weekview.WeekViewActivity;
 import com.lenovo.service.basicpubliclibrary.widget.CircleImageActivity;
 import com.lenovo.service.basicpubliclibrary.zoomheader.ZoomHeaderActivity;
 import com.lizehao.watermelondiarynew.ui.WatermelonDiayActivity;
+import com.wind.windlinkrecycleview.WindlinkRecycleviewActivity;
 
 
 public class WidgetActivity extends AppCompatActivity implements View.OnClickListener {
@@ -105,6 +106,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     private TextView mTvWatermediary;
     private TextView mLinkTextView;
     private TextView mTvCount;
+    private TextView mTvWindlink;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -162,6 +164,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTvWatermediary = (TextView) findViewById(R.id.tvWatermediary);
         mLinkTextView = (TextView) findViewById(R.id.linkTextView);
         mTvCount = (TextView) findViewById(R.id.tv_count);
+        mTvWindlink = (TextView) findViewById(R.id.tvWindlink);
     }
 
     private void init_listener() {
@@ -213,6 +216,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTvWatermediary.setOnClickListener(this);
         mLinkTextView.setOnClickListener(this);
         mTvCount.setOnClickListener(this);
+        mTvWindlink.setOnClickListener(this);
     }
 
     @Override
@@ -398,6 +402,10 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
             case R.id.tv_count:
                 startActivity(new Intent(WidgetActivity.this, CounterActivity.class));
                 break;
+            case R.id.tvWindlink:
+                startActivity(new Intent(WidgetActivity.this, WindlinkRecycleviewActivity.class));
+                break;
+
 
         }
     }
