@@ -556,6 +556,9 @@
         <activity android:name=".hencoder.hencoderpracticedraw5.MainActivity"/>
         <activity android:name=".hencoder.hencoderpracticedraw6.MainActivity"/>
         <activity android:name=".hencoder.hencoderpracticedraw7.MainActivity"/>
+        <activity android:name=".threed.ThreedMainActivity" />
+        <activity android:name=".threed.UserCenterActivity" />
+        <activity android:name=".threed.WeatherActivity" />
     </application>
 
 </manifest>
