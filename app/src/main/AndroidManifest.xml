@@ -547,6 +547,8 @@
             android:screenOrientation="landscape" />
         <activity android:name=".sugar.ScanSDActivity"></activity>
 
+        <activity android:name=".textview.spantouchfixtextview.SpanTouchFixTextViewActivity"/>
+
         <activity android:name=".hencoder.hencoderpracticedraw1.MainActivity"/>
         <activity android:name=".hencoder.hencoderpracticedraw2.MainActivity"/>
         <activity android:name=".hencoder.hencoderpracticedraw3.MainActivity"/>

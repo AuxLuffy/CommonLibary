@@ -47,6 +47,7 @@ import com.lenovo.service.basicpubliclibrary.stepview.StepViewActivity;
 import com.lenovo.service.basicpubliclibrary.tagviewgroup.TagViewGroupActivity;
 import com.lenovo.service.basicpubliclibrary.textview.linktextview.LinkTextViewActivity;
 import com.lenovo.service.basicpubliclibrary.textview.spantext.SpanTextActivity;
+import com.lenovo.service.basicpubliclibrary.textview.spantouchfixtextview.SpanTouchFixTextViewActivity;
 import com.lenovo.service.basicpubliclibrary.textview.textstyle.TextActivity;
 import com.lenovo.service.basicpubliclibrary.textview.verticaltextview.VerticalTextViewActivity;
 import com.lenovo.service.basicpubliclibrary.timepicker.TimePickerActivity;
@@ -105,6 +106,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     private TextView mTvWatermediary;
     private TextView mLinkTextView;
     private TextView mTvCount;
+    private TextView mSpanTouchFixTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -162,6 +164,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTvWatermediary = (TextView) findViewById(R.id.tvWatermediary);
         mLinkTextView = (TextView) findViewById(R.id.linkTextView);
         mTvCount = (TextView) findViewById(R.id.tv_count);
+        mSpanTouchFixTextView = (TextView) findViewById(R.id.spanTouchFixTextView);
     }
 
     private void init_listener() {
@@ -213,6 +216,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTvWatermediary.setOnClickListener(this);
         mLinkTextView.setOnClickListener(this);
         mTvCount.setOnClickListener(this);
+        mSpanTouchFixTextView.setOnClickListener(this);
     }
 
     @Override
@@ -397,6 +401,9 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.tv_count:
                 startActivity(new Intent(WidgetActivity.this, CounterActivity.class));
+                break;
+            case R.id.spanTouchFixTextView:
+                startActivity(new Intent(WidgetActivity.this, SpanTouchFixTextViewActivity.class));
                 break;
 
         }

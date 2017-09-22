@@ -79,6 +79,8 @@
 10.控件-添加竖直排版的TextView
 11.控件-添加支持各种文字边距,段落边距,自定义部分文字的TextView
 12.控件-添加可识别URL/Mail/Tel的TextView
+13.控件-添加用于修正TextView添加ClickSpan后的点击行为与时间传递的TextView
+
 
 
 # 李巷阳
