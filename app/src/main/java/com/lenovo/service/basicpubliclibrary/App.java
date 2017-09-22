@@ -15,6 +15,7 @@ import com.raizlabs.android.dbflow.config.FlowManager;
 import com.squareup.leakcanary.LeakCanary;
 import com.squareup.leakcanary.RefWatcher;
 
+import org.litepal.LitePal;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
@@ -39,7 +40,7 @@ public class App extends SugarApp {
     public void onCreate() {
         super.onCreate();
         this.mContext = getApplicationContext();
-
+        LitePal.initialize(this);
         sInstance = this;
         mEngine = new Retrofit.Builder()
                 .baseUrl("http://7xk9dj.com1.z0.glb.clouddn.com/banner/api/")

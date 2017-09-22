@@ -39,7 +39,10 @@
 - **2017/09/18~2017/09/24**         
     1. EventBus 3   
     2. 使用retrofit2上传图片  
-    3. Cupboard
+    3. Cupboard     
+    4. Litepal     
+    5. Tray     
+    
 
 # 何云超
 1. 动画-不一样的图片轮播

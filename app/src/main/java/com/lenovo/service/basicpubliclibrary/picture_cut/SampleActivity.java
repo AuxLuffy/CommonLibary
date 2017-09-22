@@ -34,7 +34,7 @@ import java.util.Random;
  */
 public class SampleActivity extends BaseActivity {
 
-    private static final String TAG = "SampleActivity";
+    private static final String TAG = "TrayActivity";
 
     private static final int REQUEST_SELECT_PICTURE = 0x01;
     private static final String SAMPLE_CROPPED_IMAGE_NAME = "SampleCropImage";

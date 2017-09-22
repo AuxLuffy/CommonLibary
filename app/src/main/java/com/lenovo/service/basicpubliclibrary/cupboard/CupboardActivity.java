@@ -1,158 +1,111 @@
 package com.lenovo.service.basicpubliclibrary.cupboard;
 
 import android.app.Activity;
-import android.database.sqlite.SQLiteDatabase;
+import android.content.ContentValues;
 import android.os.Bundle;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import java.util.ArrayList;
-import java.util.List;
-
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 import com.lenovo.service.basicpubliclibrary.R;
-import nl.qbusict.cupboard.QueryResultIterable;
+import com.lenovo.service.basicpubliclibrary.cupboard.model.SimpleBook;
+import com.lenovo.service.basicpubliclibrary.permissionDemo.other.ToastUtil;
+
+import java.util.List;
 
 import static nl.qbusict.cupboard.CupboardFactory.cupboard;
 
 public class CupboardActivity extends Activity {
-
-    static SQLiteDatabase db;
-
-    EditText etBunnyName;
-    Button btnAdd;
-    ListView lvBunnies;
-
-    ArrayAdapter<String> bunnyAdapter;
-    ArrayList<Bunny> bunnyArray;
-    ArrayList<String> bunnyNameArray;
+    protected CupboardSQLiteOpenHelper cupboardSQLiteOpenHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cupboard);
-
-        //init views
-        etBunnyName = (EditText) findViewById(R.id.edit_text);
-        btnAdd = (Button) findViewById(R.id.button2);
-        lvBunnies = (ListView) findViewById(R.id.listView);
-
-        // setup database
-        PracticeDatabaseHelper dbHelper = new PracticeDatabaseHelper(this);
-        dbHelper.onUpgrade(dbHelper.getWritableDatabase(), 1, 2);
-        db = dbHelper.getWritableDatabase();
-
-        // here is where you associate the name array.
-        bunnyNameArray = getAllBunniesNames();
-
-        bunnyAdapter = new ArrayAdapter(getBaseContext(), android.R.layout.simple_list_item_2, android.R.id.text1, bunnyNameArray) {
-            @Override
-            public View getView(int position, View convertView, ViewGroup parent) {
-                View view = super.getView(position, convertView, parent);
-                TextView text1 = (TextView) view.findViewById(android.R.id.text1);
-                TextView text2 = (TextView) view.findViewById(android.R.id.text2);
-
-                text1.setText("This bunny is named: "+bunnyArray.get(position).getName());
-                text2.setText("It is a "+bunnyArray.get(position).getCutenessTypeEnum()+" bunny");
-                return view;
-            }
-        };
-
-        // clicking this button adds a new bunny with your chosen name to the database
-        btnAdd.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String s = etBunnyName.getText().toString();
-                if (!s.isEmpty()) {
-                    Bunny b = new Bunny(s);
-                    cupboard().withDatabase(db).put(b);
-                    bunnyArray.add(b);
-                    bunnyAdapter.add(b.getName());
-                    bunnyAdapter.notifyDataSetChanged();
-                    // empty the edit text
-                    etBunnyName.setText("");
-                } else {
-                    Toast.makeText(getApplicationContext(), "no empty bunnies", Toast.LENGTH_SHORT).show();
-                }
-
-            }
-        });
-
-        lvBunnies.setAdapter(bunnyAdapter);
-
-        // long clicking on a list item will remove the bunny from the list AND from the db
-        lvBunnies.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
-            @Override
-            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int pos, long l) {
-
-                Bunny b = bunnyArray.get(pos);
-                cupboard().withDatabase(db).delete(Bunny.class, b.get_id());
-                bunnyArray.remove(pos);
-                bunnyNameArray.remove(pos);
-                bunnyAdapter.notifyDataSetChanged();
-
-                return false;
-            }
-        });
-
-        //clicking on the bunny updates their cuteness value to VERYCUTE and persists that change
-        lvBunnies.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int pos, long l) {
-
-                // as an example of updating a value, and persisting it back to the db
-                Bunny b = bunnyArray.get(pos);
-                b.setCuteValue(85);
-                b.setCutenessTypeEnum(Bunny.cutenessType.VERYCUTE);
-                cupboard().withDatabase(db).put(b);
-                bunnyAdapter.notifyDataSetChanged();
-            }
-        });
-
-        getListOfVeryCuteBunniesNamedSteve();
-
+        ButterKnife.bind(this);
+        cupboardSQLiteOpenHelper = new CupboardSQLiteOpenHelper(this);
     }
 
+    @OnClick(R.id.store_single_object)
+    public void store_single_object() {
+        SimpleBook simpleBook = new SimpleBook();
+        simpleBook.title = "title_single_" + System.currentTimeMillis();
+        cupboard().withDatabase(cupboardSQLiteOpenHelper.getWritableDatabase()).put(simpleBook);
 
-     /* Private Methods */
-
-    private static List<Bunny> getListFromQueryResultIterator(QueryResultIterable<Bunny> iter) {
-
-        final List<Bunny> bunnies = new ArrayList<Bunny>();
-        for (Bunny bunny : iter) {
-            bunnies.add(bunny);
-        }
-        iter.close();
-
-        return bunnies;
+        get_all_objects();
     }
 
-    public ArrayList<String> getAllBunniesNames() {
-        final QueryResultIterable<Bunny> iter = cupboard().withDatabase(db).query(Bunny.class).query();
-        bunnyArray = (ArrayList<Bunny>) getListFromQueryResultIterator(iter);
-
-        ArrayList<String> bunnyNameArray = new ArrayList<String>();
-        for (Bunny b : bunnyArray) {
-            bunnyNameArray.add(b.getName());
+    @OnClick(R.id.store_multi_objects)
+    public void store_multi_objects() {
+        for (int i = 0; i < 2; i++) {
+            SimpleBook simpleBook = new SimpleBook();
+            simpleBook.title = "title_multi_" + System.currentTimeMillis();
+            cupboard().withDatabase(cupboardSQLiteOpenHelper.getWritableDatabase()).put(simpleBook);
         }
 
-        return bunnyNameArray;
+        get_all_objects();
     }
 
-    // this is an example method demonstrating how one would query cupboard for a specific subset
-    // of objects. In this case, very cute bunnies named steve.
-    public static List<Bunny> getListOfVeryCuteBunniesNamedSteve() {
-        String selectionString = "name='steve' AND cuteValue > 66";
-//        Long time = Calendar.getInstance().getTimeInMillis();
-        QueryResultIterable<Bunny> iterable =
-                cupboard().withDatabase(db).query(Bunny.class).withSelection(selectionString).query();
-        List<Bunny> list = getListFromQueryResultIterator(iterable);
-        return list;
+    @OnClick(R.id.get_single_object)
+    public void get_single_object() {
+        SimpleBook simpleBook = cupboard().withDatabase(cupboardSQLiteOpenHelper.getWritableDatabase())
+                .query(SimpleBook.class).get();
+
+    }
+
+    @OnClick(R.id.get_all_objects)
+    public void get_all_objects() {
+        StringBuilder sb = new StringBuilder();
+        List<SimpleBook> items = cupboard().withDatabase(cupboardSQLiteOpenHelper.getWritableDatabase()).query(SimpleBook.class).list();
+        for (SimpleBook item : items) {
+            sb.append(item);
+        }
+
+        ToastUtil.show(sb.toString());
+    }
+
+    @OnClick(R.id.update_single_object)
+    public void update_single_object() {
+        SimpleBook simpleBook = cupboard().withDatabase(cupboardSQLiteOpenHelper.getWritableDatabase())
+                .query(SimpleBook.class).get();
+
+        if (simpleBook != null) {
+            ContentValues values = new ContentValues(1);
+            values.put("title", "update_single_object");
+            int updateCount = cupboard().withDatabase(cupboardSQLiteOpenHelper.getWritableDatabase())
+                    .update(SimpleBook.class, values, "title=?", simpleBook.title);
+        }
+
+        get_all_objects();
+    }
+
+    @OnClick(R.id.update_all_objects)
+    public void update_all_objects() {
+        ContentValues values = new ContentValues(1);
+        values.put("title", "update_all_objects");
+        cupboard().withDatabase(cupboardSQLiteOpenHelper.getWritableDatabase()).update(SimpleBook.class, values);
+
+        get_all_objects();
+    }
+
+    @OnClick(R.id.delete_single_object)
+    public void delete_single_object() {
+        SimpleBook simpleBook = cupboard().withDatabase(cupboardSQLiteOpenHelper.getWritableDatabase())
+                .query(SimpleBook.class).get();
+
+        if (simpleBook != null) {
+            boolean ret = cupboard().withDatabase(cupboardSQLiteOpenHelper.getWritableDatabase())
+                    .delete(SimpleBook.class, simpleBook._id);
+
+        }
+
+        get_all_objects();
+    }
+
+    @OnClick(R.id.delete_all_object)
+    public void delete_all_object() {
+
+        cupboard().withDatabase(cupboardSQLiteOpenHelper.getWritableDatabase())
+                .delete(SimpleBook.class, null);
+
+        get_all_objects();
     }
 }
