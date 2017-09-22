@@ -427,6 +427,16 @@
             />
 
         <TextView
+            android:id="@+id/linkTextView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#f6E6FA"
+            android:gravity="center"
+            android:text="可自动识别URL/Mail/Tel的TextView"
+            android:textColor="#CCCCCC"
+
+            />
+        <TextView
             android:id="@+id/tv_expandable"
             android:layout_width="match_parent"
             android:layout_height="60dp"

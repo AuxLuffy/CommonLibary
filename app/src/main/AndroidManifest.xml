@@ -376,6 +376,7 @@
         <activity android:name=".smallchart.RadarChartActivity" />
         <activity android:name=".smallchart.LineChartActivity"
             android:screenOrientation="landscape"></activity>
+        <activity android:name=".textview.linktextview.LinkTextViewActivity"/>
     </application>
 
 </manifest>

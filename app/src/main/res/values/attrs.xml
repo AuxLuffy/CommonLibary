@@ -345,4 +345,9 @@
         <enum name="text" value="0"/>
         <enum name="number" value="1"/>
     </attr>
+
+    <declare-styleable name="LinkTextView">
+        <attr name="qmui_linkBackgroundColor" format="color"/>
+        <attr name="qmui_linkTextColor" format="color"/>
+    </declare-styleable>
 </resources>
