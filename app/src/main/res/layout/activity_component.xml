@@ -177,6 +177,15 @@
             android:text="折线图"
             android:background="#F08080"
             android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tv_curvechart"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColor="@color/black"
+            android:text="曲线图"
+            android:background="#ADD8E6"
+            android:gravity="center" />
     </LinearLayout>
 
 </ScrollView>

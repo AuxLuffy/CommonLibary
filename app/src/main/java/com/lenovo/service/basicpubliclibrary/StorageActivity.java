@@ -10,6 +10,7 @@ import com.lenovo.service.basicpubliclibrary.dbflow.DBFlowActivity;
 import com.lenovo.service.basicpubliclibrary.greendao.GreenDaoDemoActivity;
 import com.lenovo.service.basicpubliclibrary.ormlite.OrmLiteActivity;
 import com.lenovo.service.basicpubliclibrary.realm.RealmActivity;
+import com.lenovo.service.basicpubliclibrary.sugar.ScanSDActivity;
 import com.lenovo.service.basicpubliclibrary.sugar.SugarActivity;
 
 public class StorageActivity extends AppCompatActivity implements View.OnClickListener {
@@ -19,6 +20,7 @@ public class StorageActivity extends AppCompatActivity implements View.OnClickLi
     private TextView greenDao;
     private TextView sugar;
     private TextView realm;
+    private TextView scan_sd_mp3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,8 @@ public class StorageActivity extends AppCompatActivity implements View.OnClickLi
         tvDBFlow = (TextView) findViewById(R.id.tvDBFlow);
         sugar = (TextView) findViewById(R.id.sugar);
         realm = (TextView) findViewById(R.id.realm);
+        scan_sd_mp3 = (TextView) findViewById(R.id.scan_sd_mp3);
+
 
         setOnClickListener();
     }
@@ -40,6 +44,7 @@ public class StorageActivity extends AppCompatActivity implements View.OnClickLi
         tvDBFlow.setOnClickListener(this);
         sugar.setOnClickListener(this);
         realm.setOnClickListener(this);
+        scan_sd_mp3.setOnClickListener(this);
 
     }
 
@@ -65,6 +70,10 @@ public class StorageActivity extends AppCompatActivity implements View.OnClickLi
             case R.id.realm:
                 Intent realm = new Intent(this, RealmActivity.class);
                 startActivity(realm);
+                break;
+            case R.id.scan_sd_mp3:
+                Intent scan_mp3 = new Intent(this, ScanSDActivity.class);
+                startActivity(scan_mp3);
                 break;
         }
     }

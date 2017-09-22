@@ -28,6 +28,7 @@ import com.lenovo.service.basicpubliclibrary.shadowmasking.ShadowmaskingActivity
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+import com.lenovo.service.basicpubliclibrary.smallchart.CurveChartActivity;
 import com.lenovo.service.basicpubliclibrary.smallchart.LineChartActivity;
 import com.lenovo.service.basicpubliclibrary.smallchart.PieCharActivity;
 import com.lenovo.service.basicpubliclibrary.smallchart.RadarChartActivity;
@@ -71,6 +72,8 @@ public class ComponentActivity extends AppCompatActivity implements View.OnClick
     TextView tv_radarchart;
     @BindView(R.id.tv_lineXchart)
     TextView tv_lineXchart;
+    @BindView(R.id.tv_curvechart)
+    TextView tv_curvechart;
 
 
     @Override
@@ -98,6 +101,7 @@ public class ComponentActivity extends AppCompatActivity implements View.OnClick
         tv_piechart.setOnClickListener(this);
         tv_radarchart.setOnClickListener(this);
         tv_lineXchart.setOnClickListener(this);
+        tv_curvechart.setOnClickListener(this);
     }
 
 
@@ -177,6 +181,10 @@ public class ComponentActivity extends AppCompatActivity implements View.OnClick
             case R.id.tv_lineXchart:
                 // 折线图
                 startActivity(new Intent(ComponentActivity.this, LineChartActivity.class));
+                break;
+            case R.id.tv_curvechart:
+                // 曲线图
+                startActivity(new Intent(ComponentActivity.this, CurveChartActivity.class));
                 break;
         }
     }
