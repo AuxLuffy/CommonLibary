@@ -245,6 +245,7 @@
         <activity android:name=".obtainlocalphoto.LocalPhotoActivity"/>
         <activity android:name=".gesturelock.GestureLockActivity"/>
         <activity android:name=".gesturelock.DrawPasswordActivity"/>
+        <activity android:name=".cupboard.CupboardActivity"/>
         <activity android:name=".bezier.BezierActivity"/>
         <activity android:name=".bezier.DotsLoaderActivity"/>
         <activity android:name=".leakcanary.LeakCanaryActivity"/>

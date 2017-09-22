@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
-
+import com.lenovo.service.basicpubliclibrary.cupboard.CupboardActivity;
 import com.lenovo.service.basicpubliclibrary.dbflow.DBFlowActivity;
 import com.lenovo.service.basicpubliclibrary.greendao.GreenDaoDemoActivity;
 import com.lenovo.service.basicpubliclibrary.ormlite.OrmLiteActivity;
@@ -19,6 +19,7 @@ public class StorageActivity extends AppCompatActivity implements View.OnClickLi
     private TextView greenDao;
     private TextView sugar;
     private TextView realm;
+    private TextView cupboard;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +31,7 @@ public class StorageActivity extends AppCompatActivity implements View.OnClickLi
         tvDBFlow = (TextView) findViewById(R.id.tvDBFlow);
         sugar = (TextView) findViewById(R.id.sugar);
         realm = (TextView) findViewById(R.id.realm);
+        cupboard = (TextView) findViewById(R.id.cupboard);
 
         setOnClickListener();
     }
@@ -40,6 +42,7 @@ public class StorageActivity extends AppCompatActivity implements View.OnClickLi
         tvDBFlow.setOnClickListener(this);
         sugar.setOnClickListener(this);
         realm.setOnClickListener(this);
+        cupboard.setOnClickListener(this);
 
     }
 
@@ -65,6 +68,10 @@ public class StorageActivity extends AppCompatActivity implements View.OnClickLi
             case R.id.realm:
                 Intent realm = new Intent(this, RealmActivity.class);
                 startActivity(realm);
+                break;
+            case R.id.cupboard:
+                Intent cupboard = new Intent(this, CupboardActivity.class);
+                startActivity(cupboard);
                 break;
         }
     }

@@ -999,4 +999,5 @@
     <string name="app_names">ExpandableLayout</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settingss">Settings</string>
+    <string name="hint">请输入信息</string>
 </resources>
