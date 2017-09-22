@@ -455,7 +455,8 @@
         <activity android:name=".keyboardpanelswitch.TranslucentActivity" />
         <activity android:name=".keyboardpanelswitch.ChattingResolvedHandleByPlaceholderActivity" />
         <activity android:name=".keyboardpanelswitch.ChattingUnresolvedActivity" />
-        <activity android:name=".counter.CounterActivity"></activity>
+        <activity android:name=".counter.CounterActivity" />
+        <activity android:name=".danmu.DanmuActivity"></activity>
     </application>
 
 </manifest>

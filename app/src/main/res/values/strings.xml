@@ -1073,4 +1073,5 @@
     <string name="viewpager">ViewPager 2.0</string>
     <string name="optimized">Optimized for scrolling app intros.</string>
     <string name="free">Free and open source.</string>
+    <item name="tag_inner_entity" type="id"></item>
 </resources>

@@ -195,5 +195,16 @@
             android:textColor="#CCCCCC"
 
             />
+
+        <TextView
+            android:id="@+id/tv_danmu"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#7CFC00"
+            android:gravity="center"
+            android:text="轻量级弹幕"
+            android:textColor="#CCCCCC"
+
+            />
     </LinearLayout>
 </ScrollView>

@@ -11,6 +11,7 @@ import com.lenovo.service.basicpubliclibrary.bezier.BezierActivity;
 import com.lenovo.service.basicpubliclibrary.bezier.DotsLoaderActivity;
 import com.lenovo.service.basicpubliclibrary.bottombar.BottomBarActivity;
 import com.lenovo.service.basicpubliclibrary.colorfultoast.ColorfulToastActivity;
+import com.lenovo.service.basicpubliclibrary.danmu.DanmuActivity;
 import com.lenovo.service.basicpubliclibrary.expandablelvanimated.ExpandableListViewActivity;
 import com.lenovo.service.basicpubliclibrary.floatingbutton.FLoatingBtnActivity;
 import com.lenovo.service.basicpubliclibrary.floatingmenu.FloatingActionActivity;
@@ -64,6 +65,7 @@ public class AnimationActivity extends AppCompatActivity {
         tv_floatingmenu = (TextView)findViewById(R.id.tv_floatingmenu);
         findViewById(R.id.tv_floatbtn).setOnClickListener(new TextViewClickListener());
         findViewById(R.id.tv_bottom_bar).setOnClickListener(new TextViewClickListener());
+        findViewById(R.id.tv_danmu).setOnClickListener(new TextViewClickListener());
 
         mTvExamplelv = (TextView)findViewById(R.id.tv_examplelv);
         mTvWowoviewpager = (TextView)findViewById(R.id.wowo_viewpager);
@@ -162,6 +164,9 @@ public class AnimationActivity extends AppCompatActivity {
                     break;
                 case R.id.wowo_viewpager:
                     startActivity(new Intent(AnimationActivity.this, WowoMainActivity.class));
+                    break;
+                case R.id.tv_danmu:
+                    startActivity(new Intent(AnimationActivity.this, DanmuActivity.class));
                     break;
                 default:
                     break;
