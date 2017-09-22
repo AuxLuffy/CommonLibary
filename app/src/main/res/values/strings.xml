@@ -172,6 +172,21 @@
     <string name="linkTextView_auto_identify">URL/Mail/Tel自动识别</string>
     <string name="linkTextView_auto_identify_word">可以自动识别网页链接，例如 http://www.qmuiteam.com。\n可以自动识别电话号码，例如 13600000000。\n也可以识别邮件地址，例如 qmuiteam@gmail.com。\n我们可以为其添加自定义的点击事件。</string>
 
+
+    <!-- SpanTouchFixTextView 展示界面 -->
+    <string name="system_behavior_1">\@qmui:点击span区域会同时出发span的点击事件和 TextView 的点击事件 #qmui#</string>
+    <string name="system_behavior_2">\@qmui: 系统默认情况下，TextView 不添加点击事件，然后 TextView 的父元素添加点击事件，
+        那么点击 TextView 将无法触发父元素的点击事件。#qmui#</string>
+
+    <string name="span_touch_fix_1">\@qmui:span的点击事件与textView的点击事件完全分离#qmui#</string>
+    <string name="span_touch_fix_2">\@qmui:默认情况下，如果textView添加了clickSpan,#qmui#那么textView的事件将无法冒泡到父级。
+        但在某些场景（例如微博评论需要整条可点），我们需要将事件冒泡给父元素进行处理。#qmui#</string>
+
+    <!-- SpanTouchFixTextView -->
+    <string name="spanTouchFix_description">QMUISpanTouchFixTextView 主要用于修正 TextView 添加 ClickSpan 后的点击行为与事件传递</string>
+    <string name="spanTouchFix_system_behavior">TextView系统行为</string>
+    <string name="spanTouchFix_qmui_fix_behavior">QMUI修复后行为</string>
+
     <string name="path_00">M 187.05 28.42 C 189.38 22.60 190.69 16.44 192.59 10.47 C 192.99 16.21 193.57 21.95 193.61
         27.71 C 196.57 29.22 199.80 30.43 202.26 32.75 C 204.81 35.60 205.72 39.46 206.68 43.07 C 207.86 48.30 209.90
         53.37 209.99 58.80 C 209.32 64.24 203.41 67.83 205.30 73.84 C 205.58 88.10 203.60 102.31 204.76 116.56 C 203.99
@@ -1296,4 +1311,6 @@
     <string name="write_multiprocess_explaination">Only tray is possible to listen to changes made in a different process. The SharedPreferences receive no callback</string>
 
     <string name="foo">foo</string>
+    <string name="marquee_text">心中有阳光，脚底有力量。</string>
+    <string name="marquee_texts">心中有阳光，脚底有力量。心中有阳光，脚底有力量。心中有阳光，脚底有力量。心中有阳光，脚底有力量。</string>
 </resources>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="25dp">
+
+            <TextView
+                style="@style/QDCommonDescription"
+                android:text="@string/spanTouchFix_description"
+                android:gravity="left"/>
+
+            <TextView
+                style="@style/QDCommonTitle"
+                android:layout_marginTop="10dp"
+                android:text="@string/spanTouchFix_system_behavior"/>
+
+            <TextView
+                android:id="@+id/sysytem_tv_1"
+                style="@style/QDCommonDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/s_app_touch_fix_area_bg"
+                android:gravity="left"
+                android:padding="5dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                style="@style/QDCommonTitle"
+                android:text="@string/spanTouchFix_qmui_fix_behavior"/>
+
+            <com.lenovo.service.basicpubliclibrary.textview.spantouchfixtextview.SpanTouchFixTextView
+                android:id="@+id/touch_fix_tv_1"
+                style="@style/QDCommonDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/s_app_touch_fix_area_bg"
+                android:gravity="left"
+                android:padding="5dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/white"/>
+
+            <TextView
+                style="@style/QDCommonTitle"
+                android:layout_marginTop="20dp"
+                android:text="@string/spanTouchFix_system_behavior"/>
+
+            <LinearLayout
+                android:id="@+id/click_area_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/s_app_touch_fix_area_bg"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/sysytem_tv_2"
+                    style="@style/QDCommonDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:background="@color/deep_gray"
+                    android:gravity="left"
+                    android:padding="5dp"/>
+            </LinearLayout>
+
+            <TextView
+                style="@style/QDCommonTitle"
+                android:text="@string/spanTouchFix_qmui_fix_behavior"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:id="@+id/click_area_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/s_app_touch_fix_area_bg"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <com.lenovo.service.basicpubliclibrary.textview.spantouchfixtextview.SpanTouchFixTextView
+                    android:id="@+id/touch_fix_tv_2"
+                    style="@style/QDCommonDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:background="@color/deep_gray"
+                    android:gravity="left"
+                    android:padding="5dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
