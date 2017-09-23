@@ -91,6 +91,8 @@
         <activity android:name=".recyclerview.staggeredtimeline.timeline1.TimeLine1Activity" />
         <!-- 瀑布流式任务时光轴演示界面 -->
         <activity android:name=".recyclerview.staggeredtimeline.timeline2.DotTimeLineActivity" />
+        <!-- 悬浮效果演示界面 -->
+        <activity android:name=".recyclerview.suspension.ui.SuspensionEffectActivity" />
         <!-- 袁东华结束 -->
 
 
@@ -528,15 +530,14 @@
             android:screenOrientation="landscape" />
         <activity android:name=".sugar.ScanSDActivity"></activity>
 
-        <activity android:name=".hencoder.hencoderpracticedraw1.MainActivity"/>
-        <activity android:name=".hencoder.hencoderpracticedraw2.MainActivity"/>
-        <activity android:name=".hencoder.hencoderpracticedraw3.MainActivity"/>
-        <activity android:name=".hencoder.hencoderpracticedraw4.MainActivity"/>
-        <activity android:name=".hencoder.hencoderpracticedraw5.MainActivity"/>
-        <activity android:name=".hencoder.hencoderpracticedraw6.MainActivity"/>
-        <activity android:name=".hencoder.hencoderpracticedraw7.MainActivity"/>
-        <activity android:name="com.wind.windlinkrecycleview.WindlinkRecycleviewActivity">
-        </activity>
+        <activity android:name=".hencoder.hencoderpracticedraw1.MainActivity" />
+        <activity android:name=".hencoder.hencoderpracticedraw2.MainActivity" />
+        <activity android:name=".hencoder.hencoderpracticedraw3.MainActivity" />
+        <activity android:name=".hencoder.hencoderpracticedraw4.MainActivity" />
+        <activity android:name=".hencoder.hencoderpracticedraw5.MainActivity" />
+        <activity android:name=".hencoder.hencoderpracticedraw6.MainActivity" />
+        <activity android:name=".hencoder.hencoderpracticedraw7.MainActivity" />
+        <activity android:name="com.wind.windlinkrecycleview.WindlinkRecycleviewActivity"></activity>
         <activity android:name=".stikyscrollview.StikyScrollviewActivity"></activity>
         <activity android:name=".sugar.ScanSDActivity" />
         <activity android:name=".textview.spantouchfixtextview.SpanTouchFixTextViewActivity" />

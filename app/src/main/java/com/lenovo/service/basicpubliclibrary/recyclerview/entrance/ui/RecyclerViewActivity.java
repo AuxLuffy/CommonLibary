@@ -22,6 +22,7 @@ import com.lenovo.service.basicpubliclibrary.recyclerview.staggeredgrid.ui.ItemH
 import com.lenovo.service.basicpubliclibrary.recyclerview.staggeredgrid.ui.StaggeredGridActivity;
 import com.lenovo.service.basicpubliclibrary.recyclerview.staggeredtimeline.timeline1.TimeLine1Activity;
 import com.lenovo.service.basicpubliclibrary.recyclerview.staggeredtimeline.timeline2.DotTimeLineActivity;
+import com.lenovo.service.basicpubliclibrary.recyclerview.suspension.ui.SuspensionEffectActivity;
 import com.lenovo.service.basicpubliclibrary.shadowmasking.utils.ScreenUtils;
 
 import java.util.ArrayList;
@@ -63,6 +64,7 @@ public class RecyclerViewActivity extends AppCompatActivity {
         list.add("瀑布流条目操作:拖拽排序,滑动删除");
         list.add("瀑布流式时光轴效果1");
         list.add("瀑布流式时光轴效果2");
+        list.add("悬浮效果");
         recyclerViewAdapter.setList(list);
     }
 
@@ -121,6 +123,10 @@ public class RecyclerViewActivity extends AppCompatActivity {
                     //点击瀑布流式任务时光轴
                     case 8:
                         startActivity(new Intent(context, DotTimeLineActivity.class));
+                        break;
+                    //点击悬浮效果
+                    case 9:
+                        startActivity(new Intent(context, SuspensionEffectActivity.class));
                         break;
                 }
 
