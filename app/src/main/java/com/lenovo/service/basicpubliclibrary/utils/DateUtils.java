@@ -14,6 +14,8 @@ public class DateUtils {
     private static SimpleDateFormat sf;
     private static SimpleDateFormat sdf;
 
+
+
     public static String getShowTime(long timeStamp) {
         long dayMinute = 24 * 60;
         String showTime = null;

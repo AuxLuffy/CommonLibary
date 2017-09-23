@@ -1,14 +1,6 @@
 package com.lenovo.service.basicpubliclibrary.recyclerview.staggeredtimeline.timeline1;
 
-/**
- * *          _       _
- * *   __   _(_)_   _(_) __ _ _ __
- * *   \ \ / / \ \ / / |/ _` | '_ \
- * *    \ V /| |\ V /| | (_| | | | |
- * *     \_/ |_| \_/ |_|\__,_|_| |_|
- * <p>
- * Created by vivian on 2017/6/9.
- */
+
 
 public class Item {
     int resId;
