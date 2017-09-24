@@ -1313,4 +1313,6 @@
     <string name="foo">foo</string>
     <string name="marquee_text">心中有阳光，脚底有力量。</string>
     <string name="marquee_texts">心中有阳光，脚底有力量。心中有阳光，脚底有力量。心中有阳光，脚底有力量。心中有阳光，脚底有力量。</string>
+    <string name="perf_test">Perf test</string>
+
 </resources>

@@ -466,81 +466,69 @@
         <activity
             android:name=".litepal.activity.ManageTablesActivity"
             android:label="@string/manage_table_sample"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".litepal.activity.ModelListActivity"
             android:label="@string/manage_table_sample"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".litepal.activity.TableListActivity"
             android:label="@string/manage_table_sample"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".litepal.activity.ModelStructureActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".litepal.activity.TableStructureActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".litepal.activity.CRUDActivity"
             android:label="@string/crud_sample"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".litepal.activity.SaveSampleActivity"
             android:label="@string/save_sample"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".litepal.activity.UpdateSampleActivity"
             android:label="@string/update_sample"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".litepal.activity.DeleteSampleActivity"
             android:label="@string/delete_sample"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".litepal.activity.QuerySampleActivity"
             android:label="@string/query_sample"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".litepal.activity.AggregateActivity"
             android:label="@string/aggregate_sample"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".litepal.activity.CountSampleActivity"
             android:label="@string/count_sample"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".litepal.activity.MaxSampleActivity"
             android:label="@string/max_sample"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".litepal.activity.MinSampleActivity"
             android:label="@string/max_sample"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".litepal.activity.AverageSampleActivity"
             android:label="@string/average_sample"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".litepal.activity.SumSampleActivity"
             android:label="@string/sum_sample"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".smallchart.CurveChartActivity"
             android:screenOrientation="landscape" />
-        <activity android:name=".sugar.ScanSDActivity"></activity>
-
-        <activity android:name=".hencoder.hencoderpracticedraw1.MainActivity" />
-        <activity android:name=".hencoder.hencoderpracticedraw2.MainActivity" />
-        <activity android:name=".hencoder.hencoderpracticedraw3.MainActivity" />
-        <activity android:name=".hencoder.hencoderpracticedraw4.MainActivity" />
-        <activity android:name=".hencoder.hencoderpracticedraw5.MainActivity" />
-        <activity android:name=".hencoder.hencoderpracticedraw6.MainActivity" />
-        <activity android:name=".hencoder.hencoderpracticedraw7.MainActivity" />
-        <activity android:name="com.wind.windlinkrecycleview.WindlinkRecycleviewActivity"></activity>
-        <activity android:name=".stikyscrollview.StikyScrollviewActivity"></activity>
         <activity android:name=".sugar.ScanSDActivity" />
-        <activity android:name=".textview.spantouchfixtextview.SpanTouchFixTextViewActivity" />
         <activity android:name=".hencoder.hencoderpracticedraw1.MainActivity" />
         <activity android:name=".hencoder.hencoderpracticedraw2.MainActivity" />
         <activity android:name=".hencoder.hencoderpracticedraw3.MainActivity" />
@@ -548,10 +536,18 @@
         <activity android:name=".hencoder.hencoderpracticedraw5.MainActivity" />
         <activity android:name=".hencoder.hencoderpracticedraw6.MainActivity" />
         <activity android:name=".hencoder.hencoderpracticedraw7.MainActivity" />
+        <activity android:name="com.wind.windlinkrecycleview.WindlinkRecycleviewActivity" />
+        <activity android:name=".stikyscrollview.StikyScrollviewActivity" />
+        <activity android:name=".textview.spantouchfixtextview.SpanTouchFixTextViewActivity" />
         <activity android:name=".threed.ThreedMainActivity" />
         <activity android:name=".threed.UserCenterActivity" />
         <activity android:name=".threed.WeatherActivity" />
-        <activity android:name=".marqueue.MarqueueActivity"></activity>
+        <activity android:name=".marqueue.MarqueueActivity" />
+        <activity android:name=".pulseview.PulseViewActivity" />
+        <activity android:name=".pulseview.PhotoViewActivity" />
+        <activity android:name=".blurry.BlurryTestActivity" />
+        <activity android:name=".tickerview.TickerActivity"></activity>
+        <activity android:name=".tickerview.PerfActivity"></activity>
     </application>
 
 </manifest>

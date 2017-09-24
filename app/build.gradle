@@ -53,8 +53,6 @@ repositories {
 }
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'net.grandcentrix.tray:tray:0.12.0'
-    compile 'com.github.fernandodev.androidproperties:androidproperties:+'
 
     //65535解决
 
@@ -100,6 +98,9 @@ dependencies {
     compile(name: 'expandablelib-release', ext: 'aar')
     compile project(':watermediary')
     compile files('libs/libammsdk.jar')
+    compile project(':windlinkrecycleview')
+    compile 'net.grandcentrix.tray:tray:0.12.0'
+    compile 'com.github.fernandodev.androidproperties:androidproperties:+'
     compile 'org.greenrobot:eventbus:3.0.0'
     compile 'com.android.support:multidex:1.0.0'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
@@ -155,13 +156,16 @@ dependencies {
     compile 'com.novaapps:FloatingActionMenu:1.0'
     compile 'me.leolin:ShortcutBadger:1.1.18@aar'
     compile 'com.gjiazhe:PanoramaImageView:1.0'
+    compile 'com.nightonke:wowoviewpager:2.0.0'
+    compile 'cn.dreamtobe.kpswitch:library:1.6.0'
+    compile 'com.github.devlight.pulseview:library:1.0.2'
+    compile 'com.github.chrisbanes:PhotoView:2.1.3'
+    compile 'jp.wasabeef:blurry:2.1.1'
+    compile 'com.robinhood.ticker:ticker:1.2.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
     annotationProcessor 'com.github.jokermonn:permissions4m:2.1.1-processor'
     debugCompile 'com.squareup.leakcanary:leakcanary-android:1.3'
     releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.3'
-    compile 'com.nightonke:wowoviewpager:2.0.0'
-    compile 'cn.dreamtobe.kpswitch:library:1.6.0'
-    compile project(':windlinkrecycleview')
 }
 greendao {
     schemaVersion 1

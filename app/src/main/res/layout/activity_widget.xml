@@ -388,6 +388,7 @@
             android:gravity="center"
             android:text="购物添加删除控件"
             android:textColor="#666666" />
+
         <TextView
             android:id="@+id/tv_headView"
             android:layout_width="match_parent"
@@ -396,6 +397,7 @@
             android:gravity="center"
             android:text="圆形头型控件"
             android:textColor="#333333" />
+
         <TextView
             android:id="@+id/tv_alertDialog"
             android:layout_width="match_parent"
@@ -404,6 +406,7 @@
             android:gravity="center"
             android:text="自定义提示框"
             android:textColor="@color/baby_blue" />
+
         <TextView
             android:id="@+id/verticalTextView"
             android:layout_width="match_parent"
@@ -509,8 +512,42 @@
             android:background="#E6E6FA"
             android:gravity="center"
             android:text="垂直公告"
-            android:textColor="#CCCCCC"
+            android:textColor="#CCCCCC" />
 
-            />
+        <TextView
+            android:id="@+id/tvPulseActivity"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#F08080"
+            android:gravity="center"
+            android:text="仿微信雷达搜索"
+            android:textColor="#CCCCCC" />
+
+        <TextView
+            android:id="@+id/tvMasaccioView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#808080"
+            android:gravity="center"
+            android:text="图片双击放大控件"
+            android:textColor="#CCCCCC" />
+
+        <TextView
+            android:id="@+id/tvTickerView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#303030"
+            android:gravity="center"
+            android:text="文本切换动画效果"
+            android:textColor="#CCCCCC" />
+
+        <TextView
+            android:id="@+id/tvBlurry"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#B0B0B0"
+            android:gravity="center"
+            android:text="图片模糊化效果"
+            android:textColor="#CCCCCC" />
     </LinearLayout>
 </ScrollView>
