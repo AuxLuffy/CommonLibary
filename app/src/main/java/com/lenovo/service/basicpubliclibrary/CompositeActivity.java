@@ -21,10 +21,12 @@ import com.lenovo.service.basicpubliclibrary.permissionDemo.PermissionDemoActivi
 import com.lenovo.service.basicpubliclibrary.request.ui.RequestTestActivity;
 import com.lenovo.service.basicpubliclibrary.rxjava.RxJavaActivity;
 import com.lenovo.service.basicpubliclibrary.sadl.SADLActivity;
+import com.lenovo.service.basicpubliclibrary.tencentx5.X5WebViewActivity;
 import com.lenovo.service.basicpubliclibrary.validation.ValidateActivity;
 import com.lenovo.service.basicpubliclibrary.videoplayer.VideoplayerActivity;
 import com.lenovo.service.basicpubliclibrary.wechatpay.WeChatPayActivity;
 import com.lenovo.service.basicpubliclibrary.xmlparse.XmlParseActivity;
+import com.lenovo.service.basicpubliclibrary.zbar.ZbarActivity;
 import com.lenovo.service.basicpubliclibrary.zxing.activity.ZxingActivity;
 
 
@@ -87,12 +89,16 @@ public class CompositeActivity extends AppCompatActivity implements View.OnClick
                 intent.setClass(this, ALogActivity.class);
                 break;
 
+            case R.id.tv_jnidemo:
+
+                intent.setClass(this, JNITestActivity.class);
+
+                break;
             case R.id.tv_xmlparse:
 
                 intent.setClass(this, XmlParseActivity.class);
 
                 break;
-
             case R.id.scan_code:
                 intent.setClass(this, ZxingActivity.class);
                 break;
@@ -138,6 +144,12 @@ public class CompositeActivity extends AppCompatActivity implements View.OnClick
                 intent.setClass(this, FingerprintActivity.class);
                 break;
 
+            case R.id.tx_x5:
+                intent.setClass(this,X5WebViewActivity.class);
+                break;
+            case R.id.zbar:
+                intent.setClass(this, ZbarActivity.class);
+                break;
         }
         startActivity(intent);
     }

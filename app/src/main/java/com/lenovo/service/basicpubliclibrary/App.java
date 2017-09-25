@@ -14,6 +14,7 @@ import com.raizlabs.android.dbflow.config.FlowConfig;
 import com.raizlabs.android.dbflow.config.FlowManager;
 import com.squareup.leakcanary.LeakCanary;
 import com.squareup.leakcanary.RefWatcher;
+import com.tencent.smtt.sdk.QbSdk;
 
 import org.litepal.LitePal;
 import retrofit2.Retrofit;
@@ -101,6 +102,7 @@ public class App extends SugarApp {
         if (!LeakCanary.isInAnalyzerProcess(this)) {
             refWatcher=  LeakCanary.install(this);
         }
+        QbSdk.initX5Environment(this,null);
     }
 
     public static Context getContext() {

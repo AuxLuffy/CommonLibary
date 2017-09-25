@@ -44,7 +44,7 @@
     <uses-permission android:name="android.permission.WRITE_CONTACTS" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
-
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <application
         android:name=".App"
         android:allowBackup="true"
@@ -556,6 +556,8 @@
         <activity android:name=".psdinput.PayPsdViewActivity" android:theme="@style/AppThemeNoTitle" />
         <activity android:name=".progressbar.ProgressBarActivity" android:theme="@style/AppThemeNoTitle" />
         <activity android:name=".fingerutils.FingerprintActivity" android:theme="@style/AppThemeNoTitle" />
+        <activity android:name=".tencentx5.X5WebViewActivity"/>
+        <activity android:name=".zbar.ZbarActivity"/>
     </application>
 
 </manifest>
