@@ -234,6 +234,14 @@
             android:text="仿小米开机动画"
             android:textColor="#CCCCCC" />
 
-
+        <TextView
+            android:id="@+id/tv_shinebutton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColor="#CCCCCC"
+            android:text="酷炫的爆炸性效果，常用于点赞效果，收藏等"
+            android:background="#f20d8b"
+            android:gravity="center"
+            />
     </LinearLayout>
 </ScrollView>

@@ -92,10 +92,14 @@
         <activity android:name=".recyclerview.staggeredtimeline.timeline1.TimeLine1Activity" />
         <!-- 瀑布流式任务时光轴演示界面 -->
         <activity android:name=".recyclerview.staggeredtimeline.timeline2.DotTimeLineActivity" />
+        <!-- 瀑布流式任务时光轴演示界面2 -->
+        <activity android:name=".recyclerview.staggeredtimeline.timeline3.DotTimeLine2Activity" />
         <!-- 悬浮效果演示界面1 -->
         <activity android:name=".recyclerview.suspension.ui.SuspensionEffectActivity" />
         <!-- 悬浮效果演示界面2 -->
         <activity android:name=".recyclerview.suspension2.ui.SuspensionEffect2Activity" />
+        <!-- 悬浮效果演示界面3 -->
+        <activity android:name=".recyclerview.suspension3.ui.SuspensionEffect3Activity" />
         <!-- 袁东华结束 -->
 
 
@@ -556,6 +560,7 @@
         <activity android:name=".psdinput.PayPsdViewActivity" android:theme="@style/AppThemeNoTitle" />
         <activity android:name=".progressbar.ProgressBarActivity" android:theme="@style/AppThemeNoTitle" />
         <activity android:name=".fingerutils.FingerprintActivity" android:theme="@style/AppThemeNoTitle" />
+        <activity android:name=".shinebutton.ShineButtonActivity" />
         <activity android:name=".tencentx5.X5WebViewActivity"/>
         <activity android:name=".zbar.ZbarActivity"/>
     </application>

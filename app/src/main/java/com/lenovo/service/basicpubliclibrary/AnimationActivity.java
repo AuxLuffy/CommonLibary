@@ -23,6 +23,7 @@ import com.lenovo.service.basicpubliclibrary.loadingart.Loadingart_activity;
 import com.lenovo.service.basicpubliclibrary.loopview.LoopViewActivity;
 import com.lenovo.service.basicpubliclibrary.meizuweather.MeizuWeacherActivity;
 import com.lenovo.service.basicpubliclibrary.roll3dimageview.RollImageActivity;
+import com.lenovo.service.basicpubliclibrary.shinebutton.ShineButtonActivity;
 import com.lenovo.service.basicpubliclibrary.stikyscrollview.StikyScrollviewActivity;
 import com.lenovo.service.basicpubliclibrary.svg.WowActivity;
 import com.lenovo.service.basicpubliclibrary.takeaway.TakeawayActivity;
@@ -47,6 +48,7 @@ public class AnimationActivity extends AppCompatActivity {
     private TextView tv_floatingmenu;
     private TextView mTvWowoviewpager;
     private TextView mTvStikyscrollview;
+    private TextView mTvshinebutton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,6 +78,7 @@ public class AnimationActivity extends AppCompatActivity {
 
         mTvExamplelv = (TextView)findViewById(R.id.tv_examplelv);
         mTvWowoviewpager = (TextView)findViewById(R.id.wowo_viewpager);
+        mTvshinebutton = (TextView) findViewById(R.id.tv_shinebutton);
 
         text1.setOnClickListener(new TextViewClickListener());
         mTvLoopView.setOnClickListener(new TextViewClickListener());
@@ -93,6 +96,7 @@ public class AnimationActivity extends AppCompatActivity {
         tv_floatingmenu.setOnClickListener(new TextViewClickListener());
         mTvWowoviewpager.setOnClickListener(new TextViewClickListener());
         mTvStikyscrollview.setOnClickListener(new TextViewClickListener());
+        mTvshinebutton.setOnClickListener(new TextViewClickListener());
     }
 
     public class TextViewClickListener implements View.OnClickListener {
@@ -185,7 +189,9 @@ public class AnimationActivity extends AppCompatActivity {
                 case R.id.bubbleview:
                     startActivity(new Intent(AnimationActivity.this, BubbleViewActivity.class));
                     break;
-
+                case R.id.tv_shinebutton:
+                    startActivity(new Intent(AnimationActivity.this, ShineButtonActivity.class));
+                    break;
                 default:
                     break;
             }

@@ -1,4 +1,4 @@
-package com.lenovo.service.basicpubliclibrary.recyclerview.suspension2.view;
+package com.lenovo.service.basicpubliclibrary.recyclerview.suspension3.view;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -10,7 +10,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.lenovo.service.basicpubliclibrary.recyclerview.suspension2.listener.GroupListener;
+import com.lenovo.service.basicpubliclibrary.recyclerview.suspension3.listener.GroupListener;
 import com.lenovo.service.basicpubliclibrary.utils.LogUtil;
 
 /**
