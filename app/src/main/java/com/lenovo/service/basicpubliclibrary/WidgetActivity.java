@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import com.lenovo.service.basicpubliclibrary.AppStartGuide.AppStartGuide;
 import com.lenovo.service.basicpubliclibrary.LoadMoreRecyclerView.MyRecyclerViewActivity;
+import com.lenovo.service.basicpubliclibrary.blurry.BlurryTestActivity;
 import com.lenovo.service.basicpubliclibrary.Tastytoast.ToastActivity;
 import com.lenovo.service.basicpubliclibrary.UserGuideView.UserGuideActivity;
 import com.lenovo.service.basicpubliclibrary.addsub.AddSubActivity;
@@ -31,9 +32,14 @@ import com.lenovo.service.basicpubliclibrary.gesturelock.GestureLockActivity;
 import com.lenovo.service.basicpubliclibrary.iconbadge.IconBadgeActivity;
 import com.lenovo.service.basicpubliclibrary.jike.JikeGalleryActivity;
 import com.lenovo.service.basicpubliclibrary.loaddata.LoadDataActivity;
+import com.lenovo.service.basicpubliclibrary.marqueue.MarqueueActivity;
 import com.lenovo.service.basicpubliclibrary.panoramimageview.PanoramImageActivity;
 import com.lenovo.service.basicpubliclibrary.pickerview.PickerActivity;
 import com.lenovo.service.basicpubliclibrary.popup.PopUpActivity;
+import com.lenovo.service.basicpubliclibrary.progressbar.ProgressBarActivity;
+import com.lenovo.service.basicpubliclibrary.psdinput.PayPsdViewActivity;
+import com.lenovo.service.basicpubliclibrary.pulseview.PhotoViewActivity;
+import com.lenovo.service.basicpubliclibrary.pulseview.PulseViewActivity;
 import com.lenovo.service.basicpubliclibrary.questionnaire.QuestionActivity;
 import com.lenovo.service.basicpubliclibrary.recyclertablayout.TabLayoutActivity;
 import com.lenovo.service.basicpubliclibrary.recyclerview.entrance.ui.RecyclerViewActivity;
@@ -47,8 +53,10 @@ import com.lenovo.service.basicpubliclibrary.stepview.StepViewActivity;
 import com.lenovo.service.basicpubliclibrary.tagviewgroup.TagViewGroupActivity;
 import com.lenovo.service.basicpubliclibrary.textview.linktextview.LinkTextViewActivity;
 import com.lenovo.service.basicpubliclibrary.textview.spantext.SpanTextActivity;
+import com.lenovo.service.basicpubliclibrary.textview.spantouchfixtextview.SpanTouchFixTextViewActivity;
 import com.lenovo.service.basicpubliclibrary.textview.textstyle.TextActivity;
 import com.lenovo.service.basicpubliclibrary.textview.verticaltextview.VerticalTextViewActivity;
+import com.lenovo.service.basicpubliclibrary.tickerview.TickerActivity;
 import com.lenovo.service.basicpubliclibrary.timepicker.TimePickerActivity;
 import com.lenovo.service.basicpubliclibrary.toolbar.TestToolbarActivity;
 import com.lenovo.service.basicpubliclibrary.ultraviewpager.UPVDemoActivity;
@@ -56,6 +64,7 @@ import com.lenovo.service.basicpubliclibrary.weekview.WeekViewActivity;
 import com.lenovo.service.basicpubliclibrary.widget.CircleImageActivity;
 import com.lenovo.service.basicpubliclibrary.zoomheader.ZoomHeaderActivity;
 import com.lizehao.watermelondiarynew.ui.WatermelonDiayActivity;
+import com.wind.windlinkrecycleview.WindlinkRecycleviewActivity;
 
 
 public class WidgetActivity extends AppCompatActivity implements View.OnClickListener {
@@ -105,6 +114,13 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     private TextView mTvWatermediary;
     private TextView mLinkTextView;
     private TextView mTvCount;
+    private TextView mSpanTouchFixTextView;
+    private TextView mTvMarqueue;
+    private TextView mTvWindlink;
+    private TextView mTvPulseView;
+    private TextView mTvMasicoView;
+    private TextView mTvBlurry;
+    private TextView mTvTicker;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -143,7 +159,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mCard = (TextView) findViewById(R.id.card);
         mAvatarLabel = (TextView) findViewById(R.id.avatar_label);
         mTvBottleloading = (TextView) findViewById(R.id.tv_bottleloading);
-        mTvWeekview= (TextView) findViewById(R.id.tv_weekview);
+        mTvWeekview = (TextView) findViewById(R.id.tv_weekview);
         mTvDialogfragment = (TextView) findViewById(R.id.tv_dialogfragment);
         mTvWeekview = (TextView) findViewById(R.id.tv_weekview);
         mTvFlowflag = (TextView) findViewById(R.id.tv_flowflag);
@@ -162,6 +178,13 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTvWatermediary = (TextView) findViewById(R.id.tvWatermediary);
         mLinkTextView = (TextView) findViewById(R.id.linkTextView);
         mTvCount = (TextView) findViewById(R.id.tv_count);
+        mSpanTouchFixTextView = (TextView) findViewById(R.id.spanTouchFixTextView);
+        mTvMarqueue = (TextView) findViewById(R.id.tv_marqueue);
+        mTvWindlink = (TextView) findViewById(R.id.tvWindlink);
+        mTvPulseView = (TextView) findViewById(R.id.tvPulseActivity);
+        mTvMasicoView = (TextView) findViewById(R.id.tvMasaccioView);
+        mTvTicker = (TextView) findViewById(R.id.tvTickerView);
+        mTvBlurry = (TextView) findViewById(R.id.tvBlurry);
     }
 
     private void init_listener() {
@@ -189,6 +212,8 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         findViewById(R.id.tv_toolbar).setOnClickListener(this);
         findViewById(R.id.tv_timepicker).setOnClickListener(this);
         findViewById(R.id.tv_expandable).setOnClickListener(this);
+        findViewById(R.id.tv_psw_input).setOnClickListener(this);
+        findViewById(R.id.tv_progress).setOnClickListener(this);
         mUserGuide.setOnClickListener(this);
         tv_gesture_lock.setOnClickListener(this);
         tagview.setOnClickListener(this);
@@ -213,6 +238,13 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTvWatermediary.setOnClickListener(this);
         mLinkTextView.setOnClickListener(this);
         mTvCount.setOnClickListener(this);
+        mSpanTouchFixTextView.setOnClickListener(this);
+        mTvMarqueue.setOnClickListener(this);
+        mTvWindlink.setOnClickListener(this);
+        mTvPulseView.setOnClickListener(this);
+        mTvMasicoView.setOnClickListener(this);
+        mTvTicker.setOnClickListener(this);
+        mTvBlurry.setOnClickListener(this);
     }
 
     @Override
@@ -271,7 +303,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
             case R.id.recyclerview_tv:
                 startActivity(new Intent(WidgetActivity.this, RecyclerViewActivity.class));
                 break;
-           
+
             case R.id.tv_boommenu:
                 startActivity(new Intent(WidgetActivity.this, BoomMenuMainActivity.class));
                 break;
@@ -398,6 +430,34 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
             case R.id.tv_count:
                 startActivity(new Intent(WidgetActivity.this, CounterActivity.class));
                 break;
+            case R.id.spanTouchFixTextView:
+                startActivity(new Intent(WidgetActivity.this, SpanTouchFixTextViewActivity.class));
+                break;
+            case R.id.tv_marqueue:
+                startActivity(new Intent(WidgetActivity.this, MarqueueActivity.class));
+                break;
+            case R.id.tvWindlink:
+                startActivity(new Intent(WidgetActivity.this, WindlinkRecycleviewActivity.class));
+                break;
+            case R.id.tvPulseActivity:
+                startActivity(new Intent(WidgetActivity.this, PulseViewActivity.class));
+                break;
+            case R.id.tvMasaccioView:
+                startActivity(new Intent(WidgetActivity.this, PhotoViewActivity.class));
+                break;
+            case R.id.tvBlurry:
+                startActivity(new Intent(WidgetActivity.this, BlurryTestActivity.class));
+                break;
+            case R.id.tvTickerView:
+                startActivity(new Intent(WidgetActivity.this, TickerActivity.class));
+                break;
+            case R.id.tv_psw_input:
+                startActivity(new Intent(WidgetActivity.this, PayPsdViewActivity.class));
+                break;
+            case R.id.tv_progress:
+                startActivity(new Intent(WidgetActivity.this, ProgressBarActivity.class));
+                break;
+
 
         }
     }

@@ -15,22 +15,14 @@ import android.view.ViewGroup;
 
 
 import com.lenovo.service.basicpubliclibrary.R;
-import com.lenovo.service.basicpubliclibrary.recyclerview.staggeredtimeline.util.Util;
+import com.lenovo.service.basicpubliclibrary.dialog.util.DisplayUtil;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
 import static android.R.attr.drawableRight;
 
-/**
- * *          _       _
- * *   __   _(_)_   _(_) __ _ _ __
- * *   \ \ / / \ \ / / |/ _` | '_ \
- * *    \ V /| |\ V /| | (_| | | | |
- * *     \_/ |_| \_/ |_|\__,_|_| |_|
- * <p>
- * Created by vivian on 2017/6/9.
- */
+
 
 public class DotItemDecoration extends RecyclerView.ItemDecoration {
     public static final int STYLE_DRAW = 0;
@@ -319,27 +311,27 @@ public class DotItemDecoration extends RecyclerView.ItemDecoration {
         }
 
         public Builder setTopDistance(float distance) {
-            itemDecoration.mTopDistance = Util.Dp2Px(mContext, distance);
+            itemDecoration.mTopDistance = DisplayUtil.dp2px(mContext, distance);
             return this;
         }
 
         public Builder setItemPaddingLeft(float itemPaddingLeft) {
-            itemDecoration.mItemPaddingLeft = Util.Dp2Px(mContext, itemPaddingLeft);
+            itemDecoration.mItemPaddingLeft = DisplayUtil.dp2px(mContext, itemPaddingLeft);
             return this;
         }
 
         public Builder setItemPaddingRight(float itemPaddingRight) {
-            itemDecoration.mItemPaddingRight = Util.Dp2Px(mContext, itemPaddingRight);
+            itemDecoration.mItemPaddingRight = DisplayUtil.dp2px(mContext, itemPaddingRight);
             return this;
         }
 
         public Builder setItemInterVal(float interval) {
-            itemDecoration.mItemInterval = Util.Dp2Px(mContext, interval);
+            itemDecoration.mItemInterval = DisplayUtil.dp2px(mContext, interval);
             return this;
         }
 
         public Builder setLineWidth(float lineWidth) {
-            itemDecoration.mLineWidth = Util.Dp2Px(mContext, lineWidth);
+            itemDecoration.mLineWidth = DisplayUtil.dp2px(mContext, lineWidth);
             return this;
         }
 
@@ -349,7 +341,7 @@ public class DotItemDecoration extends RecyclerView.ItemDecoration {
         }
 
         public Builder setDotPaddingTop(int paddingTop) {
-            itemDecoration.mDotPaddingTop = Util.Dp2Px(mContext, paddingTop);
+            itemDecoration.mDotPaddingTop = DisplayUtil.dp2px(mContext, paddingTop);
             return this;
         }
 
@@ -359,7 +351,7 @@ public class DotItemDecoration extends RecyclerView.ItemDecoration {
         }
 
         public Builder setDotRadius(int dotRadius) {
-            itemDecoration.mDotRadius = Util.Dp2Px(mContext, dotRadius);
+            itemDecoration.mDotRadius = DisplayUtil.dp2px(mContext, dotRadius);
             return this;
         }
 
@@ -374,12 +366,12 @@ public class DotItemDecoration extends RecyclerView.ItemDecoration {
         }
 
         public Builder setTextSize(float textSize) {
-            itemDecoration.mTextSize = Util.Sp2Px(mContext, textSize);
+            itemDecoration.mTextSize = DisplayUtil.dp2px(mContext, textSize);
             return this;
         }
 
         public Builder setDotPaddingText(float dotPaddingText) {
-            itemDecoration.mDotPaddingText = Util.Dp2Px(mContext, dotPaddingText);
+            itemDecoration.mDotPaddingText = DisplayUtil.dp2px(mContext, dotPaddingText);
             return this;
         }
 
@@ -389,7 +381,7 @@ public class DotItemDecoration extends RecyclerView.ItemDecoration {
         }
 
         public Builder setBottomDistance(float bottomDistance) {
-            itemDecoration.mBottomDistance = Util.Dp2Px(mContext, bottomDistance);
+            itemDecoration.mBottomDistance = DisplayUtil.dp2px(mContext, bottomDistance);
             return this;
         }
 

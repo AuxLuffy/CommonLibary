@@ -16,6 +16,7 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
 
     <!-- end 二维码扫描 相机，闪光灯权限 -->
     <uses-feature android:name="android.hardware.camera" />
@@ -91,6 +92,14 @@
         <activity android:name=".recyclerview.staggeredtimeline.timeline1.TimeLine1Activity" />
         <!-- 瀑布流式任务时光轴演示界面 -->
         <activity android:name=".recyclerview.staggeredtimeline.timeline2.DotTimeLineActivity" />
+        <!-- 瀑布流式任务时光轴演示界面2 -->
+        <activity android:name=".recyclerview.staggeredtimeline.timeline3.DotTimeLine2Activity" />
+        <!-- 悬浮效果演示界面1 -->
+        <activity android:name=".recyclerview.suspension.ui.SuspensionEffectActivity" />
+        <!-- 悬浮效果演示界面2 -->
+        <activity android:name=".recyclerview.suspension2.ui.SuspensionEffect2Activity" />
+        <!-- 悬浮效果演示界面3 -->
+        <activity android:name=".recyclerview.suspension3.ui.SuspensionEffect3Activity" />
         <!-- 袁东华结束 -->
 
 
@@ -245,6 +254,7 @@
         <activity android:name=".obtainlocalphoto.LocalPhotoActivity" />
         <activity android:name=".gesturelock.GestureLockActivity" />
         <activity android:name=".gesturelock.DrawPasswordActivity" />
+        <activity android:name=".cupboard.CupboardActivity" />
         <activity android:name=".bezier.BezierActivity" />
         <activity android:name=".bezier.DotsLoaderActivity" />
         <activity android:name=".leakcanary.LeakCanaryActivity" />
@@ -374,11 +384,10 @@
             android:launchMode="singleTop" />
         <activity android:name=".smallchart.PieCharActivity" />
         <activity android:name=".smallchart.RadarChartActivity" />
-        <activity android:name=".smallchart.LineChartActivity"
-            android:screenOrientation="landscape"></activity>
-        <activity android:name=".textview.linktextview.LinkTextViewActivity"/>
-
-
+        <activity
+            android:name=".smallchart.LineChartActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".textview.linktextview.LinkTextViewActivity" />
         <activity android:name=".wowoviewpagerexample.WowoMainActivity" />
         <activity
             android:name=".wowoviewpagerexample.WoWoTranslationAnimationActivity"
@@ -457,19 +466,100 @@
         <activity android:name=".keyboardpanelswitch.ChattingResolvedHandleByPlaceholderActivity" />
         <activity android:name=".keyboardpanelswitch.ChattingUnresolvedActivity" />
         <activity android:name=".counter.CounterActivity" />
-        <activity android:name=".danmu.DanmuActivity"></activity>
+        <activity android:name=".litepal.activity.LitepalActivity" />
+        <activity android:name=".danmu.DanmuActivity" />
+        <activity android:name=".tray.TrayActivity" />
+        <activity android:name=".properties.PreferencesActivity" />
+        <activity
+            android:name=".litepal.activity.ManageTablesActivity"
+            android:label="@string/manage_table_sample"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".litepal.activity.ModelListActivity"
+            android:label="@string/manage_table_sample"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".litepal.activity.TableListActivity"
+            android:label="@string/manage_table_sample"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".litepal.activity.ModelStructureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".litepal.activity.TableStructureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".litepal.activity.CRUDActivity"
+            android:label="@string/crud_sample"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".litepal.activity.SaveSampleActivity"
+            android:label="@string/save_sample"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".litepal.activity.UpdateSampleActivity"
+            android:label="@string/update_sample"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".litepal.activity.DeleteSampleActivity"
+            android:label="@string/delete_sample"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".litepal.activity.QuerySampleActivity"
+            android:label="@string/query_sample"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".litepal.activity.AggregateActivity"
+            android:label="@string/aggregate_sample"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".litepal.activity.CountSampleActivity"
+            android:label="@string/count_sample"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".litepal.activity.MaxSampleActivity"
+            android:label="@string/max_sample"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".litepal.activity.MinSampleActivity"
+            android:label="@string/max_sample"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".litepal.activity.AverageSampleActivity"
+            android:label="@string/average_sample"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".litepal.activity.SumSampleActivity"
+            android:label="@string/sum_sample"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".smallchart.CurveChartActivity"
             android:screenOrientation="landscape" />
-        <activity android:name=".sugar.ScanSDActivity"></activity>
-
-        <activity android:name=".hencoder.hencoderpracticedraw1.MainActivity"/>
-        <activity android:name=".hencoder.hencoderpracticedraw2.MainActivity"/>
-        <activity android:name=".hencoder.hencoderpracticedraw3.MainActivity"/>
-        <activity android:name=".hencoder.hencoderpracticedraw4.MainActivity"/>
-        <activity android:name=".hencoder.hencoderpracticedraw5.MainActivity"/>
-        <activity android:name=".hencoder.hencoderpracticedraw6.MainActivity"/>
-        <activity android:name=".hencoder.hencoderpracticedraw7.MainActivity"/>
+        <activity android:name=".sugar.ScanSDActivity" />
+        <activity android:name=".hencoder.hencoderpracticedraw1.MainActivity" />
+        <activity android:name=".hencoder.hencoderpracticedraw2.MainActivity" />
+        <activity android:name=".hencoder.hencoderpracticedraw3.MainActivity" />
+        <activity android:name=".hencoder.hencoderpracticedraw4.MainActivity" />
+        <activity android:name=".hencoder.hencoderpracticedraw5.MainActivity" />
+        <activity android:name=".hencoder.hencoderpracticedraw6.MainActivity" />
+        <activity android:name=".hencoder.hencoderpracticedraw7.MainActivity" />
+        <activity android:name="com.wind.windlinkrecycleview.WindlinkRecycleviewActivity" />
+        <activity android:name=".stikyscrollview.StikyScrollviewActivity" />
+        <activity android:name=".textview.spantouchfixtextview.SpanTouchFixTextViewActivity" />
+        <activity android:name=".threed.ThreedMainActivity" />
+        <activity android:name=".threed.UserCenterActivity" />
+        <activity android:name=".threed.WeatherActivity" />
+        <activity android:name=".marqueue.MarqueueActivity" />
+        <activity android:name=".pulseview.PulseViewActivity" />
+        <activity android:name=".pulseview.PhotoViewActivity" />
+        <activity android:name=".blurry.BlurryTestActivity" />
+        <activity android:name=".tickerview.TickerActivity" />
+        <activity android:name=".tickerview.PerfActivity" />
+        <activity android:name=".xmlparse.XmlParseActivity"></activity>
+        <activity android:name=".bubbleview.BubbleViewActivity" android:theme="@style/AppThemeNoTitle" />
+        <activity android:name=".psdinput.PayPsdViewActivity" android:theme="@style/AppThemeNoTitle" />
+        <activity android:name=".progressbar.ProgressBarActivity" android:theme="@style/AppThemeNoTitle" />
+        <activity android:name=".fingerutils.FingerprintActivity" android:theme="@style/AppThemeNoTitle" />
     </application>
 
 </manifest>

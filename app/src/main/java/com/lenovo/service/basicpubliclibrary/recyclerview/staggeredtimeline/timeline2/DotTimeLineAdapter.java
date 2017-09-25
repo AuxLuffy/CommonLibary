@@ -9,19 +9,12 @@ import android.widget.TextView;
 
 
 import com.lenovo.service.basicpubliclibrary.R;
-import com.lenovo.service.basicpubliclibrary.recyclerview.staggeredtimeline.util.Util;
+import com.lenovo.service.basicpubliclibrary.utils.DateUtils;
+import com.lenovo.service.basicpubliclibrary.utils.TimeUtil;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
-/**
- * *          _       _
- * *   __   _(_)_   _(_) __ _ _ __
- * *   \ \ / / \ \ / / |/ _` | '_ \
- * *    \ V /| |\ V /| | (_| | | | |
- * *     \_/ |_| \_/ |_|\__,_|_| |_|
- * <p>
- * Created by vivian on 2017/6/9.
- */
 
 public class DotTimeLineAdapter extends RecyclerView.Adapter<DotTimeLineAdapter.ViewHolder> {
     Context mContext;
@@ -49,7 +42,7 @@ public class DotTimeLineAdapter extends RecyclerView.Adapter<DotTimeLineAdapter.
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        holder.time.setText(Util.LongtoStringFormat(1000 * mList.get(position).getTime()));
+        holder.time.setText(TimeUtil.LongtoStringFormat(mList.get(position).getTime()));
         holder.textView.setText(mList.get(position).getEvent());
         holder.time.setTextColor(colors[position % colors.length]);
     }

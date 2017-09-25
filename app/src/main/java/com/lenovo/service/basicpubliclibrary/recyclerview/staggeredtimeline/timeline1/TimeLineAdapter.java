@@ -13,15 +13,7 @@ import com.lenovo.service.basicpubliclibrary.R;
 
 import java.util.List;
 
-/**
- * *          _       _
- * *   __   _(_)_   _(_) __ _ _ __
- * *   \ \ / / \ \ / / |/ _` | '_ \
- * *    \ V /| |\ V /| | (_| | | | |
- * *     \_/ |_| \_/ |_|\__,_|_| |_|
- * <p>
- * Created by vivian on 2017/6/9.
- */
+
 
 public class TimeLineAdapter extends RecyclerView.Adapter<TimeLineAdapter.ViewHolder> {
     Context mContext;

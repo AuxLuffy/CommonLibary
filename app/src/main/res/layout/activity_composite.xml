@@ -144,12 +144,12 @@
 
 
         <TextView
-                android:id="@+id/tv_jnidemo"
+                android:id="@+id/tv_xmlparse"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:background="#66FF4081"
                 android:gravity="center"
-                android:text="jni 初步探究"
+                android:text="xml解析"
                 android:textColor="#CCCCCC"/>
         <TextView
                 android:id="@+id/tvAlipay"
@@ -281,6 +281,15 @@
             android:onClick="startAlipayActivity"
             android:gravity="center"
             android:text="自定义View系列7-属性动画进阶"
+            android:textColor="#CCCCCC"/>
+        <TextView
+            android:id="@+id/tv_fingerprint"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#80f0d4"
+            android:onClick="startAlipayActivity"
+            android:gravity="center"
+            android:text="指纹识别工具"
             android:textColor="#CCCCCC"/>
 
     </LinearLayout>

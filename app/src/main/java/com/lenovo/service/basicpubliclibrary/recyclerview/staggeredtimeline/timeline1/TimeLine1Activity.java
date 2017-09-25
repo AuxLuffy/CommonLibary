@@ -10,6 +10,7 @@ import android.support.v7.widget.StaggeredGridLayoutManager;
 
 
 import com.lenovo.service.basicpubliclibrary.R;
+import com.lenovo.service.basicpubliclibrary.dialog.util.DisplayUtil;
 import com.lenovo.service.basicpubliclibrary.shadowmasking.utils.ScreenUtils;
 
 import java.util.ArrayList;
@@ -48,8 +49,8 @@ public class TimeLine1Activity extends AppCompatActivity {
         mRecyclerView.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
         //创建ItemDecoration
         ItemDecoration itemDecoration = new ItemDecoration(this);
-        itemDecoration.setDistanceBetweenScreenAndItem(ScreenUtils.dp2px(this,10));
-        itemDecoration.setDistance(ScreenUtils.dp2px(this,30));
+        itemDecoration.setDistanceBetweenScreenAndItem(DisplayUtil.dp2px(this,10));
+        itemDecoration.setDistance(DisplayUtil.dp2px(this,30));
         itemDecoration.setNodeDrawable(getDrawable(R.drawable.time));
         itemDecoration.setHorizontalLine(ContextCompat.getDrawable(this, R.drawable.horizontal_line));
         itemDecoration.setVerticalLine(ContextCompat.getDrawable(this, R.drawable.gray_line));

@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">公共基础库</string>
 
 
@@ -171,6 +171,21 @@
     <!-- LinkTextView 展示界面 -->
     <string name="linkTextView_auto_identify">URL/Mail/Tel自动识别</string>
     <string name="linkTextView_auto_identify_word">可以自动识别网页链接，例如 http://www.qmuiteam.com。\n可以自动识别电话号码，例如 13600000000。\n也可以识别邮件地址，例如 qmuiteam@gmail.com。\n我们可以为其添加自定义的点击事件。</string>
+
+
+    <!-- SpanTouchFixTextView 展示界面 -->
+    <string name="system_behavior_1">\@qmui:点击span区域会同时出发span的点击事件和 TextView 的点击事件 #qmui#</string>
+    <string name="system_behavior_2">\@qmui: 系统默认情况下，TextView 不添加点击事件，然后 TextView 的父元素添加点击事件，
+        那么点击 TextView 将无法触发父元素的点击事件。#qmui#</string>
+
+    <string name="span_touch_fix_1">\@qmui:span的点击事件与textView的点击事件完全分离#qmui#</string>
+    <string name="span_touch_fix_2">\@qmui:默认情况下，如果textView添加了clickSpan,#qmui#那么textView的事件将无法冒泡到父级。
+        但在某些场景（例如微博评论需要整条可点），我们需要将事件冒泡给父元素进行处理。#qmui#</string>
+
+    <!-- SpanTouchFixTextView -->
+    <string name="spanTouchFix_description">QMUISpanTouchFixTextView 主要用于修正 TextView 添加 ClickSpan 后的点击行为与事件传递</string>
+    <string name="spanTouchFix_system_behavior">TextView系统行为</string>
+    <string name="spanTouchFix_qmui_fix_behavior">QMUI修复后行为</string>
 
     <string name="path_00">M 187.05 28.42 C 189.38 22.60 190.69 16.44 192.59 10.47 C 192.99 16.21 193.57 21.95 193.61
         27.71 C 196.57 29.22 199.80 30.43 202.26 32.75 C 204.81 35.60 205.72 39.46 206.68 43.07 C 207.86 48.30 209.90
@@ -1183,4 +1198,121 @@
     <string name="title_animator_set">AnimatorSet</string>
     <string name="title_keyframe">PropertyValuesHolder.ofKeyframe()</string>
     <item name="tag_inner_entity" type="id"></item>
+    <string name="hint">请输入信息</string>
+
+    <string name="data_created">在DbInspectorActivity查看测试数据</string>
+    <string name="dbinspector_app_name">DbInspector标签</string>
+
+    <string name="manage_table_sample">Manage Tables Sample</string>
+    <string name="crud_sample">CRUD Sample</string>
+    <string name="manage_table">Manage Tables</string>
+    <string name="crud">CRUD</string>
+    <string name="aggregate_functions">Aggregate Functions</string>
+    <string name="aggregate_sample">Aggregate Sample</string>
+    <string name="table_generation_tip">Tables will be generated automatically depending on the current model structure once you operate database.</string>
+    <string name="current_model_structure">Current Model Structure</string>
+    <string name="current_table_structure">Current Table Structure</string>
+    <string name="field_name">Field Name</string>
+    <string name="field_type">Field Type</string>
+    <string name="column_name">Name</string>
+    <string name="column_type">Type</string>
+    <string name="column_nullable">Nullable</string>
+    <string name="column_unique">Unique</string>
+    <string name="column_default">Default</string>
+    <string name="sample_codes">Sample codes:</string>
+    <string name="result">Result:</string>
+    <string name="save_sample">Save Sample</string>
+    <string name="update_sample">Update Sample</string>
+    <string name="delete_sample">Delete Sample</string>
+    <string name="query_sample">Query Sample</string>
+    <string name="count_sample">Count Sample</string>
+    <string name="max_sample">Max Sample</string>
+    <string name="min_sample">Min Sample</string>
+    <string name="average_sample">Average Sample</string>
+    <string name="sum_sample">Sum Sample</string>
+    <string name="run_codes_above">Run codes above</string>
+    <string name="sample_codes_first_line">Singer singer = new Singer&#040;&#041;&#059;</string>
+    <string name="sample_codes_second_line_pre">singer.setName&#040;\&#034;</string>
+    <string name="sample_codes_second_line_end">\&#034;&#041;&#059;</string>
+    <string name="sample_codes_third_line_pre">singer.setAge&#040;</string>
+    <string name="sample_codes_third_line_end">&#041;&#059;</string>
+    <string name="sample_codes_fourth_line_pre">singer.setMale&#040;</string>
+    <string name="sample_codes_fourth_line_end">&#041;&#059;</string>
+    <string name="sample_codes_save">singer.save&#040;&#041;&#059;</string>
+    <string name="sample_codes_update_first_line_pre">singer.update&#040;</string>
+    <string name="sample_codes_update_first_line_end">&#041;&#059;</string>
+    <string name="sample_codes_update_second_line">singer.updateAll&#040;\&#034;name=? and age=?\&#034;,</string>
+    <string name="sample_codes_update_third_line_pre">\&#034;</string>
+    <string name="sample_codes_update_third_line_mid">\&#034;, \&#034;</string>
+    <string name="sample_codes_update_third_line_end">\&#034;&#041;&#059;</string>
+    <string name="sample_codes_delete_first_line_pre">DataSupport.delete&#040;Singer.class,&#160;</string>
+    <string name="sample_codes_delete_first_line_end">&#041;&#059;</string>
+    <string name="sample_codes_delete_second_line">DataSupport.deleteAll&#040;Singer.class,</string>
+    <string name="sample_codes_delete_third_line">\&#034;name = ? and age = ?\&#034;,</string>
+    <string name="sample_codes_delete_fourth_line_pre">\&#034;</string>
+    <string name="sample_codes_delete_fourth_line_mid">\&#034;, \&#034;</string>
+    <string name="sample_codes_delete_fourth_line_end">\&#034;&#041;&#059;</string>
+    <string name="sample_desc_query_first_line">Find singer whose id is 1:</string>
+    <string name="sample_codes_query_first_line">Singer singer = DataSupport.find&#040;\nSinger.class, 1&#041;&#059;</string>
+    <string name="sample_desc_query_second_line">Find all singers:</string>
+    <string name="sample_codes_query_second_line">List&#60;Singer&#62; allSingers =\nDataSupport.findAll&#040;Singer.class&#041;&#059;</string>
+    <string name="sample_desc_query_third_line">Find all singers who are yonger than 20:</string>
+    <string name="sample_codes_query_third_line">List&#60;Singer&#62; singers =\nDataSupport.where&#040;\&#034;age &#60; ?\&#034;, \&#034;20\&#034;&#041;.\nfind&#040;Singer.class&#041;&#059;</string>
+    <string name="sample_desc_query_fourth_line">Find all female singers who are elder than 25:</string>
+    <string name="sample_codes_query_fourth_line">List&#60;Singer&#62; singers =\nDataSupport.where&#040;\n\&#034;age &#60; ? and ismale = ?\&#034;, \&#034;25\&#034;, \&#034;0\&#034;&#041;.\nfind&#040;Singer.class&#041;&#059;</string>
+    <string name="sample_desc_query_fifth_line">Find same records as above by SQL:</string>
+    <string name="sample_codes_query_fifth_line">Cursor cursor =\nDataSupport.findBySQL&#040;\n\&#034;select * from singer where\nage &#60; ? and ismale = ?\&#034;, \&#034;25\&#034;, \&#034;0\&#034;&#041;&#059;</string>
+    <string name="sample_codes_count_first_line">DataSupport.count&#040;Singer.class&#041;&#059;</string>
+    <string name="sample_codes_count_second_line_pre">DataSupport.where&#040;\&#034;age &#62; ?\&#034;, \&#034;</string>
+    <string name="sample_codes_count_second_line_end">\&#034;&#041;.</string>
+    <string name="sample_codes_count_third_line">count&#040;Singer.class&#041;&#059;</string>
+    <string name="sample_codes_max_first_line">DataSupport.max&#040;Singer.class,\n\&#034;age\&#034;, Integer.TYPE&#041;&#059;</string>
+    <string name="sample_codes_max_second_line_pre">DataSupport.where&#040;\&#034;age &#60; ?\&#034;, \&#034;</string>
+    <string name="sample_codes_max_second_line_end">\&#034;&#041;.</string>
+    <string name="sample_codes_max_third_line">max&#040;Singer.class, \&#034;age\&#034;,\nInteger.TYPE&#041;&#059;</string>
+    <string name="sample_codes_min_first_line">DataSupport.min&#040;Singer.class,\n\&#034;age\&#034;, Integer.TYPE&#041;&#059;</string>
+    <string name="sample_codes_min_second_line_pre">DataSupport.where&#040;\&#034;age &#62; ?\&#034;, \&#034;</string>
+    <string name="sample_codes_min_second_line_end">\&#034;&#041;.</string>
+    <string name="sample_codes_min_third_line">min&#040;Singer.class, \&#034;age\&#034;,\nInteger.TYPE&#041;&#059;</string>
+    <string name="sample_codes_avg_first_line">DataSupport.average&#040;Singer.class,\n\&#034;age\&#034;&#041;&#059;</string>
+    <string name="sample_codes_avg_second_line_pre">DataSupport.where&#040;\&#034;age &#62; ?\&#034;, \&#034;</string>
+    <string name="sample_codes_avg_second_line_end">\&#034;&#041;.</string>
+    <string name="sample_codes_avg_third_line">average&#040;Singer.class, \&#034;age\&#034;&#041;&#059;</string>
+    <string name="sample_codes_sum_first_line">DataSupport.sum&#040;Singer.class,\n\&#034;age\&#034;, Integer.TYPE&#041;&#059;</string>
+    <string name="sample_codes_sum_second_line_pre">DataSupport.where&#040;\&#034;age &#62; ?\&#034;, \&#034;</string>
+    <string name="sample_codes_sum_second_line_end">\&#034;&#041;.</string>
+    <string name="sample_codes_sum_third_line">sum&#040;Singer.class, \&#034;age\&#034;,\nInteger.TYPE&#041;&#059;</string>
+    <string name="taylor_swift">Taylor Swift</string>
+    <string name="justin_bieber">Justin Bieber</string>
+    <string name="one">1</string>
+    <string name="twenty_five">25</string>
+    <string name="twenty_three">23</string>
+    <string name="twenty">20</string>
+    <string name="boolean_false">false</string>
+    <string name="boolean_true">true</string>
+    <string name="error_param_is_not_valid">Param is not valid.</string>
+    <string name="number_of_rows_affected">%1$s rows affected.</string>
+
+
+    <!-- sample screen -->
+    <string name="sample_launched_x_times" tools:ignore="PluralsCandidate">%1$d times launched</string>
+    <string name="sample_import_sharedpref_in_tray">import SharedPref in tray</string>
+    <string name="sample_write_shared_pref">write SharedPreferences</string>
+    <string name="sample_reset">reset</string>
+    <string name="launch_counter">Launch Counter</string>
+    <string name="launch_counter_decription">restart the app to increase the counter. See? It\'s persistent</string>
+    <string name="sharedprefs_import">SharedPreference import</string>
+    <string name="sharedprefs_import_description">generate data in the SharedPreferences and import them to the tray preference</string>
+    <string name="multiprocess_test_title">Multi process test</string>
+    <string name="multiprocess_test_description">increases a counter on the main process. Reading it in another process. See the difference between SharedPreferences and Tray\n<b>See logcat for output!</b></string>
+    <string name="button_increase_multiprocess_counter">read in other process</string>
+    <string name="button_increase_multiprocess_counter_other">listen to changes from other process</string>
+    <string name="read_multiprocess_explaination">Click this button fast and you\'ll see the shared preferences having trouble staying in sync. No problem for tray</string>
+    <string name="write_multiprocess_explaination">Only tray is possible to listen to changes made in a different process. The SharedPreferences receive no callback</string>
+
+    <string name="foo">foo</string>
+    <string name="marquee_text">心中有阳光，脚底有力量。</string>
+    <string name="marquee_texts">心中有阳光，脚底有力量。心中有阳光，脚底有力量。心中有阳光，脚底有力量。心中有阳光，脚底有力量。</string>
+    <string name="perf_test">Perf test</string>
+
 </resources>

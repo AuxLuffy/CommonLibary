@@ -206,5 +206,34 @@
             android:textColor="#CCCCCC"
 
             />
+
+        <TextView
+            android:id="@+id/tv_threed"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#F0E68C"
+            android:gravity="center"
+            android:text="放入view能3d旋转"
+            android:textColor="#CCCCCC" />
+
+        <TextView
+            android:id="@+id/tvStikyscrollview"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#e28914"
+            android:gravity="center"
+            android:text="利用RecyclerView实现顶部悬浮效果"
+            android:textColor="#CCCCCC" />
+
+        <TextView
+            android:id="@+id/bubbleview"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#CC9CCC"
+            android:gravity="center"
+            android:text="仿小米开机动画"
+            android:textColor="#CCCCCC" />
+
+
     </LinearLayout>
 </ScrollView>

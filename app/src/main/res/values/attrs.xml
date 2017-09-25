@@ -5,134 +5,134 @@
     <attr name="btn_bg" format="reference|color" />
     <attr name="text_color" format="reference|color" />
 
-    <attr name="emptyText" format="reference|string"/>
-    <attr name="emptyImgId" format="reference"/>
-    <attr name="emptyImageVisible" format="boolean"/>
+    <attr name="emptyText" format="reference|string" />
+    <attr name="emptyImgId" format="reference" />
+    <attr name="emptyImageVisible" format="boolean" />
 
-    <attr name="errorText" format="reference|string"/>
-    <attr name="errorImgId" format="reference"/>
-    <attr name="errorImageVisible" format="boolean"/>
+    <attr name="errorText" format="reference|string" />
+    <attr name="errorImgId" format="reference" />
+    <attr name="errorImageVisible" format="boolean" />
 
-    <attr name="noNetWorkText" format="reference|string"/>
-    <attr name="noNetWorkImgId" format="reference"/>
-    <attr name="noNetWorkImageVisible" format="boolean"/>
+    <attr name="noNetWorkText" format="reference|string" />
+    <attr name="noNetWorkImgId" format="reference" />
+    <attr name="noNetWorkImageVisible" format="boolean" />
 
-    <attr name="allTipTextColor" format="reference|color"/>
-    <attr name="allTipTextSize" format="integer"/>
-    <attr name="allPageBackgroundColor" format="reference|color"/>
+    <attr name="allTipTextColor" format="reference|color" />
+    <attr name="allTipTextSize" format="integer" />
+    <attr name="allPageBackgroundColor" format="reference|color" />
 
-    <attr name="reloadBtnText" format="reference|string"/>
-    <attr name="reloadBtnTextSize" format="integer"/>
-    <attr name="reloadBtnTextColor" format="reference|color"/>
-    <attr name="reloadBtnBackgroundResource" format="reference"/>
-    <attr name="reloadBtnVisible" format="boolean"/>
+    <attr name="reloadBtnText" format="reference|string" />
+    <attr name="reloadBtnTextSize" format="integer" />
+    <attr name="reloadBtnTextColor" format="reference|color" />
+    <attr name="reloadBtnBackgroundResource" format="reference" />
+    <attr name="reloadBtnVisible" format="boolean" />
     <attr name="reloadClickArea">
-        <enum name="full" value="20"/>
-        <enum name="button" value="21"/>
+        <enum name="full" value="20" />
+        <enum name="button" value="21" />
     </attr>
 
     <declare-styleable name="LoadDataLayout">
-        <attr name="loadingText" format="reference|string"/>
-        <attr name="loadingTextSize" format="integer"/>
-        <attr name="loadingTextColor" format="reference|color"/>
-        <attr name="loadingViewLayoutId" format="reference"/>
+        <attr name="loadingText" format="reference|string" />
+        <attr name="loadingTextSize" format="integer" />
+        <attr name="loadingTextColor" format="reference|color" />
+        <attr name="loadingViewLayoutId" format="reference" />
 
-        <attr name="emptyText"/>
-        <attr name="emptyImgId"/>
-        <attr name="emptyImageVisible"/>
+        <attr name="emptyText" />
+        <attr name="emptyImgId" />
+        <attr name="emptyImageVisible" />
 
-        <attr name="errorText"/>
-        <attr name="errorImgId"/>
-        <attr name="errorImageVisible"/>
+        <attr name="errorText" />
+        <attr name="errorImgId" />
+        <attr name="errorImageVisible" />
 
-        <attr name="noNetWorkText"/>
-        <attr name="noNetWorkImgId"/>
-        <attr name="noNetWorkImageVisible"/>
+        <attr name="noNetWorkText" />
+        <attr name="noNetWorkImgId" />
+        <attr name="noNetWorkImageVisible" />
 
-        <attr name="allTipTextColor"/>
-        <attr name="allTipTextSize"/>
-        <attr name="allPageBackgroundColor"/>
+        <attr name="allTipTextColor" />
+        <attr name="allTipTextSize" />
+        <attr name="allPageBackgroundColor" />
 
-        <attr name="reloadBtnText"/>
-        <attr name="reloadBtnTextSize"/>
-        <attr name="reloadBtnTextColor"/>
-        <attr name="reloadBtnBackgroundResource"/>
-        <attr name="reloadBtnVisible"/>
-        <attr name="reloadClickArea"/>
+        <attr name="reloadBtnText" />
+        <attr name="reloadBtnTextSize" />
+        <attr name="reloadBtnTextColor" />
+        <attr name="reloadBtnBackgroundResource" />
+        <attr name="reloadBtnVisible" />
+        <attr name="reloadClickArea" />
 
     </declare-styleable>
 
     <declare-styleable name="SwipeLoadDataLayout">
-        <attr name="emptyText"/>
-        <attr name="emptyImgId"/>
-        <attr name="emptyImageVisible"/>
+        <attr name="emptyText" />
+        <attr name="emptyImgId" />
+        <attr name="emptyImageVisible" />
 
-        <attr name="errorText"/>
-        <attr name="errorImgId"/>
-        <attr name="errorImageVisible"/>
+        <attr name="errorText" />
+        <attr name="errorImgId" />
+        <attr name="errorImageVisible" />
 
-        <attr name="noNetWorkText"/>
-        <attr name="noNetWorkImgId"/>
-        <attr name="noNetWorkImageVisible"/>
+        <attr name="noNetWorkText" />
+        <attr name="noNetWorkImgId" />
+        <attr name="noNetWorkImageVisible" />
 
-        <attr name="allTipTextColor"/>
-        <attr name="allTipTextSize"/>
-        <attr name="allPageBackgroundColor"/>
+        <attr name="allTipTextColor" />
+        <attr name="allTipTextSize" />
+        <attr name="allPageBackgroundColor" />
 
-        <attr name="reloadBtnText"/>
-        <attr name="reloadBtnTextSize"/>
-        <attr name="reloadBtnTextColor"/>
-        <attr name="reloadBtnBackgroundResource"/>
-        <attr name="reloadBtnVisible"/>
-        <attr name="reloadClickArea"/>
+        <attr name="reloadBtnText" />
+        <attr name="reloadBtnTextSize" />
+        <attr name="reloadBtnTextColor" />
+        <attr name="reloadBtnBackgroundResource" />
+        <attr name="reloadBtnVisible" />
+        <attr name="reloadClickArea" />
     </declare-styleable>
     <declare-styleable name="RxTitle">
-        <attr name="title" format="string"/>
-        <attr name="titleColor" format="color"/>
-        <attr name="titleSize" format="dimension"/>
-        <attr name="titleVisibility" format="boolean"/>
+        <attr name="title" format="string" />
+        <attr name="titleColor" format="color" />
+        <attr name="titleSize" format="dimension" />
+        <attr name="titleVisibility" format="boolean" />
 
-        <attr name="leftText" format="string"/>
-        <attr name="leftTextColor" format="color"/>
-        <attr name="leftTextSize" format="dimension"/>
-        <attr name="leftTextVisibility" format="boolean"/>
+        <attr name="leftText" format="string" />
+        <attr name="leftTextColor" format="color" />
+        <attr name="leftTextSize" format="dimension" />
+        <attr name="leftTextVisibility" format="boolean" />
 
-        <attr name="rightText" format="string"/>
-        <attr name="rightTextColor" format="color"/>
-        <attr name="rightTextSize" format="dimension"/>
-        <attr name="rightTextVisibility" format="boolean"/>
+        <attr name="rightText" format="string" />
+        <attr name="rightTextColor" format="color" />
+        <attr name="rightTextSize" format="dimension" />
+        <attr name="rightTextVisibility" format="boolean" />
 
-        <attr name="leftIcon" format="reference"/>
-        <attr name="leftIconVisibility" format="boolean"/>
+        <attr name="leftIcon" format="reference" />
+        <attr name="leftIconVisibility" format="boolean" />
 
-        <attr name="rightIcon" format="reference"/>
-        <attr name="rightIconVisibility" format="boolean"/>
+        <attr name="rightIcon" format="reference" />
+        <attr name="rightIconVisibility" format="boolean" />
     </declare-styleable>
     <declare-styleable name="ShoppingView">
-        <attr name="sv_bg_color" format="color"/>
-        <attr name="sv_text" format="string"/>
-        <attr name="sv_text_size" format="dimension"/>
-        <attr name="sv_duration" format="integer"/>
+        <attr name="sv_bg_color" format="color" />
+        <attr name="sv_text" format="string" />
+        <attr name="sv_text_size" format="dimension" />
+        <attr name="sv_duration" format="integer" />
     </declare-styleable>
     <declare-styleable name="SwitchButton">
-        <attr name="sb_shadow_radius" format="reference|dimension"/>
-        <attr name="sb_shadow_offset" format="reference|dimension"/>
-        <attr name="sb_shadow_color" format="reference|color"/>
-        <attr name="sb_uncheck_color" format="reference|color"/>
-        <attr name="sb_checked_color" format="reference|color"/>
-        <attr name="sb_border_width" format="reference|dimension"/>
-        <attr name="sb_checkline_color" format="reference|color"/>
-        <attr name="sb_checkline_width" format="reference|dimension"/>
-        <attr name="sb_uncheckcircle_color" format="reference|color"/>
-        <attr name="sb_uncheckcircle_width" format="reference|dimension"/>
-        <attr name="sb_uncheckcircle_radius" format="reference|dimension"/>
-        <attr name="sb_checked" format="reference|boolean"/>
-        <attr name="sb_shadow_effect" format="reference|boolean"/>
-        <attr name="sb_effect_duration" format="reference|integer"/>
-        <attr name="sb_button_color" format="reference|color"/>
-        <attr name="sb_show_indicator" format="reference|boolean"/>
-        <attr name="sb_background" format="reference|color"/>
-        <attr name="sb_enable_effect" format="reference|boolean"/>
+        <attr name="sb_shadow_radius" format="reference|dimension" />
+        <attr name="sb_shadow_offset" format="reference|dimension" />
+        <attr name="sb_shadow_color" format="reference|color" />
+        <attr name="sb_uncheck_color" format="reference|color" />
+        <attr name="sb_checked_color" format="reference|color" />
+        <attr name="sb_border_width" format="reference|dimension" />
+        <attr name="sb_checkline_color" format="reference|color" />
+        <attr name="sb_checkline_width" format="reference|dimension" />
+        <attr name="sb_uncheckcircle_color" format="reference|color" />
+        <attr name="sb_uncheckcircle_width" format="reference|dimension" />
+        <attr name="sb_uncheckcircle_radius" format="reference|dimension" />
+        <attr name="sb_checked" format="reference|boolean" />
+        <attr name="sb_shadow_effect" format="reference|boolean" />
+        <attr name="sb_effect_duration" format="reference|integer" />
+        <attr name="sb_button_color" format="reference|color" />
+        <attr name="sb_show_indicator" format="reference|boolean" />
+        <attr name="sb_background" format="reference|color" />
+        <attr name="sb_enable_effect" format="reference|boolean" />
     </declare-styleable>
 
     <declare-styleable name="UserGuideView">
@@ -152,13 +152,13 @@
     </declare-styleable>
 
     <declare-styleable name="TagViewGroup">
-        <attr name="inner_radius" format="dimension"/>
-        <attr name="radiu" format="dimension"/>
-        <attr name="line_width" format="dimension"/>
-        <attr name="v_distance" format="dimension"/>
-        <attr name="tilt_distance" format="dimension"/>
-        <attr name="ripple_alpha" format="integer"/>
-        <attr name="ripple_maxRadius" format="dimension"/>
+        <attr name="inner_radius" format="dimension" />
+        <attr name="radiu" format="dimension" />
+        <attr name="line_width" format="dimension" />
+        <attr name="v_distance" format="dimension" />
+        <attr name="tilt_distance" format="dimension" />
+        <attr name="ripple_alpha" format="integer" />
+        <attr name="ripple_maxRadius" format="dimension" />
     </declare-styleable>
     <declare-styleable name="CardView">
         <attr name="cirlceColor" format="color" />
@@ -207,8 +207,8 @@
     </declare-styleable>
 
     <declare-styleable name="DotsLoaderView">
-        <attr name="dlv_item_drawable" format="integer"/>
-        <attr name="dlv_line_color" format="color"/>
+        <attr name="dlv_item_drawable" format="integer" />
+        <attr name="dlv_line_color" format="color" />
     </declare-styleable>
 
     <declare-styleable name="ZWCalendarView">
@@ -234,7 +234,6 @@
     </declare-styleable>
 
 
-
     <attr name="weekHeight" format="dimension" />
     <attr name="weekTextSize" format="dimension" />
     <attr name="weekBackgroundColor" format="color" />
@@ -247,6 +246,12 @@
     <attr name="todayTextColor" format="color" />
     <attr name="signTextColor" format="color" />
     <attr name="limitFutureMonth" format="boolean" />
+
+    <attr name="qmui_config_color_gray_1" format="color" />
+    <attr name="qmui_config_color_gray_2" format="color" />
+    <attr name="qmui_config_color_gray_3" format="color" />
+
+    <attr name="qmui_config_color_separator_darken" format="color" />
 
     <declare-styleable name="ZWSignCalendarView">
         <attr name="weekHeight" />
@@ -293,65 +298,120 @@
     </declare-styleable>
 
     <declare-styleable name="FloatingActionButton">
-        <attr name="fab_colorPressed" format="color"/>
-        <attr name="fab_colorDisabled" format="color"/>
-        <attr name="fab_colorNormal" format="color"/>
-        <attr name="fab_icon" format="reference"/>
+        <attr name="fab_colorPressed" format="color" />
+        <attr name="fab_colorDisabled" format="color" />
+        <attr name="fab_colorNormal" format="color" />
+        <attr name="fab_icon" format="reference" />
         <attr name="fab_size" format="enum">
-            <enum name="normal" value="0"/>
-            <enum name="mini" value="1"/>
+            <enum name="normal" value="0" />
+            <enum name="mini" value="1" />
         </attr>
-        <attr name="fab_title" format="string"/>
-        <attr name="fab_stroke_visible" format="boolean"/>
+        <attr name="fab_title" format="string" />
+        <attr name="fab_stroke_visible" format="boolean" />
     </declare-styleable>
     <declare-styleable name="AddFloatingActionButton">
-        <attr name="fab_plusIconColor" format="color"/>
+        <attr name="fab_plusIconColor" format="color" />
     </declare-styleable>
     <declare-styleable name="FloatingActionsMenu">
-        <attr name="fab_addButtonColorPressed" format="color"/>
-        <attr name="fab_addButtonColorNormal" format="color"/>
+        <attr name="fab_addButtonColorPressed" format="color" />
+        <attr name="fab_addButtonColorNormal" format="color" />
         <attr name="fab_addButtonSize" format="enum">
-            <enum name="normal" value="0"/>
-            <enum name="mini" value="1"/>
+            <enum name="normal" value="0" />
+            <enum name="mini" value="1" />
         </attr>
-        <attr name="fab_addButtonPlusIconColor" format="color"/>
-        <attr name="fab_addButtonStrokeVisible" format="boolean"/>
-        <attr name="fab_labelStyle" format="reference"/>
+        <attr name="fab_addButtonPlusIconColor" format="color" />
+        <attr name="fab_addButtonStrokeVisible" format="boolean" />
+        <attr name="fab_labelStyle" format="reference" />
         <attr name="fab_labelsPosition" format="enum">
-            <enum name="left" value="0"/>
-            <enum name="right" value="1"/>
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
         </attr>
         <attr name="fab_expandDirection" format="enum">
-            <enum name="up" value="0"/>
-            <enum name="down" value="1"/>
-            <enum name="left" value="2"/>
-            <enum name="right" value="3"/>
+            <enum name="up" value="0" />
+            <enum name="down" value="1" />
+            <enum name="left" value="2" />
+            <enum name="right" value="3" />
         </attr>
     </declare-styleable>
 
     <declare-styleable name="Pinview">
-        <attr name="pinBackground" format="reference"/>
-        <attr name="pinLength" format="integer"/>
-        <attr name="pinWidth" format="dimension"/>
-        <attr name="pinHeight" format="dimension"/>
-        <attr name="splitWidth" format="dimension"/>
-        <attr name="cursorVisible" format="boolean"/>
-        <attr name="password" format="boolean"/>
-        <attr name="forceKeyboard" format ="boolean"/>
-        <attr name="hint" format="string"/>
-        <attr name="inputType"/>
+        <attr name="pinBackground" format="reference" />
+        <attr name="pinLength" format="integer" />
+        <attr name="pinWidth" format="dimension" />
+        <attr name="pinHeight" format="dimension" />
+        <attr name="splitWidth" format="dimension" />
+        <attr name="cursorVisible" format="boolean" />
+        <attr name="password" format="boolean" />
+        <attr name="forceKeyboard" format="boolean" />
+        <attr name="hint" format="string" />
+        <attr name="inputType" />
     </declare-styleable>
     <attr name="inputType" format="enum">
-        <enum name="text" value="0"/>
-        <enum name="number" value="1"/>
+        <enum name="text" value="0" />
+        <enum name="number" value="1" />
     </attr>
 
     <declare-styleable name="LinkTextView">
-        <attr name="qmui_linkBackgroundColor" format="color"/>
-        <attr name="qmui_linkTextColor" format="color"/>
+        <attr name="qmui_linkBackgroundColor" format="color" />
+        <attr name="qmui_linkTextColor" format="color" />
     </declare-styleable>
 
     <declare-styleable name="CounterView">
         <attr name="duration" format="integer" />
     </declare-styleable>
+
+    <declare-styleable name="MarqueeViewStyle">
+        <attr name="mvInterval" format="integer|reference" />
+        <attr name="mvAnimDuration" format="integer|reference" />
+        <attr name="mvTextSize" format="dimension|reference" />
+        <attr name="mvTextColor" format="color|reference" />
+        <attr name="mvSingleLine" format="boolean" />
+        <attr name="mvGravity">
+            <enum name="left" value="0" />
+            <enum name="center" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+        <attr name="mvDirection">
+            <enum name="bottom_to_top" value="0" />
+            <enum name="top_to_bottom" value="1" />
+            <enum name="right_to_left" value="2" />
+            <enum name="left_to_right" value="3" />
+        </attr>
+    </declare-styleable>
+
+
+
+    <declare-styleable name="PayPsdInputView">
+
+        <attr name="maxCount" format="integer" />
+        <attr name="circleColor" format="color" />
+        <attr name="bottomLineColor" format="color" />
+        <attr name="rad" format="dimension" />
+        <attr name="divideLineWidth" format="dimension" />
+        <attr name="divideLineColor" format="color" />
+        <attr name="rectAngle" format="dimension" />
+        <attr name="focusedColor" format="color"/>
+        <attr name="psdType" format="enum">
+            <enum name="weChat" value="0" />
+            <enum name="bottomLine" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CircleProgressBarView">
+
+        <attr name="circleBgStrokeWidth" format="dimension" />
+        <attr name="progressStrokeWidth" format="dimension" />
+
+        <attr name="circleBgColor" format="color" />
+        <attr name="progressColor" format="color" />
+
+        <attr name="circleAnimationDuration" format="integer" />
+
+        <attr name="isDrawCenterProgressText" format="boolean" />
+
+        <attr name="centerProgressTextColor" format="color"/>
+        <attr name="centerProgressTextSize" format="dimension"/>
+
+    </declare-styleable>
+
 </resources>

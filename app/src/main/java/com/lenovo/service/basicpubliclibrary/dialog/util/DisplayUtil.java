@@ -2,6 +2,7 @@ package com.lenovo.service.basicpubliclibrary.dialog.util;
 
 import android.content.Context;
 import android.graphics.Point;
+import android.util.DisplayMetrics;
 import android.view.WindowManager;
 
 
@@ -33,5 +34,16 @@ public class DisplayUtil {
         WindowManager wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
         wm.getDefaultDisplay().getSize(point);
         return point;
+    }
+
+    /**
+     * DisplayMetrics
+     * @return
+     */
+    public static DisplayMetrics getDisplayMetrics(Context context){
+        DisplayMetrics displayMetrics = new DisplayMetrics();
+        ((WindowManager) context.getApplicationContext().getSystemService(Context.WINDOW_SERVICE))
+                .getDefaultDisplay().getMetrics(displayMetrics);
+        return displayMetrics;
     }
 }

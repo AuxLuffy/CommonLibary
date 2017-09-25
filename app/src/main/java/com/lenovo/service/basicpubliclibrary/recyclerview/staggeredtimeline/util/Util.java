@@ -5,15 +5,6 @@ import android.content.Context;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-/**
- * *          _       _
- * *   __   _(_)_   _(_) __ _ _ __
- * *   \ \ / / \ \ / / |/ _` | '_ \
- * *    \ V /| |\ V /| | (_| | | | |
- * *     \_/ |_| \_/ |_|\__,_|_| |_|
- * <p>
- * Created by vivian on 2017/6/12.
- */
 
 public class Util {
     /**

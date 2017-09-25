@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.lenovo.retrofithelper2.RetrofitHelperActivity;
+import com.lenovo.service.basicpubliclibrary.jniDemo.JNITestActivity;
 import com.lenovo.service.basicpubliclibrary.jobservice.JobServiceActivity;
 import com.lenovo.service.basicpubliclibrary.keyboardpanelswitch.KeyboardPanelSwitchActivity;
 import com.lenovo.service.basicpubliclibrary.leakcanary.LeakCanaryActivity;
@@ -42,6 +43,7 @@ public class OptimizeActivity extends AppCompatActivity implements View.OnClickL
         mTv_okhttpEncapsulation.setOnClickListener(this);
         mTvRetrofitHelper.setOnClickListener(this);
         mTvKeyboard.setOnClickListener(this);
+        findViewById(R.id.tv_jnidemo).setOnClickListener(this);
 
     }
 
@@ -69,6 +71,10 @@ public class OptimizeActivity extends AppCompatActivity implements View.OnClickL
                 break;
             case R.id.tv_keyboard:
                 intent=new Intent(this, KeyboardPanelSwitchActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.tv_jnidemo:
+                intent = new Intent(this, JNITestActivity.class);
                 startActivity(intent);
                 break;
         }

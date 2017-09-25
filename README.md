@@ -39,6 +39,11 @@
 - **2017/09/18~2017/09/24**         
     1. EventBus 3   
     2. 使用retrofit2上传图片  
+    3. Cupboard     
+    4. Litepal     
+    5. Tray     
+    6. Preferences     
+    
 
 # 何云超
 1. 动画-不一样的图片轮播
@@ -50,6 +55,10 @@
 7. 控件-dialogfragment的封装
 8. 控件-签到日历
 9. 购物加减控件的封装
+10.控件-数字变化效果
+11.控件-垂直公告
+12.动画-轻量级弹幕
+13.动画-放入view进行3d翻转
 
 # 赵彤
 1. 框架-数据库greenDao
@@ -60,10 +69,14 @@
 6. 一款快速易用控件圆形头像CircleImageView
 7. android数据库框架Realm的基本使用方法
 8. 动态显示的提示框Alerter
-
+9. 仿微信雷达搜索波纹效果PulseView
+10.图片双击缩放控件PhotoView
+11.文本滚动切换效果视图TickerView
+12.图片模糊化处理框架BLURRY
 # 种洋洋
 1. 控件-实现图片花式翻转
 2. 控件-添加自定义土司
+3. 控件-添加弹出视图框
 3. 控件-添加弹出视图框
 4. 控件-页面加载数据样式
 5. 动画-添加彩色对话框
@@ -74,6 +87,8 @@
 10.控件-添加竖直排版的TextView
 11.控件-添加支持各种文字边距,段落边距,自定义部分文字的TextView
 12.控件-添加可识别URL/Mail/Tel的TextView
+13.控件-添加用于修正TextView添加ClickSpan后的点击行为与时间传递的TextView
+
 
 
 # 李巷阳
@@ -87,8 +102,10 @@
 8.  动画-ExpandableListView折叠动画
 9.  控件-新手引导,指引遮盖模板
 10. 框架-okHttp网络框架高级封装
-
-
+11. 框架-retrofit网络框架的高级封装
+12. 控件-时间轴日记功能
+13. 控件-RecyclerView双列表联动与悬停
+14. 动画-利用RecyclerView实现顶部悬浮效果
 
 
 # 汪雅菁
@@ -140,6 +157,10 @@
 7. 综合-权限申请的第三方库
 8. 动画-floatingmenu浮动菜单
 9. 动画-bottombar底部栏
+10. 控件-密码输入控件
+11. 综合-指纹识别工具
+12. 控件-自定义进度条
+13. 动画-仿小米开机动画
 
 
 
@@ -151,9 +172,11 @@
 2. 综合-recyclerview使用封装
 3. 控件-mvp+折线图使用封装
 4. 控件-自定义toolbar
-5. 综合-jni开发初步探究（已更新：实现java与c互调功能）  注：关于jni开发，更新代码后，如果报错，则说明需要配置你的ndk。请在local.properties文件中，添加ndk.dir=E\:\\ndk\\android-ndk-r14b 来标示你的ndk本地路径
+5. 优化-jni开发初步探究（已更新：实现java与c互调功能）  注：关于jni开发，更新代码后，如果报错，则说明需要配置你的ndk。请在local.properties文件中，添加ndk.dir=E\:\\ndk\\android-ndk-r14b 来标示你的ndk本地路径
 6. 综合-网络框架 Okhttp + retrofit2 + http/https + rxjava + mvp（已更新：添加https连接演示）
 7. 综合-网络框架 Okhttp + retrofit2 + http/https + mvp
+8. 优化-崩溃日志上传
+9. 综合-crab崩溃异常ANR记录
 
 
 非原创部分
@@ -161,6 +184,7 @@
 1. 控件-时间选择器
 2. 控件-floatingbutton隐藏菜单
 3. 控件-ExpandableLayout使用
+4. 综合-xml解析 SAX解析 DOM解析 PULL解析
 
 
 # 袁东华
@@ -174,3 +198,7 @@
 7. 瀑布流条目操作:滑动删除条目,长按条目拖动排序
 8. 瀑布流式时光轴效果1
 9. 瀑布流式时光轴效果2
+10. 瀑布流式时光轴效果2
+11. 利用ItemDecoration实现城市分类悬浮栏效果
+12. 利用ItemDecoration实现城市分类悬浮栏效果2
+13. 利用ItemDecoration实现城市分类悬浮栏效果3

@@ -10,6 +10,7 @@ import com.lenovo.service.basicpubliclibrary.ProgressBaranimation.ProgressActivi
 import com.lenovo.service.basicpubliclibrary.bezier.BezierActivity;
 import com.lenovo.service.basicpubliclibrary.bezier.DotsLoaderActivity;
 import com.lenovo.service.basicpubliclibrary.bottombar.BottomBarActivity;
+import com.lenovo.service.basicpubliclibrary.bubbleview.BubbleViewActivity;
 import com.lenovo.service.basicpubliclibrary.colorfultoast.ColorfulToastActivity;
 import com.lenovo.service.basicpubliclibrary.danmu.DanmuActivity;
 import com.lenovo.service.basicpubliclibrary.expandablelvanimated.ExpandableListViewActivity;
@@ -22,8 +23,10 @@ import com.lenovo.service.basicpubliclibrary.loadingart.Loadingart_activity;
 import com.lenovo.service.basicpubliclibrary.loopview.LoopViewActivity;
 import com.lenovo.service.basicpubliclibrary.meizuweather.MeizuWeacherActivity;
 import com.lenovo.service.basicpubliclibrary.roll3dimageview.RollImageActivity;
+import com.lenovo.service.basicpubliclibrary.stikyscrollview.StikyScrollviewActivity;
 import com.lenovo.service.basicpubliclibrary.svg.WowActivity;
 import com.lenovo.service.basicpubliclibrary.takeaway.TakeawayActivity;
+import com.lenovo.service.basicpubliclibrary.threed.ThreedMainActivity;
 import com.lenovo.service.basicpubliclibrary.wowoviewpagerexample.WowoMainActivity;
 
 public class AnimationActivity extends AppCompatActivity {
@@ -43,6 +46,7 @@ public class AnimationActivity extends AppCompatActivity {
     private TextView mTvExamplelv;
     private TextView tv_floatingmenu;
     private TextView mTvWowoviewpager;
+    private TextView mTvStikyscrollview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,9 +67,12 @@ public class AnimationActivity extends AppCompatActivity {
         mTvColorfulToast = (TextView) findViewById(R.id.tvColorfulToast);
         tv_dots_loader = (TextView) findViewById(R.id.tv_dots_loader);
         tv_floatingmenu = (TextView)findViewById(R.id.tv_floatingmenu);
+        mTvStikyscrollview = (TextView) findViewById(R.id.tvStikyscrollview);
         findViewById(R.id.tv_floatbtn).setOnClickListener(new TextViewClickListener());
         findViewById(R.id.tv_bottom_bar).setOnClickListener(new TextViewClickListener());
         findViewById(R.id.tv_danmu).setOnClickListener(new TextViewClickListener());
+        findViewById(R.id.tv_threed).setOnClickListener(new TextViewClickListener());
+        findViewById(R.id.bubbleview).setOnClickListener(new TextViewClickListener());
 
         mTvExamplelv = (TextView)findViewById(R.id.tv_examplelv);
         mTvWowoviewpager = (TextView)findViewById(R.id.wowo_viewpager);
@@ -85,6 +92,7 @@ public class AnimationActivity extends AppCompatActivity {
         mTvExamplelv.setOnClickListener(new TextViewClickListener());
         tv_floatingmenu.setOnClickListener(new TextViewClickListener());
         mTvWowoviewpager.setOnClickListener(new TextViewClickListener());
+        mTvStikyscrollview.setOnClickListener(new TextViewClickListener());
     }
 
     public class TextViewClickListener implements View.OnClickListener {
@@ -168,6 +176,16 @@ public class AnimationActivity extends AppCompatActivity {
                 case R.id.tv_danmu:
                     startActivity(new Intent(AnimationActivity.this, DanmuActivity.class));
                     break;
+                case R.id.tv_threed:
+                    startActivity(new Intent(AnimationActivity.this, ThreedMainActivity.class));
+                    break;
+                case R.id.tvStikyscrollview:
+                    startActivity(new Intent(AnimationActivity.this, StikyScrollviewActivity.class));
+                    break;
+                case R.id.bubbleview:
+                    startActivity(new Intent(AnimationActivity.this, BubbleViewActivity.class));
+                    break;
+
                 default:
                     break;
             }
