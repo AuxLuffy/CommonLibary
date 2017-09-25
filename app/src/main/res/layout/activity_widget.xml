@@ -549,5 +549,22 @@
             android:gravity="center"
             android:text="图片模糊化效果"
             android:textColor="#CCCCCC" />
+
+        <TextView
+            android:id="@+id/tv_psw_input"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#c6b631"
+            android:gravity="center"
+            android:text="密码输入控件"
+            android:textColor="#CCCCCC" />
+        <TextView
+            android:id="@+id/tv_progress"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#6884df"
+            android:gravity="center"
+            android:text="自定义进度条"
+            android:textColor="#CCCCCC" />
     </LinearLayout>
 </ScrollView>

@@ -16,6 +16,7 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
 
     <!-- end 二维码扫描 相机，闪光灯权限 -->
     <uses-feature android:name="android.hardware.camera" />
@@ -550,6 +551,11 @@
         <activity android:name=".blurry.BlurryTestActivity" />
         <activity android:name=".tickerview.TickerActivity"></activity>
         <activity android:name=".tickerview.PerfActivity"></activity>
+
+        <activity android:name=".bubbleview.BubbleViewActivity" android:theme="@style/AppThemeNoTitle" />
+        <activity android:name=".psdinput.PayPsdViewActivity" android:theme="@style/AppThemeNoTitle" />
+        <activity android:name=".progressbar.ProgressBarActivity" android:theme="@style/AppThemeNoTitle" />
+        <activity android:name=".fingerutils.FingerprintActivity" android:theme="@style/AppThemeNoTitle" />
     </application>
 
 </manifest>

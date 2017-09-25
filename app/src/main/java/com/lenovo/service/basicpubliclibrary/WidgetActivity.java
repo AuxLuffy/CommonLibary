@@ -36,6 +36,8 @@ import com.lenovo.service.basicpubliclibrary.marqueue.MarqueueActivity;
 import com.lenovo.service.basicpubliclibrary.panoramimageview.PanoramImageActivity;
 import com.lenovo.service.basicpubliclibrary.pickerview.PickerActivity;
 import com.lenovo.service.basicpubliclibrary.popup.PopUpActivity;
+import com.lenovo.service.basicpubliclibrary.progressbar.ProgressBarActivity;
+import com.lenovo.service.basicpubliclibrary.psdinput.PayPsdViewActivity;
 import com.lenovo.service.basicpubliclibrary.pulseview.PhotoViewActivity;
 import com.lenovo.service.basicpubliclibrary.pulseview.PulseViewActivity;
 import com.lenovo.service.basicpubliclibrary.questionnaire.QuestionActivity;
@@ -210,6 +212,8 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         findViewById(R.id.tv_toolbar).setOnClickListener(this);
         findViewById(R.id.tv_timepicker).setOnClickListener(this);
         findViewById(R.id.tv_expandable).setOnClickListener(this);
+        findViewById(R.id.tv_psw_input).setOnClickListener(this);
+        findViewById(R.id.tv_progress).setOnClickListener(this);
         mUserGuide.setOnClickListener(this);
         tv_gesture_lock.setOnClickListener(this);
         tagview.setOnClickListener(this);
@@ -446,6 +450,12 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.tvTickerView:
                 startActivity(new Intent(WidgetActivity.this, TickerActivity.class));
+                break;
+            case R.id.tv_psw_input:
+                startActivity(new Intent(WidgetActivity.this, PayPsdViewActivity.class));
+                break;
+            case R.id.tv_progress:
+                startActivity(new Intent(WidgetActivity.this, ProgressBarActivity.class));
                 break;
 
 

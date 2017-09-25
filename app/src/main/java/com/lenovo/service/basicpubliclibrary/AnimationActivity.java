@@ -10,6 +10,7 @@ import com.lenovo.service.basicpubliclibrary.ProgressBaranimation.ProgressActivi
 import com.lenovo.service.basicpubliclibrary.bezier.BezierActivity;
 import com.lenovo.service.basicpubliclibrary.bezier.DotsLoaderActivity;
 import com.lenovo.service.basicpubliclibrary.bottombar.BottomBarActivity;
+import com.lenovo.service.basicpubliclibrary.bubbleview.BubbleViewActivity;
 import com.lenovo.service.basicpubliclibrary.colorfultoast.ColorfulToastActivity;
 import com.lenovo.service.basicpubliclibrary.danmu.DanmuActivity;
 import com.lenovo.service.basicpubliclibrary.expandablelvanimated.ExpandableListViewActivity;
@@ -71,6 +72,7 @@ public class AnimationActivity extends AppCompatActivity {
         findViewById(R.id.tv_bottom_bar).setOnClickListener(new TextViewClickListener());
         findViewById(R.id.tv_danmu).setOnClickListener(new TextViewClickListener());
         findViewById(R.id.tv_threed).setOnClickListener(new TextViewClickListener());
+        findViewById(R.id.bubbleview).setOnClickListener(new TextViewClickListener());
 
         mTvExamplelv = (TextView)findViewById(R.id.tv_examplelv);
         mTvWowoviewpager = (TextView)findViewById(R.id.wowo_viewpager);
@@ -180,6 +182,10 @@ public class AnimationActivity extends AppCompatActivity {
                 case R.id.tvStikyscrollview:
                     startActivity(new Intent(AnimationActivity.this, StikyScrollviewActivity.class));
                     break;
+                case R.id.bubbleview:
+                    startActivity(new Intent(AnimationActivity.this, BubbleViewActivity.class));
+                    break;
+
                 default:
                     break;
             }

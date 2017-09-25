@@ -12,6 +12,7 @@ import com.lenovo.service.basicpubliclibrary.cameraDemo.RecordMainAcitivity;
 import com.lenovo.service.basicpubliclibrary.camerakit.CamerakitActivity;
 import com.lenovo.service.basicpubliclibrary.databinding.DataBindingActivity;
 import com.lenovo.service.basicpubliclibrary.eventbus.EventBusActivity;
+import com.lenovo.service.basicpubliclibrary.fingerutils.FingerprintActivity;
 import com.lenovo.service.basicpubliclibrary.jniDemo.JNITestActivity;
 import com.lenovo.service.basicpubliclibrary.jsBridge.activity.JSBridgeActivity;
 import com.lenovo.service.basicpubliclibrary.jsBridge.common.LocalConstant;
@@ -33,7 +34,7 @@ public class CompositeActivity extends AppCompatActivity implements View.OnClick
     private int[] ids = new int[]{R.id.helloChart, R.id.jsBridge, R.id.SADL, R.id.ilog_demo,
             R.id.tv_jnidemo, R.id.scan_code, R.id.tv_getui, R.id.tv_permission,R.id.tvEventBus,
             R.id.tv_request, R.id.tv_view1, R.id.tv_view2, R.id.tv_view3, R.id.tv_view4,
-            R.id.tv_view5, R.id.tv_view6, R.id.tv_view7
+            R.id.tv_view5, R.id.tv_view6, R.id.tv_view7, R.id.tv_fingerprint
     };
 
     @Override
@@ -132,6 +133,10 @@ public class CompositeActivity extends AppCompatActivity implements View.OnClick
             case R.id.tv_view7:
                 intent.setClass(this, com.lenovo.service.basicpubliclibrary.hencoder.hencoderpracticedraw7.MainActivity.class);
                 break;
+            case R.id.tv_fingerprint:
+                intent.setClass(this, FingerprintActivity.class);
+                break;
+
         }
         startActivity(intent);
     }
