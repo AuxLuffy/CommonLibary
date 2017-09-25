@@ -187,7 +187,9 @@
 1. 控件-时间选择器
 2. 控件-floatingbutton隐藏菜单
 3. 控件-ExpandableLayout使用
-4. 综合-xml解析 SAX解析 DOM解析 PULL解析
+4. 综合-SAX解析 
+5. 综合-DOM解析
+6. 综合-PULL解析
 
 
 # 袁东华

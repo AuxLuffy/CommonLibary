@@ -1,6 +1,7 @@
 package com.lenovo.service.basicpubliclibrary.xmlparse;
 
 import android.util.Log;
+import android.widget.TextView;
 
 import com.lenovo.service.basicpubliclibrary.R;
 import com.lenovo.service.basicpubliclibrary.request.ui.BaseActivity;
@@ -8,9 +9,13 @@ import com.lenovo.service.basicpubliclibrary.request.ui.BaseActivity;
 import java.io.InputStream;
 import java.util.List;
 
+import butterknife.BindView;
 import butterknife.OnClick;
 
 public class XmlParseActivity extends BaseActivity {
+
+    @BindView(R.id.text)
+    TextView text;
 
     @Override
     protected int bindLayout() {
@@ -53,16 +58,18 @@ public class XmlParseActivity extends BaseActivity {
 
     @OnClick(R.id.parse)
     public void onClick() {
-        try {  
+        try {
             InputStream is = getAssets().open("books.xml");
 //            SaxBookParser parser = new SaxBookParser();
-            DomParseService parser = new DomParseService();
+//            DomParseService parser = new DomParseService();
+            PullParser parser = new PullParser();
             List<Book> books = parser.parse(is);
-            for (Book book : books) {  
+            for (Book book : books) {
+                text.setText(text.getText().toString()+book.toString());
                 Log.i("book", book.toString());
-            }  
-        } catch (Exception e) {  
+            }
+        } catch (Exception e) {
             Log.e("book", e.getMessage());
-        }  
+        }
     }
 }

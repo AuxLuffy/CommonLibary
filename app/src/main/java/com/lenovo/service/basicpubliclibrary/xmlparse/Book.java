@@ -35,6 +35,6 @@ public class Book {
 
     @Override
     public String toString() {
-        return super.toString();
+        return id+" "+name+" "+price;
     }
 }

@@ -4,6 +4,7 @@ import android.app.Application;
 import android.content.Context;
 import android.support.multidex.MultiDex;
 
+import com.baidu.crabsdk.CrabSDK;
 import com.blankj.ALog;
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.lenovo.service.basicpubliclibrary.bgabanner.Engine;
@@ -33,6 +34,7 @@ public class App extends SugarApp {
     private static App sInstance;
     private Engine mEngine;
     private RefWatcher refWatcher;
+    private static final String BAIDU_CRAB = "a3b3ddfe123c3d76";
 
     public static int widthPixels = 720;// 屏幕宽度
     public static int heightPixels = 1280;// 屏幕高度
@@ -49,7 +51,7 @@ public class App extends SugarApp {
                 .build().create(Engine.class);
 
         Fresco.initialize(this);
-
+        CrabSDK.init(this, BAIDU_CRAB);
         LoadDataLayout.getBuilder()
                 .setLoadingText(getString(R.string.custom_loading_text))
                 .setLoadingTextSize(16)
