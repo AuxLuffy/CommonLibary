@@ -560,6 +560,7 @@
         <activity android:name=".psdinput.PayPsdViewActivity" android:theme="@style/AppThemeNoTitle" />
         <activity android:name=".progressbar.ProgressBarActivity" android:theme="@style/AppThemeNoTitle" />
         <activity android:name=".fingerutils.FingerprintActivity" android:theme="@style/AppThemeNoTitle" />
+        <activity android:name=".shinebutton.ShineButtonActivity" />
     </application>
 
 </manifest>
