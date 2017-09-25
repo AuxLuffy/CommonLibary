@@ -42,7 +42,7 @@ public class SuspensionEffectActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSupportActionBar().setTitle("利用ItemDecoration的onDrawOver方法实现悬浮栏效果");
+        getSupportActionBar().setSubtitle("利用ItemDecoration的onDrawOver方法实现悬浮栏效果");
         setContentView(R.layout.activity_recyclerview_item_decoration);
         initView();
         initData();

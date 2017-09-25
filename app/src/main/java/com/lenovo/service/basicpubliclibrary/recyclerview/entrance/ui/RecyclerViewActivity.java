@@ -44,7 +44,7 @@ public class RecyclerViewActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recyclerview);
-        getSupportActionBar().setTitle("RecyclerView相关实现效果");
+        getSupportActionBar().setTitle("利用ItemDecoration实现城市分类悬浮栏效果");
         initView();
         initData();
     }
@@ -64,7 +64,7 @@ public class RecyclerViewActivity extends AppCompatActivity {
         list.add("瀑布流条目操作:拖拽排序,滑动删除");
         list.add("瀑布流式时光轴效果1");
         list.add("瀑布流式时光轴效果2");
-        list.add("悬浮效果");
+        list.add("利用ItemDecoration实现城市分类悬浮栏效果");
         recyclerViewAdapter.setList(list);
     }
 
@@ -124,7 +124,7 @@ public class RecyclerViewActivity extends AppCompatActivity {
                     case 8:
                         startActivity(new Intent(context, DotTimeLineActivity.class));
                         break;
-                    //点击悬浮效果
+                    //点击利用ItemDecoration实现城市分类悬浮栏效果
                     case 9:
                         startActivity(new Intent(context, SuspensionEffectActivity.class));
                         break;
