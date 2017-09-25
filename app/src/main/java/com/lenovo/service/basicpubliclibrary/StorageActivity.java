@@ -15,6 +15,9 @@ import com.lenovo.service.basicpubliclibrary.realm.RealmActivity;
 import com.lenovo.service.basicpubliclibrary.sugar.ScanSDActivity;
 import com.lenovo.service.basicpubliclibrary.sugar.SugarActivity;
 import com.lenovo.service.basicpubliclibrary.tray.TrayActivity;
+import com.lenovo.service.basicpubliclibrary.xmlparse.PullParseActivity;
+import com.lenovo.service.basicpubliclibrary.xmlparse.SaxParseActivity;
+import com.lenovo.service.basicpubliclibrary.xmlparse.XmlParseActivity;
 
 public class StorageActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -60,6 +63,9 @@ public class StorageActivity extends AppCompatActivity implements View.OnClickLi
         tray.setOnClickListener(this);
         preferences.setOnClickListener(this);
         scan_sd_mp3.setOnClickListener(this);
+        findViewById(R.id.tv_xmldomparse).setOnClickListener(this);
+        findViewById(R.id.tv_xmlpullparse).setOnClickListener(this);
+        findViewById(R.id.tv_xmlsaxparse).setOnClickListener(this);
 
     }
 
@@ -105,6 +111,18 @@ public class StorageActivity extends AppCompatActivity implements View.OnClickLi
             case R.id.scan_sd_mp3:
                 Intent scan_mp3 = new Intent(this, ScanSDActivity.class);
                 startActivity(scan_mp3);
+                break;
+            case R.id.tv_xmldomparse:
+                Intent xmlParse = new Intent(this, XmlParseActivity.class);
+                startActivity(xmlParse);
+                break;
+            case R.id.tv_xmlpullparse:
+                Intent xmlpullParse = new Intent(this, PullParseActivity.class);
+                startActivity(xmlpullParse);
+                break;
+            case R.id.tv_xmlsaxparse:
+                Intent xmlsaxParse = new Intent(this, SaxParseActivity.class);
+                startActivity(xmlsaxParse);
                 break;
         }
     }

@@ -16,6 +16,8 @@ public class XmlParseActivity extends BaseActivity {
 
     @BindView(R.id.text)
     TextView text;
+    @BindView(R.id.texttitle)
+    TextView texttitle;
 
     @Override
     protected int bindLayout() {
@@ -24,6 +26,7 @@ public class XmlParseActivity extends BaseActivity {
 
     @Override
     protected void setWidget() {
+        texttitle.setText("DOM解析演示");
 //        Button readBtn = (Button) findViewById(R.id.readBtn);
 //        Button writeBtn = (Button) findViewById(R.id.writeBtn);
 //
@@ -60,9 +63,7 @@ public class XmlParseActivity extends BaseActivity {
     public void onClick() {
         try {
             InputStream is = getAssets().open("books.xml");
-//            SaxBookParser parser = new SaxBookParser();
-//            DomParseService parser = new DomParseService();
-            PullParser parser = new PullParser();
+            DomParseService parser = new DomParseService();
             List<Book> books = parser.parse(is);
             for (Book book : books) {
                 text.setText(text.getText().toString()+book.toString());

@@ -35,10 +35,10 @@ public class CompositeActivity extends AppCompatActivity implements View.OnClick
     private TextView[] textviews;
 
     private int[] ids = new int[]{R.id.helloChart, R.id.jsBridge, R.id.SADL, R.id.ilog_demo,
-            R.id.tv_xmlparse, R.id.scan_code, R.id.tv_getui, R.id.tv_permission,R.id.tvEventBus,
+             R.id.scan_code, R.id.tv_getui, R.id.tv_permission,R.id.tvEventBus,
             R.id.tv_request, R.id.tv_view1, R.id.tv_view2, R.id.tv_view3, R.id.tv_view4,
             R.id.tv_view5, R.id.tv_view6, R.id.tv_view7, R.id.tv_fingerprint
-    };
+    };//R.id.tv_xmlparse,
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -94,11 +94,11 @@ public class CompositeActivity extends AppCompatActivity implements View.OnClick
                 intent.setClass(this, JNITestActivity.class);
 
                 break;
-            case R.id.tv_xmlparse:
-
-                intent.setClass(this, XmlParseActivity.class);
-
-                break;
+//            case R.id.tv_xmlparse:
+//
+//                intent.setClass(this, XmlParseActivity.class);
+//
+//                break;
             case R.id.scan_code:
                 intent.setClass(this, ZxingActivity.class);
                 break;

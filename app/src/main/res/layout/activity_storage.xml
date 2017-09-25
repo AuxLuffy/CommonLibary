@@ -113,7 +113,34 @@
                 android:text="Preferences"
                 android:textColor="@color/black"
         />
+        <TextView
+            android:id="@+id/tv_xmlpullparse"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#66FF4081"
+            android:gravity="center"
+            android:text="pull解析"
+            android:textColor="#CCCCCC"/>
+        <TextView
+            android:id="@+id/tv_xmlsaxparse"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#FFF0F5"
+            android:gravity="center"
+            android:text="sax 解析"
+            android:textColor="#CCCCCC"
 
+            />
 
-    </LinearLayout>
+        <TextView
+            android:id="@+id/tv_xmldomparse"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#7CFC00"
+            android:gravity="center"
+            android:text="dom 解析"
+            android:textColor="#CCCCCC"
+
+            />
+</LinearLayout>
 </ScrollView>

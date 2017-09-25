@@ -556,6 +556,8 @@
         <activity android:name=".tickerview.TickerActivity" />
         <activity android:name=".tickerview.PerfActivity" />
         <activity android:name=".xmlparse.XmlParseActivity"></activity>
+        <activity android:name=".xmlparse.PullParseActivity"/>
+        <activity android:name=".xmlparse.SaxParseActivity"/>
         <activity android:name=".bubbleview.BubbleViewActivity" android:theme="@style/AppThemeNoTitle" />
         <activity android:name=".psdinput.PayPsdViewActivity" android:theme="@style/AppThemeNoTitle" />
         <activity android:name=".progressbar.ProgressBarActivity" android:theme="@style/AppThemeNoTitle" />
