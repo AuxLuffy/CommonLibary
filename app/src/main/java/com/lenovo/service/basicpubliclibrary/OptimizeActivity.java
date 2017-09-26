@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import com.example.lenovo.retrofithelper2.RetrofitHelperActivity;
 import com.lenovo.service.basicpubliclibrary.StrategyPattern.StrategyPatternActivity;
+import com.lenovo.service.basicpubliclibrary.builderpattern.BuilderPatternActivity;
 import com.lenovo.service.basicpubliclibrary.factorypattern.FactoryActivity;
 import com.lenovo.service.basicpubliclibrary.jniDemo.JNITestActivity;
 import com.lenovo.service.basicpubliclibrary.jobservice.JobServiceActivity;
@@ -24,6 +25,7 @@ public class OptimizeActivity extends AppCompatActivity implements View.OnClickL
     private TextView mTvKeyboard;
     private TextView mTvStrategyPattern;
     private TextView mTvFactoryPattern;
+    private TextView mTvBuilderPattern;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +43,7 @@ public class OptimizeActivity extends AppCompatActivity implements View.OnClickL
         mTvKeyboard = (TextView) findViewById(R.id.tv_keyboard);
         mTvStrategyPattern = (TextView) findViewById(R.id.tv_strategypattern);
         mTvFactoryPattern = (TextView) findViewById(R.id.tv_factory_pattern);
+        mTvBuilderPattern = (TextView) findViewById(R.id.tv_builder_pattern);
 
     }
 
@@ -51,6 +54,7 @@ public class OptimizeActivity extends AppCompatActivity implements View.OnClickL
         mTvKeyboard.setOnClickListener(this);
         mTvStrategyPattern.setOnClickListener(this);
         mTvFactoryPattern.setOnClickListener(this);
+        mTvBuilderPattern.setOnClickListener(this);
         findViewById(R.id.tv_jnidemo).setOnClickListener(this);
 
     }
@@ -91,6 +95,10 @@ public class OptimizeActivity extends AppCompatActivity implements View.OnClickL
                 break;
             case R.id.tv_factory_pattern:
                 intent = new Intent(this, FactoryActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.tv_builder_pattern:
+                intent = new Intent(this, BuilderPatternActivity.class);
                 startActivity(intent);
                 break;
         }

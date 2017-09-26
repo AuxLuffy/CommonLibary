@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
 
     <LinearLayout
@@ -9,117 +9,124 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/text1"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="#FFFFF0"
-        android:gravity="center"
-        android:textColor="#CCCCCC"
-        android:text="优化"
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#FFFFF0"
+            android:gravity="center"
+            android:text="优化"
+            android:textColor="#CCCCCC"
 
-        />
+            />
 
-    <TextView
-        android:id="@+id/job_service"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="#F0E68C"
-        android:gravity="center"
-        android:textColor="#CCCCCC"
-        android:onClick="onClick"
-        android:text="jobService" />
+        <TextView
+            android:id="@+id/job_service"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#F0E68C"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="jobService"
+            android:textColor="#CCCCCC"/>
 
-    <TextView
-        android:id="@+id/leak_canary"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:textColor="#CCCCCC"
-        android:text="LeakCanary内存泄漏检测"
-        android:background="#E6E6FA"
-        android:gravity="center"
-        android:onClick="onClick"
-        />
-    <TextView
-        android:id="@+id/tv_okhttpEncapsulation"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:textColor="#CCCCCC"
-        android:background="#FFF0F5"
-        android:gravity="center"
-        android:text="OKHttp网络框架高级封装"
-        android:onClick="onClick"
-        />
+        <TextView
+            android:id="@+id/leak_canary"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#E6E6FA"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="LeakCanary内存泄漏检测"
+            android:textColor="#CCCCCC"
+            />
 
-    <TextView
-        android:id="@+id/schedule_service"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:textColor="#CCCCCC"
-        android:text="前、台定时执行一项任务"
-        android:background="#FFF0F5"
-        android:gravity="center"
-        android:onClick="onClick"
+        <TextView
+            android:id="@+id/tv_okhttpEncapsulation"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#FFF0F5"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="OKHttp网络框架高级封装"
+            android:textColor="#CCCCCC"
+            />
 
-        />
-    <TextView
-        android:id="@+id/tvRetrofitHelper"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:textColor="#CCCCCC"
-        android:text="Retrofit网络框架高级封装"
-        android:background="#7CFC00"
-        android:gravity="center"
-        />
-    <TextView
-        android:id="@+id/tv_keyboard"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:textColor="#CCCCCC"
-        android:text="键盘面板冲突及布局闪动处理方案"
-        android:background="#ADD8E6"
-        android:gravity="center"
+        <TextView
+            android:id="@+id/schedule_service"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#FFF0F5"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="前、台定时执行一项任务"
+            android:textColor="#CCCCCC"
 
-        />
-    <TextView
-        android:id="@+id/tv_jnidemo"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="#66FF4081"
-        android:gravity="center"
-        android:text="jni 初步探究"
-        android:textColor="#CCCCCC"/>
+            />
+
+        <TextView
+            android:id="@+id/tvRetrofitHelper"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#7CFC00"
+            android:gravity="center"
+            android:text="Retrofit网络框架高级封装"
+            android:textColor="#CCCCCC"
+            />
+
+        <TextView
+            android:id="@+id/tv_keyboard"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#ADD8E6"
+            android:gravity="center"
+            android:text="键盘面板冲突及布局闪动处理方案"
+            android:textColor="#CCCCCC"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_jnidemo"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#66FF4081"
+            android:gravity="center"
+            android:text="jni 初步探究"
+            android:textColor="#CCCCCC"/>
 
 
-    <TextView
-        android:id="@+id/tv_strategypattern"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="#f6E6FA"
-        android:gravity="center"
-        android:text="策略者模式的使用"
-        android:textColor="#CCCCCC"
+        <TextView
+            android:id="@+id/tv_strategypattern"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#f6E6FA"
+            android:gravity="center"
+            android:text="策略者模式的使用"
+            android:textColor="#CCCCCC"
 
-        />
+            />
 
-    <TextView
-        android:id="@+id/tv_factory_pattern"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:textColor="#CCCCCC"
-        android:text="抽象工厂模式的使用"
-        android:background="#E0FFFF"
-        android:gravity="center"
+        <TextView
+            android:id="@+id/tv_factory_pattern"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#E0FFFF"
+            android:gravity="center"
+            android:text="抽象工厂模式的使用"
+            android:textColor="#CCCCCC"
 
-        />    <TextView
-    android:layout_width="match_parent"
-    android:layout_height="60dp"
-    android:textColor="#CCCCCC"
-    android:text="未完待续"
-    android:background="#D3D3D3"
-    android:gravity="center"
+            />
 
-    />
-</LinearLayout>
+        <TextView
+            android:id="@+id/tv_builder_pattern"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#D3D3D3"
+            android:gravity="center"
+            android:text="Builder(建造者)模式的使用"
+            android:textColor="#CCCCCC"
+
+            />
+    </LinearLayout>
 
 </ScrollView>
