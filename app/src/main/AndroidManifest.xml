@@ -578,6 +578,8 @@
         <activity android:name=".magicsurfaceview.MultiSlideAnimActivity"/>
         <activity android:name=".magicsurfaceview.VortexAnimActivity"/>
         <activity android:name=".magicsurfaceview.WaveAnimActivity"/>
+        <activity android:name=".searchbox.SearchBoxActivity"
+                  android:theme="@android:style/Theme.Light.NoTitleBar" />
     </application>
 
 </manifest>
