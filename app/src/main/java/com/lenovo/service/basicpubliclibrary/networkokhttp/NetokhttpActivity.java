@@ -6,9 +6,9 @@ import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
-import com.lenovo.service.basicpubliclibrary.MainActivity;
 import com.lenovo.service.basicpubliclibrary.R;
 import com.lenovo.service.basicpubliclibrary.networkokhttp.bean.Banner;
 import com.lenovo.service.basicpubliclibrary.networkokhttp.http.OkHttpHelper;
@@ -28,6 +28,7 @@ public class NetokhttpActivity extends Activity implements View.OnClickListener 
 
     private OkHttpHelper httpHelper = OkHttpHelper.getInstance();// 初始化网络框架
     private Button mBt_access;
+    private TextView mMtvContent;
 
 
     @Override
@@ -43,6 +44,7 @@ public class NetokhttpActivity extends Activity implements View.OnClickListener 
 
     private void init_view() {
         mBt_access = (Button) findViewById(R.id.bt_access_networks);
+        mMtvContent = findViewById(R.id.tvContent);
     }
 
 
@@ -64,22 +66,29 @@ public class NetokhttpActivity extends Activity implements View.OnClickListener 
                             sb.append(banner.toString());
                         }
                         Log.e("MainActivity",sb.toString());
+                        setContent(sb.toString());
                         Toast.makeText(NetokhttpActivity.this,sb.toString(),Toast.LENGTH_SHORT).show();
                     }
 
                     @Override
                     public void onError(Response response, int code, Exception e) {
                         Log.e("MainActivity",code+"");
+                        setContent(code+"");
                     }
 
                     @Override
                     public void onTokenError(Response response, int code) {
                         Log.e("MainActivity",code+"");
-
+                        setContent(code+"");
                     }
                 });
                 break;
+
         }
+    }
+
+    private void setContent(String str) {
+        mMtvContent.setText(str);
     }
 
 

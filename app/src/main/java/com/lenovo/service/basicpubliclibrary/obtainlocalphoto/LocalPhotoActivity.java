@@ -124,7 +124,7 @@ public class LocalPhotoActivity extends Activity{
         GirdItemAdapter.mSelectedImage.clear();// 清空adapter的数据。
         photoGrid=(GridView)findViewById(R.id.gird_photo_list);
         photoBtn=(Button)findViewById(R.id.selected_photo_btn);
-        titleName=(TextView)this.findViewById(R.id.selected_photo_name_text);
+        titleName=(TextView)findViewById(R.id.selected_photo_name_text);
         quxiaoBtn=(TextView)findViewById(R.id.quxiao_btn);
         titleIcon=(ImageView)findViewById(R.id.selected_photo_icon);
         headLayout=(RelativeLayout)findViewById(R.id.selected_photo_header_layout);
@@ -368,16 +368,17 @@ public class LocalPhotoActivity extends Activity{
     }
     // 获取通讯录权限
     private void init_Permission() {
-        PermissionUtils.requestPermission(mActivity, PermissionUtils.CODE_READ_EXTERNAL_STORAGE, mPermissionGrant);
-        PermissionUtils.requestPermission(mActivity, PermissionUtils.CODE_WRITE_EXTERNAL_STORAGE, mPermissionGrant);
-        PermissionUtils.requestPermission(mActivity, PermissionUtils.CODE_WRITE_EXTERNAL_CAMERA, mPermissionGrant);
+//        PermissionUtils.requestPermission(mActivity, PermissionUtils.CODE_READ_EXTERNAL_STORAGE, mPermissionGrant);
+//        PermissionUtils.requestPermission(mActivity, PermissionUtils.CODE_WRITE_EXTERNAL_STORAGE, mPermissionGrant);
+//        PermissionUtils.requestPermission(mActivity, PermissionUtils.CODE_WRITE_EXTERNAL_CAMERA, mPermissionGrant);
+          PermissionUtils.requestMultiPermissions(mActivity,mPermissionGrant);
     }
     // 获取后权限的回调
     private PermissionUtils.PermissionGrant mPermissionGrant = new PermissionUtils.PermissionGrant() {
         @Override
         public void onPermissionGranted(int requestCode) {
             switch (requestCode) {
-                case PermissionUtils.CODE_READ_EXTERNAL_STORAGE:
+                case PermissionUtils.CODE_MULTI_PERMISSION:
                     getImages();
                     break;
                 default:
