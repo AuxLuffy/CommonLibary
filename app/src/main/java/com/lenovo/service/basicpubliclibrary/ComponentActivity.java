@@ -2,7 +2,6 @@ package com.lenovo.service.basicpubliclibrary;
 
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.hardware.Camera;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
@@ -10,8 +9,7 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
-import butterknife.BindView;
-import butterknife.ButterKnife;
+
 import com.lenovo.service.basicpubliclibrary.Frostedglasseffect.FrostedGlassEffectActivity;
 import com.lenovo.service.basicpubliclibrary.Frostedglasseffect.util.BlurBehind;
 import com.lenovo.service.basicpubliclibrary.Frostedglasseffect.util.OnBlurCompleteListener;
@@ -20,19 +18,19 @@ import com.lenovo.service.basicpubliclibrary.colortheme.ColorThemeActivity;
 import com.lenovo.service.basicpubliclibrary.fragmentation.demo_flow.FlowMainActivity;
 import com.lenovo.service.basicpubliclibrary.maillistananimation.MaillistActivity;
 import com.lenovo.service.basicpubliclibrary.multitype.bilibili.BilibiliActivity;
+import com.lenovo.service.basicpubliclibrary.notificoation.NotificoationActivity;
 import com.lenovo.service.basicpubliclibrary.obtainlocalphoto.LocalPhotoActivity;
 import com.lenovo.service.basicpubliclibrary.picture_cut.SampleActivity;
 import com.lenovo.service.basicpubliclibrary.pullTorefresh_tool.PullTorefreshActivity;
 import com.lenovo.service.basicpubliclibrary.shadowmasking.ShadowmaskingActivity;
-
-import butterknife.BindView;
-import butterknife.ButterKnife;
-
 import com.lenovo.service.basicpubliclibrary.smallchart.CurveChartActivity;
 import com.lenovo.service.basicpubliclibrary.smallchart.LineChartActivity;
 import com.lenovo.service.basicpubliclibrary.smallchart.PieCharActivity;
 import com.lenovo.service.basicpubliclibrary.smallchart.RadarChartActivity;
 import com.lenovo.service.basicpubliclibrary.uploadfile.UploadFileActivity;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
 import lenovo.com.zxing.MipcaActivityCapture;
 
 public class ComponentActivity extends AppCompatActivity implements View.OnClickListener {
@@ -74,7 +72,8 @@ public class ComponentActivity extends AppCompatActivity implements View.OnClick
     TextView tv_lineXchart;
     @BindView(R.id.tv_curvechart)
     TextView tv_curvechart;
-
+    @BindView(R.id.tvNotificoation)
+    TextView mtvNotificoation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -102,6 +101,7 @@ public class ComponentActivity extends AppCompatActivity implements View.OnClick
         tv_radarchart.setOnClickListener(this);
         tv_lineXchart.setOnClickListener(this);
         tv_curvechart.setOnClickListener(this);
+        mtvNotificoation.setOnClickListener(this);
     }
 
 
@@ -185,6 +185,10 @@ public class ComponentActivity extends AppCompatActivity implements View.OnClick
             case R.id.tv_curvechart:
                 // 曲线图
                 startActivity(new Intent(ComponentActivity.this, CurveChartActivity.class));
+                break;
+            case R.id.tvNotificoation:
+                // Notificaation消息通知的使用
+                startActivity(new Intent(ComponentActivity.this, NotificoationActivity.class));
                 break;
         }
     }

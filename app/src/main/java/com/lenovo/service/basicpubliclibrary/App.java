@@ -1,6 +1,5 @@
 package com.lenovo.service.basicpubliclibrary;
 
-import android.app.Application;
 import android.content.Context;
 import android.support.multidex.MultiDex;
 
@@ -11,7 +10,6 @@ import com.lenovo.service.basicpubliclibrary.bgabanner.Engine;
 import com.lenovo.service.basicpubliclibrary.config.Config;
 import com.lenovo.service.basicpubliclibrary.loaddata.LoadDataLayout;
 import com.orm.SugarApp;
-import com.raizlabs.android.dbflow.config.FlowConfig;
 import com.raizlabs.android.dbflow.config.FlowManager;
 import com.squareup.leakcanary.LeakCanary;
 import com.squareup.leakcanary.RefWatcher;

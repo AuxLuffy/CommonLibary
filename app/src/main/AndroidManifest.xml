@@ -566,6 +566,10 @@
         <activity android:name=".tencentx5.X5WebViewActivity"/>
         <activity android:name=".zbar.ZbarActivity"/>
         <activity android:name=".StrategyPattern.StrategyPatternActivity"/>
+        <activity android:name=".notificoation.NotificoationActivity"></activity>
+        <activity android:name=".notificoation.CustomActivity"></activity>
+        <activity android:name=".notificoation.ProgressAcitivty"></activity>
+
     </application>
 
 </manifest>
