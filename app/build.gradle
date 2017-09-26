@@ -173,6 +173,7 @@ dependencies {
     compile 'crab.baidu.crabndk:crabndk:latest.release@aar'
     compile 'com.sackcentury:shinebutton:0.1.9'
     compile 'com.yanzhenjie.zbar:camera:1.0.0'
+    compile 'com.gplibs:magic-surface-view:1.1.1'
 }
 greendao {
     schemaVersion 1

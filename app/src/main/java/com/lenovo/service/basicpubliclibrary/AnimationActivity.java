@@ -21,6 +21,8 @@ import com.lenovo.service.basicpubliclibrary.guideanim.ShowActivity;
 import com.lenovo.service.basicpubliclibrary.headerfloatanimation.HeaderFloatActivity;
 import com.lenovo.service.basicpubliclibrary.loadingart.Loadingart_activity;
 import com.lenovo.service.basicpubliclibrary.loopview.LoopViewActivity;
+import com.lenovo.service.basicpubliclibrary.magicsurfaceview.MagicSurfaceviewActivity;
+import com.lenovo.service.basicpubliclibrary.magicsurfaceview.launch.LaunchActivity;
 import com.lenovo.service.basicpubliclibrary.meizuweather.MeizuWeacherActivity;
 import com.lenovo.service.basicpubliclibrary.roll3dimageview.RollImageActivity;
 import com.lenovo.service.basicpubliclibrary.shinebutton.ShineButtonActivity;
@@ -49,6 +51,7 @@ public class AnimationActivity extends AppCompatActivity {
     private TextView mTvWowoviewpager;
     private TextView mTvStikyscrollview;
     private TextView mTvshinebutton;
+    private TextView mTvMagicsurface;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,6 +82,7 @@ public class AnimationActivity extends AppCompatActivity {
         mTvExamplelv = (TextView)findViewById(R.id.tv_examplelv);
         mTvWowoviewpager = (TextView)findViewById(R.id.wowo_viewpager);
         mTvshinebutton = (TextView) findViewById(R.id.tv_shinebutton);
+        mTvMagicsurface = (TextView) findViewById(R.id.tv_magicsurface);
 
         text1.setOnClickListener(new TextViewClickListener());
         mTvLoopView.setOnClickListener(new TextViewClickListener());
@@ -97,6 +101,7 @@ public class AnimationActivity extends AppCompatActivity {
         mTvWowoviewpager.setOnClickListener(new TextViewClickListener());
         mTvStikyscrollview.setOnClickListener(new TextViewClickListener());
         mTvshinebutton.setOnClickListener(new TextViewClickListener());
+        mTvMagicsurface.setOnClickListener(new TextViewClickListener());
     }
 
     public class TextViewClickListener implements View.OnClickListener {
@@ -191,6 +196,9 @@ public class AnimationActivity extends AppCompatActivity {
                     break;
                 case R.id.tv_shinebutton:
                     startActivity(new Intent(AnimationActivity.this, ShineButtonActivity.class));
+                    break;
+                case R.id.tv_magicsurface:
+                    startActivity(new Intent(AnimationActivity.this, LaunchActivity.class));
                     break;
                 default:
                     break;

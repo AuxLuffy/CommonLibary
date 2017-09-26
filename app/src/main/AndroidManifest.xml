@@ -567,6 +567,16 @@
         <activity android:name=".zbar.ZbarActivity"/>
         <activity android:name=".StrategyPattern.StrategyPatternActivity"/>
         <activity android:name=".factorypattern.FactoryActivity"/>
+
+        <activity android:name=".magicsurfaceview.MagicSurfaceviewActivity"/>
+        <activity android:name=".magicsurfaceview.launch.LaunchActivity"/>
+        <activity android:name=".magicsurfaceview.LightSampleActivity"/>
+        <activity android:name=".magicsurfaceview.MacWindowAnimActivity"/>
+        <activity android:name=".magicsurfaceview.MatrixAnimSampleActivity"/>
+        <activity android:name=".magicsurfaceview.MultiScrapAnimActivity"/>
+        <activity android:name=".magicsurfaceview.MultiSlideAnimActivity"/>
+        <activity android:name=".magicsurfaceview.VortexAnimActivity"/>
+        <activity android:name=".magicsurfaceview.WaveAnimActivity"/>
     </application>
 
 </manifest>
