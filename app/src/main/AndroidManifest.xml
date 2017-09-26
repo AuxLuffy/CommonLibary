@@ -565,6 +565,7 @@
         <activity android:name=".shinebutton.ShineButtonActivity" />
         <activity android:name=".tencentx5.X5WebViewActivity"/>
         <activity android:name=".zbar.ZbarActivity"/>
+        <activity android:name=".StrategyPattern.StrategyPatternActivity"/>
     </application>
 
 </manifest>

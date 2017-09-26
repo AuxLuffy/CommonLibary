@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.lenovo.retrofithelper2.RetrofitHelperActivity;
+import com.lenovo.service.basicpubliclibrary.StrategyPattern.StrategyPatternActivity;
 import com.lenovo.service.basicpubliclibrary.jniDemo.JNITestActivity;
 import com.lenovo.service.basicpubliclibrary.jobservice.JobServiceActivity;
 import com.lenovo.service.basicpubliclibrary.keyboardpanelswitch.KeyboardPanelSwitchActivity;
@@ -20,6 +21,7 @@ public class OptimizeActivity extends AppCompatActivity implements View.OnClickL
     private TextView mTv_okhttpEncapsulation;
     private TextView mTvRetrofitHelper;
     private TextView mTvKeyboard;
+    private TextView mTvStrategyPattern;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +37,7 @@ public class OptimizeActivity extends AppCompatActivity implements View.OnClickL
         mTv_okhttpEncapsulation = (TextView) findViewById(R.id.tv_okhttpEncapsulation);
         mTvRetrofitHelper = (TextView) findViewById(R.id.tvRetrofitHelper);
         mTvKeyboard = (TextView) findViewById(R.id.tv_keyboard);
+        mTvStrategyPattern = (TextView) findViewById(R.id.tv_strategypattern);
 
     }
 
@@ -43,6 +46,7 @@ public class OptimizeActivity extends AppCompatActivity implements View.OnClickL
         mTv_okhttpEncapsulation.setOnClickListener(this);
         mTvRetrofitHelper.setOnClickListener(this);
         mTvKeyboard.setOnClickListener(this);
+        mTvStrategyPattern.setOnClickListener(this);
         findViewById(R.id.tv_jnidemo).setOnClickListener(this);
 
     }
@@ -75,6 +79,10 @@ public class OptimizeActivity extends AppCompatActivity implements View.OnClickL
                 break;
             case R.id.tv_jnidemo:
                 intent = new Intent(this, JNITestActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.tv_strategypattern:
+                intent = new Intent(this, StrategyPatternActivity.class);
                 startActivity(intent);
                 break;
         }
