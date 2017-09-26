@@ -10,6 +10,7 @@ import com.example.getui.GetuiActivity;
 import com.lenovo.service.basicpubliclibrary.alipay.AlipayActivity;
 import com.lenovo.service.basicpubliclibrary.cameraDemo.RecordMainAcitivity;
 import com.lenovo.service.basicpubliclibrary.camerakit.CamerakitActivity;
+import com.lenovo.service.basicpubliclibrary.colorpickerview.ColorPickerViewActivity;
 import com.lenovo.service.basicpubliclibrary.databinding.DataBindingActivity;
 import com.lenovo.service.basicpubliclibrary.eventbus.EventBusActivity;
 import com.lenovo.service.basicpubliclibrary.fingerutils.FingerprintActivity;
@@ -181,5 +182,9 @@ public class CompositeActivity extends AppCompatActivity implements View.OnClick
 
     public void toWeChatPayActivity(View view) {
         startActivity(new Intent(this, WeChatPayActivity.class));
+    }
+
+    public void  getColorPickerView(View view) {
+        startActivity(new Intent(this, ColorPickerViewActivity.class));
     }
 }

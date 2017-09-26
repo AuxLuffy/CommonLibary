@@ -245,4 +245,5 @@
     <color name="cb">#BBB</color>
     <color name="c3">#333</color>
     <color name="c6">#666</color>
+    <color name="btnColor">#30354b</color>
 </resources>
