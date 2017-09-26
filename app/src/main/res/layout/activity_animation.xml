@@ -243,5 +243,24 @@
             android:background="#f20d8b"
             android:gravity="center"
             />
+
+        <TextView
+            android:id="@+id/tv_magicsurface"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#7CFC00"
+            android:gravity="center"
+            android:text="一个使用openGL渲染的动画特效库"
+            android:textColor="#CCCCCC" />
+
+        <TextView
+            android:id="@+id/tv_search_box"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColor="#CCCCCC"
+            android:text="实现搜索栏伸展和收缩动画效果"
+            android:background="#E0FFFF"
+            android:gravity="center"
+            />
     </LinearLayout>
 </ScrollView>

@@ -21,8 +21,11 @@ import com.lenovo.service.basicpubliclibrary.guideanim.ShowActivity;
 import com.lenovo.service.basicpubliclibrary.headerfloatanimation.HeaderFloatActivity;
 import com.lenovo.service.basicpubliclibrary.loadingart.Loadingart_activity;
 import com.lenovo.service.basicpubliclibrary.loopview.LoopViewActivity;
+import com.lenovo.service.basicpubliclibrary.magicsurfaceview.MagicSurfaceviewActivity;
+import com.lenovo.service.basicpubliclibrary.magicsurfaceview.launch.LaunchActivity;
 import com.lenovo.service.basicpubliclibrary.meizuweather.MeizuWeacherActivity;
 import com.lenovo.service.basicpubliclibrary.roll3dimageview.RollImageActivity;
+import com.lenovo.service.basicpubliclibrary.searchbox.SearchBoxActivity;
 import com.lenovo.service.basicpubliclibrary.shinebutton.ShineButtonActivity;
 import com.lenovo.service.basicpubliclibrary.stikyscrollview.StikyScrollviewActivity;
 import com.lenovo.service.basicpubliclibrary.svg.WowActivity;
@@ -49,6 +52,8 @@ public class AnimationActivity extends AppCompatActivity {
     private TextView mTvWowoviewpager;
     private TextView mTvStikyscrollview;
     private TextView mTvshinebutton;
+    private TextView mTvMagicsurface;
+    private TextView mTvSearchBox;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,6 +75,7 @@ public class AnimationActivity extends AppCompatActivity {
         tv_dots_loader = (TextView) findViewById(R.id.tv_dots_loader);
         tv_floatingmenu = (TextView)findViewById(R.id.tv_floatingmenu);
         mTvStikyscrollview = (TextView) findViewById(R.id.tvStikyscrollview);
+        mTvSearchBox = (TextView) findViewById(R.id.tv_search_box);
         findViewById(R.id.tv_floatbtn).setOnClickListener(new TextViewClickListener());
         findViewById(R.id.tv_bottom_bar).setOnClickListener(new TextViewClickListener());
         findViewById(R.id.tv_danmu).setOnClickListener(new TextViewClickListener());
@@ -79,6 +85,7 @@ public class AnimationActivity extends AppCompatActivity {
         mTvExamplelv = (TextView)findViewById(R.id.tv_examplelv);
         mTvWowoviewpager = (TextView)findViewById(R.id.wowo_viewpager);
         mTvshinebutton = (TextView) findViewById(R.id.tv_shinebutton);
+        mTvMagicsurface = (TextView) findViewById(R.id.tv_magicsurface);
 
         text1.setOnClickListener(new TextViewClickListener());
         mTvLoopView.setOnClickListener(new TextViewClickListener());
@@ -97,6 +104,8 @@ public class AnimationActivity extends AppCompatActivity {
         mTvWowoviewpager.setOnClickListener(new TextViewClickListener());
         mTvStikyscrollview.setOnClickListener(new TextViewClickListener());
         mTvshinebutton.setOnClickListener(new TextViewClickListener());
+        mTvMagicsurface.setOnClickListener(new TextViewClickListener());
+        mTvSearchBox.setOnClickListener(new TextViewClickListener());
     }
 
     public class TextViewClickListener implements View.OnClickListener {
@@ -191,6 +200,12 @@ public class AnimationActivity extends AppCompatActivity {
                     break;
                 case R.id.tv_shinebutton:
                     startActivity(new Intent(AnimationActivity.this, ShineButtonActivity.class));
+                    break;
+                case R.id.tv_magicsurface:
+                    startActivity(new Intent(AnimationActivity.this, LaunchActivity.class));
+                    break;
+                case R.id.tv_search_box:
+                    startActivity(new Intent(AnimationActivity.this, SearchBoxActivity.class));
                     break;
                 default:
                     break;
