@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import com.example.lenovo.retrofithelper2.RetrofitHelperActivity;
 import com.lenovo.service.basicpubliclibrary.StrategyPattern.StrategyPatternActivity;
+import com.lenovo.service.basicpubliclibrary.factorypattern.FactoryActivity;
 import com.lenovo.service.basicpubliclibrary.jniDemo.JNITestActivity;
 import com.lenovo.service.basicpubliclibrary.jobservice.JobServiceActivity;
 import com.lenovo.service.basicpubliclibrary.keyboardpanelswitch.KeyboardPanelSwitchActivity;
@@ -22,6 +23,7 @@ public class OptimizeActivity extends AppCompatActivity implements View.OnClickL
     private TextView mTvRetrofitHelper;
     private TextView mTvKeyboard;
     private TextView mTvStrategyPattern;
+    private TextView mTvFactoryPattern;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +40,7 @@ public class OptimizeActivity extends AppCompatActivity implements View.OnClickL
         mTvRetrofitHelper = (TextView) findViewById(R.id.tvRetrofitHelper);
         mTvKeyboard = (TextView) findViewById(R.id.tv_keyboard);
         mTvStrategyPattern = (TextView) findViewById(R.id.tv_strategypattern);
+        mTvFactoryPattern = (TextView) findViewById(R.id.tv_factory_pattern);
 
     }
 
@@ -47,6 +50,7 @@ public class OptimizeActivity extends AppCompatActivity implements View.OnClickL
         mTvRetrofitHelper.setOnClickListener(this);
         mTvKeyboard.setOnClickListener(this);
         mTvStrategyPattern.setOnClickListener(this);
+        mTvFactoryPattern.setOnClickListener(this);
         findViewById(R.id.tv_jnidemo).setOnClickListener(this);
 
     }
@@ -83,6 +87,10 @@ public class OptimizeActivity extends AppCompatActivity implements View.OnClickL
                 break;
             case R.id.tv_strategypattern:
                 intent = new Intent(this, StrategyPatternActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.tv_factory_pattern:
+                intent = new Intent(this, FactoryActivity.class);
                 startActivity(intent);
                 break;
         }

@@ -566,6 +566,7 @@
         <activity android:name=".tencentx5.X5WebViewActivity"/>
         <activity android:name=".zbar.ZbarActivity"/>
         <activity android:name=".StrategyPattern.StrategyPatternActivity"/>
+        <activity android:name=".factorypattern.FactoryActivity"/>
     </application>
 
 </manifest>
