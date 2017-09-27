@@ -380,7 +380,6 @@
     </declare-styleable>
 
 
-
     <declare-styleable name="PayPsdInputView">
 
         <attr name="maxCount" format="integer" />
@@ -390,7 +389,7 @@
         <attr name="divideLineWidth" format="dimension" />
         <attr name="divideLineColor" format="color" />
         <attr name="rectAngle" format="dimension" />
-        <attr name="focusedColor" format="color"/>
+        <attr name="focusedColor" format="color" />
         <attr name="psdType" format="enum">
             <enum name="weChat" value="0" />
             <enum name="bottomLine" value="1" />
@@ -409,9 +408,14 @@
 
         <attr name="isDrawCenterProgressText" format="boolean" />
 
-        <attr name="centerProgressTextColor" format="color"/>
-        <attr name="centerProgressTextSize" format="dimension"/>
+        <attr name="centerProgressTextColor" format="color" />
+        <attr name="centerProgressTextSize" format="dimension" />
 
     </declare-styleable>
-
+    <!--时光轴-->
+    <declare-styleable name="SwipeDragLayout">
+        <attr name="need_offset" format="float" />
+        <attr name="ios" format="boolean" />
+        <attr name="click_to_close" format="boolean" />
+    </declare-styleable>
 </resources>

@@ -93,7 +93,7 @@
         <!-- 瀑布流式任务时光轴演示界面 -->
         <activity android:name=".recyclerview.staggeredtimeline.timeline2.DotTimeLineActivity" />
         <!-- 瀑布流式任务时光轴演示界面2 -->
-        <activity android:name=".recyclerview.staggeredtimeline.timeline3.DotTimeLine2Activity" />
+        <activity android:name=".recyclerview.staggeredtimeline.timeline3.ui.TimeLine3Activity" />
         <!-- 悬浮效果演示界面1 -->
         <activity android:name=".recyclerview.suspension.ui.SuspensionEffectActivity" />
         <!-- 悬浮效果演示界面2 -->
