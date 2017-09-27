@@ -33,6 +33,7 @@ import com.lenovo.service.basicpubliclibrary.iconbadge.IconBadgeActivity;
 import com.lenovo.service.basicpubliclibrary.jike.JikeGalleryActivity;
 import com.lenovo.service.basicpubliclibrary.loaddata.LoadDataActivity;
 import com.lenovo.service.basicpubliclibrary.marqueue.MarqueueActivity;
+import com.lenovo.service.basicpubliclibrary.materialripple.MaterialRippleActivity;
 import com.lenovo.service.basicpubliclibrary.panoramimageview.PanoramImageActivity;
 import com.lenovo.service.basicpubliclibrary.pickerview.PickerActivity;
 import com.lenovo.service.basicpubliclibrary.popup.PopUpActivity;
@@ -121,6 +122,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     private TextView mTvMasicoView;
     private TextView mTvBlurry;
     private TextView mTvTicker;
+    private TextView mTvMaterialRipple;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -185,6 +187,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTvMasicoView = (TextView) findViewById(R.id.tvMasaccioView);
         mTvTicker = (TextView) findViewById(R.id.tvTickerView);
         mTvBlurry = (TextView) findViewById(R.id.tvBlurry);
+        mTvMaterialRipple = (TextView) findViewById(R.id.tv_materialripple);
     }
 
     private void init_listener() {
@@ -245,6 +248,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTvMasicoView.setOnClickListener(this);
         mTvTicker.setOnClickListener(this);
         mTvBlurry.setOnClickListener(this);
+        mTvMaterialRipple.setOnClickListener(this);
     }
 
     @Override
@@ -457,7 +461,9 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
             case R.id.tv_progress:
                 startActivity(new Intent(WidgetActivity.this, ProgressBarActivity.class));
                 break;
-
+            case R.id.tv_materialripple:
+                startActivity(new Intent(WidgetActivity.this, MaterialRippleActivity.class));
+                break;
 
         }
     }

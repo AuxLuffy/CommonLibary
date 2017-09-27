@@ -566,5 +566,13 @@
             android:gravity="center"
             android:text="自定义进度条"
             android:textColor="#CCCCCC" />
+        <TextView
+            android:id="@+id/tv_materialripple"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#FF6926"
+            android:gravity="center"
+            android:text=" Android视图的纹波效果封装"
+            android:textColor="#CCCCCC" />
     </LinearLayout>
 </ScrollView>

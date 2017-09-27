@@ -174,6 +174,7 @@ dependencies {
     compile 'com.sackcentury:shinebutton:0.1.9'
     compile 'com.yanzhenjie.zbar:camera:1.0.0'
     compile 'com.gplibs:magic-surface-view:1.1.1'
+    compile 'com.balysv:material-ripple:1.0.2'
 }
 greendao {
     schemaVersion 1

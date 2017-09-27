@@ -186,6 +186,9 @@
     <string name="spanTouchFix_description">QMUISpanTouchFixTextView 主要用于修正 TextView 添加 ClickSpan 后的点击行为与事件传递</string>
     <string name="spanTouchFix_system_behavior">TextView系统行为</string>
     <string name="spanTouchFix_qmui_fix_behavior">QMUI修复后行为</string>
+    <string name="switch_list">ListView</string>
+    <string name="switch_button">Buttons</string>
+    <string name="switch_recycler">RecyclerView</string>
 
     <string name="path_00">M 187.05 28.42 C 189.38 22.60 190.69 16.44 192.59 10.47 C 192.99 16.21 193.57 21.95 193.61
         27.71 C 196.57 29.22 199.80 30.43 202.26 32.75 C 204.81 35.60 205.72 39.46 206.68 43.07 C 207.86 48.30 209.90

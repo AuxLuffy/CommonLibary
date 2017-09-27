@@ -581,6 +581,9 @@
         <activity android:name=".searchbox.SearchBoxActivity"
                   android:theme="@android:style/Theme.Light.NoTitleBar" />
         <activity android:name=".colorpickerview.ColorPickerViewActivity"/>
+        <activity android:name=".materialripple.MaterialRippleActivity"/>
+        <activity android:name=".materialripple.DemoListActivity"/>
+        <activity android:name=".materialripple.DemoRecyclerActivity"/>
     </application>
 
 </manifest>
