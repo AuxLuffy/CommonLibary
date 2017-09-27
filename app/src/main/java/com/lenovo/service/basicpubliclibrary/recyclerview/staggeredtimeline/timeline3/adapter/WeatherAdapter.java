@@ -65,8 +65,15 @@ public class WeatherAdapter extends Adapter<WeatherAdapter.ViewHolder> {
             @Override
             public void onClick(View view) {
                 if (list.size() > position) {
+                    //删除当前条目
                     list.remove(position);
                     notifyItemRemoved(position);
+                    //刷下删除条目下面的条目
+                    if (position != list.size() ) {
+                        notifyItemRangeChanged(position,list.size()-position);
+
+                    }
+
                 }
             }
         });
