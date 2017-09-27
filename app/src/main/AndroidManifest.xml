@@ -16,7 +16,7 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
-    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
 
     <!-- end 二维码扫描 相机，闪光灯权限 -->
     <uses-feature android:name="android.hardware.camera" />
@@ -45,6 +45,7 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
     <application
         android:name=".App"
         android:allowBackup="true"
@@ -555,35 +556,44 @@
         <activity android:name=".blurry.BlurryTestActivity" />
         <activity android:name=".tickerview.TickerActivity" />
         <activity android:name=".tickerview.PerfActivity" />
-        <activity android:name=".xmlparse.XmlParseActivity"></activity>
-        <activity android:name=".xmlparse.PullParseActivity"/>
-        <activity android:name=".xmlparse.SaxParseActivity"/>
-        <activity android:name=".bubbleview.BubbleViewActivity" android:theme="@style/AppThemeNoTitle" />
-        <activity android:name=".psdinput.PayPsdViewActivity" android:theme="@style/AppThemeNoTitle" />
-        <activity android:name=".progressbar.ProgressBarActivity" android:theme="@style/AppThemeNoTitle" />
-        <activity android:name=".fingerutils.FingerprintActivity" android:theme="@style/AppThemeNoTitle" />
+        <activity android:name=".xmlparse.XmlParseActivity" />
+        <activity android:name=".xmlparse.PullParseActivity" />
+        <activity android:name=".xmlparse.SaxParseActivity" />
+        <activity
+            android:name=".bubbleview.BubbleViewActivity"
+            android:theme="@style/AppThemeNoTitle" />
+        <activity
+            android:name=".psdinput.PayPsdViewActivity"
+            android:theme="@style/AppThemeNoTitle" />
+        <activity
+            android:name=".progressbar.ProgressBarActivity"
+            android:theme="@style/AppThemeNoTitle" />
+        <activity
+            android:name=".fingerutils.FingerprintActivity"
+            android:theme="@style/AppThemeNoTitle" />
         <activity android:name=".shinebutton.ShineButtonActivity" />
-        <activity android:name=".tencentx5.X5WebViewActivity"/>
-        <activity android:name=".zbar.ZbarActivity"/>
-        <activity android:name=".StrategyPattern.StrategyPatternActivity"/>
-        <activity android:name=".factorypattern.FactoryActivity"/>
-        <activity android:name=".builderpattern.BuilderPatternActivity"/>
-
-        <activity android:name=".magicsurfaceview.MagicSurfaceviewActivity"/>
-        <activity android:name=".magicsurfaceview.launch.LaunchActivity"/>
-        <activity android:name=".magicsurfaceview.LightSampleActivity"/>
-        <activity android:name=".magicsurfaceview.MacWindowAnimActivity"/>
-        <activity android:name=".magicsurfaceview.MatrixAnimSampleActivity"/>
-        <activity android:name=".magicsurfaceview.MultiScrapAnimActivity"/>
-        <activity android:name=".magicsurfaceview.MultiSlideAnimActivity"/>
-        <activity android:name=".magicsurfaceview.VortexAnimActivity"/>
-        <activity android:name=".magicsurfaceview.WaveAnimActivity"/>
-        <activity android:name=".searchbox.SearchBoxActivity"
-                  android:theme="@android:style/Theme.Light.NoTitleBar" />
-        <activity android:name=".colorpickerview.ColorPickerViewActivity"/>
-        <activity android:name=".materialripple.MaterialRippleActivity"/>
-        <activity android:name=".materialripple.DemoListActivity"/>
-        <activity android:name=".materialripple.DemoRecyclerActivity"/>
+        <activity android:name=".tencentx5.X5WebViewActivity" />
+        <activity android:name=".zbar.ZbarActivity" />
+        <activity android:name=".StrategyPattern.StrategyPatternActivity" />
+        <activity android:name=".factorypattern.FactoryActivity" />
+        <activity android:name=".builderpattern.BuilderPatternActivity" />
+        <activity android:name=".magicsurfaceview.MagicSurfaceviewActivity" />
+        <activity android:name=".magicsurfaceview.launch.LaunchActivity" />
+        <activity android:name=".magicsurfaceview.LightSampleActivity" />
+        <activity android:name=".magicsurfaceview.MacWindowAnimActivity" />
+        <activity android:name=".magicsurfaceview.MatrixAnimSampleActivity" />
+        <activity android:name=".magicsurfaceview.MultiScrapAnimActivity" />
+        <activity android:name=".magicsurfaceview.MultiSlideAnimActivity" />
+        <activity android:name=".magicsurfaceview.VortexAnimActivity" />
+        <activity android:name=".magicsurfaceview.WaveAnimActivity" />
+        <activity
+            android:name=".searchbox.SearchBoxActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity android:name=".colorpickerview.ColorPickerViewActivity" />
+        <activity android:name=".materialripple.MaterialRippleActivity" />
+        <activity android:name=".materialripple.DemoListActivity" />
+        <activity android:name=".materialripple.DemoRecyclerActivity" />
+        <activity android:name=".viewexplosion.ViewExplosiionActivity"></activity>
     </application>
 
 </manifest>
