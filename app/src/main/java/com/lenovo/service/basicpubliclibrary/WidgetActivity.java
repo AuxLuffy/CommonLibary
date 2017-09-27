@@ -8,13 +8,13 @@ import android.widget.TextView;
 
 import com.lenovo.service.basicpubliclibrary.AppStartGuide.AppStartGuide;
 import com.lenovo.service.basicpubliclibrary.LoadMoreRecyclerView.MyRecyclerViewActivity;
-import com.lenovo.service.basicpubliclibrary.blurry.BlurryTestActivity;
 import com.lenovo.service.basicpubliclibrary.Tastytoast.ToastActivity;
 import com.lenovo.service.basicpubliclibrary.UserGuideView.UserGuideActivity;
 import com.lenovo.service.basicpubliclibrary.addsub.AddSubActivity;
 import com.lenovo.service.basicpubliclibrary.alerter.AlerterActivity;
 import com.lenovo.service.basicpubliclibrary.avatarlabelview.AvatarLabelActivity;
 import com.lenovo.service.basicpubliclibrary.bgabanner.GuideActivity;
+import com.lenovo.service.basicpubliclibrary.blurry.BlurryTestActivity;
 import com.lenovo.service.basicpubliclibrary.boommenu.BoomMenuMainActivity;
 import com.lenovo.service.basicpubliclibrary.bottleLoadingView.GABottleLoadingViewAcivity;
 import com.lenovo.service.basicpubliclibrary.cardstatcview.CardStackActivty;
@@ -25,6 +25,7 @@ import com.lenovo.service.basicpubliclibrary.dialog.ColorDialogActivity;
 import com.lenovo.service.basicpubliclibrary.dialogfragment.DialogActivity;
 import com.lenovo.service.basicpubliclibrary.doodle.DoodleViewActivity;
 import com.lenovo.service.basicpubliclibrary.dropdownmenu.DropDownActivity;
+import com.lenovo.service.basicpubliclibrary.emojifilter.EmojiFilterActivity;
 import com.lenovo.service.basicpubliclibrary.expandable.ExpandableActivity;
 import com.lenovo.service.basicpubliclibrary.flowlayout.CategoryActivity;
 import com.lenovo.service.basicpubliclibrary.flycotablayout.ui.SimpleHomeActivity;
@@ -123,6 +124,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
     private TextView mTvBlurry;
     private TextView mTvTicker;
     private TextView mTvMaterialRipple;
+    private TextView mTvEmojiFilter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -188,6 +190,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTvTicker = (TextView) findViewById(R.id.tvTickerView);
         mTvBlurry = (TextView) findViewById(R.id.tvBlurry);
         mTvMaterialRipple = (TextView) findViewById(R.id.tv_materialripple);
+        mTvEmojiFilter = (TextView) findViewById(R.id.tv_emojifilter);
     }
 
     private void init_listener() {
@@ -249,6 +252,7 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
         mTvTicker.setOnClickListener(this);
         mTvBlurry.setOnClickListener(this);
         mTvMaterialRipple.setOnClickListener(this);
+        mTvEmojiFilter.setOnClickListener(this);
     }
 
     @Override
@@ -463,6 +467,9 @@ public class WidgetActivity extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.tv_materialripple:
                 startActivity(new Intent(WidgetActivity.this, MaterialRippleActivity.class));
+                break;
+            case R.id.tv_emojifilter:
+                startActivity(new Intent(WidgetActivity.this, EmojiFilterActivity.class));
                 break;
 
         }

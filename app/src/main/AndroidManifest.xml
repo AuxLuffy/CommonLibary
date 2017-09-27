@@ -593,7 +593,8 @@
         <activity android:name=".materialripple.MaterialRippleActivity" />
         <activity android:name=".materialripple.DemoListActivity" />
         <activity android:name=".materialripple.DemoRecyclerActivity" />
-        <activity android:name=".viewexplosion.ViewExplosiionActivity"></activity>
+        <activity android:name=".viewexplosion.ViewExplosiionActivity" />
+        <activity android:name=".emojifilter.EmojiFilterActivity"></activity>
     </application>
 
 </manifest>
