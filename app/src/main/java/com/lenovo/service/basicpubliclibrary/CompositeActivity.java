@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import com.example.getui.GetuiActivity;
 import com.lenovo.service.basicpubliclibrary.alipay.AlipayActivity;
+import com.lenovo.service.basicpubliclibrary.bgaphotopicker.MomentListActivity;
 import com.lenovo.service.basicpubliclibrary.cameraDemo.RecordMainAcitivity;
 import com.lenovo.service.basicpubliclibrary.camerakit.CamerakitActivity;
 import com.lenovo.service.basicpubliclibrary.colorpickerview.ColorPickerViewActivity;
@@ -26,7 +27,6 @@ import com.lenovo.service.basicpubliclibrary.tencentx5.X5WebViewActivity;
 import com.lenovo.service.basicpubliclibrary.validation.ValidateActivity;
 import com.lenovo.service.basicpubliclibrary.videoplayer.VideoplayerActivity;
 import com.lenovo.service.basicpubliclibrary.wechatpay.WeChatPayActivity;
-import com.lenovo.service.basicpubliclibrary.xmlparse.XmlParseActivity;
 import com.lenovo.service.basicpubliclibrary.zbar.ZbarActivity;
 import com.lenovo.service.basicpubliclibrary.zxing.activity.ZxingActivity;
 
@@ -186,5 +186,9 @@ public class CompositeActivity extends AppCompatActivity implements View.OnClick
 
     public void  getColorPickerView(View view) {
         startActivity(new Intent(this, ColorPickerViewActivity.class));
+    }
+
+    public void   sendWeChat(View view) {
+        startActivity(new Intent(this, MomentListActivity.class));
     }
 }

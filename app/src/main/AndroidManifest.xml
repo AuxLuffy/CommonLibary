@@ -595,6 +595,10 @@
         <activity android:name=".materialripple.DemoRecyclerActivity" />
         <activity android:name=".viewexplosion.ViewExplosiionActivity" />
         <activity android:name=".emojifilter.EmojiFilterActivity"></activity>
+        <activity android:name=".bgaphotopicker.MomentAddActivity"
+            android:theme="@style/AppThemeNoTitle" />
+        <activity android:name=".bgaphotopicker.MomentListActivity"
+            android:theme="@style/AppThemeNoTitle" />
     </application>
 
 </manifest>

@@ -319,6 +319,15 @@
             android:gravity="center"
             android:text="从图片中获取颜色"
             android:textColor="#CCCCCC" />
+
+        <TextView
+            android:onClick="sendWeChat"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#FF259C"
+            android:gravity="center"
+            android:text="微信朋友圈图片选择、预览、九宫格图片及其拖拽排序等功能"
+            android:textColor="#CCCCCC" />
     </LinearLayout>
 
 </ScrollView>
