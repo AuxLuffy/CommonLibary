@@ -42,6 +42,7 @@ android {
         javaMaxHeapSize "4g"
         incremental true
     }
+
 }
 ext {
     supportVersion = '26.0.0-alpha1'
@@ -178,6 +179,7 @@ dependencies {
     compile 'cn.bingoogolapple:bga-photopicker:1.2.3@aar'
     compile 'cn.bingoogolapple:bga-adapter:1.1.8@aar'
     compile 'pub.devrel:easypermissions:0.2.1'
+    compile 'com.aliyun.ams:alicloud-android-hotfix:3.1.2'
 }
 greendao {
     schemaVersion 1
