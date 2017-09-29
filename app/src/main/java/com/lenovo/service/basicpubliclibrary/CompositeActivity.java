@@ -21,6 +21,7 @@ import com.lenovo.service.basicpubliclibrary.jniDemo.JNITestActivity;
 import com.lenovo.service.basicpubliclibrary.jsBridge.activity.JSBridgeActivity;
 import com.lenovo.service.basicpubliclibrary.jsBridge.common.LocalConstant;
 import com.lenovo.service.basicpubliclibrary.linechart.ui.LineChartActivity;
+import com.lenovo.service.basicpubliclibrary.opengl.SwitchRendererActivity;
 import com.lenovo.service.basicpubliclibrary.permissionDemo.PermissionDemoActivity;
 import com.lenovo.service.basicpubliclibrary.request.ui.RequestTestActivity;
 import com.lenovo.service.basicpubliclibrary.rxjava.RxJavaActivity;
@@ -41,7 +42,7 @@ public class CompositeActivity extends AppCompatActivity implements View.OnClick
              R.id.scan_code, R.id.tv_getui, R.id.tv_permission,R.id.tvEventBus,
             R.id.tv_request, R.id.tv_view1, R.id.tv_view2, R.id.tv_view3, R.id.tv_view4,
             R.id.tv_view5, R.id.tv_view6, R.id.tv_view7, R.id.tv_fingerprint, R.id.tvAppUpdate,
-            R.id.tv_view5, R.id.tv_view6, R.id.tv_view7, R.id.tv_fingerprint,R.id.tv_aidl
+            R.id.tv_aidl, R.id.tv_opengl
     };//R.id.tv_xmlparse,
 
     @Override
@@ -159,6 +160,9 @@ public class CompositeActivity extends AppCompatActivity implements View.OnClick
                 break;
             case R.id.tv_aidl:
                 intent.setClass(this, AidlActivity.class);
+                break;
+            case R.id.tv_opengl:
+                intent.setClass(this, SwitchRendererActivity.class);
                 break;
         }
         startActivity(intent);

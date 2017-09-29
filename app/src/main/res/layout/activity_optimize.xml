@@ -138,6 +138,16 @@
             android:textColor="#CCCCCC"
 
             />
+
+        <TextView
+            android:id="@+id/tv_netframe"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#F0E68C"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="retrofit + rxjava封装"
+            android:textColor="#CCCCCC" />
         <TextView
             android:id="@+id/tv_customkeyboard"
             android:layout_width="match_parent"
