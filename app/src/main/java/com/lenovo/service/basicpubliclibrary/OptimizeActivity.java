@@ -15,6 +15,7 @@ import com.lenovo.service.basicpubliclibrary.jniDemo.JNITestActivity;
 import com.lenovo.service.basicpubliclibrary.jobservice.JobServiceActivity;
 import com.lenovo.service.basicpubliclibrary.keyboardpanelswitch.KeyboardPanelSwitchActivity;
 import com.lenovo.service.basicpubliclibrary.leakcanary.LeakCanaryActivity;
+import com.lenovo.service.basicpubliclibrary.netframe.NetTestActivity;
 import com.lenovo.service.basicpubliclibrary.networkokhttp.NetokhttpActivity;
 import com.lenovo.service.basicpubliclibrary.schedule.ScheduleActivity;
 
@@ -28,6 +29,7 @@ public class OptimizeActivity extends AppCompatActivity implements View.OnClickL
     private TextView mTvFactoryPattern;
     private TextView mTvBuilderPattern;
     private TextView tv_threadPool;
+    private TextView nTvNetFrame;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +49,7 @@ public class OptimizeActivity extends AppCompatActivity implements View.OnClickL
         mTvFactoryPattern = (TextView) findViewById(R.id.tv_factory_pattern);
         mTvBuilderPattern = (TextView) findViewById(R.id.tv_builder_pattern);
         tv_threadPool = (TextView) findViewById(R.id.tv_threadPool);
+        nTvNetFrame = (TextView) findViewById(R.id.tv_netframe);
 
     }
 
@@ -59,6 +62,7 @@ public class OptimizeActivity extends AppCompatActivity implements View.OnClickL
         mTvFactoryPattern.setOnClickListener(this);
         mTvBuilderPattern.setOnClickListener(this);
         tv_threadPool.setOnClickListener(this);
+        nTvNetFrame.setOnClickListener(this);
         findViewById(R.id.tv_jnidemo).setOnClickListener(this);
 
     }
@@ -107,6 +111,10 @@ public class OptimizeActivity extends AppCompatActivity implements View.OnClickL
                 break;
             case R.id.tv_threadPool:
                 intent = new Intent(this, ThreadPoolActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.tv_netframe:
+                intent = new Intent(this, NetTestActivity.class);
                 startActivity(intent);
                 break;
         }

@@ -1,8 +1,6 @@
 package com.lenovo.service.basicpubliclibrary;
 
-import android.app.Application;
 import android.content.Context;
-import android.content.pm.PackageManager;
 import android.support.multidex.MultiDex;
 import android.widget.Toast;
 
@@ -12,8 +10,9 @@ import com.facebook.drawee.backends.pipeline.Fresco;
 import com.lenovo.service.basicpubliclibrary.bgabanner.Engine;
 import com.lenovo.service.basicpubliclibrary.config.Config;
 import com.lenovo.service.basicpubliclibrary.loaddata.LoadDataLayout;
+import com.lenovo.service.basicpubliclibrary.netframe.net.extension.BaseNetProvider;
+import com.lenovo.service.basicpubliclibrary.netframe.net.retrofit.NetMgr;
 import com.orm.SugarApp;
-import com.raizlabs.android.dbflow.config.FlowConfig;
 import com.raizlabs.android.dbflow.config.FlowManager;
 import com.squareup.leakcanary.LeakCanary;
 import com.squareup.leakcanary.RefWatcher;
@@ -23,6 +22,7 @@ import com.taobao.sophix.listener.PatchLoadStatusListener;
 import com.tencent.smtt.sdk.QbSdk;
 
 import org.litepal.LitePal;
+
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
@@ -112,6 +112,8 @@ public class App extends SugarApp {
         QbSdk.initX5Environment(this,null);
         // queryAndLoadNewPatch不可放在attachBaseContext 中，否则无网络权限，建议放在后面任意时刻，如onCreate中
         SophixManager.getInstance().queryAndLoadNewPatch();
+//初始化netframe
+        NetMgr.getInstance().registerProvider(new BaseNetProvider());
     }
 
     public static Context getContext() {

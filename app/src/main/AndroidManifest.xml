@@ -609,7 +609,8 @@
         <activity android:name=".emojifilter.EmojiFilterActivity"></activity>
         <activity android:name=".bgaphotopicker.MomentAddActivity"
             android:theme="@style/AppThemeNoTitle" />
-        <activity android:name=".bgaphotopicker.MomentListActivity"
+        <activity
+            android:name=".bgaphotopicker.MomentListActivity"
             android:theme="@style/AppThemeNoTitle" />
         <activity android:name=".appupdate.AppUpdateActivity" />
         <activity
@@ -621,6 +622,7 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".opengl.OpenGLActivity" />
         <activity android:name=".opengl.SwitchRendererActivity"></activity>
+        <activity android:name=".netframe.NetTestActivity"></activity>
     </application>
 
 </manifest>
