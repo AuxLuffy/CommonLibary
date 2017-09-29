@@ -28,6 +28,12 @@ android {
         }
     }
 
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main/java', 'src/main/aidl']
+        }
+    }
+
     dataBinding {
         enabled = true
     }
@@ -42,7 +48,6 @@ android {
         javaMaxHeapSize "4g"
         incremental true
     }
-
 }
 ext {
     supportVersion = '26.0.0-alpha1'

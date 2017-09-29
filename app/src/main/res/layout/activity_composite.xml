@@ -328,6 +328,15 @@
             android:gravity="center"
             android:text="微信朋友圈图片选择、预览、九宫格图片及其拖拽排序等功能"
             android:textColor="#CCCCCC" />
+
+        <TextView
+            android:id="@+id/tv_aidl"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#80f0d4"
+            android:gravity="center"
+            android:text="进程间通信之AIDL"
+            android:textColor="#CCCCCC" />
     </LinearLayout>
 
 </ScrollView>

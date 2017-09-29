@@ -611,6 +611,8 @@
             android:theme="@style/AppThemeNoTitle" />
         <activity android:name=".bgaphotopicker.MomentListActivity"
             android:theme="@style/AppThemeNoTitle" />
+        <activity android:name=".aidls.AidlActivity"></activity>
+
     </application>
 
 </manifest>
