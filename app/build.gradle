@@ -62,14 +62,12 @@ repositories {
 }
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-
     //65535解决
 
     // if Java use this. If using Kotlin do NOT use this.
     annotationProcessor "com.github.Raizlabs.DBFlow:dbflow-processor:${dbflow_version}"
     compile "com.github.Raizlabs.DBFlow:dbflow-core:${dbflow_version}"
     compile "com.github.Raizlabs.DBFlow:dbflow:${dbflow_version}"
-
     // sql-cipher database encyrption (optional)
     compile "com.android.support:support-v4:${supportVersion}"
     compile "com.android.support:appcompat-v7:${supportVersion}"
@@ -108,6 +106,7 @@ dependencies {
     compile project(':watermediary')
     compile files('libs/libammsdk.jar')
     compile project(':windlinkrecycleview')
+    compile project(':customkeyboard')
     compile 'net.grandcentrix.tray:tray:0.12.0'
     compile 'com.github.fernandodev.androidproperties:androidproperties:+'
     compile 'org.greenrobot:eventbus:3.0.0'

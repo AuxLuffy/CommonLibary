@@ -16,6 +16,7 @@ import com.lenovo.service.basicpubliclibrary.jobservice.JobServiceActivity;
 import com.lenovo.service.basicpubliclibrary.keyboardpanelswitch.KeyboardPanelSwitchActivity;
 import com.lenovo.service.basicpubliclibrary.leakcanary.LeakCanaryActivity;
 import com.lenovo.service.basicpubliclibrary.networkokhttp.NetokhttpActivity;
+import com.lenovo.service.basicpubliclibrary.safekeyboard.SafeKeyBoardActivity;
 import com.lenovo.service.basicpubliclibrary.schedule.ScheduleActivity;
 
 public class OptimizeActivity extends AppCompatActivity implements View.OnClickListener {
@@ -60,7 +61,7 @@ public class OptimizeActivity extends AppCompatActivity implements View.OnClickL
         mTvBuilderPattern.setOnClickListener(this);
         tv_threadPool.setOnClickListener(this);
         findViewById(R.id.tv_jnidemo).setOnClickListener(this);
-
+        findViewById(R.id.tv_customkeyboard).setOnClickListener(this);
     }
 
     public void onClick(View view){
@@ -107,6 +108,10 @@ public class OptimizeActivity extends AppCompatActivity implements View.OnClickL
                 break;
             case R.id.tv_threadPool:
                 intent = new Intent(this, ThreadPoolActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.tv_customkeyboard:
+                intent = new Intent(this, SafeKeyBoardActivity.class);
                 startActivity(intent);
                 break;
         }
