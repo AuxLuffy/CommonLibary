@@ -9,6 +9,7 @@ import android.widget.TextView;
 import com.example.getui.GetuiActivity;
 import com.lenovo.service.basicpubliclibrary.aidls.AidlActivity;
 import com.lenovo.service.basicpubliclibrary.alipay.AlipayActivity;
+import com.lenovo.service.basicpubliclibrary.appupdate.AppUpdateActivity;
 import com.lenovo.service.basicpubliclibrary.bgaphotopicker.MomentListActivity;
 import com.lenovo.service.basicpubliclibrary.cameraDemo.RecordMainAcitivity;
 import com.lenovo.service.basicpubliclibrary.camerakit.CamerakitActivity;
@@ -39,6 +40,7 @@ public class CompositeActivity extends AppCompatActivity implements View.OnClick
     private int[] ids = new int[]{R.id.helloChart, R.id.jsBridge, R.id.SADL, R.id.ilog_demo,
              R.id.scan_code, R.id.tv_getui, R.id.tv_permission,R.id.tvEventBus,
             R.id.tv_request, R.id.tv_view1, R.id.tv_view2, R.id.tv_view3, R.id.tv_view4,
+            R.id.tv_view5, R.id.tv_view6, R.id.tv_view7, R.id.tv_fingerprint, R.id.tvAppUpdate,
             R.id.tv_view5, R.id.tv_view6, R.id.tv_view7, R.id.tv_fingerprint,R.id.tv_aidl
     };//R.id.tv_xmlparse,
 
@@ -151,6 +153,9 @@ public class CompositeActivity extends AppCompatActivity implements View.OnClick
                 break;
             case R.id.zbar:
                 intent.setClass(this, ZbarActivity.class);
+                break;
+            case R.id.tvAppUpdate:
+                intent.setClass(this, AppUpdateActivity.class);
                 break;
             case R.id.tv_aidl:
                 intent.setClass(this, AidlActivity.class);
