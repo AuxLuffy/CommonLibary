@@ -14,6 +14,8 @@ import com.lenovo.service.basicpubliclibrary.netframe.net.extension.BaseNetProvi
 import com.lenovo.service.basicpubliclibrary.netframe.net.retrofit.NetMgr;
 import com.orm.SugarApp;
 import com.raizlabs.android.dbflow.config.FlowManager;
+import com.robin.lazy.cache.CacheLoaderManager;
+import com.robin.lazy.cache.disk.naming.HashCodeFileNameGenerator;
 import com.squareup.leakcanary.LeakCanary;
 import com.squareup.leakcanary.RefWatcher;
 import com.taobao.sophix.PatchStatus;
@@ -48,6 +50,7 @@ public class App extends SugarApp {
     public void onCreate() {
         super.onCreate();
         this.mContext = getApplicationContext();
+        CacheLoaderManager.getInstance().init(this, new HashCodeFileNameGenerator(), 1024 * 1024 * 8, 50, 20);
         LitePal.initialize(this);
         sInstance = this;
         mEngine = new Retrofit.Builder()

@@ -623,9 +623,10 @@
             android:name=".bezier.ThreadPoolActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".opengl.OpenGLActivity" />
-        <activity android:name=".opengl.SwitchRendererActivity"></activity>
-        <activity android:name=".netframe.NetTestActivity"></activity>
-        <activity android:name=".safekeyboard.SafeKeyBoardActivity"></activity>
+        <activity android:name=".opengl.SwitchRendererActivity" />
+        <activity android:name=".netframe.NetTestActivity" />
+        <activity android:name=".safekeyboard.SafeKeyBoardActivity" />
+        <activity android:name=".cachedemo.LazyCacheActivity"></activity>
     </application>
 
 </manifest>
