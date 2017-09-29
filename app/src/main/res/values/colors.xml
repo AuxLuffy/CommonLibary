@@ -248,4 +248,8 @@
     <color name="btnColor">#30354b</color>
 
     <color name="black_deep">#FF000000</color>
+
+    <color name="red_deep">#ea2226</color>
+    <color name="orange_salmon">#EC5745</color>
+    <item name="gray_holo_light" type="color">#ffd0d0d0</item>
 </resources>

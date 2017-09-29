@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import com.example.lenovo.retrofithelper2.RetrofitHelperActivity;
 import com.lenovo.service.basicpubliclibrary.StrategyPattern.StrategyPatternActivity;
+import com.lenovo.service.basicpubliclibrary.bezier.ThreadPoolActivity;
 import com.lenovo.service.basicpubliclibrary.builderpattern.BuilderPatternActivity;
 import com.lenovo.service.basicpubliclibrary.factorypattern.FactoryActivity;
 import com.lenovo.service.basicpubliclibrary.jniDemo.JNITestActivity;
@@ -26,6 +27,7 @@ public class OptimizeActivity extends AppCompatActivity implements View.OnClickL
     private TextView mTvStrategyPattern;
     private TextView mTvFactoryPattern;
     private TextView mTvBuilderPattern;
+    private TextView tv_threadPool;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +46,7 @@ public class OptimizeActivity extends AppCompatActivity implements View.OnClickL
         mTvStrategyPattern = (TextView) findViewById(R.id.tv_strategypattern);
         mTvFactoryPattern = (TextView) findViewById(R.id.tv_factory_pattern);
         mTvBuilderPattern = (TextView) findViewById(R.id.tv_builder_pattern);
+        tv_threadPool = (TextView) findViewById(R.id.tv_threadPool);
 
     }
 
@@ -55,6 +58,7 @@ public class OptimizeActivity extends AppCompatActivity implements View.OnClickL
         mTvStrategyPattern.setOnClickListener(this);
         mTvFactoryPattern.setOnClickListener(this);
         mTvBuilderPattern.setOnClickListener(this);
+        tv_threadPool.setOnClickListener(this);
         findViewById(R.id.tv_jnidemo).setOnClickListener(this);
 
     }
@@ -99,6 +103,10 @@ public class OptimizeActivity extends AppCompatActivity implements View.OnClickL
                 break;
             case R.id.tv_builder_pattern:
                 intent = new Intent(this, BuilderPatternActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.tv_threadPool:
+                intent = new Intent(this, ThreadPoolActivity.class);
                 startActivity(intent);
                 break;
         }

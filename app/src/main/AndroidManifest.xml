@@ -612,6 +612,9 @@
         <activity android:name=".bgaphotopicker.MomentListActivity"
             android:theme="@style/AppThemeNoTitle" />
         <activity android:name=".aidls.AidlActivity"></activity>
+        <activity
+            android:name=".bezier.ThreadPoolActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
 
     </application>
 
