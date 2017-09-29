@@ -584,6 +584,13 @@
         <activity android:name=".notificoation.CustomActivity"></activity>
         <activity android:name=".notificoation.ProgressAcitivty"></activity>
 
+        <activity android:name="com.example.lenovo.cutphoto.ActivityRxPhoto"></activity>
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+
     </application>
 
 </manifest>

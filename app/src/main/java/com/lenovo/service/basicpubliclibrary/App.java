@@ -5,6 +5,7 @@ import android.support.multidex.MultiDex;
 
 import com.baidu.crabsdk.CrabSDK;
 import com.blankj.ALog;
+import com.example.lenovo.cutphoto.utils.RxUtils;
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.lenovo.service.basicpubliclibrary.bgabanner.Engine;
 import com.lenovo.service.basicpubliclibrary.config.Config;
@@ -16,6 +17,7 @@ import com.squareup.leakcanary.RefWatcher;
 import com.tencent.smtt.sdk.QbSdk;
 
 import org.litepal.LitePal;
+
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
@@ -103,6 +105,7 @@ public class App extends SugarApp {
             refWatcher=  LeakCanary.install(this);
         }
         QbSdk.initX5Environment(this,null);
+
     }
 
     public static Context getContext() {

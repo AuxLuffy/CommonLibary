@@ -1,2 +1,2 @@
-include ':app', ':kotlin', ':camera', ':qrcode', ':getui', ':retrofithelper', ':watermediary', ':windlinkrecycleview'
+include ':app', ':kotlin', ':camera', ':qrcode', ':getui', ':retrofithelper', ':watermediary', ':windlinkrecycleview', ':cutphotolib'
 

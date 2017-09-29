@@ -56,14 +56,12 @@ repositories {
 }
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-
     //65535解决
 
     // if Java use this. If using Kotlin do NOT use this.
     annotationProcessor "com.github.Raizlabs.DBFlow:dbflow-processor:${dbflow_version}"
     compile "com.github.Raizlabs.DBFlow:dbflow-core:${dbflow_version}"
     compile "com.github.Raizlabs.DBFlow:dbflow:${dbflow_version}"
-
     // sql-cipher database encyrption (optional)
     compile "com.android.support:support-v4:${supportVersion}"
     compile "com.android.support:appcompat-v7:${supportVersion}"
@@ -174,6 +172,7 @@ dependencies {
     compile 'com.sackcentury:shinebutton:0.1.9'
     compile 'com.yanzhenjie.zbar:camera:1.0.0'
     compile 'com.gplibs:magic-surface-view:1.1.1'
+    compile project(':cutphotolib')
 }
 greendao {
     schemaVersion 1

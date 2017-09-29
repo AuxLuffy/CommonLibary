@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.getui.GetuiActivity;
+import com.example.lenovo.cutphoto.ActivityRxPhoto;
 import com.lenovo.service.basicpubliclibrary.alipay.AlipayActivity;
 import com.lenovo.service.basicpubliclibrary.cameraDemo.RecordMainAcitivity;
 import com.lenovo.service.basicpubliclibrary.camerakit.CamerakitActivity;
@@ -25,7 +26,6 @@ import com.lenovo.service.basicpubliclibrary.tencentx5.X5WebViewActivity;
 import com.lenovo.service.basicpubliclibrary.validation.ValidateActivity;
 import com.lenovo.service.basicpubliclibrary.videoplayer.VideoplayerActivity;
 import com.lenovo.service.basicpubliclibrary.wechatpay.WeChatPayActivity;
-import com.lenovo.service.basicpubliclibrary.xmlparse.XmlParseActivity;
 import com.lenovo.service.basicpubliclibrary.zbar.ZbarActivity;
 import com.lenovo.service.basicpubliclibrary.zxing.activity.ZxingActivity;
 
@@ -37,7 +37,7 @@ public class CompositeActivity extends AppCompatActivity implements View.OnClick
     private int[] ids = new int[]{R.id.helloChart, R.id.jsBridge, R.id.SADL, R.id.ilog_demo,
              R.id.scan_code, R.id.tv_getui, R.id.tv_permission,R.id.tvEventBus,
             R.id.tv_request, R.id.tv_view1, R.id.tv_view2, R.id.tv_view3, R.id.tv_view4,
-            R.id.tv_view5, R.id.tv_view6, R.id.tv_view7, R.id.tv_fingerprint
+            R.id.tv_view5, R.id.tv_view6, R.id.tv_view7, R.id.tv_fingerprint,R.id.tvUcrop
     };//R.id.tv_xmlparse,
 
     @Override
@@ -149,6 +149,9 @@ public class CompositeActivity extends AppCompatActivity implements View.OnClick
                 break;
             case R.id.zbar:
                 intent.setClass(this, ZbarActivity.class);
+                break;
+            case R.id.tvUcrop://Ucrop图片裁剪+glide圆角头像
+                intent.setClass(this, ActivityRxPhoto.class);
                 break;
         }
         startActivity(intent);
