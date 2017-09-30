@@ -142,5 +142,13 @@
             android:textColor="#CCCCCC"
 
             />
+        <TextView
+            android:id="@+id/tv_cache"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#e9b863"
+            android:gravity="center"
+            android:text="cacheLoader缓存工具库"
+            android:textColor="#ffffff" />
 </LinearLayout>
 </ScrollView>

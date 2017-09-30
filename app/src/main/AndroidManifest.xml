@@ -16,7 +16,7 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
-    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
 
     <!-- end 二维码扫描 相机，闪光灯权限 -->
     <uses-feature android:name="android.hardware.camera" />
@@ -45,6 +45,7 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
     <application
         android:name=".App"
         android:allowBackup="true"
@@ -93,7 +94,7 @@
         <!-- 瀑布流式任务时光轴演示界面 -->
         <activity android:name=".recyclerview.staggeredtimeline.timeline2.DotTimeLineActivity" />
         <!-- 瀑布流式任务时光轴演示界面2 -->
-        <activity android:name=".recyclerview.staggeredtimeline.timeline3.DotTimeLine2Activity" />
+        <activity android:name=".recyclerview.staggeredtimeline.timeline3.ui.TimeLine3Activity" />
         <!-- 悬浮效果演示界面1 -->
         <activity android:name=".recyclerview.suspension.ui.SuspensionEffectActivity" />
         <!-- 悬浮效果演示界面2 -->
@@ -297,6 +298,19 @@
         <service
             android:name=".iconbadge.BadgeIntentService"
             android:exported="false" />
+
+        <!-- 阿里热修复 -->
+        <meta-data
+            android:name="com.taobao.android.hotfix.IDSECRET"
+            android:value="24636833-1" />
+        <meta-data
+            android:name="com.taobao.android.hotfix.APPSECRET"
+            android:value="8c991a8f9a41169eb06cf79f70996f2a" />
+        <meta-data
+            android:name="com.taobao.android.hotfix.RSASECRET"
+            android:value="MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDfZzZql0uvK9J3zQQXE7wCcZEmNNWwXXQDxHgLrKeqHheWTgT28imRyi7Nu5XStigaLcDLfUtJnCveea5lbU+CPZJaxj5lHVtBY3qHIhh7D4a5h0NOtxZkqQHaih/vNE2THrPGAvbhLQciQF7zXp26l5kMCXuXS6DiOnKxYi+oIRc+tIOAFSXWXhwRTMG+M7dK/zb1+Cnt12MfZ9S4AQ5l9puMK/CJoDk7Y27O7zk5QMzfSGpGEPjnD8bpUApxVDHkau9HRr93v6AqJtalZg+xfCTdPHUAPlUn92yld/kaVVHvJQHhjqzWeO1k0wgf+4PL1tuHN+xhSua1TIIfd4G/AgMBAAECggEAH/3ezArYesBSxnckc82Oqebre0Yrp7LqTzPOYRWbeQAQLqUDjv2EuGz0oN+RB/iv63fL2RgbNPJZUeWo9LtfnG4GzFsBSmeWztlZDYrzaIQDrgPRvq73VPji3BHVmuKpjTzjT6LTCdHx6JTBRCazfaoB77hX64WYB22JSR+fZXr7EHB/E8gUqeAfekYwWOCldD4skeeUpcGfGbFOLnNoGaAlSOBu/6cPh5xwERyczBQ0SlvaAPuoGXX6nnf1ygTU+RwDgAN+Mq9tLyVM6VMqny73VhKngiTCHVwqC4yMxcAjVsTmyQZvV7EmrTZfzdIhhKB1CjPzeC7p46soiWK7UQKBgQD6q7Uv3SFKHLUz2DYH1F3TGQx7Dm6mNKfr8W3bDnOfuSAqdnH0YUvkI7F4Wehv8bGwj4G1PhmZyKGH2d3JtW7j3Vs097oHR+fFI8OCBKKJ3TDG0YskjjvrtvR17yuPr2IAdOEyfA2NyCVoOK9T9ONryriqA/XrK80rIp6IEW+KuQKBgQDkJxlq0Jxk7r9tw14tL8Z/b046Y22DQB7GjHtwIq0WKJbcNAohQK/KA1/PvDrOm2kFYhNY5FneXZN6YHjf0TyzzUK4X4/SxxSNPbGWn2XTZar2CQUKX/HD+PSTz7tzM8U3fA8DTsayRQEax6y+8Ao6Pow2g4fmF2S+lbu/ENxUNwKBgQDF3kyDn7XrXoXaisz7mTMGszsa1+WX5PC4WjcxN1MlvWganKyPD05so5AvRCkqVErC6ESm4IIs1iZLqjpcQo9p5w1b3kBGBwh4oSZut2HmGWerSTTggjXiduS5QzXLkdF2MsygoTPBuz9r6XLcfu4V5EuoSMASBt1JM2aYWcsGYQKBgQCovb5PwQCaqfXNIbzKoNYntFPgXV9GvqrEYGx/UDZB+D0zmg2P8H7TY1F+nBHGcyzmfVYf3awWCZGk5isgJmnF9d8N7Ce8Vd9+Yw2wgC3Yfw5FsAAZX0K5layWkgJqvvRzB/82jBHrEZwyiVHbWj/GOjKLsxZU+CJbzvSv6LF8WwKBgQCqlyI3JnF8uxRLJkFJD5RbasCGZsmDXR8Zc0RCtN+bhU4hnL2iocloVSeOlZXDM6R1D5x6WyllJsSkRb4hesluGP4a8UCLpt774uk/hhV765NnxEuoSTf4EWQgrDZqlfJ9Jb4ceSHz7i0MEVCG7E5W443HwG1/TZAHvuI7Hj5y0A==" />
+        <!-- end 阿里热修复 -->
+
 
         <!-- sugar -->
         <!-- 数据库名字 -->
@@ -555,14 +569,64 @@
         <activity android:name=".blurry.BlurryTestActivity" />
         <activity android:name=".tickerview.TickerActivity" />
         <activity android:name=".tickerview.PerfActivity" />
-        <activity android:name=".xmlparse.XmlParseActivity"></activity>
-        <activity android:name=".xmlparse.PullParseActivity"/>
-        <activity android:name=".xmlparse.SaxParseActivity"/>
-        <activity android:name=".bubbleview.BubbleViewActivity" android:theme="@style/AppThemeNoTitle" />
-        <activity android:name=".psdinput.PayPsdViewActivity" android:theme="@style/AppThemeNoTitle" />
-        <activity android:name=".progressbar.ProgressBarActivity" android:theme="@style/AppThemeNoTitle" />
-        <activity android:name=".fingerutils.FingerprintActivity" android:theme="@style/AppThemeNoTitle" />
+        <activity android:name=".xmlparse.XmlParseActivity" />
+        <activity android:name=".xmlparse.PullParseActivity" />
+        <activity android:name=".xmlparse.SaxParseActivity" />
+        <activity
+            android:name=".bubbleview.BubbleViewActivity"
+            android:theme="@style/AppThemeNoTitle" />
+        <activity
+            android:name=".psdinput.PayPsdViewActivity"
+            android:theme="@style/AppThemeNoTitle" />
+        <activity
+            android:name=".progressbar.ProgressBarActivity"
+            android:theme="@style/AppThemeNoTitle" />
+        <activity
+            android:name=".fingerutils.FingerprintActivity"
+            android:theme="@style/AppThemeNoTitle" />
         <activity android:name=".shinebutton.ShineButtonActivity" />
+        <activity android:name=".tencentx5.X5WebViewActivity" />
+        <activity android:name=".zbar.ZbarActivity" />
+        <activity android:name=".StrategyPattern.StrategyPatternActivity" />
+        <activity android:name=".factorypattern.FactoryActivity" />
+        <activity android:name=".builderpattern.BuilderPatternActivity" />
+        <activity android:name=".magicsurfaceview.MagicSurfaceviewActivity" />
+        <activity android:name=".magicsurfaceview.launch.LaunchActivity" />
+        <activity android:name=".magicsurfaceview.LightSampleActivity" />
+        <activity android:name=".magicsurfaceview.MacWindowAnimActivity" />
+        <activity android:name=".magicsurfaceview.MatrixAnimSampleActivity" />
+        <activity android:name=".magicsurfaceview.MultiScrapAnimActivity" />
+        <activity android:name=".magicsurfaceview.MultiSlideAnimActivity" />
+        <activity android:name=".magicsurfaceview.VortexAnimActivity" />
+        <activity android:name=".magicsurfaceview.WaveAnimActivity" />
+        <activity
+            android:name=".searchbox.SearchBoxActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity android:name=".colorpickerview.ColorPickerViewActivity" />
+        <activity android:name=".materialripple.MaterialRippleActivity" />
+        <activity android:name=".materialripple.DemoListActivity" />
+        <activity android:name=".materialripple.DemoRecyclerActivity" />
+        <activity android:name=".viewexplosion.ViewExplosiionActivity" />
+        <activity android:name=".emojifilter.EmojiFilterActivity" />
+        <activity
+            android:name=".bgaphotopicker.MomentAddActivity"
+            android:theme="@style/AppThemeNoTitle" />
+        <activity
+            android:name=".bgaphotopicker.MomentListActivity"
+            android:theme="@style/AppThemeNoTitle" />
+        <activity android:name=".appupdate.AppUpdateActivity" />
+        <activity
+            android:name=".appupdate.CustomsUpdateActivity"
+            android:theme="@style/UpdateDialog" />
+        <activity android:name=".aidls.AidlActivity" />
+        <activity
+            android:name=".bezier.ThreadPoolActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".opengl.OpenGLActivity" />
+        <activity android:name=".opengl.SwitchRendererActivity" />
+        <activity android:name=".netframe.NetTestActivity" />
+        <activity android:name=".safekeyboard.SafeKeyBoardActivity" />
+        <activity android:name=".cachedemo.LazyCacheActivity"></activity>
         <activity android:name=".tencentx5.X5WebViewActivity"/>
         <activity android:name=".zbar.ZbarActivity"/>
         <activity android:name=".StrategyPattern.StrategyPatternActivity"/>

@@ -21,7 +21,6 @@ import com.lenovo.service.basicpubliclibrary.guideanim.ShowActivity;
 import com.lenovo.service.basicpubliclibrary.headerfloatanimation.HeaderFloatActivity;
 import com.lenovo.service.basicpubliclibrary.loadingart.Loadingart_activity;
 import com.lenovo.service.basicpubliclibrary.loopview.LoopViewActivity;
-import com.lenovo.service.basicpubliclibrary.magicsurfaceview.MagicSurfaceviewActivity;
 import com.lenovo.service.basicpubliclibrary.magicsurfaceview.launch.LaunchActivity;
 import com.lenovo.service.basicpubliclibrary.meizuweather.MeizuWeacherActivity;
 import com.lenovo.service.basicpubliclibrary.roll3dimageview.RollImageActivity;
@@ -31,6 +30,7 @@ import com.lenovo.service.basicpubliclibrary.stikyscrollview.StikyScrollviewActi
 import com.lenovo.service.basicpubliclibrary.svg.WowActivity;
 import com.lenovo.service.basicpubliclibrary.takeaway.TakeawayActivity;
 import com.lenovo.service.basicpubliclibrary.threed.ThreedMainActivity;
+import com.lenovo.service.basicpubliclibrary.viewexplosion.ViewExplosiionActivity;
 import com.lenovo.service.basicpubliclibrary.wowoviewpagerexample.WowoMainActivity;
 
 public class AnimationActivity extends AppCompatActivity {
@@ -81,6 +81,7 @@ public class AnimationActivity extends AppCompatActivity {
         findViewById(R.id.tv_danmu).setOnClickListener(new TextViewClickListener());
         findViewById(R.id.tv_threed).setOnClickListener(new TextViewClickListener());
         findViewById(R.id.bubbleview).setOnClickListener(new TextViewClickListener());
+        findViewById(R.id.tv_viewexplosion).setOnClickListener(new TextViewClickListener());
 
         mTvExamplelv = (TextView)findViewById(R.id.tv_examplelv);
         mTvWowoviewpager = (TextView)findViewById(R.id.wowo_viewpager);
@@ -206,6 +207,9 @@ public class AnimationActivity extends AppCompatActivity {
                     break;
                 case R.id.tv_search_box:
                     startActivity(new Intent(AnimationActivity.this, SearchBoxActivity.class));
+                    break;
+                case R.id.tv_viewexplosion:
+                    startActivity(new Intent(AnimationActivity.this, ViewExplosiionActivity.class));
                     break;
                 default:
                     break;

@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
+
+import com.lenovo.service.basicpubliclibrary.cachedemo.LazyCacheActivity;
 import com.lenovo.service.basicpubliclibrary.cupboard.CupboardActivity;
 import com.lenovo.service.basicpubliclibrary.dbflow.DBFlowActivity;
 import com.lenovo.service.basicpubliclibrary.greendao.GreenDaoDemoActivity;
@@ -66,6 +68,7 @@ public class StorageActivity extends AppCompatActivity implements View.OnClickLi
         findViewById(R.id.tv_xmldomparse).setOnClickListener(this);
         findViewById(R.id.tv_xmlpullparse).setOnClickListener(this);
         findViewById(R.id.tv_xmlsaxparse).setOnClickListener(this);
+        findViewById(R.id.tv_cache).setOnClickListener(this);
 
     }
 
@@ -123,6 +126,10 @@ public class StorageActivity extends AppCompatActivity implements View.OnClickLi
             case R.id.tv_xmlsaxparse:
                 Intent xmlsaxParse = new Intent(this, SaxParseActivity.class);
                 startActivity(xmlsaxParse);
+                break;
+            case R.id.tv_cache:
+                Intent intentt = new Intent(this, LazyCacheActivity.class);
+                startActivity(intentt);
                 break;
         }
     }

@@ -262,5 +262,14 @@
             android:background="#E0FFFF"
             android:gravity="center"
             />
+
+        <TextView
+            android:id="@+id/tv_viewexplosion"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#F0E68C"
+            android:gravity="center"
+            android:text="view破碎"
+            android:textColor="#CCCCCC" />
     </LinearLayout>
 </ScrollView>

@@ -28,6 +28,12 @@ android {
         }
     }
 
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main/java', 'src/main/aidl']
+        }
+    }
+
     dataBinding {
         enabled = true
     }
@@ -42,6 +48,20 @@ android {
         javaMaxHeapSize "4g"
         incremental true
     }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+    }
+
 }
 ext {
     supportVersion = '26.0.0-alpha1'
@@ -100,6 +120,10 @@ dependencies {
     compile project(':watermediary')
     compile files('libs/libammsdk.jar')
     compile project(':windlinkrecycleview')
+    compile project(':customkeyboard')
+
+    //net
+    //rxlifecycle
     compile 'net.grandcentrix.tray:tray:0.12.0'
     compile 'com.github.fernandodev.androidproperties:androidproperties:+'
     compile 'org.greenrobot:eventbus:3.0.0'
@@ -163,15 +187,25 @@ dependencies {
     compile 'com.github.chrisbanes:PhotoView:2.1.3'
     compile 'jp.wasabeef:blurry:2.1.1'
     compile 'com.robinhood.ticker:ticker:1.2.1'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
-    annotationProcessor 'com.github.jokermonn:permissions4m:2.1.1-processor'
-    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.3'
-    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.3'
     compile 'crab.baidu.crabsdk:crabsdk:latest.release@aar'
     compile 'crab.baidu.crabndk:crabndk:latest.release@aar'
     compile 'com.sackcentury:shinebutton:0.1.9'
     compile 'com.yanzhenjie.zbar:camera:1.0.0'
     compile 'com.gplibs:magic-surface-view:1.1.1'
+    compile 'com.balysv:material-ripple:1.0.2'
+    compile 'cn.bingoogolapple:bga-photopicker:1.2.3@aar'
+    compile 'cn.bingoogolapple:bga-adapter:1.1.8@aar'
+    compile 'pub.devrel:easypermissions:0.2.1'
+    compile 'com.aliyun.ams:alicloud-android-hotfix:3.1.2'
+    compile 'com.github.fccaikai:AppUpdate:2.1.4'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.8.1'
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'com.trello:rxlifecycle-components:1.0'
+    compile 'com.robin.lazy.cache:CacheLibrary:1.0.6'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    annotationProcessor 'com.github.jokermonn:permissions4m:2.1.1-processor'
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.3'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.3'
     compile project(':cutphotolib')
     compile project(':fragtabhostlib')
     compile project(':gridviewdraglib')

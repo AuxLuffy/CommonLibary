@@ -323,6 +323,51 @@
             android:textColor="#000000"/>
 
 
+
+        <TextView
+            android:onClick="getColorPickerView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#06E6FA"
+            android:gravity="center"
+            android:text="从图片中获取颜色"
+            android:textColor="#CCCCCC" />
+
+        <TextView
+            android:onClick="sendWeChat"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#FF259C"
+            android:gravity="center"
+            android:text="微信朋友圈图片选择、预览、九宫格图片及其拖拽排序等功能"
+            android:textColor="#CCCCCC" />
+
+        <TextView
+            android:id="@+id/tv_aidl"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#80f0d4"
+            android:gravity="center"
+            android:text="进程间通信之AIDL"
+            android:textColor="#CCCCCC" />
+
+        <TextView
+            android:id="@+id/tvAppUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#FFFFF0"
+            android:gravity="center"
+            android:text="app检查升级"
+            android:textColor="#CCCCCC" />
+
+        <TextView
+            android:id="@+id/tv_opengl"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#E6E6FA"
+            android:gravity="center"
+            android:text="opengl渲染简单3D图形"
+            android:textColor="#CCCCCC" />
     </LinearLayout>
 
 </ScrollView>

@@ -22,7 +22,7 @@ import com.lenovo.service.basicpubliclibrary.recyclerview.staggeredgrid.ui.ItemH
 import com.lenovo.service.basicpubliclibrary.recyclerview.staggeredgrid.ui.StaggeredGridActivity;
 import com.lenovo.service.basicpubliclibrary.recyclerview.staggeredtimeline.timeline1.TimeLine1Activity;
 import com.lenovo.service.basicpubliclibrary.recyclerview.staggeredtimeline.timeline2.DotTimeLineActivity;
-import com.lenovo.service.basicpubliclibrary.recyclerview.staggeredtimeline.timeline3.DotTimeLine2Activity;
+import com.lenovo.service.basicpubliclibrary.recyclerview.staggeredtimeline.timeline3.ui.TimeLine3Activity;
 import com.lenovo.service.basicpubliclibrary.recyclerview.suspension.ui.SuspensionEffectActivity;
 import com.lenovo.service.basicpubliclibrary.recyclerview.suspension2.ui.SuspensionEffect2Activity;
 import com.lenovo.service.basicpubliclibrary.recyclerview.suspension3.ui.SuspensionEffect3Activity;
@@ -132,7 +132,7 @@ public class RecyclerViewActivity extends AppCompatActivity {
                         break;
                     //点击瀑布流式时光轴效果3
                     case 9:
-                        startActivity(new Intent(context, DotTimeLine2Activity.class));
+                        startActivity(new Intent(context, TimeLine3Activity.class));
                         break;
                     //点击利用ItemDecoration实现城市分类悬浮栏效果
                     case 10:

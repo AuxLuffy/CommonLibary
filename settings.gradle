@@ -1,2 +1,3 @@
+include ':app', ':kotlin', ':camera', ':qrcode', ':getui', ':retrofithelper', ':watermediary', ':windlinkrecycleview', ':customkeyboard'
 include ':app', ':kotlin', ':camera', ':qrcode', ':getui', ':retrofithelper', ':watermediary', ':windlinkrecycleview', ':cutphotolib', ':gridviewdraglib', ':fragtabhostlib'
 

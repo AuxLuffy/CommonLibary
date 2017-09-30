@@ -144,6 +144,35 @@
             android:gravity="center"
             android:text="封装GridView实现标签移动效果"
             android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/tv_threadPool"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#FFF0F5"
+            android:gravity="center"
+            android:text="线程池的使用"
+            android:textColor="#CCCCCC"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_netframe"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#F0E68C"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="retrofit + rxjava封装"
+            android:textColor="#CCCCCC" />
+        <TextView
+            android:id="@+id/tv_customkeyboard"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#d7fac9"
+            android:gravity="center"
+            android:text="安全键盘"
+            android:textColor="#CCCCCC" />
     </LinearLayout>
 
 </ScrollView>
