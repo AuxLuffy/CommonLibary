@@ -173,6 +173,8 @@ dependencies {
     compile 'com.yanzhenjie.zbar:camera:1.0.0'
     compile 'com.gplibs:magic-surface-view:1.1.1'
     compile project(':cutphotolib')
+    compile project(':fragtabhostlib')
+    compile project(':gridviewdraglib')
 }
 greendao {
     schemaVersion 1

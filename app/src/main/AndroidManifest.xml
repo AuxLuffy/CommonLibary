@@ -589,7 +589,8 @@
             android:name="com.yalantis.ucrop.UCropActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-
+        <activity android:name="com.example.lenovo.gridview_drag.ChannelActivity"></activity>
+        <activity android:name="com.example.lenovo.fragmenttabhost.FragTabHostActivity"></activity>
 
     </application>
 

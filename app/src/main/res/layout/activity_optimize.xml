@@ -125,8 +125,25 @@
             android:gravity="center"
             android:text="Builder(建造者)模式的使用"
             android:textColor="#CCCCCC"
-
             />
+        <TextView
+            android:id="@+id/tvFragTabHost"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#06E6FA"
+            android:onClick="onClick"
+            android:gravity="center"
+            android:text="封装FragmentTabHost实现底部菜单"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/tvGridViewDrag"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#80f0d4"
+            android:onClick="startAlipayActivity"
+            android:gravity="center"
+            android:text="封装GridView实现标签移动效果"
+            android:textColor="#000000"/>
     </LinearLayout>
 
 </ScrollView>

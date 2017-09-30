@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.lenovo.fragmenttabhost.FragTabHostActivity;
+import com.example.lenovo.gridview_drag.ChannelActivity;
 import com.example.lenovo.retrofithelper2.RetrofitHelperActivity;
 import com.lenovo.service.basicpubliclibrary.StrategyPattern.StrategyPatternActivity;
 import com.lenovo.service.basicpubliclibrary.builderpattern.BuilderPatternActivity;
@@ -56,6 +58,8 @@ public class OptimizeActivity extends AppCompatActivity implements View.OnClickL
         mTvFactoryPattern.setOnClickListener(this);
         mTvBuilderPattern.setOnClickListener(this);
         findViewById(R.id.tv_jnidemo).setOnClickListener(this);
+        findViewById(R.id.tvFragTabHost).setOnClickListener(this);
+        findViewById(R.id.tvGridViewDrag).setOnClickListener(this);
 
     }
 
@@ -100,6 +104,14 @@ public class OptimizeActivity extends AppCompatActivity implements View.OnClickL
             case R.id.tv_builder_pattern:
                 intent = new Intent(this, BuilderPatternActivity.class);
                 startActivity(intent);
+                break;
+            case R.id.tvFragTabHost:
+                intent=new Intent(this, FragTabHostActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.tvGridViewDrag:
+                 intent=new Intent(this, ChannelActivity.class);
+                 startActivity(intent);
                 break;
         }
     }
