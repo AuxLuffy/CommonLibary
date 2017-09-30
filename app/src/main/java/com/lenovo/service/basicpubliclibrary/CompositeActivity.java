@@ -11,6 +11,7 @@ import com.example.lenovo.cutphoto.ActivityRxPhoto;
 import com.lenovo.service.basicpubliclibrary.aidls.AidlActivity;
 import com.lenovo.service.basicpubliclibrary.alipay.AlipayActivity;
 import com.lenovo.service.basicpubliclibrary.appupdate.AppUpdateActivity;
+import com.lenovo.service.basicpubliclibrary.bezier.ShakeActivity;
 import com.lenovo.service.basicpubliclibrary.bgaphotopicker.MomentListActivity;
 import com.lenovo.service.basicpubliclibrary.cameraDemo.RecordMainAcitivity;
 import com.lenovo.service.basicpubliclibrary.camerakit.CamerakitActivity;
@@ -43,7 +44,7 @@ public class CompositeActivity extends AppCompatActivity implements View.OnClick
              R.id.scan_code, R.id.tv_getui, R.id.tv_permission,R.id.tvEventBus,
             R.id.tv_request, R.id.tv_view1, R.id.tv_view2, R.id.tv_view3, R.id.tv_view4,
             R.id.tv_view5, R.id.tv_view6, R.id.tv_view7, R.id.tv_fingerprint, R.id.tvAppUpdate,
-            R.id.tv_aidl, R.id.tv_opengl,R.id.tvUcrop
+            R.id.tv_aidl, R.id.tv_opengl,R.id.tvUcrop,R.id.tv_shake
     };//R.id.tv_xmlparse,
 
     @Override
@@ -167,6 +168,9 @@ public class CompositeActivity extends AppCompatActivity implements View.OnClick
                 break;
             case R.id.tvUcrop://Ucrop图片裁剪+glide圆角头像
                 intent.setClass(this, ActivityRxPhoto.class);
+                break;
+            case R.id.tv_shake:
+                intent.setClass(this, ShakeActivity.class);
                 break;
         }
         startActivity(intent);

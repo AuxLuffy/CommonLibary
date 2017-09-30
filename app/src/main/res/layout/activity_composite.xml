@@ -368,6 +368,15 @@
             android:gravity="center"
             android:text="opengl渲染简单3D图形"
             android:textColor="#CCCCCC" />
+
+        <TextView
+            android:id="@+id/tv_shake"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#F0E68C"
+            android:gravity="center"
+            android:text="摇一摇"
+            android:textColor="#CCCCCC" />
     </LinearLayout>
 
 </ScrollView>
