@@ -271,5 +271,13 @@
             android:gravity="center"
             android:text="view破碎"
             android:textColor="#CCCCCC" />
+        <TextView
+            android:id="@+id/tv_animationbtn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#25dfe2"
+            android:gravity="center"
+            android:text="带动画效果的按钮"
+            android:textColor="#CCCCCC" />
     </LinearLayout>
 </ScrollView>

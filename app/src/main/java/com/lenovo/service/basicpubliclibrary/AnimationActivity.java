@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.lenovo.service.basicpubliclibrary.ProgressBaranimation.ProgressActivity;
+import com.lenovo.service.basicpubliclibrary.animationbutton.AnimationBtnActivity;
 import com.lenovo.service.basicpubliclibrary.bezier.BezierActivity;
 import com.lenovo.service.basicpubliclibrary.bezier.DotsLoaderActivity;
 import com.lenovo.service.basicpubliclibrary.bottombar.BottomBarActivity;
@@ -82,6 +83,7 @@ public class AnimationActivity extends AppCompatActivity {
         findViewById(R.id.tv_threed).setOnClickListener(new TextViewClickListener());
         findViewById(R.id.bubbleview).setOnClickListener(new TextViewClickListener());
         findViewById(R.id.tv_viewexplosion).setOnClickListener(new TextViewClickListener());
+        findViewById(R.id.tv_animationbtn).setOnClickListener(new TextViewClickListener());
 
         mTvExamplelv = (TextView)findViewById(R.id.tv_examplelv);
         mTvWowoviewpager = (TextView)findViewById(R.id.wowo_viewpager);
@@ -210,6 +212,9 @@ public class AnimationActivity extends AppCompatActivity {
                     break;
                 case R.id.tv_viewexplosion:
                     startActivity(new Intent(AnimationActivity.this, ViewExplosiionActivity.class));
+                    break;
+                case R.id.tv_animationbtn:
+                    startActivity(new Intent(AnimationActivity.this, AnimationBtnActivity.class));
                     break;
                 default:
                     break;

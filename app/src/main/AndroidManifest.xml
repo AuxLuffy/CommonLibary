@@ -645,6 +645,7 @@
 
         <activity android:name=".bezier.ShakeActivity"></activity>
         <activity android:name=".gallerypicker.GalleryMainActivity"></activity>
+        <activity android:name=".animationbutton.AnimationBtnActivity"></activity>
     </application>
 
 </manifest>
