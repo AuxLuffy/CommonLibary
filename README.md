@@ -225,3 +225,7 @@
 11. 利用ItemDecoration实现城市分类悬浮栏效果
 12. 利用ItemDecoration实现城市分类悬浮栏效果2
 13. 利用ItemDecoration实现城市分类悬浮栏效果3
+14. 利用RecyclerView实现Gallery效果
+15. 利用RecyclerView实现商品展示效果
+16. 利用RecyclerView实现天气预报效果
+17. 利用RecyclerView实现Excel效果

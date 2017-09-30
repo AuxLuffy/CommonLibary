@@ -101,6 +101,14 @@
         <activity android:name=".recyclerview.suspension2.ui.SuspensionEffect2Activity" />
         <!-- 悬浮效果演示界面3 -->
         <activity android:name=".recyclerview.suspension3.ui.SuspensionEffect3Activity" />
+        <!-- RecyclerView实现Gallery效果 -->
+        <activity android:name=".recyclerview.discretescrollview.demo.gallery.GalleryActivity" />
+        <!-- RecyclerView实现商品展示效果 -->
+        <activity android:name=".recyclerview.discretescrollview.demo.shop.ShopActivity" />
+        <!-- RecyclerView实现天气预报效果 -->
+        <activity android:name=".recyclerview.discretescrollview.demo.weather.WeatherActivity" />
+        <!-- RecyclerViewExcel效果 -->
+        <activity android:name=".recyclerview.excel.ExcelActivity" />
         <!-- 袁东华结束 -->
 
 

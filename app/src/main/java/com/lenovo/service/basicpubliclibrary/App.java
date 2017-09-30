@@ -13,6 +13,7 @@ import com.lenovo.service.basicpubliclibrary.config.Config;
 import com.lenovo.service.basicpubliclibrary.loaddata.LoadDataLayout;
 import com.lenovo.service.basicpubliclibrary.netframe.net.extension.BaseNetProvider;
 import com.lenovo.service.basicpubliclibrary.netframe.net.retrofit.NetMgr;
+import com.lenovo.service.basicpubliclibrary.recyclerview.discretescrollview.demo.DiscreteScrollViewOptions;
 import com.orm.SugarApp;
 import com.raizlabs.android.dbflow.config.FlowManager;
 import com.robin.lazy.cache.CacheLoaderManager;
@@ -51,6 +52,7 @@ public class App extends SugarApp {
     public void onCreate() {
         super.onCreate();
         this.mContext = getApplicationContext();
+        DiscreteScrollViewOptions.init(this);
         CacheLoaderManager.getInstance().init(this, new HashCodeFileNameGenerator(), 1024 * 1024 * 8, 50, 20);
         LitePal.initialize(this);
         sInstance = this;

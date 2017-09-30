@@ -12,7 +12,11 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import com.lenovo.service.basicpubliclibrary.R;
 import com.lenovo.service.basicpubliclibrary.recyclerview.banner.ui.BannerActivity;
+import com.lenovo.service.basicpubliclibrary.recyclerview.discretescrollview.demo.gallery.GalleryActivity;
+import com.lenovo.service.basicpubliclibrary.recyclerview.discretescrollview.demo.shop.ShopActivity;
+import com.lenovo.service.basicpubliclibrary.recyclerview.discretescrollview.demo.weather.WeatherActivity;
 import com.lenovo.service.basicpubliclibrary.recyclerview.entrance.adapter.RecyclerViewAdapter;
+import com.lenovo.service.basicpubliclibrary.recyclerview.excel.ExcelActivity;
 import com.lenovo.service.basicpubliclibrary.recyclerview.item.decoration.line.ui.DecorationActivity;
 import com.lenovo.service.basicpubliclibrary.recyclerview.item.decoration.line.view.DividerItemDecoration;
 import com.lenovo.service.basicpubliclibrary.recyclerview.item.decoration.rankinglist.ui.RankingListActivity;
@@ -71,6 +75,10 @@ public class RecyclerViewActivity extends AppCompatActivity {
         list.add("利用ItemDecoration实现城市分类悬浮栏效果1");
         list.add("利用ItemDecoration实现城市分类悬浮栏效果2");
         list.add("利用ItemDecoration实现城市分类悬浮栏效果3");
+        list.add("利用RecyclerView实现Gallery效果");
+        list.add("利用RecyclerView实现商品展示效果");
+        list.add("利用RecyclerView实现天气预报效果");
+        list.add("利用RecyclerView实现Excel效果");
         recyclerViewAdapter.setList(list);
     }
 
@@ -145,6 +153,22 @@ public class RecyclerViewActivity extends AppCompatActivity {
                     //点击利用ItemDecoration实现城市分类悬浮栏效果3
                     case 12:
                         startActivity(new Intent(context, SuspensionEffect3Activity.class));
+                        break;
+                    //RecyclerView实现Gallery效果
+                    case 13:
+                        startActivity(new Intent(context, GalleryActivity.class));
+                        break;
+                    //RecyclerView实现商品展示效果
+                    case 14:
+                        startActivity(new Intent(context, ShopActivity.class));
+                        break;
+                    //RecyclerView天气预报效果
+                    case 15:
+                        startActivity(new Intent(context, WeatherActivity.class));
+                        break;
+                    //RecyclerView实现Excel效果
+                    case 16:
+                        startActivity(new Intent(context, ExcelActivity.class));
                         break;
                 }
 

@@ -672,4 +672,24 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:padding">10dp</item>
     </style>
+
+
+
+    <style name="ShopTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@android:color/white</item>
+        <item name="colorAccent">@color/shopAccent</item>
+    </style>
+
+    <style name="WeatherTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus" tools:targetApi="kitkat">true</item>
+    </style>
+
+    <style name="GalleryTheme" parent="AppTheme">
+        <item name="colorAccent">@color/galleryAccent</item>
+    </style>
+
+    <style name="ClickableImageView">
+        <item name="android:clickable">true</item>
+        <item name="android:background">?android:selectableItemBackground</item>
+    </style>
 </resources>

@@ -121,8 +121,8 @@ dependencies {
     compile files('libs/libammsdk.jar')
     compile project(':windlinkrecycleview')
     compile project(':customkeyboard')
-
     //net
+
     //rxlifecycle
     compile 'net.grandcentrix.tray:tray:0.12.0'
     compile 'com.github.fernandodev.androidproperties:androidproperties:+'
