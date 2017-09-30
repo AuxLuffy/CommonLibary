@@ -43,8 +43,7 @@ public class CompositeActivity extends AppCompatActivity implements View.OnClick
              R.id.scan_code, R.id.tv_getui, R.id.tv_permission,R.id.tvEventBus,
             R.id.tv_request, R.id.tv_view1, R.id.tv_view2, R.id.tv_view3, R.id.tv_view4,
             R.id.tv_view5, R.id.tv_view6, R.id.tv_view7, R.id.tv_fingerprint, R.id.tvAppUpdate,
-            R.id.tv_aidl, R.id.tv_opengl
-            R.id.tv_view5, R.id.tv_view6, R.id.tv_view7, R.id.tv_fingerprint,R.id.tvUcrop
+            R.id.tv_aidl, R.id.tv_opengl,R.id.tvUcrop
     };//R.id.tv_xmlparse,
 
     @Override
