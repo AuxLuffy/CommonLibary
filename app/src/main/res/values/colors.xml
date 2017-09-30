@@ -329,4 +329,6 @@
     <color name="bg_color">#FF99DCD7</color>
     <color name="tab_indicator_color">#66aea9</color>
     <color name="tab_text_color">#74c6c0</color>
+
+    <color name="gallery_blue">#FF4081</color>
 </resources>

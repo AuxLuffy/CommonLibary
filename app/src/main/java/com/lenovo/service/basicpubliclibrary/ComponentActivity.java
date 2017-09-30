@@ -16,6 +16,7 @@ import com.lenovo.service.basicpubliclibrary.Frostedglasseffect.util.OnBlurCompl
 import com.lenovo.service.basicpubliclibrary.bezier.PinViewActivity;
 import com.lenovo.service.basicpubliclibrary.colortheme.ColorThemeActivity;
 import com.lenovo.service.basicpubliclibrary.fragmentation.demo_flow.FlowMainActivity;
+import com.lenovo.service.basicpubliclibrary.gallerypicker.GalleryMainActivity;
 import com.lenovo.service.basicpubliclibrary.maillistananimation.MaillistActivity;
 import com.lenovo.service.basicpubliclibrary.multitype.bilibili.BilibiliActivity;
 import com.lenovo.service.basicpubliclibrary.notificoation.NotificoationActivity;
@@ -74,6 +75,9 @@ public class ComponentActivity extends AppCompatActivity implements View.OnClick
     TextView tv_curvechart;
     @BindView(R.id.tvNotificoation)
     TextView mtvNotificoation;
+    @BindView(R.id.tv_gallerypicker)
+    TextView tv_gallerypicker;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -102,6 +106,7 @@ public class ComponentActivity extends AppCompatActivity implements View.OnClick
         tv_lineXchart.setOnClickListener(this);
         tv_curvechart.setOnClickListener(this);
         mtvNotificoation.setOnClickListener(this);
+        tv_gallerypicker.setOnClickListener(this);
     }
 
 
@@ -189,6 +194,10 @@ public class ComponentActivity extends AppCompatActivity implements View.OnClick
             case R.id.tvNotificoation:
                 // Notificaation消息通知的使用
                 startActivity(new Intent(ComponentActivity.this, NotificoationActivity.class));
+                break;
+            case R.id.tv_gallerypicker:
+                // 曲线图
+                startActivity(new Intent(ComponentActivity.this, GalleryMainActivity.class));
                 break;
         }
     }

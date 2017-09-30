@@ -664,6 +664,7 @@
         <activity android:name="com.example.lenovo.gridview_drag.ChannelActivity"></activity>
         <activity android:name="com.example.lenovo.fragmenttabhost.FragTabHostActivity"></activity>
 
+        <activity android:name=".gallerypicker.GalleryMainActivity"></activity>
     </application>
 
 </manifest>

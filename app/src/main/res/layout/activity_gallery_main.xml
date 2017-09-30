@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <Switch
+        android:id="@+id/swMulSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="@string/isMulSelect"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etMulMaxSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/swMulSelect"
+        android:hint="@string/mulMaxSize"
+        android:inputType="number"
+        android:textSize="16sp" />
+
+    <Switch
+        android:id="@+id/swShowCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etMulMaxSize"
+        android:checked="true"
+        android:text="@string/isShowCamera"
+        android:textSize="16sp" />
+
+    <RadioGroup
+        android:id="@+id/rgImageLoader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/swShowCamera"
+        android:checkedButton="@+id/rbGlide"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbGlide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Glide" />
+
+        <RadioButton
+            android:id="@+id/rbPicasso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Picasso" />
+
+        <RadioButton
+            android:id="@+id/rbFresco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Fresco" />
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnOpenCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rgImageLoader"
+        android:text="@string/OpenCamera" />
+
+    <Switch
+        android:id="@+id/swIsCrop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnOpenCamera"
+        android:checked="false"
+        android:text="@string/isCrop"
+        android:textSize="16sp" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvResultPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn"
+        android:layout_below="@+id/swIsCrop" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/open" />
+
+
+</RelativeLayout>

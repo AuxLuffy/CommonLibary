@@ -197,6 +197,15 @@
             android:gravity="center" />
 
 
+
+        <TextView
+            android:id="@+id/tv_gallerypicker"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColor="@color/black"
+            android:text="图片选择器"
+            android:background="#36cfa4"
+            android:gravity="center" />
     </LinearLayout>
 
 </ScrollView>

@@ -209,6 +209,7 @@ dependencies {
     compile project(':cutphotolib')
     compile project(':fragtabhostlib')
     compile project(':gridviewdraglib')
+    compile 'com.github.YancyYe:GalleryPick:1.2.1'
 }
 greendao {
     schemaVersion 1
