@@ -14,9 +14,7 @@ import android.widget.FrameLayout;
 
 import com.lenovo.service.basicpubliclibrary.R;
 
-/**
- * Created by ditclear on 16/7/12. 可滑动的layout extends FrameLayout
- */
+
 public class SwipeDragLayout extends FrameLayout {
 
     private static SwipeDragLayout mCacheView;
@@ -152,7 +150,7 @@ public class SwipeDragLayout extends FrameLayout {
         }
     }
 
-    private void smoothClose(boolean smooth) {
+    public void smoothClose(boolean smooth) {
         if (smooth) {
             mDragHelper.smoothSlideViewTo(contentView, getPaddingLeft(), getPaddingTop());
             postInvalidate();
@@ -174,7 +172,13 @@ public class SwipeDragLayout extends FrameLayout {
             mListener.onClosed(SwipeDragLayout.this);
         }
     }
-    
+    public void clickClose() {
+        isOpen = false;
+        mCacheView = null;
+        if (mListener != null) {
+            mListener.onClosed(SwipeDragLayout.this);
+        }
+    }
     @Override
     public boolean onInterceptTouchEvent(MotionEvent ev) {
         switch (ev.getAction()) {

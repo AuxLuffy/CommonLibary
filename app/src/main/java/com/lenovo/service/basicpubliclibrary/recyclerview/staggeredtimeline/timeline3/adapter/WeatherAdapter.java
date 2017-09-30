@@ -19,6 +19,7 @@ import com.lenovo.service.basicpubliclibrary.recyclerview.item.handle.listener.O
 import com.lenovo.service.basicpubliclibrary.recyclerview.item.handle.listener.OnItemClickListener;
 import com.lenovo.service.basicpubliclibrary.recyclerview.item.handle.listener.OnMoveAndSwipedListener;
 import com.lenovo.service.basicpubliclibrary.recyclerview.item.handle.listener.OnStateChangedListener;
+import com.lenovo.service.basicpubliclibrary.recyclerview.staggeredtimeline.timeline3.SwipeDragLayout;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -61,6 +62,7 @@ public class WeatherAdapter extends Adapter<WeatherAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(final ViewHolder holder, final int position) {
         holder.task_edit.setText(list.get(position));
+        //点击删除
         holder.trash.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -69,15 +71,30 @@ public class WeatherAdapter extends Adapter<WeatherAdapter.ViewHolder> {
                     list.remove(position);
                     notifyItemRemoved(position);
                     //刷下删除条目下面的条目
-                    if (position != list.size() ) {
-                        notifyItemRangeChanged(position,list.size()-position);
+                    if (position != list.size()) {
+                        notifyItemRangeChanged(position, list.size() - position);
 
                     }
 
                 }
             }
         });
+        //点击编辑
+        holder.edit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (list.size() > position) {
+                    if (holder.swip_layout.isOpen()) {
+                        holder.swip_layout.smoothClose(true);
+                        holder.edit.setEnabled(true);
+                        holder.edit.setFocusable(true);
+                        notifyItemChanged(position);
+                    }
 
+
+                }
+            }
+        });
 
     }
 
@@ -90,6 +107,7 @@ public class WeatherAdapter extends Adapter<WeatherAdapter.ViewHolder> {
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         private EditText task_edit;
         private ImageView trash, edit;
+        private SwipeDragLayout swip_layout;
 
         private OnItemClickListener onItemClickListener;
 
@@ -97,9 +115,10 @@ public class WeatherAdapter extends Adapter<WeatherAdapter.ViewHolder> {
             super(itemView);
             this.onItemClickListener = onItemClickListener;
             itemView.setOnClickListener(this);
-            task_edit = (EditText) itemView.findViewById(R.id.task_edit);
-            trash = (ImageView) itemView.findViewById(R.id.trash);
-            edit = (ImageView) itemView.findViewById(R.id.edit);
+            task_edit = itemView.findViewById(R.id.task_edit);
+            trash = itemView.findViewById(R.id.trash);
+            edit = itemView.findViewById(R.id.edit);
+            swip_layout = itemView.findViewById(R.id.swip_layout);
         }
 
         @Override
