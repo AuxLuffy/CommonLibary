@@ -150,5 +150,33 @@
             android:gravity="center"
             android:text="cacheLoader缓存工具库"
             android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/tv_FileCache"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#66FF4081"
+            android:gravity="center"
+            android:text="工厂模式File存储"
+            android:textColor="#CCCCCC"/>
+        <TextView
+            android:id="@+id/tv_sp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#FFF0F5"
+            android:gravity="center"
+            android:text="工厂模式sp存储"
+            android:textColor="#CCCCCC"
+            />
+
+        <TextView
+            android:id="@+id/tv_db"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#7CFC00"
+            android:gravity="center"
+            android:text="db存储"
+            android:textColor="#CCCCCC"
+            />
 </LinearLayout>
 </ScrollView>

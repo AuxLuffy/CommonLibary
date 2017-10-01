@@ -642,10 +642,14 @@
         <activity android:name="com.example.lenovo.cutphoto.ActivityRxPhoto"></activity>
         <activity android:name="com.example.lenovo.gridview_drag.ChannelActivity"></activity>
         <activity android:name="com.example.lenovo.fragmenttabhost.FragTabHostActivity"></activity>
+        <activity android:name=".Exception.PermissionActivity"/>
 
         <activity android:name=".bezier.ShakeActivity"></activity>
         <activity android:name=".gallerypicker.GalleryMainActivity"></activity>
         <activity android:name=".animationbutton.AnimationBtnActivity"></activity>
+        <activity android:name=".cache.CacheFileActivity"/>
+        <activity android:name=".cache.SPActivity"/>
+        <activity android:name=".cache.DBActivity"/>
     </application>
 
 </manifest>

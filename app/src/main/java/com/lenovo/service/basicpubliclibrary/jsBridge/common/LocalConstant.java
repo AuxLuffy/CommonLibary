@@ -14,4 +14,8 @@ public interface LocalConstant {
         String page_register = "PAGE_REGISTER";
     }
 
+    interface SharePrefer{
+        public String mgs = "mgs";
+
+    }
 }

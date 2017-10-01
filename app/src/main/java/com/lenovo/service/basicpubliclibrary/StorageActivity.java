@@ -6,6 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
+import com.lenovo.service.basicpubliclibrary.cache.CacheFileActivity;
+import com.lenovo.service.basicpubliclibrary.cache.DBActivity;
+import com.lenovo.service.basicpubliclibrary.cache.SPActivity;
 import com.lenovo.service.basicpubliclibrary.cachedemo.LazyCacheActivity;
 import com.lenovo.service.basicpubliclibrary.cupboard.CupboardActivity;
 import com.lenovo.service.basicpubliclibrary.dbflow.DBFlowActivity;
@@ -69,6 +72,9 @@ public class StorageActivity extends AppCompatActivity implements View.OnClickLi
         findViewById(R.id.tv_xmlpullparse).setOnClickListener(this);
         findViewById(R.id.tv_xmlsaxparse).setOnClickListener(this);
         findViewById(R.id.tv_cache).setOnClickListener(this);
+        findViewById(R.id.tv_FileCache).setOnClickListener(this);
+        findViewById(R.id.tv_sp).setOnClickListener(this);
+        findViewById(R.id.tv_db).setOnClickListener(this);
 
     }
 
@@ -130,6 +136,18 @@ public class StorageActivity extends AppCompatActivity implements View.OnClickLi
             case R.id.tv_cache:
                 Intent intentt = new Intent(this, LazyCacheActivity.class);
                 startActivity(intentt);
+                break;
+            case R.id.tv_FileCache:
+                Intent cacheIntent = new Intent(this, CacheFileActivity.class);
+                startActivity(cacheIntent);
+                break;
+            case R.id.tv_sp:
+                Intent spIntent = new Intent(this, SPActivity.class);
+                startActivity(spIntent);
+                break;
+            case R.id.tv_db:
+                Intent dbIntent = new Intent(this, DBActivity.class);
+                startActivity(dbIntent);
                 break;
         }
     }

@@ -200,11 +200,16 @@
 2. 综合-recyclerview使用封装
 3. 控件-mvp+折线图使用封装
 4. 控件-自定义toolbar
-5. 优化-jni开发初步探究（已更新：实现java与c互调功能）  注：关于jni开发，更新代码后，如果报错，则说明需要配置你的ndk。请在local.properties文件中，添加ndk.dir=E\:\\ndk\\android-ndk-r14b 来标示你的ndk本地路径
+5. 优化-jni开发初步探究（已更新：实现java与c互调功能）
 6. 综合-网络框架 Okhttp + retrofit2 + http/https + rxjava + mvp（已更新：添加https连接演示）
 7. 综合-网络框架 Okhttp + retrofit2 + http/https + mvp
 8. 优化-崩溃日志上传
 9. 综合-crab崩溃异常ANR记录
+10. 优化-两行代码搞定权限申请
+11. 存储-工厂模式file存储
+12. 存储-工厂模式sp存储
+13. 存储-db存储
+
 
 
 非原创部分

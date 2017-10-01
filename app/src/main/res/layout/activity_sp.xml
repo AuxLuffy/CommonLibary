@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/inputstr"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_gravity="center_vertical"
+        android:background="@null"
+        android:maxLength="11"
+        android:paddingLeft="@dimen/dp_20"
+        android:singleLine="true"
+        android:text=""
+        android:textColorHint="@color/gray_stroke"
+        android:textSize="@dimen/normal_16_text"
+        />
+    <Button
+        android:id="@+id/save"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:text="保存"
+        />
+    <Button
+        android:id="@+id/get"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:text="取得刚保存的数据"
+        />
+    <TextView
+        android:id="@+id/mgs"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:paddingLeft="@dimen/dp_20"
+        />
+</LinearLayout>

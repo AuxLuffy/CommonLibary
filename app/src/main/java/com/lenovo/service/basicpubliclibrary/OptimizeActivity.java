@@ -9,6 +9,7 @@ import android.widget.TextView;
 import com.example.lenovo.fragmenttabhost.FragTabHostActivity;
 import com.example.lenovo.gridview_drag.ChannelActivity;
 import com.example.lenovo.retrofithelper2.RetrofitHelperActivity;
+import com.lenovo.service.basicpubliclibrary.Exception.PermissionActivity;
 import com.lenovo.service.basicpubliclibrary.StrategyPattern.StrategyPatternActivity;
 import com.lenovo.service.basicpubliclibrary.bezier.ThreadPoolActivity;
 import com.lenovo.service.basicpubliclibrary.builderpattern.BuilderPatternActivity;
@@ -70,6 +71,7 @@ public class OptimizeActivity extends AppCompatActivity implements View.OnClickL
         findViewById(R.id.tv_customkeyboard).setOnClickListener(this);
         findViewById(R.id.tvFragTabHost).setOnClickListener(this);
         findViewById(R.id.tvGridViewDrag).setOnClickListener(this);
+        findViewById(R.id.tv_permission).setOnClickListener(this);
 
     }
 
@@ -134,6 +136,10 @@ public class OptimizeActivity extends AppCompatActivity implements View.OnClickL
             case R.id.tvGridViewDrag:
                  intent=new Intent(this, ChannelActivity.class);
                  startActivity(intent);
+                break;
+            case R.id.tv_permission:
+                intent = new Intent(this, PermissionActivity.class);
+                startActivity(intent);
                 break;
         }
     }

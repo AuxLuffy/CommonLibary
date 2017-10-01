@@ -173,6 +173,17 @@
             android:gravity="center"
             android:text="安全键盘"
             android:textColor="#CCCCCC" />
+
+        <TextView
+            android:id="@+id/tv_permission"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#FFF0F5"
+            android:gravity="center"
+            android:text="permission申请"
+            android:textColor="#CCCCCC"
+
+            />
     </LinearLayout>
 
 </ScrollView>
