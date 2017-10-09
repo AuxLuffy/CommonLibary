@@ -650,6 +650,8 @@
         <activity android:name=".cache.CacheFileActivity"/>
         <activity android:name=".cache.SPActivity"/>
         <activity android:name=".cache.DBActivity"/>
+        <activity android:name=".charseperator.CharSeperatorActivity"/>
+        <activity android:name=".screenshot.ScreenShotActivity"/>
     </application>
 
 </manifest>

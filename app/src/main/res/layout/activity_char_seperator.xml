@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lenovo.service.basicpubliclibrary.charseperator.CharSeperatorActivity">
+
+    <EditText
+        android:id="@+id/editOrignalText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入需要分解词句"
+        android:padding="5dp"
+        android:textColor="@android:color/holo_blue_bright" />
+
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="显示结果"
+        android:textColor="@android:color/black"
+        android:textSize="14dp" />
+
+    <Button
+        android:id="@+id/btnSeperate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/holo_red_light"
+        android:text="分词"
+        android:textColor="@android:color/white"
+        android:textSize="14dp" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/holo_red_light"
+        android:text="清空结果"
+        android:textColor="@android:color/white"
+        android:textSize="14dp" />
+</LinearLayout>

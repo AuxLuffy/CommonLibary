@@ -15,6 +15,7 @@ import com.lenovo.service.basicpubliclibrary.bezier.ShakeActivity;
 import com.lenovo.service.basicpubliclibrary.bgaphotopicker.MomentListActivity;
 import com.lenovo.service.basicpubliclibrary.cameraDemo.RecordMainAcitivity;
 import com.lenovo.service.basicpubliclibrary.camerakit.CamerakitActivity;
+import com.lenovo.service.basicpubliclibrary.charseperator.CharSeperatorActivity;
 import com.lenovo.service.basicpubliclibrary.colorpickerview.ColorPickerViewActivity;
 import com.lenovo.service.basicpubliclibrary.databinding.DataBindingActivity;
 import com.lenovo.service.basicpubliclibrary.eventbus.EventBusActivity;
@@ -28,6 +29,7 @@ import com.lenovo.service.basicpubliclibrary.permissionDemo.PermissionDemoActivi
 import com.lenovo.service.basicpubliclibrary.request.ui.RequestTestActivity;
 import com.lenovo.service.basicpubliclibrary.rxjava.RxJavaActivity;
 import com.lenovo.service.basicpubliclibrary.sadl.SADLActivity;
+import com.lenovo.service.basicpubliclibrary.screenshot.ScreenShotActivity;
 import com.lenovo.service.basicpubliclibrary.tencentx5.X5WebViewActivity;
 import com.lenovo.service.basicpubliclibrary.validation.ValidateActivity;
 import com.lenovo.service.basicpubliclibrary.videoplayer.VideoplayerActivity;
@@ -44,7 +46,7 @@ public class CompositeActivity extends AppCompatActivity implements View.OnClick
              R.id.scan_code, R.id.tv_getui, R.id.tv_permission,R.id.tvEventBus,
             R.id.tv_request, R.id.tv_view1, R.id.tv_view2, R.id.tv_view3, R.id.tv_view4,
             R.id.tv_view5, R.id.tv_view6, R.id.tv_view7, R.id.tv_fingerprint, R.id.tvAppUpdate,
-            R.id.tv_aidl, R.id.tv_opengl,R.id.tvUcrop,R.id.tv_shake
+            R.id.tv_aidl, R.id.tv_opengl,R.id.tvUcrop,R.id.tv_shake,R.id.tv_aiSeperate,R.id.tv_screenShot
     };//R.id.tv_xmlparse,
 
     @Override
@@ -171,6 +173,12 @@ public class CompositeActivity extends AppCompatActivity implements View.OnClick
                 break;
             case R.id.tv_shake:
                 intent.setClass(this, ShakeActivity.class);
+                break;
+            case R.id.tv_aiSeperate:
+                intent.setClass(this, CharSeperatorActivity.class);
+                break;
+            case R.id.tv_screenShot:
+                intent.setClass(this, ScreenShotActivity.class);
                 break;
         }
         startActivity(intent);

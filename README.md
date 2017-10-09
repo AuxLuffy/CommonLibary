@@ -85,6 +85,8 @@
 10. 图片双击缩放控件PhotoView
 11. 文本滚动切换效果视图TickerView
 12. 图片模糊化处理框架BLURRY
+13. 百度AI语言基础之分词技术
+14. android截屏工具 短/长截屏
 
 
 

@@ -31,6 +31,7 @@ android {
     sourceSets {
         main {
             java.srcDirs = ['src/main/java', 'src/main/aidl']
+            jniLibs.srcDirs = ['libs']
         }
     }
 
@@ -61,7 +62,6 @@ android {
         exclude 'META-INF/dependencies.txt'
         exclude 'META-INF/LGPL2.1'
     }
-
 }
 ext {
     supportVersion = '26.0.0-alpha1'
@@ -210,6 +210,8 @@ dependencies {
     compile project(':fragtabhostlib')
     compile project(':gridviewdraglib')
     compile 'com.github.YancyYe:GalleryPick:1.2.1'
+    compile files('libs/json-20160810.jar')
+    compile files('libs/aip-java-sdk-3.1.0.jar')
 }
 greendao {
     schemaVersion 1
