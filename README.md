@@ -127,6 +127,14 @@
 12. 控件-时间轴日记功能
 13. 控件-RecyclerView双列表联动与悬停
 14. 动画-利用RecyclerView实现顶部悬浮效果
+15. 控件-Notificoation消息通知栏的使用
+16. 综合-Ucrop图片裁剪+glide圆角头像功能
+17. 控件-FragmentTabHost实现底部菜单栏的封装
+18. 综合-封装gridview实现标签移动拖拽效果
+
+
+
+
 
 
 # 汪雅菁
