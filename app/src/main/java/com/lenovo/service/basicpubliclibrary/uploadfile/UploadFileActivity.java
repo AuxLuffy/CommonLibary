@@ -26,7 +26,8 @@ public class UploadFileActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(UploadFileActivity.this, "start uploading", Toast.LENGTH_SHORT).show();
-                uploadPic(null, "");
+
+//                uploadPic(null, "");
             }
         });
     }
