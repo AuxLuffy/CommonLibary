@@ -104,7 +104,7 @@ public class MaillistActivity extends Activity{
                         Log.e("thread",Thread.currentThread().getName()+":1");
                         // 获取本地通讯录
                         List<ModelContactCity> ContactInfo = ContactInfoUtils.getContactList(mActivity);
-                        if(ContactInfo==null)return ContactInfo;
+                        if(ContactInfo==null) return ContactInfo;
                         List<ModelContactCity> newContactInfo = ContactInfoUtils.getRightMobile(ContactInfo);
                         Type listType = new TypeToken<ArrayList<ModelContactCity>>() {}.getType();
                         Gson gson = new Gson();
@@ -112,9 +112,13 @@ public class MaillistActivity extends Activity{
                         final List<ModelContactCity> Letterdata = ContactInfoUtils.
                                 getLetterdata(newContactInfo, (List<ModelContactCity>) gson.fromJson(TitleData.DATA, listType));
                         // 把通讯录和字符集合并
-                        Letterdata.addAll(newContactInfo);
-                        // 排序合并后的数据
-                        Collections.sort(Letterdata, new LetterComparator());
+                        if(Letterdata!=null){
+                            Letterdata.addAll(newContactInfo);
+                            // 排序合并后的数据
+                            Collections.sort(Letterdata, new LetterComparator());
+                        }
+
+
                         return Letterdata;
                     }
                 })
@@ -124,6 +128,8 @@ public class MaillistActivity extends Activity{
                         Log.e("thread",Thread.currentThread().getName()+":2");
                         // 如果获取的通讯录为空,给用户提示
                         if (modelContactCities==null){
+                            Toast.makeText(mActivity, "通讯录查询为空", Toast.LENGTH_SHORT).show();
+
                             throw new AppException("通讯录无法显示,原因是您的通讯录为空或者您未开启获取通讯录权限",1);
                         }
                         return modelContactCities;
